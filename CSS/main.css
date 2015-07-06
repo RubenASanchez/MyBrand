@@ -1,0 +1,16 @@
+/*
+    Document   : CSS/main.css
+    Created on : 2015-07-06 05:22 PM
+    Author     : Valento
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+root {
+    display: block;
+}
+
+body {
+    background: cornflowerblue;
+}
