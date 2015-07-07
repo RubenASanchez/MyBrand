@@ -6,29 +6,151 @@
     <title>Ruben A Sanchez</title>
     
     <link href="../CSS/main.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" src="../SCRIPTS/events.js"></script>
 </head>
 
 <body>
 
-    <p>Hiya</p>
+    <header>
+        <p>Ruben A Sanchez</p>
+    </header>
     
+    <div id="topelementscontainer">
     
+        <div id="calendar">
+            <p id="calendar-day"></p>
+            <p id="calendar-date"></p>
+            <p id="calendar-month-year"></p>
+        </div>
 
     
-            <a href="https://twitter.com/Ruben_A_Sanchez" class="twitter-follow-button" data-show-count="false">Follow @Ruben_A_Sanchez</a>
-            <script>
-                ! function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0],
-                        p = /^http:/.test(d.location) ? 'http' : 'https';
-                    if(!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = p + '://platform.twitter.com/widgets.js';
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, 'script', 'twitter-wjs');
-            </script>
+        <div id="calendarContainer">
+            <div id="calendarMonth">
+                <p>July</p>
+            </div>
 
+            <div id="calendarDay">
+                <table class="day">
+                    <tr>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>T</td>
+                        <td>W</td>
+                        <td>T</td>
+                        <td>F</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td class="zero">0</td>
+                        <td class="zero">0</td>
+                        <td class="zero">0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="today">6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td class="zero">0</td>
+                    </tr>
+                  <!--  <tr>
+                        <td class="zero">0</td>
+                        <td class="zero">0</td>
+                        <td class="zero">0</td>
+                        <td class="zero">0</td>
+                        <td class="zero">0</td>
+                        <td class="zero">0</td>
+                        <td class="zero">0</td>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+
+        
+        <div id="itsmecontainer">
+            <img src="IMAGES/androidmetransparent.png">
+        </div>
+    
+    </div>
+
+    <div id="middleelementscontainer">
+    
+        <div id="twittercontainer">
+            <a class="twitter-timeline" href="https://twitter.com/Ruben_A_Sanchez" data-widget-id="514859664236765184" height="200" width="390" data-tweet-limit="1" >Tweets by @Ruben_A_Sanchez</a>
+                <script>
+                    ! function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if(!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                            }
+                    }(document, "script", "twitter-wjs");
+                </script>
+        </div>
+
+        
+        
+        
+        
+    </div>
+
+    <footer>
+    
+        <a href="https://twitter.com/Ruben_A_Sanchez" class="twitter-follow-button" data-show-count="false">Follow @Ruben_A_Sanchez</a>
+        <script>
+            ! function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                if(!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + '://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'twitter-wjs');
+        </script>
+    
+    </footer>
+    
+    
+    
+    
     
     
     
