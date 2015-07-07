@@ -62,16 +62,32 @@ header p {
     vertical-align: middle;
 }
 
-#topelementscontainer {
-    height: 300px;
+
+.sectioncontainer {
     width: 90%;
     margin: 4% auto;
+}
+
+#one {
+    background: green;
+    float: left;
+}
+
+#two {
+    background: red;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#three {
+    background: teal;
+    float: right;
 }
 
 
 /*Calendar Date*/
 
-#calendar {
+#datecalendar {
     width: 130px;
     height: 180px;
     /*margin: 20px 0px 20px 50px;*/
@@ -82,7 +98,7 @@ header p {
     float: left;
 }
 
-#calendar p {
+#datecalendar p {
     font-family: zekton;
     padding: 10px 0px;
     margin: 0px;
@@ -108,8 +124,7 @@ header p {
 
 #calendarContainer {
     width: 180px;
-    height: 126px; /*144px*/
-    /*margin: 40px auto 20px auto;*/
+    height: 126px;
     box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
     font-family: zekton;
     font-size: 10px;
@@ -143,17 +158,12 @@ header p {
 #itsmecontainer {
     width: 200px;
     float: right;
-    margin-top: -145px;
 }
 
-#middleelementscontainer {
-    width: 90%;
-    margin: 4% auto;
-}
 
 #twittercontainer {
     width: 50%;
-    max-width: 390px;
+    max-width: 380px;
     box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
 }
 
