@@ -1,9 +1,3 @@
-/**
-* User: Valento
-* Date: 2015-07-06
-* Time: 10:40 PM
-*/
-
 // to find today's date
 
 function calendar() {
@@ -26,4 +20,5 @@ function setText(id, val) {
 
 // to get calendar to show up
 
-window.onload = calendar;
+/*window.onload = calendar;*/       /*this is outdated*/
+window.addEventListener('load',calendar)
