@@ -72,6 +72,14 @@ header p {
     margin-top: 50px;
 }
 
+.videocontainer {
+    width: 100%;
+}
+
+.videocontainer video {
+    /*max-width: 480;*/
+}
+
 #one {
     background: green;
     float: left;
