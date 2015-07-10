@@ -9,6 +9,7 @@
     
     <script type="text/javascript" src="../SCRIPTS/events.js"></script>
     <script type="text/javascript" src="../SCRIPTS/clock.js"></script>
+    <script type="text/javascript" src="../SCRIPTS/video.js"></script>
 </head>
 
 <body>
@@ -38,25 +39,7 @@
             <p>I'm so glad you stopped by.</p>
             <p>Please have a look around and enjoy.</p>
             <nav class="button mainbutton" id="tooffice">
-                
-                <div class="hidden1">
-                    <div class="circle"><p>one</p>
-                    </div>
-                </div>
-                
-                <div class="hidden2">
-                    <div class="circle">
-                        <a href="#office"><p>two</p></a>
-                    </div>
-                </div>
-                
-                <div class="hidden3">
-                    <div class="circle">
-                        <a href="#office"><p>three</p></a>
-                    </div>
-                </div>
-                
-                <a href="#" id="btn" onclick="return false" style="color:rgba(250,250,250,0);">click
+                <a href="#tooffice">
                     <p>Menu</p>
                 </a>
             </nav>
@@ -80,12 +63,11 @@
                 <div class="niceview">
                     <p>Nice view!</p>
                 </div>
-            <nav class="button" id="tovideo">
-                <a href="#video">
-                    <p>To Video</p>
-                </a>
-            </nav>    
-
+                <nav class="button" id="tovideo">
+                    <a href="#video">
+                        <p>To Video</p>
+                    </a>
+                </nav>
             </div>    
     
     </section>
@@ -134,8 +116,8 @@
                         <td>6</td>
                         <td>7</td>
                         <td>8</td>
-                        <td class="today">9</td>
-                        <td>10</td>
+                        <td>9</td>
+                        <td class="today">10</td>
                         <td>11</td>
                     </tr>
                     <tr>
@@ -282,8 +264,6 @@
     
     
     
-    
-    
     <footer>
     
         <a href="https://twitter.com/Ruben_A_Sanchez" class="twitter-follow-button" data-show-count="false">Follow @Ruben_A_Sanchez</a>
@@ -300,9 +280,6 @@
             }(document, 'script', 'twitter-wjs');
         </script>
     
-        
-       
-        
         
         
     </footer>
