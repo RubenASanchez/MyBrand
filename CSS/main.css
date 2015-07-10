@@ -35,8 +35,8 @@ html, body, div, h1, h2, p, ul, li {
 /*  Buttons  */
 
 .button {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     font-family: zekton;
     text-align: center;
     padding-top: 0px;
@@ -58,9 +58,17 @@ html, body, div, h1, h2, p, ul, li {
 
 .button p {
     color: white;
-    height: 20px;
-    margin-top:-18px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.mainbutton p {
     padding: 10px;
+}
+
+.circlebutton p {
+    padding: 28px 0;
+    border-radius: 50%;
 }
 
 .button:hover {
@@ -136,21 +144,6 @@ header p {
     float: right;
 }
 
-#one {
-    background: green;
-    float: left;
-}
-
-#two {
-    background: red;
-    width: 100px;
-    margin: 0 auto;
-}
-
-#three {
-    background: teal;
-    float: right;
-}
 
 /*Calendar Date*/
 
@@ -286,6 +279,10 @@ footer {
     float: right;
 }
 
+.mindmap {
+    width: 100%;
+}
+
 /*Scrolling Animation*/
 
 /*ok these are not working*/
@@ -295,8 +292,8 @@ footer {
 }
 
 a[ id="office" ]:target~.skyframe {
-    -webkit-transform: translateY(-200px);
-    transform: translateY(-200px);
+    -webkit-transform: translateY(800px);
+    transform: translateY(800px);
 }
 
 
@@ -388,4 +385,9 @@ a[ id="office" ]:target~.skyframe {
     to{
         transform: translateX(1300px);
     }
+}
+
+
+.mindmap {
+    background: #87a2d3;
 }

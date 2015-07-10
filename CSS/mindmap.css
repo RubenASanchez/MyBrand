@@ -1,0 +1,186 @@
+
+.timeline {
+    position: relative;
+    margin: 0;
+}
+
+.timeline h1 {
+    font-family: ethnocentric;
+    font-size: 20px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    z-index: 1;
+    color: rgba(16,86,147,.8);
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.timeline .panelcontainer {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 650px;
+    background-color: #e9e8f2;
+}
+
+.timeline .backgroundslider {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.timeline .backgroundslider img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.timeline .panelslider {
+    width: 100%;
+    position: absolute;
+}
+
+.timeline .panel {
+    width: 500px;
+    position: absolute;
+}
+
+.timeline .panel .label {
+    font-family: ethnocentric;
+    font-size: 40px;
+    text-align: center;
+    margin: 100px 0 0 0;
+    color: rgba(16,86,147,.8);
+}
+
+.timeline .panelcontent {
+    font-family: zekton;
+    padding: 20px;
+    position: relative;
+    background-color: rgba(16,86,147,.8);
+    margin: 50px 100px 0px 100px;
+    height: 300px;
+}
+
+.timeline .panelcontent h2 {
+    font-size: 1em;
+    color: #fff;
+    margin: 0px 0px 10px 0px;
+}
+
+.timeline .panelcontent p {
+    margin: 0px 0px 10px 10px;
+    position: relative;
+    color: rgba(255,255,255,.50);
+}
+
+.timeline nav {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    text-align: center;
+    width: inherit;
+}
+
+.timeline nav a {
+    font-family: zekton;
+    color: rgba(16,86,147,.6);
+    font-size: .9em;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.timeline nav a:hover {
+    background-color: rgba(16,86,147,.2)
+}
+
+.timeline nav a:first-child {
+    border-left-width: 6px;
+}
+
+.timeline nav a:last-child {
+    border-right-width: 6px;
+}
+
+.timeline nav a.selected {
+    background-color: rgba(16,86,147,.6);
+    color: rgba(255,255,255,.50);
+}
+
+.timeline .panel img.arpanet {
+    margin: 0px 0px 10px 0px;
+}
+
+.timeline .panel img.tcp {
+    float: left;
+    margin: 10px 20px 0px 0px;
+}
+
+.timeline .panel img.telecom {
+    float: right;
+    margin: 10px 30px 0px 10px;
+}
+
+.clearboth {
+    clear: both;
+}
+
+@media screen and (max-width: 500px) {
+    .timeline {
+        margin: 0px;
+        background: #095b82 url(../images/backgroundsmall.png) no-repeat center 0px;
+    }
+    .timeline h1 {
+        text-align: left;
+        padding: 10px 10px 10px 20px;
+    }
+    .timeline .panelcontainer {
+        height: auto;
+        background: none;
+        filter: none;
+        margin: 0px;
+    }
+    .timeline .panelslider {
+        position: static;
+        height: auto;
+    }
+    .timeline .panel {
+        width: auto;
+        height: auto;
+        position: static;
+        border-top: 1px solid rgba(255,255,255,.3);
+        padding-bottom: 20px;
+    }
+    .timeline nav {
+        display: none;
+    }
+    .timeline .backgroundslider {
+        display: none;
+    }
+    .timeline .panel:first-child {
+        padding-top: 40px;
+    }
+    .timeline .panelcontent {
+        padding-top: 60px;
+    }
+    .timeline .panelcontent .label {
+        top: -10px;
+        right: 10px;
+    }
+    .timeline .panel img.www {
+        margin: 0px 25px 0px 0px;
+    }
+    .timeline .panel img.www {
+        margin: 0px 25px 0px 0px;
+    }
+    .timeline .panel img.comm {
+        float: left;
+        margin: 10px 15px 0px 0px;
+    }
+}

@@ -6,10 +6,15 @@
     <title>Ruben A Sanchez</title>
     
     <link href="../CSS/main.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/mindmap.css" rel="stylesheet" type="text/css">
+    
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="../SCRIPTS/jquery-1.8.3.min.js"></script>
     
     <script type="text/javascript" src="../SCRIPTS/events.js"></script>
     <script type="text/javascript" src="../SCRIPTS/clock.js"></script>
     <script type="text/javascript" src="../SCRIPTS/video.js"></script>
+    <script type="text/javascript" src="../SCRIPTS/mindmap.js"></script>
 </head>
 
 <body>
@@ -39,7 +44,7 @@
             <p>I'm so glad you stopped by.</p>
             <p>Please have a look around and enjoy.</p>
             <nav class="button mainbutton" id="tooffice">
-                <a href="#tooffice">
+                <a href="#office">
                     <p>Menu</p>
                 </a>
             </nav>
@@ -63,9 +68,9 @@
                 <div class="niceview">
                     <p>Nice view!</p>
                 </div>
-                <nav class="button" id="tovideo">
+                <nav class="button circlebutton" id="tovideo">
                     <a href="#video">
-                        <p>To Video</p>
+                        <p>Video</p>
                     </a>
                 </nav>
             </div>    
@@ -220,6 +225,69 @@
     </section>
     
     
+    <section class="sectioncontainer mindmap" style="width:98%;">
+    
+        <img src="IMAGES/mindmapbackground.png" style="width:100%;">
+        
+        
+    </section>
+    
+    
+    
+    
+    <!-- <section class ="sectioncontainer mindmap">-->
+    
+        <div class="timeline">
+            <div class="panelcontainer">
+                
+                <h1>How I Have Spent My Time</h1>
+                <div class="backgroundslider">
+                    <img class="background" src="../IMAGES/mindmapbackground.png" width="1200" height="650" />
+                </div>
+                <div class="panelslider">
+                    
+                    <div class="panel">
+                        <div class="label">2007 - 2009</div>
+                        <div class="panelcontent">
+                            <h2>Industry</h2>
+                            <img class="arpanet" src="../images/arpanet.png" alt="BioChem" />
+                            <p>I spent some time acquiring a solid foundation of laboratory procedures such as PCR and Cell Culturing in the clinical diagnostic and comparative medicine research fields.</p>
+                            <p>I had the pleasure to work within the labs of industry leaders such as Quest Diagnostics, The Scripps Research Institute, and Pfizer Global Research and Development.</p>
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+                
+                    <div class="panel">
+                        <div class="label">2010 - 2012</div>
+                        <div class="panelcontent">
+                            <h2>Academia</h2>
+                            <img class="tcp" src="../images/tcp.png" alt="Education" />
+                            <p>My academic interests have resulted in obtaining degrees in Physics and Mathematics.  I am currently attending UCSC and pursuing 2 degrees: one in Lingustics the other in Cognitive Science.</p>
+                            <p>It is my hope that I will continue on to acquire a Ph.D. in NeuroLinguistics.</p>
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="label">2013 - 2015</div>
+                        <div class="panelcontent">
+                            <h2>Current</h2>
+                            <img class="arpanet" src="../images/arpanet.png" alt="NeuroLinguistics" />
+                            <p>Recently I completed internships at the Dynamic Memory Lab and the Center for Mind and Brain at UC Davis.  We studied the hippocampus via cognitive tests and fMRI scans.</p>
+                            <p>I am currently holding a research assistant position at UCSC in a Linguistics laboratory analyzing phonetic data.</p>
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <nav></nav>
+            </div>
+        </div>
+    
+    <!-- </section>-->
+    
+    
+    
     <section class="sectioncontainer">
     
         <div id="twittercontainer">
@@ -245,23 +313,7 @@
     
 
     
-    
-    <section class="sectioncontainer">
-    
-        <div id="one">
-            <p>left</p>
-        </div>
-    
-        <div id="three">
-            <p>right</p>
-        </div>
-    
-        <div id="two">
-            <p>middle</p>
-        </div>
-    
-    </section>
-    
+  
     
     
     <footer>
@@ -283,7 +335,7 @@
         
         
     </footer>
-    
+
 </body>
 
 </html>
