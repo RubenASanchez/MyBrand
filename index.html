@@ -9,7 +9,6 @@
     
     <script type="text/javascript" src="../SCRIPTS/events.js"></script>
     <script type="text/javascript" src="../SCRIPTS/clock.js"></script>
-    
 </head>
 
 <body>
@@ -39,12 +38,30 @@
             <p>I'm so glad you stopped by.</p>
             <p>Please have a look around and enjoy.</p>
             <nav class="button mainbutton" id="tooffice">
-                <a href="#office">
+                
+                <div class="hidden1">
+                    <div class="circle"><p>one</p>
+                    </div>
+                </div>
+                
+                <div class="hidden2">
+                    <div class="circle">
+                        <a href="#office"><p>two</p></a>
+                    </div>
+                </div>
+                
+                <div class="hidden3">
+                    <div class="circle">
+                        <a href="#office"><p>three</p></a>
+                    </div>
+                </div>
+                
+                <a href="#" id="btn" onclick="return false" style="color:rgba(250,250,250,0);">click
                     <p>Menu</p>
                 </a>
-            </nav>    
+            </nav>
         </div>
-        
+            
         <div style="clear:both;"></div>
             
         </div>
@@ -52,7 +69,7 @@
     </section>
     
     
-    <section class="sectioncontainer, skyframe" id="office">
+    <section class="sectioncontainer, skyframe" id="office" style="margin-bottom:5%;">
     
             <div class="sky">
                 <div class="cloud fcloud01"></div>
@@ -74,7 +91,7 @@
     </section>
 
     
-    <section class="sectioncontainer">
+    <section class="sectioncontainer" style="margin-top:5%;">
     
         <div id="datecalendar">
             <p id="calendar-day"></p>
@@ -175,9 +192,51 @@
             </video>
         
         </div>
+        
+        <div style="clear:both;"></div>
     
     </section>
 
+    
+    <section class="sectioncontainer">
+        
+        <div id="detailedintrocontainer1">
+            
+            <div id="detailedintro1">
+                <p>I am a recent graduate from the University of California at Santa Cruz.  I was a double major and received a B.A. in Linguistics and a B.S. in Cognitive Science.</p>
+                <br />
+                <p>I also hold two Associate of Science degrees, one in Physics the other in Mathematics.</p>
+            </div>
+        
+            <div id="detailedintro2">
+                <img src="IMAGES/androidmetransparent.png">
+            </div>
+        
+            <div style="clear:both;"></div>
+            
+        </div>
+        
+    </section>
+    
+    
+    <section class="sectioncontainer">
+    
+        <div id="detailedintrocontainer2">
+            
+            <div id="detailedintro4">
+                <p>My goal is to obtain a Ph.D. in Neurolinguistics in order to pursue research involving signal cell transduction.  I would also like to develop web based tools for language acquisition.</p>
+            </div>
+        
+            <div id="detailedintro3">
+                <img src="IMAGES/androidmetransparent.png">
+            </div>
+        
+            <div style="clear:both;"></div>
+        
+        </div>
+    
+    </section>
+    
     
     <section class="sectioncontainer">
     
@@ -201,7 +260,6 @@
         
         
     </section>
-    
     
 
     
@@ -242,6 +300,11 @@
             }(document, 'script', 'twitter-wjs');
         </script>
     
+        
+       
+        
+        
+        
     </footer>
     
 </body>
