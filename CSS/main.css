@@ -248,11 +248,47 @@ header p {
 footer {
     background-color: #4973c1;
     width: 100%;
-    height: 50px;
+    height: 100%;
     padding-top: 25px;
     text-align: center;
+    /*font-family: zekton;*/
 }
 
+footer p {
+    color: whitesmoke;
+}
+
+.footerlinkscontainer {
+    width: 95%;
+    margin: 20px auto;
+}
+
+.footerlinks {
+    /*background: orange;*/
+    width: 21%;
+    border-top: 2px solid #cccccc;
+    margin: 0 20px;
+    text-align: left;
+    float: left;
+}
+
+.footerlinks p {
+    color: white;
+}
+
+.footerlinks nav a {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+/*#footerlinks nav a p {
+    padding: 1px 0px;
+    color: #cccccc;
+}*/
+
+.footerlinks nav a:hover {
+    color: white;
+}
 
 /* Detailed Introduction */
 
@@ -279,9 +315,22 @@ footer {
     float: right;
 }
 
+.theend {
+    height: 25px;
+    text-align: left;
+    font-size: .8em;
+}
+
+.theend p {
+    color: #cccccc;
+    margin: 1% 0 0 8%;
+}
+
+/*
 .mindmap {
     width: 100%;
 }
+*/
 
 /*Scrolling Animation*/
 
