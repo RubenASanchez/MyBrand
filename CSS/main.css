@@ -6,6 +6,13 @@
 */
 
 
+/*  notebook 1280 x 800  */
+/* ipad 1024 x 768 */
+/* iphone 375 x 667 */
+/* 320 x 568 */
+/* 360 x 640 */
+
+
 /*  Reset default styles  */
 
 header, footer, nav, root {
@@ -19,6 +26,7 @@ html, body, div, h1, h2, p, ul, li {
 
 @charset "UTF-8";
 
+
 /*  Declaration of non standard items  */
 
 @font-face {
@@ -31,6 +39,7 @@ html, body, div, h1, h2, p, ul, li {
   font-family: 'zekton';
   src: url('../FONTS/zekton.ttf') format('truetype');
 }
+
 
 /*  Buttons  */
 
@@ -84,6 +93,7 @@ html, body, div, h1, h2, p, ul, li {
 #tovideo p {
     margin-top: -10px;
 }
+
 
 /* Main Elements Custom Styles */
 
@@ -145,7 +155,7 @@ header p {
 }
 
 
-/*Calendar Date*/
+/* Calendar Date */
 
 #datecalendar {
     width: 130px;
@@ -179,7 +189,7 @@ header p {
     
 }
 
-/*Little Calendar*/
+/* Little Calendar */
 
 #calendarContainer {
     width: 180px;
@@ -214,7 +224,7 @@ header p {
     background-color: #8db1f4;
 }
 
-/*Clock*/
+/* Clock */
 
 #clockcontainer {
     width: 150px;
@@ -237,57 +247,6 @@ header p {
     margin: 16px auto 0px auto;
     font-size: 54px;
     text-align: center;
-}
-
-#twittercontainer {
-    width: 50%;
-    max-width: 380px;
-    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
-}
-
-footer {
-    background-color: #4973c1;
-    width: 100%;
-    height: 100%;
-    padding-top: 25px;
-    text-align: center;
-    /*font-family: zekton;*/
-}
-
-footer p {
-    color: whitesmoke;
-}
-
-.footerlinkscontainer {
-    width: 95%;
-    margin: 20px auto;
-}
-
-.footerlinks {
-    /*background: orange;*/
-    width: 21%;
-    border-top: 2px solid #cccccc;
-    margin: 0 20px;
-    text-align: left;
-    float: left;
-}
-
-.footerlinks p {
-    color: white;
-}
-
-.footerlinks nav a {
-    text-decoration: none;
-    color: #cccccc;
-}
-
-/*#footerlinks nav a p {
-    padding: 1px 0px;
-    color: #cccccc;
-}*/
-
-.footerlinks nav a:hover {
-    color: white;
 }
 
 /* Detailed Introduction */
@@ -315,6 +274,100 @@ footer p {
     float: right;
 }
 
+
+/* Twitter Feed */
+
+#twittercontainer {
+    width: 50%;
+    max-width: 380px;
+    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
+}
+
+
+/* Social Icon Links */
+
+.socialiconscontainer {
+    width: 650px;
+    margin: 60px auto;
+    position: relative;
+    /*background: orange;*/
+}
+
+.socialicons {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 6%;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+.socialiconsbase {
+    position: absolute;
+}
+
+.socialiconsbase, .socialiconshover {
+    opacity: 1;
+}
+
+.socialiconsbase:hover {
+    opacity: 0;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #4973c1;
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    text-align: center;
+}
+
+footer p {
+    color: whitesmoke;
+}
+
+
+/* Footer Links */
+
+.footerlinkscontainer {
+    width: 95%;
+    margin: 25px auto;
+}
+
+.footerlinks {
+    /*background: orange;*/
+    width: 20%;
+    border-top: 2px solid #cccccc;
+    margin: 0 20px;
+    text-align: left;
+    float: left;
+}
+
+.footerlinks p {
+    color: white;
+}
+
+.footerlinks nav a {
+    text-decoration: none;
+    font-size: .9em;
+    color: #cccccc;
+}
+
+.footerlinks nav {
+    padding: 8px 0px;
+}
+
+.footerlinks nav a:hover {
+    color: white;
+}
+
+
+/* Last line in footer */
+
 .theend {
     height: 25px;
     text-align: left;
@@ -332,6 +385,7 @@ footer p {
 }
 */
 
+
 /*Scrolling Animation*/
 
 /*ok these are not working*/
@@ -344,7 +398,6 @@ a[ id="office" ]:target~.skyframe {
     -webkit-transform: translateY(800px);
     transform: translateY(800px);
 }
-
 
 
 /*Cloud Animation*/
@@ -436,7 +489,3 @@ a[ id="office" ]:target~.skyframe {
     }
 }
 
-
-.mindmap {
-    background: #87a2d3;
-}
