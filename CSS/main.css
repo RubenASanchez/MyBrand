@@ -19,7 +19,7 @@ header, footer, nav, root {
     display: block;
 }
 
-html, body, div, h1, h2, p, ul, li {
+html, body, div, aside, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -86,7 +86,7 @@ html, body, div, h1, h2, p, ul, li {
 
 #tomindmap {
     float: left;
-    margin: 10px 0 10px 120px;
+    margin: 30px 0 0 30px;
 }
 
 #tomindmap p {
@@ -105,6 +105,15 @@ html, body, div, h1, h2, p, ul, li {
     margin-top: -10px;
 }
 
+#tocv {
+    margin: 10px 0 0 30px;
+}
+
+#tocv p {
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+}
 
 /* Main Elements Custom Styles */
 
@@ -138,7 +147,26 @@ header p {
 .sectioncontainer {
     width: 90%;
     margin: 10% auto;
+    /*background: orange;*/
 }
+
+.card {
+    width: 120px;
+    height: 180px;
+    background: whitesmoke;
+    margin: 50px 0 0 0;
+    padding: 3%;
+    float: right;
+    -webkit-box-shadow: 0 4px 4px -2px #000000;
+    -moz-box-shadow: 0 4px 4px -2px #000000;
+    box-shadow: 0px 4px 4px -2px #000000;
+
+}
+
+/*#mmcard {
+    float: right;
+    margin: 50px 0 0 0;
+}*/
 
 .imagecontainer {
     margin-top: 50px;
@@ -263,26 +291,26 @@ header p {
 /* Detailed Introduction */
 
 #detailedintrocontainer1, #detailedintrocontainer2 {
-    max-width: 520px;
+    width: 90%;
+    /*max-width: 600px;*/
     margin: 0px auto;
+/*    background: grey;*/
 }
 
-#detailedintro1 {
-    max-width: 300px;
+#detailedintro1, #detailedintro2 {
+    width: 60%;
+    max-width: 410px;
+    margin: 20px 0 0 0;
+    /*background: white;*/
     float: left;
 }
 
-#detailedintro2 {
-    float: right;
-}
 
-#detailedintro3 {
-    float: right;
-}
 
-#detailedintro4 {
-    width: 320px;
-    float: right;
+#detailedintro1 img {
+    width: 180px;
+    margin: 0 0 0 50px;
+    
 }
 
 

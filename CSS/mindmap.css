@@ -1,4 +1,9 @@
 
+.mindmap {
+    width: 100%;
+    margin: 50px auto;
+}
+
 .timeline {
     position: relative;
     margin: 0;
@@ -6,32 +11,37 @@
 
 .timeline h1 {
     font-family: ethnocentric;
-    font-size: 20px;
+    font-size: 18px;
     position: absolute;
-    top: 50px;
+    top: 10px;
     left: 0px;
     text-align: center;
     width: 100%;
     margin: 0px;
     z-index: 1;
     color: rgba(16,86,147,.8);
+    /*color: black;*/
     padding-bottom: 10px;
     letter-spacing: 2px;
+}
+
+.panelslider {
+    opacity: 0.4;
 }
 
 .timeline .panelcontainer {
     overflow: hidden;
     position: relative;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
     height: 650px;
-    background-color: #e9e8f2;
 }
 
 .timeline .backgroundslider {
     position: absolute;
     width: inherit;
     height: inherit;
+
 }
 
 .timeline .backgroundslider img {
@@ -52,24 +62,27 @@
 
 .timeline .panel .label {
     font-family: ethnocentric;
-    font-size: 40px;
+    font-size: 38px;
     text-align: center;
-    margin: 100px 0 0 0;
+    margin: 50px 0 0 0;
     color: rgba(16,86,147,.8);
+
 }
 
 .timeline .panelcontent {
     font-family: zekton;
     padding: 20px;
     position: relative;
-    background-color: rgba(16,86,147,.8);
+    /*background-color: rgba(16,86,147,.8);*/
+    background: whitesmoke;
+    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
     margin: 50px 100px 0px 100px;
     height: 300px;
 }
 
 .timeline .panelcontent h2 {
     font-size: 1em;
-    color: #fff;
+    color: black;
     margin: 0px 0px 10px 0px;
 }
 
@@ -77,6 +90,7 @@
     margin: 0px 0px 10px 10px;
     position: relative;
     color: rgba(255,255,255,.50);
+    color: black;
 }
 
 .timeline nav {
