@@ -147,7 +147,6 @@ header p {
 .sectioncontainer {
     width: 90%;
     margin: 10% auto;
-    /*background: orange;*/
 }
 
 .card {
@@ -292,16 +291,13 @@ header p {
 
 #detailedintrocontainer1, #detailedintrocontainer2 {
     width: 90%;
-    /*max-width: 600px;*/
     margin: 0px auto;
-/*    background: grey;*/
 }
 
 #detailedintro1, #detailedintro2 {
     width: 60%;
     max-width: 410px;
     margin: 20px 0 0 0;
-    /*background: white;*/
     float: left;
 }
 
@@ -310,7 +306,6 @@ header p {
 #detailedintro1 img {
     width: 180px;
     margin: 0 0 0 50px;
-    
 }
 
 
@@ -329,7 +324,6 @@ header p {
     width: 520px; /*650*/
     margin: 80px auto;
     position: relative;
-    background: green;
 }
 
 .socialicons {
@@ -375,11 +369,9 @@ footer p {
 .footerlinkscontainer {
     width: 95%;
     margin: 25px auto;
-    background: orange;
 }
 
 .footerlinks {
-    /*background: orange;*/
     width: 18%;
     border-top: 2px solid #cccccc;
     margin: 0 0 0 5%;

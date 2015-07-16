@@ -1,0 +1,60 @@
+#intro1 {
+    width: 200px;
+    margin: 100px auto 0 auto;
+    float: none;
+}
+
+.mainbutton {
+    margin: 220px auto 0 auto;
+}
+
+#intro2 {
+    margin-top: -280px;
+    float: none;
+}
+
+#detailedintro1, #detailedintro2 {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+}
+
+.card {
+    /*float: none;*/
+    margin: 10px 60px 0 0;
+    
+}
+
+#datecalendar {
+    float: none;
+    margin: 0 auto;
+}
+
+#calendarContainer {
+    margin: -550px auto 250px auto;
+}
+
+#clockcontainer {
+    float: none;
+    margin: 200px auto;
+}
+
+#twittercontainer {
+    width: 100%;
+}
+
+.socialiconscontainer {
+    width: 100%;
+    max-width: 280px;
+}
+
+.footerlinkscontainer {
+    width: 100%;
+    margin: 20px  auto 10px auto;
+}
+
+.footerlinks {
+    width: 98%;
+    margin: 0 auto;
+    float: none;
+}
