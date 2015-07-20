@@ -46,3 +46,14 @@ window.onload = function() {
     document.getElementById("inputArea").appendChild(inputMinutes);
     document.getElementById("inputArea").appendChild(startButton);
 };
+
+
+
+
+
+function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.style.display == 'block' || e.style.display == '') {
+        e.style.display = 'none';
+    } else e.style.display = 'block';
+};

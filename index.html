@@ -15,8 +15,9 @@
     <script type="text/javascript" src="../SCRIPTS/events.js"></script>
     <script type="text/javascript" src="../SCRIPTS/clock.js"></script>
     <script type="text/javascript" src="../SCRIPTS/video.js"></script>
-    <!-- <script type="text/javascript" src="../SCRIPTS/timers.js"></script> -->
+    <script type="text/javascript" src="../SCRIPTS/timers.js"></script>
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <!--<script type="text/javascript" src="https//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
 </head>
 
 <body>
@@ -45,11 +46,43 @@
             <br />
             <p>I'm so glad you stopped by.</p>
             <p>Please have a look around and enjoy.</p>
-            <nav class="button mainbutton" id="tooffice">
-                <a href="#office">
+            
+            <div id="hiddenButtonsContainer">
+                <nav class="button circlebutton" id="hidden1">
+                    <a href="#office">
+                        <p>Intro</p>
+                    </a>
+                </nav>
+                <nav class="button circlebutton" id="hidden2">
+                    <a href="#office">
+                        <p>MyEdu</p>
+                    </a>
+                </nav>
+                <nav class="button circlebutton" id="hidden3">
+                    <a href="#office">
+                        <p>Office</p>
+                    </a>
+                </nav>
+                <nav class="button circlebutton" id="hidden4">
+                    <a href="#office">
+                        <p>Office</p>
+                    </a>
+                </nav>
+                <nav class="button circlebutton" id="hidden5">
+                    <a href="#office">
+                        <p>Office</p>
+                    </a>
+                </nav>
+            </div>            
+            
+            
+            
+            <nav class="button mainbutton" id="tooffice" onclick="toggle_visibility('hiddenButtonsContainer')">
+                <!--<a href="#office">-->
                     <p>Menu</p>
-                </a>
+                <!--</a>-->
             </nav>
+            
         </div>
             
         <div style="clear:both;"></div>
@@ -89,7 +122,7 @@
             <aside class="card" id="mmcard">
                 <p>View a mind map representation of my skills and knowledgebase.</p>
                 <nav class="button circlebutton" id="tomindmap">
-                <a href="mindmap.html">
+                <a target="_blank" href="mindmap.html">
                     <p>Mind Map</p>
                 </a>
                 </nav>
@@ -127,11 +160,11 @@
     </section>    
     
     
-    <!--
+
     
     <section class="sectioncontainer">
     
-        <div id="container">
+        <div id="countdownContainer">
             <div id="inputArea">
             </div>
             <h1 id="time">0:00</h1>
@@ -139,7 +172,7 @@
         
     </section>
     
-    -->
+
          
          
          
@@ -232,8 +265,8 @@
                         <td>18</td>
                     </tr>
                     <tr>
-                        <td class="today">19</td>
-                        <td>20</td>
+                        <td>19</td>
+                        <td class="today">20</td>
                         <td>21</td>
                         <td>22</td>
                         <td>23</td>

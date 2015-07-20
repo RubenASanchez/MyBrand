@@ -58,7 +58,7 @@ html, body, div, aside, h1, h2, p, ul, li {
     width: 80px;
     height: 40px;
     border-radius: 0%;
-    margin: 60px 0 0 70px;
+    margin: 70px 0 0 80px;
 }
 
 .button a {
@@ -103,6 +103,44 @@ html, body, div, aside, h1, h2, p, ul, li {
 
 #tovideo p {
     margin-top: -10px;
+}
+
+#hiddenButtonsContainer {
+    height: 0px;
+    margin: 0px;
+    
+}
+
+#hidden1 {
+    margin: 60px 0 0 -10px;
+    float: left;
+}
+
+#hidden2 {
+    margin: 10px 0 0 -22px;
+    float: left;
+}
+
+#hidden3 {
+    margin: -5px 0 0 0;
+    float: left;
+}
+
+#hidden4 {
+    margin: 10px 0 0 0;
+    float: left;
+}
+
+#hidden5 {
+    margin: 60px 0 0 -22px;
+    float: right;
+}
+
+#hidden1 p {
+    padding: 19px 20px 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin: -2px 0 0 -4px;
 }
 
 #tocv {
@@ -189,6 +227,8 @@ header p {
 }
 
 #intro2 {
+    width: 246px;
+    height: 200px;
     float: right;
 }
 
@@ -286,6 +326,17 @@ header p {
     font-size: 54px;
     text-align: center;
 }
+
+
+/* Count Down Timer */
+
+#countdownContainer {
+    width: 270px;
+    height: 60px;
+    padding: 10px;
+    background: rgba(5,5,5,.2)
+}
+
 
 /* Detailed Introduction */
 
