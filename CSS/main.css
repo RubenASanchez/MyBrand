@@ -58,7 +58,7 @@ html, body, div, aside, h1, h2, p, ul, li {
     width: 80px;
     height: 40px;
     border-radius: 0%;
-    margin: 70px 0 0 80px;
+    margin: 70px 0 0 70px;
 }
 
 .button a {
@@ -105,44 +105,6 @@ html, body, div, aside, h1, h2, p, ul, li {
     margin-top: -10px;
 }
 
-#hiddenButtonsContainer {
-    height: 0px;
-    margin: 0px;
-    
-}
-
-#hidden1 {
-    margin: 60px 0 0 -10px;
-    float: left;
-}
-
-#hidden2 {
-    margin: 10px 0 0 -22px;
-    float: left;
-}
-
-#hidden3 {
-    margin: -5px 0 0 0;
-    float: left;
-}
-
-#hidden4 {
-    margin: 10px 0 0 0;
-    float: left;
-}
-
-#hidden5 {
-    margin: 60px 0 0 -22px;
-    float: right;
-}
-
-#hidden1 p {
-    padding: 19px 20px 20px 20px;
-    width: 20px;
-    height: 20px;
-    margin: -2px 0 0 -4px;
-}
-
 #tocv {
     margin: 10px 0 0 30px;
 }
@@ -151,6 +113,15 @@ html, body, div, aside, h1, h2, p, ul, li {
     padding: 20px;
     width: 20px;
     height: 20px;
+}
+
+#timerbuttoncontainer {
+    background: grey;
+    margin: 0 0 5px 0;
+}
+
+#showtimer {
+    margin: 0 0 0 25%;
 }
 
 /* Main Elements Custom Styles */
@@ -173,7 +144,7 @@ header {
     position: -moz-sticky;
     position: fixed;
     top: 0px;
-    z-index: 500;
+    z-index: 600;
 }
 
 header p {
@@ -334,7 +305,12 @@ header p {
     width: 270px;
     height: 60px;
     padding: 10px;
-    background: rgba(5,5,5,.2)
+    background: rgba(5,5,5,.2);
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 599;
+    display: block;
 }
 
 

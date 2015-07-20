@@ -48,12 +48,16 @@ window.onload = function() {
 };
 
 
+/* Trying to make a toggle button */
+/*
+var showtimer = document.getElementById('showtimer');
 
-
-
-function toggle_visibility(id) {
-    var e = document.getElementById(id);
-    if (e.style.display == 'block' || e.style.display == '') {
-        e.style.display = 'none';
-    } else e.style.display = 'block';
+showtimer.onclick = function() {
+    var div = document.getElementById('countdownContainer');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    } else {
+        div.style.display = 'block';
+    }
 };
+*/

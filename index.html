@@ -47,40 +47,10 @@
             <p>I'm so glad you stopped by.</p>
             <p>Please have a look around and enjoy.</p>
             
-            <div id="hiddenButtonsContainer">
-                <nav class="button circlebutton" id="hidden1">
-                    <a href="#office">
-                        <p>Intro</p>
-                    </a>
-                </nav>
-                <nav class="button circlebutton" id="hidden2">
-                    <a href="#office">
-                        <p>MyEdu</p>
-                    </a>
-                </nav>
-                <nav class="button circlebutton" id="hidden3">
-                    <a href="#office">
-                        <p>Office</p>
-                    </a>
-                </nav>
-                <nav class="button circlebutton" id="hidden4">
-                    <a href="#office">
-                        <p>Office</p>
-                    </a>
-                </nav>
-                <nav class="button circlebutton" id="hidden5">
-                    <a href="#office">
-                        <p>Office</p>
-                    </a>
-                </nav>
-            </div>            
-            
-            
-            
-            <nav class="button mainbutton" id="tooffice" onclick="toggle_visibility('hiddenButtonsContainer')">
-                <!--<a href="#office">-->
+            <nav class="button mainbutton" id="tooffice">  
+                <a href="#office">
                     <p>Menu</p>
-                <!--</a>-->
+                </a>
             </nav>
             
         </div>
@@ -158,23 +128,6 @@
         </div>
     
     </section>    
-    
-    
-
-    
-    <section class="sectioncontainer">
-    
-        <div id="countdownContainer">
-            <div id="inputArea">
-            </div>
-            <h1 id="time">0:00</h1>
-        </div>
-        
-    </section>
-    
-
-         
-         
          
          
     <section class="sectioncontainer, skyframe" id="office" style="margin-bottom:5%;">
@@ -185,25 +138,24 @@
                 <div class="sayhi">
                     <img src=IMAGES/sayinghi.png alt="My android avatar waving hi">
                 </div>
+                
                 <div class="niceview">
                     <p>Nice view!</p>
                 </div>
+                
                 <nav class="button circlebutton" id="tovideo">
                     <a href="#video">
                         <p>Video</p>
                     </a>
                 </nav>
     
+                <div id="countdownContainer">
+                    <div id="inputArea">
+                    </div>
+                    <h1 id="time">00:00</h1>
+                </div>
                 
-                
-   <!-- <section class="sectioncontainer" style="position:relative; color:rgba(204, 166, 42, 0.5); top:20px; left:20px; z-index:599; width:250px; height:100px; margin:0px; background:rgba(21, 186, 219, 0.4);">
-    
-        <p style="background:rgba(21, 186, 219, 0.4); height: ">hiya</p>
-    
-    </section> -->
-                
-                
-            </div>    
+            </div>
     
     </section>
 
@@ -220,6 +172,14 @@
             <p>Time</p>
             <div id="clock"></div>
         </div>
+
+<!--        
+        <div id="timerbuttoncontainer">
+            <nav class="button mainbutton" id="showtimer">
+                    <p>Timer</p>
+            </nav>
+        </div>
+-->
         
         <div id="calendarContainer">
             <div id="calendarMonth">
