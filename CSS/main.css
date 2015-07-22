@@ -19,9 +19,14 @@ header, footer, nav, root {
     display: block;
 }
 
-html, body, div, aside, h1, h2, p, ul, li {
+html, body, div, aside, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3, p {
+    font-style: none;
+    font-weight: normal;
 }
 
 @charset "UTF-8";
@@ -40,6 +45,29 @@ html, body, div, aside, h1, h2, p, ul, li {
   src: url('../FONTS/zekton.ttf') format('truetype');
 }
 
+
+/* Headings */
+
+h1 {
+    font-family: zekton;
+    font-size: 1.6em;
+}
+
+h2 {
+    font-family: zekton;
+    font-size: 1.2em;
+    margin: 0 0 .5em 0;
+}
+
+h3 {
+    font-family: zekton;
+    font-size: 1.1em;
+    margin: 0 0 .8em 0;
+}
+
+p {
+    font-size: 1em;
+}
 
 /*  Buttons  */
 
@@ -158,6 +186,20 @@ header p {
     margin: 10% auto;
 }
 
+.heading {
+    width: 95%;
+    height: 50px;
+    padding: 25px 0 20px 5%;
+    background: cornflowerblue;
+}
+
+
+
+
+.heading h1 {
+    color: whitesmoke;
+}
+
 .card {
     width: 120px;
     height: 180px;
@@ -171,10 +213,22 @@ header p {
 
 }
 
-/*#mmcard {
-    float: right;
-    margin: 50px 0 0 0;
-}*/
+.cards {
+    width: 75%;
+    height: 150px;
+    background: whitesmoke;
+    /*margin: -10% auto 0 auto;*/
+    margin: 0 auto;
+    padding: 5%;
+    border-top: 2px solid #aaaaaa;
+    border-bottom: 2px solid #aaaaaa;
+    /*float: right;*/
+    -webkit-box-shadow: 0 4px 4px -2px #000000;
+    -moz-box-shadow: 0 4px 4px -2px #000000;
+    box-shadow: 0px 4px 4px -2px #000000;
+}
+
+
 
 .imagecontainer {
     margin-top: 50px;
