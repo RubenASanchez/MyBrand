@@ -183,7 +183,8 @@ header p {
 
 .sectioncontainer {
     width: 90%;
-    margin: 10% auto;
+    /*margin: 12% auto;*/ /*original*/
+    margin: 25% auto;
 }
 
 .heading {
@@ -232,6 +233,7 @@ header p {
 
 .imagecontainer {
     margin-top: 50px;
+    display: none;    /* * *  added this to remove roses not sure if I want to move them down or animate them in  * * */
 }
 
 .videocontainer {

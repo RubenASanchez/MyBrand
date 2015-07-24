@@ -16,10 +16,7 @@
     <link rel="icon" sizes="192x192" type="image/png" href="IMAGES/androidfavicon192192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="IMAGES/androidfavicon180180.png">
     
-    <script type="text/javascript" src="../SCRIPTS/events.js" async defer></script>
-    <script type="text/javascript" src="../SCRIPTS/clock.js" async defer></script>
     <script type="text/javascript" src="../SCRIPTS/video.js" async defer></script>
-    <script type="text/javascript" src="../SCRIPTS/timers.js" async defer></script>
     <script type="text/javascript" src="https://apis.google.com/js/plusone.js" async defer></script>
     
     <script type="application/ld+json">
@@ -55,7 +52,7 @@
     </section>
     
     
-    <section class="sectioncontainer">
+    <section class="sectioncontainer" id="hiya" style="margin:20% auto;">
     
         <div id="introcontainer">
             
@@ -70,7 +67,7 @@
             <p>Please have a look around and enjoy.</p>
             
             <nav class="button mainbutton" id="tooffice">  
-                <a href="#office">
+                <a href="office.html">
                     <p>Menu</p>
                 </a>
             </nav>
@@ -151,185 +148,21 @@
     
     </section>
 
-    <div class="heading">
-        <h1>Updates</h1>
-    </div>
-
     
-    <section class="sectioncontainer">
     
-        <div class="cards">
-            <p>I am currently searching for an internship in a research laboratory specializing in the fields of neuroscience, cognitive science, comparative medicine, or linguistics.</p>
-        </div>
-        
-        <div style="clear:both;"></div>
-        
-    </section>
-
-    <div class="heading">
-        <h1>Current Projects</h1>
-    </div>
     
-    <section class="sectioncontainer">
+            <nav class="button circlebutton" id="tovideo">
+                <a href="updates.html">
+                    <p>Updates</p>
+                </a>
+            </nav>
     
-        <div class="cards projectcards">
-            <h2>Ongoing 2015</h2>
-            <h3>Personal Project</h3>
-            <p>Developing an educational web based tool for language learners and instructors.</p>
-        </div>
+    <a href="updates.html" style="text-decoration:none;color:white"><p>View Updates</p></a>
+    
+    <a href="currentprojects.html" style="text-decoration:none;color:white"><p>View Current Projects</p></a>
 
-        <div class="cards projectcards">
-            <h2>Summer 2015</h2>
-            <h3>Research Project</h3>
-            <p>Designing a linguistic articalutory perception study.</p>
-        </div>
-
-        <div class="cards projectcards">
-            <h2>Summer 2015</h2>
-            <h3>Blender And Mixcraft</h3>
-            <p>Learning Blender for generating 3D animations.</p>
-            <p>Learning Mixcraft for synthesizing musical scores.</p>
-        </div>
-        
-        <div class="cards projectcards">
-            <h2>Ongoing 2015</h2>
-            <h3>Graduate School</h3>
-            <p>Studying for the GRE and the MCAT.</p>
-        </div>
-        
-        <div style="clear:both;"></div>
-        
-    </section>
     
          
-    <section class="sectioncontainer, skyframe" id="office" style="margin-bottom:5%;">
-    
-            <div class="sky">
-                <div class="cloud fcloud01"></div>
-                <div class="cloud fcloud02"></div>
-                <div class="sayhi">
-                    <img src=IMAGES/sayinghi.png alt="An android avatar of Ruben A Sanchez waving hi.">
-                </div>
-                
-                <div class="niceview">
-                    <p>Nice view!</p>
-                </div>
-                
-                <nav class="button circlebutton" id="tovideo">
-                    <a href="#video">
-                        <p>Video</p>
-                    </a>
-                </nav>
-    
-                <div id="countdownContainer">
-                    <div id="inputArea">
-                    </div>
-                    <h1 id="time">00:00</h1>
-                </div>
-                
-            </div>
-    
-    </section>
-
-    
-    <section class="sectioncontainer" style="margin-top:5%;">
-    
-        <div id="datecalendar">
-            <p id="calendar-day"></p>
-            <p id="calendar-date"></p>
-            <p id="calendar-month-year"></p>
-        </div>
-
-        <div id="clockcontainer">
-            <p>Time</p>
-            <div id="clock"></div>
-        </div>
-
-<!--        
-        <div id="timerbuttoncontainer">
-            <nav class="button mainbutton" id="showtimer">
-                    <p>Timer</p>
-            </nav>
-        </div>
--->
-        
-        <div id="calendarContainer">
-            <div id="calendarMonth">
-                <p>July</p>
-            </div>
-
-            <div id="calendarDay">
-                <table class="day">
-                    <tr>
-                        <td>S</td>
-                        <td>M</td>
-                        <td>T</td>
-                        <td>W</td>
-                        <td>T</td>
-                        <td>F</td>
-                        <td>S</td>
-                    </tr>
-                    <tr>
-                        <td class="zero">0</td>
-                        <td class="zero">0</td>
-                        <td class="zero">0</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                        <td class="today">24</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td>30</td>
-                        <td>31</td>
-                        <td class="zero">0</td>
-                    </tr>
-                  <!--  <tr>
-                        <td class="zero">0</td>
-                        <td class="zero">0</td>
-                        <td class="zero">0</td>
-                        <td class="zero">0</td>
-                        <td class="zero">0</td>
-                        <td class="zero">0</td>
-                        <td class="zero">0</td>
-                    </tr> -->
-                </table>
-            </div>
-        </div>
-        
-        <div style="clear:both;"></div>
-        
-    </section>
     
     
     
