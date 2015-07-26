@@ -191,11 +191,25 @@ header p {
     width: 95%;
     height: 50px;
     padding: 25px 0 20px 5%;
+    margin: 0;
+    position: fixed;
+    top: -50px;
     background: cornflowerblue;
+    -webkit-box-shadow: 0 4px 4px -2px #000000;
+    -moz-box-shadow: 0 4px 4px -2px #000000;
+    box-shadow: 0px 3px 3px -2px #000000;
+
+    -webkit-animation-name: headingeaseout;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-name: headingeaseout;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
-
-
-
 
 .heading h1 {
     color: whitesmoke;
@@ -218,22 +232,37 @@ header p {
     width: 75%;
     height: 150px;
     background: whitesmoke;
-    /*margin: -10% auto 0 auto;*/
     margin: 0 auto;
     padding: 5%;
     border-top: 2px solid #aaaaaa;
     border-bottom: 2px solid #aaaaaa;
-    /*float: right;*/
     -webkit-box-shadow: 0 4px 4px -2px #000000;
     -moz-box-shadow: 0 4px 4px -2px #000000;
     box-shadow: 0px 4px 4px -2px #000000;
 }
 
-
+.cardsanimationcontainer {
+    z-index: -1;
+    position: relative;
+    top: 900px;
+    margin: 0% auto;
+    -webkit-animation-name: cardseaseout;
+    -webkit-animation-delay: 1.1s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-name: cardseaseout;
+    animation-delay: 1.1s;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
 
 .imagecontainer {
     margin-top: 50px;
-    display: none;    /* * *  added this to remove roses not sure if I want to move them down or animate them in  * * */
+    display: none;    /* * *  added this to remove roses going to add them to a gallery page  * * */
 }
 
 .videocontainer {
@@ -608,3 +637,44 @@ a[ id="office" ]:target~.skyframe {
     }
 }
 
+@-webkit-keyframes headingeaseout {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+    transform: translateY(100px);
+    }
+}
+
+@keyframes headingeaseout {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+    transform: translateY(100px);
+    }
+}
+
+@-webkit-keyframes cardseaseout {
+    0%{
+        transform: translateY(0px)
+    }
+    60%{
+        transform: translateY(-780px)
+    }
+    100%{
+        transform: translateY(-750px)
+    }
+}
+
+@keyframes cardseaseout {
+    0%{
+        transform: translateY(0px)
+    }
+    60%{
+        transform: translateY(-780px)
+    }
+    100%{
+        transform: translateY(-750px)
+    }
+}
