@@ -47,10 +47,7 @@
     </header>
     
     
-    <section class="sectioncontainer" id="introductionsection" style="display:flex; flex-flow:column; justify-content:center; align-items:center;">
-    
-        <div id="bigcontainer"        >
-            
+    <section class="sectioncontainer" id="introductionsection">
         
         <div id="introcontainer">
             
@@ -64,7 +61,7 @@
             <p>I'm so glad you stopped by.</p>
             <p>Please have a look around and enjoy.</p>
             
-            <nav class="button mainbutton" id="tooffice" style="border-style:solid;">  
+            <nav class="button mainbutton" id="tooffice">  
                 <a href="office.html">
                     <p>Menu</p>
                 </a>
@@ -73,21 +70,15 @@
             
         </div>
         
-        <a href="#videosection" style="background:lightblue; text-decoration:none; color:white; display:block;float:right; margin-top:auto; background:orange;"><p>To Video</p></a>
-            
-         </div>   
-        
-        
-        <div style="clear:both;"></div>
+        <nav class="button circlebutton" id="tovideo">
+                <a href="#videosection">
+                    <p>Next 1</p>
+                </a>
+        </nav>
         
     </section>
-            <nav class="button circlebutton" id="tovideo">
-                <a href="updates.html">
-                    <p>Updates</p>
-                </a>
-            </nav>
-    
 
+    
     <section class="sectioncontainer" id="videosection">
     
         <div class="videocontainer" id="video">
@@ -95,10 +86,14 @@
             <video width="100%" height="100%" controls="controls">
                 <source src="VIDEOS/introduction.mp4" type="video/mp4" alt="Moovlie animation introducing education and research goals for Ruben A Sanchez.">
             </video>
-        
+      <!--  <nav class="button circlebutton" id="tovideo">
+                <a href="#educationsection1">
+                    <p>Next 2</p>
+                </a>
+        </nav>
+      -->
+            
         </div>
-        
-        <div style="clear:both;"></div>
         
     </section>
 
@@ -124,12 +119,18 @@
                 </nav>
             </aside>
             
-            <div style="clear:both;"></div>
+        <div style="clear:both;"></div>
             
         </div>
         
+        <nav class="button circlebutton" id="tovideo">
+            <a href="#educationsection2">
+                <p>Next 3</p>
+            </a>
+        </nav>
+        
     </section>
-    
+
     
     <section class="sectioncontainer" id="educationsection2">
     
@@ -149,15 +150,17 @@
                 </nav>
             </aside>
         
-            <div style="clear:both;"></div>
+        <div style="clear:both;"></div>
         
         </div>
+        
+        <nav class="button circlebutton" id="tovideo">
+            <a href="#educationsection2">
+                <p>Next 4</p>
+            </a>
+        </nav>
     
     </section>
-
-    
-    
-    
 
     
     <a href="updates.html" style="text-decoration:none;color:white"><p>View Updates</p></a>
