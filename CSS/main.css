@@ -341,7 +341,10 @@ header p {
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
-    float: left;
+    /*float: left;*/
+    position: relative;
+    bottom: 20%;
+    margin: 0;
 }
 
 #datecalendar p {
@@ -376,6 +379,8 @@ header p {
     font-size: 10px;
     background-color: #fff;
     margin: 0 auto;
+    position: relative;
+    bottom: 20%;
 }
 
 #calendarMonth {
@@ -410,8 +415,10 @@ header p {
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
-    float: right;
     font-family: zekton;
+    position: relative;
+    left: 1%;
+    bottom: 20%;
 }
 
 #clockcontainer p {
@@ -434,11 +441,10 @@ header p {
     height: 60px;
     padding: 10px;
     background: rgba(5,5,5,.2);
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 20px;
     z-index: 599;
-    display: block;
 }
 
 
@@ -519,9 +525,9 @@ header p {
 footer {
     background-color: #4973c1;
     width: 100%;
-    height: 100%;
-    /*max-height: 600px;*/
+    height: auto;
     padding-top: 25px;
+    padding-bottom: 5px;
     text-align: center;
 }
 
