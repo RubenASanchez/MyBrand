@@ -33,6 +33,7 @@
 */
 /*  Reset default styles  */
 
+
 header, footer, nav, root {
     display: block;
 }
@@ -519,6 +520,96 @@ header p {
     opacity: 0;
 }
 
+.continuebutton {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    font-family: zekton;
+}
+
+.continuebutton p:hover {
+    color: orange;
+}
+
+nav a p {
+    color: cornflowerblue;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#arrowsclick {
+    position: absolute;
+    right: 9.6%;
+    bottom: 1%;
+    color: cornflowerblue;
+    font-family: zekton;
+    text-align: center;
+   /* background: green;*/
+    height: 68px;
+}
+
+#arrowsclick p {
+    padding: 0 0 50px 0;
+}
+
+#arrowsclick p:hover {
+    color: orange;
+}
+
+#arrowscontainer {
+    right: 40%;
+    background: orange;
+}
+
+.arrowcontainer1 {
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    animation-name: toparrow;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.arrowcontainer2 {
+    position: absolute;
+    right: 10%;
+    bottom: 18%;
+    animation-name: middlearrow;
+    animation-delay: 0.25s;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.arrowcontainer3 {
+    position: absolute;
+    right: 10%;
+    bottom: 16%;
+    animation-name: bottomarrow;
+    animation-delay: 0.50s;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;    
+}
+
+.arrowleft {
+    height: 18px;
+    width: 5px;
+    border-right: 8px solid cornflowerblue;
+    transform: skew(60deg);
+    display: inline-block;
+    margin-right: 14px;
+ }
+
+.arrowright {
+    height: 18px;
+    width: 5px;
+    border-left: 8px solid cornflowerblue;
+    transform: skew(-60deg);
+    display: inline-block;
+    margin-left: 14px;
+ }
+
 
 /* Footer */
 
@@ -581,20 +672,6 @@ footer p {
 .theend p {
     color: #cccccc;
     margin: 1% 0 0 8%;
-}
-
-
-/*Scrolling Animation*/
-
-/*ok these are not working*/
-.skyframe {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-}
-
-a[ id="office" ]:target~.skyframe {
-    -webkit-transform: translateY(800px);
-    transform: translateY(800px);
 }
 
 
@@ -726,5 +803,32 @@ a[ id="office" ]:target~.skyframe {
     }
     100%{
         transform: translateY(-750px)
+    }
+}
+
+@keyframes toparrow {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes middlearrow {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes bottomarrow {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
     }
 }
