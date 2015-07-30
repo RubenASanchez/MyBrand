@@ -539,43 +539,29 @@ nav a {
     text-decoration: none;
 }
 
-#arrowsclick {
-    position: absolute;
-    right: 9.6%;
-    bottom: 1%;
-    color: cornflowerblue;
-    font-family: zekton;
-    text-align: center;
-   /* background: green;*/
-    height: 68px;
-}
-
-#arrowsclick p {
-    padding: 0 0 50px 0;
-}
-
-#arrowsclick p:hover {
-    color: orange;
-}
-
 #arrowscontainer {
-    right: 40%;
-    background: orange;
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+#arrowcontainerrelative {
+    position: relative;
 }
 
 .arrowcontainer1 {
-    position: absolute;
-    right: 10%;
-    bottom: 20%;
+    position: relative;
+    right: 2px;
+    bottom: -20px;
     animation-name: toparrow;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
 }
 
 .arrowcontainer2 {
-    position: absolute;
-    right: 10%;
-    bottom: 18%;
+    position: relative;
+    right: 2px;
+    bottom: -10px;
     animation-name: middlearrow;
     animation-delay: 0.25s;
     animation-duration: 2.5s;
@@ -583,9 +569,9 @@ nav a {
 }
 
 .arrowcontainer3 {
-    position: absolute;
-    right: 10%;
-    bottom: 16%;
+    position: relative;
+    right: 2px;
+    bottom: 0px;
     animation-name: bottomarrow;
     animation-delay: 0.50s;
     animation-duration: 2.5s;
