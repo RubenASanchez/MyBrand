@@ -531,6 +531,11 @@ header p {
     color: orange;
 }
 
+#continuedouble {
+    right: 10%;
+    bottom: -80%;
+}
+
 nav a p {
     color: cornflowerblue;
 }
@@ -773,10 +778,10 @@ footer p {
         transform: translateY(0px)
     }
     60%{
-        transform: translateY(-780px)
+        transform: translateY(-790px)
     }
     100%{
-        transform: translateY(-750px)
+        transform: translateY(-720px)
     }
 }
 
@@ -785,10 +790,10 @@ footer p {
         transform: translateY(0px)
     }
     60%{
-        transform: translateY(-780px)
+        transform: translateY(-790px)
     }
     100%{
-        transform: translateY(-750px)
+        transform: translateY(-720px)
     }
 }
 
