@@ -12,25 +12,7 @@
 /* 320 x 568 */
 /* 360 x 640 */
 
-/*#vertalign {
-    background: orange;
-    width: 100%;
-    height: 100%;
-}*/
-/*
-#centerme {
-    background: coral;
-    width: 60%;
-    height: 50px;
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    /*max-height: 100%;*/
-}
-*/
+
 /*  Reset default styles  */
 
 
@@ -299,6 +281,30 @@ header p {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+}
+
+.projectcards h2 {
+    /*font-weight: 500;*/
+}
+
+#personalproject {
+    border-left: 2px solid #E91E63;
+    border-right: 2px solid #E91E63;
+}
+
+#researchproject {
+    border-left: 2px solid #2196F3;  /*673AB7*/
+    border-right: 2px solid #2196F3;
+}
+
+#musicvideoproject {
+    border-left: 2px solid #FF5722;
+    border-right: 2px solid #FF5722;
+}
+
+#graduateschool {
+    border-left: 2px solid #3F51B5;  /*2196F3*/
+    border-right: 2px solid #3F51B5;
 }
 
 .imagecontainer {
