@@ -118,6 +118,9 @@ p {
     background-color: coral;
 }
 
+.squarebutton {
+    margin: 0 auto;
+}
 #tomindmap {
     float: left;
     margin: 30px 0 0 30px;
@@ -319,13 +322,36 @@ header p {
 }
 
 #intro1 {
-    /*float: left;*/
+    display: flex;
 }
 
 #intro2 {
-    width: 246px;
     height: 200px;
-    /*float: right;*/
+    display: flex;
+    flex-flow: column;
+}
+
+#intro2high {
+    width: 246px;
+    display: flex;
+    flex-flow: column;
+}
+
+#intro2low {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+}
+
+#intromid {
+    margin: 20px 0 0 0;
+}
+
+#intromid, #introlow {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Detailed Introduction */
@@ -422,7 +448,7 @@ nav a {
 
 #arrowscontainer {
     position: absolute;
-    right: 5%;
+    right: 5.35%;
     bottom: 8%;
 }
 
@@ -460,23 +486,27 @@ nav a {
 }
 
 .arrowleft {
-    height: 18px;
+    height: 15px;
     width: 5px;
     border-right: 8px solid cornflowerblue;
     transform: skew(60deg);
     display: inline-block;
-    margin-right: 14px;
+    margin-right: 12px;
  }
 
 .arrowright {
-    height: 18px;
+    height: 15px;
     width: 5px;
     border-left: 8px solid cornflowerblue;
     transform: skew(-60deg);
     display: inline-block;
-    margin-left: 14px;
+    margin-left: 12px;
  }
 
+#arrowscontainersmall {
+    margin: 0 auto;
+    padding-left: 5px;
+}
 
 /* Footer */
 
