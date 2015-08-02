@@ -24,6 +24,7 @@
 <body>
     <header>
         <p>Ruben A Sanchez</p>
+        <nav class="continuebutton" id="nextvideo" style="margin:0 0 12px 0;"><a href="index.html#introductionsection"><p style="color:white">Return</p></a></nav>
     </header>
 
     <section class="sectioncontainer, skyframe" id="office" style="margin-top:50px;margin-bottom:0;">
@@ -38,13 +39,7 @@
             <div class="niceview">
                 <p>Nice view!</p>
             </div>
-                
-            <nav class="button circlebutton" style="position:absolute; top:0px; right:5px">
-                <a href="index.html">
-                    <p>Return</p>
-                </a>
-            </nav>
-    
+
             <div id="countdownContainer">
                 <div id="inputArea">
                 </div>
@@ -63,10 +58,7 @@
             <p id="calendar-month-year"></p>
         </div>
 
-        <div id="clockcontainer">
-            <p>Time</p>
-            <div id="clock"></div>
-        </div>
+
 
 <!--        
         <div id="timerbuttoncontainer">
@@ -99,10 +91,10 @@
                         <td class="zero">0</td>
                         <td class="zero">0</td>
                         <td class="zero">0</td>
-                        <td class="today">1</td>
+                        <td>1</td>
                     </tr>
                     <tr>
-                        <td>2</td>
+                        <td class="today">2</td>
                         <td>3</td>
                         <td>4</td>
                         <td>5</td>
@@ -145,9 +137,14 @@
                         <td class="zero">0</td>
                         <td class="zero">0</td>
                         <td class="zero">0</td>
-                    
+                    </tr>
                 </table>
             </div>
+        </div>
+        
+        <div id="clockcontainer">
+            <p>Time</p>
+            <div id="clock"></div>
         </div>
         
         <div style="clear:both;"></div>
