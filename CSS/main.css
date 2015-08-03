@@ -185,17 +185,13 @@ header p {
     flex-flow: row;
 }
 
-#introductionsection, #educationsection1, #educationsection2 {
+#introductionsection, #educationsection1, #educationsection2, #updatessection {
     margin: 0 auto;
     position: relative;
 }
 
 #socialiconssection {
     margin: 0 auto 10% auto;
-}
-
-#educationsection1 {
-    margin: 0 auto 0 auto;
 }
 
 .heading {
@@ -365,6 +361,36 @@ header p {
 #detailedintro1 img {
     width: 180px;
     margin: 0 0 0 50px;
+}
+
+.expandicard {
+    height: 10em;
+    padding: 1.5em;
+    margin: 0 auto;
+    background: #80ad80;
+    border-radius: 10px;
+    transition: height 0.4s, box-shadow 0.5s;
+    /*position: relative;*/
+}
+
+.expandicard:hover {
+    height: 15em;
+    transition: height 0.3s ease, box-shadow 0.5s ease;
+    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
+}
+
+.hinfo {
+    visibility: hidden;
+/*    position: relative;*/
+    top: -50%;
+    opacity: 0;
+}
+
+.hinfo:hover {
+    transition: top 0.5s ease, opacity 1s ease;
+    visibility: visible;
+    top: 1%;
+    opacity: 1;
 }
 
 /* Twitter Feed */
