@@ -185,7 +185,7 @@ header p {
     flex-flow: row;
 }
 
-#introductionsection, #educationsection1, #educationsection2, #updatessection {
+#introductionsection, #educationsection1, #educationsection2, #updatessection, #googleplussection {
     margin: 0 auto;
     position: relative;
 }
