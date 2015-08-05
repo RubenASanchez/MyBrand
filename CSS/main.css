@@ -185,12 +185,12 @@ header p {
     flex-flow: row;
 }
 
-#introductionsection, #educationsection1, #educationsection2, #updatessection, #googleplussection {
+#Welcome, #EducationPrior, #EducationFuture, #CurrentProjects, #RecentPosts, #googleplussection {
     margin: 0 auto;
     position: relative;
 }
 
-#socialiconssection {
+#SocialNetwork {
     margin: 0 auto 10% auto;
 }
 
