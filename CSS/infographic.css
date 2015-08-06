@@ -1,0 +1,218 @@
+p, figcaption {
+    font-family: zekton;
+    font-weight: normal;
+    color: whitesmoke;
+}
+
+#infographictitle p {
+    padding: 5%;
+    background: #1272a5;
+    text-align: center;
+}
+
+
+/* Pie Chart Thing */
+
+figure {
+  /*background-color: #eee;*/
+  display: block;
+  height: 0;
+  margin: 0 auto;
+  position: relative;
+  font-size:12px;
+  font-size:1vw;
+  width: 40em;
+  padding-bottom: 40em;
+}
+
+figcaption {
+  font-size:2.2vw;
+  text-align:center;
+  opacity: 0;
+  position: absolute;
+  z-index:2;
+  -webkit-animation: appear 1s 3s 1 forwards;
+  animation: appear 1s 3s 1 forwards;
+}
+
+#one {
+    top: 16.5%;
+    right: 20%;
+}
+#two {
+    top: 60%;
+    right: 12%;
+}
+#three {
+    top: 48%;
+    left: 6%;
+}
+svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+circle {
+  fill:rgba(0,0,0,0);
+  stroke-width:31.8309886184;
+  stroke-dasharray: 0,25,0,100;
+  stroke-dashoffset: 25;
+  -webkit-animation: pie1 3s 1 ease both;
+  animation: pie1 6s 1 ease both;
+}
+.pie1 {
+  stroke:rgb(70, 141, 221);
+}
+.pie2 {
+  stroke:rgb(10, 103, 170);
+  -webkit-animation-name: pie2;
+  animation-name: pie2;
+}
+.pie3 {
+  stroke:rgb(12, 79, 127);
+  -webkit-animation-name: pie3;
+  animation-name: pie3;
+}
+
+/*
+ keyframe 100% : 0 offset this-percentage rest
+*/
+
+/* 1st pie is 23.5% */
+@-webkit-keyframes pie1 {
+  50%,100% {stroke-dasharray: 0,0,23.5,76.5;}
+}
+@keyframes pie1 {
+  50%, 100% {stroke-dasharray: 0,0,23.5,76.5;}
+}
+/* 2nd pie is 17.6% */
+@-webkit-keyframes pie2 {
+  50%,100% {stroke-dasharray: 0,23.5,17.6,58.8;}
+}
+@keyframes pie2 {
+  50%,100% {stroke-dasharray: 0,23.5,17.6,58.8;}
+}
+/* 3rd pie is 58.8% */
+@-webkit-keyframes pie3 {
+  50%,100% {stroke-dasharray: 23.5,17.6,58.8,100;}
+}
+@keyframes pie3 {
+  50%,100% {stroke-dasharray: 23.5,17.6,58.8,100;}
+}
+
+* {
+    box-sizing: border-box:
+}
+
+graphwrapper {
+    width: 400px;
+    margin: 0px auto;
+    position: relative;
+}
+
+graphwrapper svg {
+    /*position: absolute;*/
+    /*margin: 100px 0px 0px 50px;*/
+}
+
+/*svg {
+    position: relative;
+    left: 0;
+    right: 0;
+}*/
+
+/*#bothcontainer {
+    position: relative;
+}*/
+
+/*#insidebox {
+    position: absolute;
+    left: 0;
+    top: 0;
+}*/
+
+/*.coordinates {
+    position: absolute;
+    counter-reset: line 6;
+    left: 200px;
+}*/
+
+/*.coordinates span {
+    display: inline-block;
+    border-bottom: 1px solid #3a3a3a;
+    height: 12px;
+    width: 350px;
+}*/
+
+/*.coordinates span:before {
+    counter-increment: line - 1;
+    content: counter(line);
+    display: inline-block;
+    color: #4a4a4a;
+    margin: 10px 0px 0px -20px;
+}*/
+
+path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash 3s ease-in forwards;
+    animation: dash 3s ease-in forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+body {
+    -webkit-animation-name: darken;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-name: darken;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes darken {
+    from{
+        background: rgb(219,219,219);
+    }
+    to{
+        background: rgb(0,0,0);
+    }
+}
+
+@keyframes darken {
+    from{
+        background: rgb(219,219,219);
+    }
+    to{
+        background: rgb(0,0,0);
+    }
+}
+
+@-webkit-keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
