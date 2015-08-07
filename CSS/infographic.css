@@ -10,11 +10,17 @@ p, figcaption {
     text-align: center;
 }
 
+#piechartthing {
+    margin: 10% 0 0 0;
+    width: 60%;
+}
 
+#graphs {
+    flex-flow: row;
+}
 /* Pie Chart Thing */
 
 figure {
-  /*background-color: #eee;*/
   display: block;
   height: 0;
   margin: 0 auto;
@@ -33,6 +39,35 @@ figcaption {
   z-index:2;
   -webkit-animation: appear 1s 3s 1 forwards;
   animation: appear 1s 3s 1 forwards;
+}
+
+#pietitle{
+    top: -20%;
+    width: 100%;
+}
+#lab1, #lab2, #lab3 {
+    font-size: 2em;
+    position: absolute;
+    opacity: 0;
+}
+#lab1 {
+    top: 16%;
+    right: -95%;
+    -webkit-animation: appear 1s 3s 1 forwards;
+    animation: appear 1s 3.50s 1 forwards;
+}
+
+#lab2 {
+    top: 32%;
+    right: -68%;
+    -webkit-animation: appear 1s 3s 1 forwards;
+    animation: appear 1s 3.75s 1 forwards;
+}
+#lab3 {
+    top: 47.5%;
+    right: -67%;
+    -webkit-animation: appear 1s 3s 1 forwards;
+    animation: appear 1s 4.00s 1 forwards;
 }
 
 #one {
@@ -61,7 +96,7 @@ circle {
   stroke-width:31.8309886184;
   stroke-dasharray: 0,25,0,100;
   stroke-dashoffset: 25;
-  -webkit-animation: pie1 3s 1 ease both;
+  -webkit-animation: pie1 6s 1 ease both;
   animation: pie1 6s 1 ease both;
 }
 .pie1 {
@@ -76,6 +111,27 @@ circle {
   stroke:rgb(12, 79, 127);
   -webkit-animation-name: pie3;
   animation-name: pie3;
+}
+
+.rec1 {
+    fill: rgb(70, 141, 221);
+    opacity: 0;
+    -webkit-animation: appear 1s 3s 1 forwards;
+    animation: appear 1s 3.50s 1 forwards;
+}
+
+.rec2 {
+    fill: rgb(10, 103, 170);
+    opacity: 0;
+    -webkit-animation: appear 1s 3s 1 forwards;
+    animation: appear 1s 3.75s 1 forwards;
+}
+
+.rec3 {
+    fill: rgb(12, 79, 127);
+    opacity: 0;
+    -webkit-animation: appear 1s 3s 1 forwards;
+    animation: appear 1s 4.00s 1 forwards;
 }
 
 /*
@@ -108,54 +164,6 @@ circle {
     box-sizing: border-box:
 }
 
-graphwrapper {
-    width: 400px;
-    margin: 0px auto;
-    position: relative;
-}
-
-graphwrapper svg {
-    /*position: absolute;*/
-    /*margin: 100px 0px 0px 50px;*/
-}
-
-/*svg {
-    position: relative;
-    left: 0;
-    right: 0;
-}*/
-
-/*#bothcontainer {
-    position: relative;
-}*/
-
-/*#insidebox {
-    position: absolute;
-    left: 0;
-    top: 0;
-}*/
-
-/*.coordinates {
-    position: absolute;
-    counter-reset: line 6;
-    left: 200px;
-}*/
-
-/*.coordinates span {
-    display: inline-block;
-    border-bottom: 1px solid #3a3a3a;
-    height: 12px;
-    width: 350px;
-}*/
-
-/*.coordinates span:before {
-    counter-increment: line - 1;
-    content: counter(line);
-    display: inline-block;
-    color: #4a4a4a;
-    margin: 10px 0px 0px -20px;
-}*/
-
 path {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
@@ -163,8 +171,8 @@ path {
     animation: dash 3s ease-in forwards;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
 }
 
 body {
