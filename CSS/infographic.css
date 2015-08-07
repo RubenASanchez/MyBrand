@@ -1,3 +1,51 @@
+#timelineedu {
+    flex-flow: column;
+    height: 100%;
+    margin: 10% 0 0 0;
+}
+
+.timelineedurows {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timelineeducolumns {
+    width: 30%;
+    height: 70px;
+    background: #1272a5;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#timelineedurow1 {
+    position: absolute;
+    left: -2000px;
+    position: relative;
+    -webkit-animation: slideright 1s ease forwards;
+    animation: slideright .5s ease forwards;
+    animation-delay: 5s;
+}
+
+#timelineedurow2 {
+    position: absolute;
+    right: -2000px;
+    position: relative;
+    -webkit-animation: slideleft 1s ease forwards;
+    animation: slideleft .5s ease forwards;
+    animation-delay: 5s;
+}
+
+#timelineedurow3 {
+    opacity: 0;
+    -webkit-animation: appear 1s 5s 1 forwards;
+    animation: appear 1s 5s 1 forwards;
+}
+
 p, figcaption {
     font-family: zekton;
     font-weight: normal;
@@ -12,7 +60,7 @@ p, figcaption {
 
 #piechartthing {
     margin: 10% 0 0 0;
-    width: 60%;
+    width: 70%;
 }
 
 #graphs {
@@ -116,21 +164,21 @@ circle {
 .rec1 {
     fill: rgb(70, 141, 221);
     opacity: 0;
-    -webkit-animation: appear 1s 3s 1 forwards;
+    -webkit-animation: appear 1s 3.50s 1 forwards;
     animation: appear 1s 3.50s 1 forwards;
 }
 
 .rec2 {
     fill: rgb(10, 103, 170);
     opacity: 0;
-    -webkit-animation: appear 1s 3s 1 forwards;
+    -webkit-animation: appear 1s 3.75s 1 forwards;
     animation: appear 1s 3.75s 1 forwards;
 }
 
 .rec3 {
     fill: rgb(12, 79, 127);
     opacity: 0;
-    -webkit-animation: appear 1s 3s 1 forwards;
+    -webkit-animation: appear 1s 4.00s 1 forwards;
     animation: appear 1s 4.00s 1 forwards;
 }
 
@@ -171,19 +219,18 @@ path {
     animation: dash 3s ease-in forwards;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
-    -webkit-animation-delay: 5s;
-    animation-delay: 5s;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
 }
 
 body {
+    background: rgb(219,219,219);
     -webkit-animation-name: darken;
     -webkit-animation-duration: 2s;
     -webkit-animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: 1;
     animation-name: darken;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-iteration-count: 1;
 }
 
 @-webkit-keyframes darken {
@@ -222,5 +269,29 @@ body {
     }
     to {
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideright {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slideright {
+    100% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes slideleft {
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slideleft {
+    100% {
+        right: 0;
     }
 }
