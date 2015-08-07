@@ -1,7 +1,8 @@
 #timelineedu {
     flex-flow: column;
     height: 100%;
-    margin: 10% 0 0 0;
+    width: 100%;
+    margin: 0 0 0 0;
 }
 
 .timelineedurows {
@@ -16,6 +17,7 @@
 .timelineeducolumns {
     width: 30%;
     height: 70px;
+    margin: 5px;
     background: #1272a5;
     justify-content: center;
     display: flex;
@@ -59,7 +61,7 @@ p, figcaption {
 }
 
 #piechartthing {
-    margin: 10% 0 0 0;
+    margin: 75px 40% 0 0;
     width: 70%;
 }
 
@@ -73,14 +75,13 @@ figure {
   height: 0;
   margin: 0 auto;
   position: relative;
-  font-size:12px;
   font-size:1vw;
-  width: 40em;
-  padding-bottom: 40em;
+  width: 25em;
+  padding-bottom: 30em;/*40em*/
 }
 
 figcaption {
-  font-size:2.2vw;
+  font-size:1.8vw;
   text-align:center;
   opacity: 0;
   position: absolute;
@@ -90,45 +91,46 @@ figcaption {
 }
 
 #pietitle{
-    top: -20%;
+    font-size: 1.6em;
+    top: -8%;
     width: 100%;
 }
 #lab1, #lab2, #lab3 {
-    font-size: 2em;
+    font-size: 1.5em;
     position: absolute;
     opacity: 0;
 }
 #lab1 {
-    top: 16%;
-    right: -95%;
+    top: 22%;
+    right: -104%;
     -webkit-animation: appear 1s 3s 1 forwards;
     animation: appear 1s 3.50s 1 forwards;
 }
 
 #lab2 {
-    top: 32%;
-    right: -68%;
+    top: 35%;
+    right: -72%;
     -webkit-animation: appear 1s 3s 1 forwards;
     animation: appear 1s 3.75s 1 forwards;
 }
 #lab3 {
     top: 47.5%;
-    right: -67%;
+    right: -70%;
     -webkit-animation: appear 1s 3s 1 forwards;
     animation: appear 1s 4.00s 1 forwards;
 }
 
 #one {
-    top: 16.5%;
+    top: 24%;
     right: 20%;
 }
 #two {
-    top: 60%;
+    top: 58%;
     right: 12%;
 }
 #three {
-    top: 48%;
-    left: 6%;
+    top: 47%;
+    left: 9%;
 }
 svg {
   display: block;
