@@ -222,7 +222,7 @@ path {
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
     -webkit-animation-delay: 6s;
-    animation-delay: 6s;
+    animation-delay: 8s;
 }
 
 body {
@@ -233,6 +233,27 @@ body {
     animation-name: darken;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+}
+
+.barGraph {
+    list-style: none;
+    margin: 20px auto;
+}
+
+.barWrap {
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgb(22, 167, 229);
+    margin: 5px;
+}
+
+.barFill {
+    border-radius: 10px 10px 10px 10px;
+    animation: barFill 1s;
+    animation-delay: 6s;
+    background-color: rgb(22, 167, 229);
+    display: block;
+    height: 15px;
+    width: 0px;
 }
 
 @-webkit-keyframes darken {
@@ -295,5 +316,11 @@ body {
 @keyframes slideleft {
     100% {
         right: 0;
+    }
+}
+
+@keyframes barFill {
+    0% {
+        width: 0;
     }
 }
