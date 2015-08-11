@@ -210,20 +210,6 @@ circle {
   50%,100% {stroke-dasharray: 23.5,17.6,58.8,100;}
 }
 
-* {
-    box-sizing: border-box:
-}
-
-path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    -webkit-animation: dash 3s ease-in forwards;
-    animation: dash 3s ease-in forwards;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-delay: 6s;
-    animation-delay: 8s;
-}
 
 body {
     background: rgb(219,219,219);
@@ -232,6 +218,16 @@ body {
     -webkit-animation-fill-mode: forwards;
     animation-name: darken;
     animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#barGraphContainer {
+    margin:20px auto;
+    width: 70%;
+    opacity: 0;
+    animation-name: appear;
+    animation-delay: 6s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -256,6 +252,21 @@ body {
     width: 0px;
 }
 
+* {
+    box-sizing: border-box:
+}
+
+path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash 3s ease-in forwards;
+    animation: dash 3s ease-in forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+}
+
 @-webkit-keyframes darken {
     from{
         background: rgb(219,219,219);
@@ -271,18 +282,6 @@ body {
     }
     to{
         background: rgb(0,0,0);
-    }
-}
-
-@-webkit-keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes dash {
-    to {
-        stroke-dashoffset: 0;
     }
 }
 
@@ -322,5 +321,17 @@ body {
 @keyframes barFill {
     0% {
         width: 0;
+    }
+}
+
+@-webkit-keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
     }
 }
