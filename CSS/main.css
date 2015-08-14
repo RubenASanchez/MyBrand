@@ -147,6 +147,10 @@ p {
     height: 20px;
 }
 
+#tographs {
+    bottom: 10%;
+}
+
 /* Main Elements Custom Styles */
 
 body {
@@ -185,13 +189,14 @@ header p {
     flex-flow: row;
 }
 
-#Welcome, #EducationPrior, #EducationFuture, #CurrentProjects, #RecentPosts, #googleplussection {
+#Welcome, #EducationPrior, #EducationFuture, #CurrentProjects, #RecentPosts, #SocialNetwork,#googleplussection {
     margin: 0 auto;
     position: relative;
 }
 
 #SocialNetwork {
     margin: 0 auto 10% auto;
+    
 }
 
 .heading {
@@ -330,7 +335,6 @@ header p {
 #intro2low {
     display: flex;
     flex-flow: column;
-    align-content: center;
 }
 
 #intromid {
@@ -373,6 +377,20 @@ header p {
     /*position: relative;*/
 }
 
+.expandicard a {
+    text-decoration: none;
+    color: white;
+}
+
+.expandicard a p {
+    height:2.5em;
+    border-bottom:1px solid white;
+}
+
+#pnoline {
+    border-bottom: none;
+}
+
 .expandicard:hover {
     height: 15em;
     transition: height 0.3s ease, box-shadow 0.5s ease;
@@ -384,10 +402,9 @@ header p {
 }
 
 .hinfo {
-    /*visibility: hidden;*/
-/*    position: relative;*/
     top: 50%;
     opacity: 0;
+    color: white;
 }
 
 .hinfo:hover {
@@ -590,7 +607,7 @@ footer p {
 
 .theend p {
     color: #cccccc;
-    margin: 1% 0 0 8%;
+    margin: 0 0 0 8%;
 }
 
 @-webkit-keyframes headingeaseout {

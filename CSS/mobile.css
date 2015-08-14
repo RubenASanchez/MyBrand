@@ -1,28 +1,87 @@
-#intro1 {
-    width: 200px;
-    margin: 100px auto 0 auto;
-    float: none;
+.sectioncontainer {
+    width:98%;
+    flex-flow: column;
+}
+
+#introcontainer {
+    flex-flow: column;
+}
+
+#intromid {
+    display: none;
+}
+
+#introlow {
+    margin: 20px 0 0 0;
 }
 
 .mainbutton {
-    margin: 220px auto 0 auto;
+    height: 100%;
+    margin: 2px;
+    flex-grow: 1;
 }
 
-#intro2 {
-    margin-top: -280px;
-    float: none;
+.mainbutton p {
+    padding: 40px 0;
+}
+
+#detailedintrocontainer1, #detailedintrocontainer2 {
+    width: 98%;
+    margin: 50px auto 0 auto;
 }
 
 #detailedintro1, #detailedintro2 {
     width: 100%;
     margin: 0 auto;
-    float: none;
+}
+
+#detailedintro1 img, #detailedintro2 img {
+    margin: 0 0 0 20%;
+}
+
+#detailedintrocontainer2 .card {
+    margin: 80% auto 0 auto;
+    padding-bottom: 22px;
 }
 
 .card {
-    /*float: none;*/
-    margin: 10px 60px 0 0;
-    
+    margin: 100% auto 0 auto;
+    float: none;
+    width: 90%;
+    height: 20%;
+}
+
+#tomindmap, #tocv {
+    float: none;
+    margin: 0 auto;
+    border-radius: 50px;
+    width: 80%;
+}
+
+#tomindmap p {
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+
+ #tocv p {
+     width: 100%;
+     padding: 20px 0 20px 0;
+ }
+
+.expandicard {
+    margin: 10px auto;
+}
+
+.postscontainer {
+    width: 90%;
+}
+
+.theend {
+    text-align: center;
+}
+
+.theend p {
+    margin: 0 0 0 0;
 }
 
 #datecalendar {
@@ -39,9 +98,6 @@
     margin: 200px auto;
 }
 
-#twittercontainer {
-    width: 100%;
-}
 
 .socialiconscontainer {
     width: 100%;
