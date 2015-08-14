@@ -1,5 +1,9 @@
 /* Buttons */
 
+nav a p {
+    color:white;
+}
+
 #timerbuttoncontainer {
     background: grey;
     margin: 0 0 5px 0;
