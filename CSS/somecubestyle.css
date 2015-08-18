@@ -8,7 +8,7 @@ body {
 }
 
 #removeme {
-    animation: byebye 2s ease 12s 1 forwards;
+  animation: byebye 2s ease 12s 1 forwards;
 }
 
 #showme {
@@ -25,14 +25,14 @@ body {
           perspective: 800;
   -webkit-perspective-origin: 50% 100px;
           perspective-origin: 50% 100px;
-  animation: fadeout 2s ease 12s 1 forwards;
+  -webkit-animation: fadeout 2s ease 12s 1 forwards;
+          animation: fadeout 2s ease 12s 1 forwards;
 }
 
 #cube {
   position: relative;
   width: 200px;
   height: 200px;
-    background: pink;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-animation: cube 10s ease-out 1s 1 forwards;
