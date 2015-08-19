@@ -267,6 +267,14 @@ path {
     animation-delay: 8s;
 }
 
+.achievements {
+    width: 75%;
+    /*background: orange;*/
+    border: 2px solid orange;
+    padding: 5%;
+    margin: 50px auto 20px auto;
+}
+
 @-webkit-keyframes darken {
     from{
         background: rgb(219,219,219);

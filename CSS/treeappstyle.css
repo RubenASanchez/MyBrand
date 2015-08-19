@@ -1,0 +1,20 @@
+root {
+    display: block;
+}
+
+svg {
+    position: absolute;
+    top: 50;
+    left: 2.5%;
+    width: 95%;
+    height: 85%; /*100% covers the rest of the bottom but does not grow and also may need to delete the height of top div*/
+}
+
+.leftbranch, .rightbranch{
+    stroke: green;
+    stroke-width: 1;
+}
+
+.leftbranch:hover , .rightbranch:hover {
+    stroke: blue;
+}
