@@ -1,3 +1,34 @@
+document.getElementById("more").onclick = function () {
+    var ok = true;
+
+     if (ok === true) {
+         var newDiv = document.createElement('div');
+
+         newDiv.className = 'newdragme';
+         newDiv.draggable = "true";
+         /*newDiv.style.backgroundColor = "black";*/        /*styles i put in style sheet*/
+         
+         var thisDiv = document.getElementById("puthere");
+         thisDiv.insertBefore(newDiv,thisDiv.firstChild)    /*inserts div inside puthere*/
+         /*document.body.insertBefore(newDiv,thisDiv);*/    /*inserts div after more*/
+    }
+};
+
+
+/*
+document.getElementById("less").onclick = function () {     attempting to make a delete option, but this needs to work per selected div
+    var del = true;
+    
+    if (del === true) {
+        var node = document.getElementById("newdragme");
+        if (node.parentNode) {
+            node.parentNode.removeChild(node);
+        }
+    }
+}
+*/
+
+
 function drag_start(event) {
     var style = window.getComputedStyle(event.target, null);
     event.dataTransfer.setData("text/plain",
@@ -23,15 +54,3 @@ document.body.addEventListener('drop',drop,false);
 
 
 
-document.getElementById("text").onclick = function () {
-    var ok = true;
-
-     if (ok === true) {
-          var div = document.createElement('div');
-           
-          div.className = 'new-rect';       
-            //div.style.backgroundColor = "black";
-
-       document.getElementsByTagName('body')[0].appendChild(div);
-    }
-};
