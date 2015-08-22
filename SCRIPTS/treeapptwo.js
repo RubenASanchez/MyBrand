@@ -52,5 +52,3 @@ document.body.addEventListener('dragover',drag_over,false);
 document.body.addEventListener('drop',drop,false);
 
 
-
-
