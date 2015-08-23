@@ -125,6 +125,26 @@ nav a p {
     z-index: 599;
 }
 
+/* To Do List */
+
+ul {
+    background: cornflowerblue;
+    height: 60px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+li {
+    margin: 0 0 0 20px;
+    background: orange;
+}
+
+li:before {
+    content: "\2713"
+}
+
 /*Cloud Animation*/
 
 .sayhi {
