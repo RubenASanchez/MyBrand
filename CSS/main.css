@@ -70,6 +70,12 @@ p {
     font-size: 1em;
 }
 
+/* Custom Colors */
+
+.material-icons.pink {
+    color: #dd4fea;
+}
+
 /*  Buttons  */
 
 .button {
