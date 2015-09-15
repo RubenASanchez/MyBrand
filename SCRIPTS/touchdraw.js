@@ -68,8 +68,7 @@ window.onresize = function(e) {
   canvas.height = document.body.clientHeight;
 };
 
-
-
+// added to clear drawing with button
 function clearcanvas() {
     var canvas = document.getElementById('canvas'),
         ctx = canvas.getContext("2d");
