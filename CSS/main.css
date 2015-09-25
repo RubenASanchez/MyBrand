@@ -5,12 +5,6 @@
     Description: Styles for all elements
 */
 
-/* notebook 1280 x 800  */
-/* ipad 1024 x 768 */
-/* iphone 375 x 667 */
-/* 320 x 568 */
-/* 360 x 640 */
-
 /*  Reset default styles  */
 
 header, footer, nav, root {
@@ -397,6 +391,8 @@ header p {
   padding: 1.2em;
   margin: 0 auto;
 }
+
+
 
 .projectcards p {
     padding: 5%;
