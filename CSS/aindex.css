@@ -1,0 +1,50 @@
+a {
+    color: black;
+}
+
+#welcome {
+    /*background: cyan;*/
+    height: 30%;
+    width: 300px;
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+    justify-content: left;
+}
+
+#tilegrid {
+    /*background: orange;*/
+    width: 60%;
+    height: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.gridrows {
+    /*background: pink;*/
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.gridcolumns {
+    background: teal;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid black;
+}
+
+.gridcolumns:hover {
+    background: rgba(100,50,100,1);
+    color: rgba(150,150,150,0.8);
+}
+
+#welcome img {
+    width: 100px;
+    margin: 0 auto;
+}

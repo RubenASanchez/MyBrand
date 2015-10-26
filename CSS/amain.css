@@ -1,0 +1,169 @@
+header, footer, nav, root {
+    display: block;
+}
+
+html, body, div, aside, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, p {
+    font-style: none;
+    font-weight: normal;
+}
+
+@charset "UTF-8";
+
+/* material icons */
+
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.color { color: cornflowerblue; } /*{ color: rgba(101,126,239,0.9); }*/
+.material-icons.activecolor { color: orange; } /*{ color: rgba(101,200,100,0.9); }*/
+
+/* custom items */
+
+@font-face {
+    font-family: 'zekton';
+    src: url('../FONTS/zekton.ttf') format('truetype');
+}
+
+p {
+    font-family: zekton;
+}
+
+html {
+    background: cornflowerblue;
+}
+
+header {
+    background: cornflowerblue;
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 4px -2px #000000;
+    -moz-box-shadow: 0 4px 4px -2px #000000;
+    box-shadow: 0px 4px 4px -2px #000000;
+    display: table;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+
+header p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section {
+    background: lightsteelblue; /*orange*/
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    overflow: hidden;
+    animation-name: wipedown;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidenav {
+    /*background: lightsalmon;*/
+    height: calc(88% - 60px);
+    width: 90px;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    z-index: 10;
+}
+
+.sidenav a {
+    margin: 8px 0px;
+}
+
+.bottomnav {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bottomnav a {
+    color: whitesmoke;
+}
+
+/* maybe use aside to make some animated icons look like they are building as it slides down*/
+aside {
+    width: 100%;
+    height: 0%;
+}
+
+.socialiconscontainer {
+    width: 200px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.socialicons {
+    border-radius: 50%;
+    margin: 0 0 0 8px;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+.socialiconsbase {
+    position: absolute;
+}
+
+.socialiconsbase, .socialiconshover {
+    opacity: 1;
+    width: 40px;
+}
+
+.socialiconsbase:hover {
+    opacity: 0;
+}
+
+footer {
+    background: cornflowerblue;
+    height: 10%; /*calc(10% - 10px);*/
+    width: 100%;
+    text-align: center;
+    color: white;
+    -webkit-box-shadow: 0 4px 4px -2px #000000;
+    -moz-box-shadow: 0 4px 4px -2px #000000;
+    box-shadow: 0px 4px 4px -2px #000000;
+    display: table;
+    position: absolute;
+    bottom: 0px;
+}
+
+footer p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@keyframes wipedown {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 90%;
+    }
+}
