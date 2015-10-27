@@ -1,52 +1,41 @@
-.linkscontainer {
-    width: 100%;
-    height: auto;
-    padding: 25px 0 10px 0;
-    text-align: center;
+section {
+    background: #4973c1;
 }
 
-
-
-.footerlinkscontainer {
-    width: 95%;
-    margin: 25px auto;
+.hlinks {
+    height: 40%;
+    width: 90%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 25% 0 0 0;
 }
 
-.footerlinks {
-    width: 18%;
+.vlinks {
+    height: 90%;
+    width: 20%;
     border-top: 2px solid #cccccc;
-    margin: 0 0 0 5%;
-    text-align: left;
-    float: left;
+    padding: 10px 0 0 0;
 }
 
-.footerlinks p {
+.title {
+    font-size: 19px;
+    color: whitesmoke;
+    margin: 0 0 12px 0;
+}
+
+.links {
+    color: #cccccc;
+    margin: 0 0 8px 0;
+}
+
+a p:hover {
     color: white;
 }
 
-.footerlinks nav a {
-    text-decoration: none;
-    font-size: .9em;
-    color: #cccccc;
-}
-
-.footerlinks nav {
-    padding: 8px 0px;
-}
-
-.footerlinks nav a:hover {
-    color: white;
-}
-
-/* Last line in footer */
-
-.theend {
-    height: 25px;
-    text-align: left;
-    font-size: .8em;
-}
-
-.theend p {
-    color: #cccccc;
-    margin: 0 0 0 8%;
+.ending {
+    color: #dddddd;
+    font-size: 14px;
+    text-align: center;
+    bottom: 100px;
 }
