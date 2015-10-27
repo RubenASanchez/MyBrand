@@ -1,39 +1,45 @@
-header {
-    z-index: 600;
+#topview {
+    width: 100%;
+    height: 60%;
+    margin: 50px 0 0 0;
 }
 
-/* Buttons */
-
-nav a p {
-    color:white;
+#bottomview {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#timerbuttoncontainer {
-    background: grey;
-    margin: 0 0 5px 0;
-}
+/* Count Down Timer */
 
-#showtimer {
-    margin: 0 0 0 25%;
+#countdownContainer {
+    width: 270px;
+    height: 60px;
+    padding: 10px;
+    background: rgba(5,5,5,.2);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
 }
 
 /* Calendar Date */
 
 #datecalendar {
-    width: 130px;
-    height: 180px;
+    width: 110px;
+    height: 150px;
     background-color: cornflowerblue;
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
-    position: relative;
-    bottom: 20%;
-    margin: 0;
 }
 
 #datecalendar p {
     font-family: zekton;
-    padding: 10px 0px;
+    padding: 10px 0px 0px 0px;
     margin: 0px;
     color: #fff;
     text-align: center;
@@ -48,22 +54,19 @@ nav a p {
 }
 
 #calendar-date {
-    font-size: 64px;
-    padding: 10px 0px 0px 0px;
+    font-size: 60px;
+    padding: 0px;
 }
 
 /* Little Calendar */
 
 #calendarContainer {
     width: 180px;
-    height: 150px; /*126*/
+    height: 150px;
     box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
     font-family: zekton;
     font-size: 10px;
     background-color: #fff;
-    margin: 0 auto;
-    position: relative;
-    bottom: 20%;
 }
 
 #calendarMonth {
@@ -93,95 +96,49 @@ nav a p {
 
 #clockcontainer {
     width: 150px;
-    height: 180px;
+    height: 150px;
     background: cornflowerblue;
     color: #fff;
     border-radius: 5%;
     box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
     font-family: zekton;
-    position: relative;
-    left: 1%;
-    bottom: 20%;
 }
 
 #clockcontainer p {
-    padding: 10px 0px;
+    padding: 20px 0px 10px 0px;
     text-align: center;
     font-size: 16px;
 }
 
 #clock {
-    margin: 16px auto 0px auto;
+    margin: 0px auto;
     font-size: 54px;
     text-align: center;
-}
-
-/* Count Down Timer */
-
-#countdownContainer {
-    width: 270px;
-    height: 60px;
-    padding: 10px;
-    background: rgba(5,5,5,.2);
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 599;
-}
-
-/* To Do List */
-
-#todolistcontainer {
-    border: 2px solid black;
-    top: 100px;
-    left: 5%;
-    margin: 0 auto;
-    align-items: flex-start;
-}
-
-ul {
-    background: cornflowerblue;
-    height: 60px;
-    width: 500px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
-    
-}
-
-li {
-    margin: 0 0 0 20px;
-    background: orange;
-}
-
-li:before {
-    content: "\2713"
 }
 
 /*Cloud Animation*/
 
 .sayhi {
-    width: 180px;
-    height: 80px;
+    width: 100px;
+    height: 45px;
     position: absolute;
-    bottom: -8px;
-    right: 2px;
+    bottom: 0px;
+    right: 150px;
+}
+
+.sayhi img {
+    width: 120px;
 }
 
 .niceview {
     position: absolute;
-    bottom: 60px;
-    right: 120px;
-}
-
-.skyframe {
-    width: 100%;
+    bottom: 40px;
+    right: 160px;
 }
 
 .sky {
     width: 100%;
-    height: 420px;
-    background-size: 100% 100%;
+    height: 100%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -197,7 +154,7 @@ li:before {
 
 .fcloud01 {
     top: 10px;
-    z-index: 100;
+    z-index: 1;
     
     -webkit-animation-name: drift;
     -webkit-animation-duration: 25s;
@@ -212,7 +169,7 @@ li:before {
 
 .fcloud02 {
     top: 60px;
-    z-index: 200;
+    z-index: 2;
 
     -webkit-animation-name: drift;
     -webkit-animation-duration: 35s;

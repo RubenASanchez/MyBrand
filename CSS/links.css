@@ -1,0 +1,52 @@
+.linkscontainer {
+    width: 100%;
+    height: auto;
+    padding: 25px 0 10px 0;
+    text-align: center;
+}
+
+
+
+.footerlinkscontainer {
+    width: 95%;
+    margin: 25px auto;
+}
+
+.footerlinks {
+    width: 18%;
+    border-top: 2px solid #cccccc;
+    margin: 0 0 0 5%;
+    text-align: left;
+    float: left;
+}
+
+.footerlinks p {
+    color: white;
+}
+
+.footerlinks nav a {
+    text-decoration: none;
+    font-size: .9em;
+    color: #cccccc;
+}
+
+.footerlinks nav {
+    padding: 8px 0px;
+}
+
+.footerlinks nav a:hover {
+    color: white;
+}
+
+/* Last line in footer */
+
+.theend {
+    height: 25px;
+    text-align: left;
+    font-size: .8em;
+}
+
+.theend p {
+    color: #cccccc;
+    margin: 0 0 0 8%;
+}
