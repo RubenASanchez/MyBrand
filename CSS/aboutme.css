@@ -1,0 +1,71 @@
+.hcontainer {
+    height: 75%;
+    width: 85%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.expandicard {
+    height: 32%;
+    width: 30%;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+    padding: 10px 0 0 0;
+    background: whitesmoke;
+    transition: height 0.4s, box-shadow 0.5s;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+}
+
+.expandicard i {
+    -webkit-transition: font-size .3s;
+    transition: font-size .3s;
+}
+
+.expandicard .slidinginfo {
+    position: relative;
+    visibility: hidden;
+    top: -50%;
+    opacity: 0;
+}
+
+.title {
+    width: 80%;
+    color: cornflowerblue;
+    border-top: 2px solid cornflowerblue;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 20px 0;
+}
+
+.slidinginfo {
+    width: 80%;
+    color: cornflowerblue;
+    margin: 20px 0 0 0;
+}
+
+.expandicard:hover {
+    height: 75%;
+    transition: height 0.4s ease, box-shadow 0.5s ease;
+    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
+}
+
+.expandicard:hover i {
+    font-size: 24px;
+}
+
+.expandicard:hover .title {
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.expandicard:hover .slidinginfo {
+    -webkit-transition: top 0.5s ease, opacity 1s ease;
+    transition: top 0.5s ease, opacity 1s ease;
+    visibility: visible;
+    top: 1%;
+    opacity: 1;
+}
