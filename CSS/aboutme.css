@@ -58,13 +58,18 @@
     margin: 20px 0 0 0;
 }
 
-.slidinginfo i{
+.slidinginfo i {
     width: 100%;
     margin: 20px 0;
     text-align: center;
 }
 
-.slidinginfo i:hover {
+.slidinginfo a {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.slidinginfo a:hover {
     color: orange;
 }
 
