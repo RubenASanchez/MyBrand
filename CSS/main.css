@@ -34,6 +34,12 @@ h1, h2, h3, p {
     src: url('../FONTS/zekton.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'ethnocentric';
+    src: url('../FONTS/ethnocentric.ttf') format('truetype');
+}
+
+
 p {
     font-family: zekton;
 }
@@ -82,6 +88,10 @@ section {
 a {
     text-decoration: none;
 }
+
+/*a i:hover {
+    color: orange;
+}*/
 
 .sidenav {
     height: calc(88% - 60px);
