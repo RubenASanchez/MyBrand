@@ -1,0 +1,174 @@
+section {
+    background: black;
+}
+
+.next a {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+}
+
+.next a:hover {
+    /*background: orange;*/
+    border: 2px solid orange;
+    color: orange; /*black*/
+}
+
+#piechartthing {
+    width: 50%;
+    margin: 0 0 0 -25%;
+    font-family: zekton;
+    color: white;
+}
+
+figure {
+  display: block;
+  height: 0;
+  margin: 0 auto;
+  position: relative;
+  font-size: 1vw;
+  width: 25em;
+  padding-bottom: 30em;
+}
+
+figcaption {
+  font-size:1.8vw;
+  text-align:center;
+  opacity: 0;
+  position: absolute;
+  z-index:2;
+  -webkit-animation: appear 1s 6s 1 forwards;
+  animation: appear 1s 6s 1 forwards;
+}
+
+#pietitle{
+    font-size: 1.6em;
+    top: -8%;
+    width: 100%;
+}
+#lab1, #lab2, #lab3 {
+    font-size: 1.5em;
+    position: absolute;
+    opacity: 0;
+}
+#lab1 {
+    top: 22%;
+    right: -104%;
+    -webkit-animation: appear 1s 6.50s 1 forwards;
+    animation: appear 1s 6.50s 1 forwards;
+}
+
+#lab2 {
+    top: 35%;
+    right: -72%;
+    -webkit-animation: appear 1s 6.75s 1 forwards;
+    animation: appear 1s 6.75s 1 forwards;
+}
+#lab3 {
+    top: 47.5%;
+    right: -70%;
+    -webkit-animation: appear 1s 7.00s 1 forwards;
+    animation: appear 1s 7.00s 1 forwards;
+}
+
+#one {
+    top: 24%;
+    right: 20%;
+}
+#two {
+    top: 58%;
+    right: 12%;
+}
+#three {
+    top: 47%;
+    left: 9%;
+}
+svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+circle {
+  fill:rgba(0,0,0,0);
+  stroke-width:31.8309886184;
+  stroke-dasharray: 0,25,0,100;
+  stroke-dashoffset: 25;
+  -webkit-animation: pie1 6s 3s 1 ease both;
+  animation: pie1 6s 3s 1 ease both;
+}
+.pie1 {
+  stroke:rgb(70, 141, 221);
+}
+.pie2 {
+  stroke:rgb(10, 103, 170);
+  -webkit-animation-name: pie2;
+  animation-name: pie2;
+}
+.pie3 {
+  stroke:rgb(12, 79, 127);
+  -webkit-animation-name: pie3;
+  animation-name: pie3;
+}
+
+.rec1 {
+    fill: rgb(70, 141, 221);
+    opacity: 0;
+    -webkit-animation: appear 1s 6.50s 1 forwards;
+    animation: appear 1s 6.50s 1 forwards;
+}
+
+.rec2 {
+    fill: rgb(10, 103, 170);
+    opacity: 0;
+    -webkit-animation: appear 1s 6.75s 1 forwards;
+    animation: appear 1s 6.75s 1 forwards;
+}
+
+.rec3 {
+    fill: rgb(12, 79, 127);
+    opacity: 0;
+    -webkit-animation: appear 1s 7.00s 1 forwards;
+    animation: appear 1s 7.00s 1 forwards;
+}
+
+/* 1st pie is 23.5% */
+@-webkit-keyframes pie1 {
+  50%,100% {stroke-dasharray: 0,0,23.5,76.5;}
+}
+@keyframes pie1 {
+  50%, 100% {stroke-dasharray: 0,0,23.5,76.5;}
+}
+/* 2nd pie is 17.6% */
+@-webkit-keyframes pie2 {
+  50%,100% {stroke-dasharray: 0,23.5,17.6,58.8;}
+}
+@keyframes pie2 {
+  50%,100% {stroke-dasharray: 0,23.5,17.6,58.8;}
+}
+/* 3rd pie is 58.8% */
+@-webkit-keyframes pie3 {
+  50%,100% {stroke-dasharray: 23.5,17.6,58.8,100;}
+}
+@keyframes pie3 {
+  50%,100% {stroke-dasharray: 23.5,17.6,58.8,100;}
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
