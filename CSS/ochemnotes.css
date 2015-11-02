@@ -26,12 +26,3 @@ section {
     margin: 5px 0 50px 0;
     text-align: center;
 }
-
-/*img:hover {
-    border: 1px solid orange;
-    border-radius: 50%;
-}*/
-
-#ione:hover > #tone {
-    color: orange;
-}
