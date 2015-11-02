@@ -1,0 +1,38 @@
+section {
+    background: whitesmoke;
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+.headerspace {
+    width: 90%;
+    height: 60px;
+}
+
+.reviewcontainer {
+    width: 90%;
+    height: calc(100% - 60px);
+    /*background: orange;*/
+}
+
+.titlecontainer {
+    width: 100%;
+    /*background: pink;*/
+}
+
+.authorcontainer {
+    width: 100%;
+    display: flex;
+    /*background: salmon;*/
+}
+
+.hcolumns {
+    width: 150px;
+    /*background: gray;*/
+}
+
+.content {
+    width: 100%;
+    height: 3000px;
+    /*background: pink;*/
+}
