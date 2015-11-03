@@ -8,6 +8,7 @@ section {
     position: relative;
     top: 1005px;
     margin: 0% auto;
+    display: -webkit-flex;
     display: flex;
     flex-flow: column;
     z-index: 1;
