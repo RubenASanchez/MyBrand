@@ -10,6 +10,7 @@ section {
     margin: 0% auto;
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: column;
     flex-flow: column;
     z-index: 1;
     -webkit-animation-name: cardseaseout;
