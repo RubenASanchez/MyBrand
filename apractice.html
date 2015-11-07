@@ -11,51 +11,83 @@
     
     <link href="../CSS/main.css" rel="stylesheet" type="text/css" async defer>
     <link href="../CSS/index.css" rel="stylesheet" type="text/css" async defer>
+    <link href="../CSS/apractice.css" rel="stylesheet" type="text/css" async defer>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <link rel="shortcut icon" href="IMAGES/androidfavicon3232.png">
     <link rel="icon" sizes="192x192" type="image/png" href="IMAGES/androidfavicon192192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="IMAGES/androidfavicon180180.png">
     <link rel="canonical" href="https://rubenasanchez.github.io">
-    
-    <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "Person",
-      "gender" : "male",
-      "name" : "Ruben A Sanchez",
-      "jobTitle" : "Neuroscience Linguistics Researcher",
-      "alumniOf" : "University Of California, Santa Cruz UCSC",
-      "email" : "ruasanch@ucsc.edu",
-      "url" : "http://rubenasanchez.github.io",
-      "sameAs" : [
-        "https://www.youtube.com/channel/UCQZpzr3XKEX9KBLLmHabyKw",
-        "https://plus.google.com/100656907146763933875/about",
-        "https://twitter.com/Ruben_A_Sanchez",
-        "https://linkedin.com/pub/ruben-sanchez/a7/b7b/b48"
-      ]
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context" : "http://schema.org",
-        "@type" : "WebSite",
-        "name" : "Ruben A Sanchez",
-        "alternateName" : "Ruben Sanchez",
-        "url" : "http://rubenasanchez.github.io"
-    }
-    </script>
 </head>
     
 <body>
 
     <header><p>Ruben A Sanchez | Researcher in neurolinguistics and comparative medicine.</p></header>
 
+ 
+    
+    
+    
     <section>
+        
+        
+              
+        
+        
         <div id="welcome"><p>Hi,</p><br /><p>I'm so glad you stopped by.</p><p>Please have a look around and enjoy.</p>
             <img src="IMAGES/androidmetransparent.png" alt="Ruben A Sanchez avatar, an android character with a lab coat">
+
         </div>
+        
+        
+        
+        
+        
+    <p class="panimate">My pursuit is to integrate brain imaging techniques such as fMRI and MEG in order to elucidate real time collaborations between networks during language learning.<span>|</span></p>
+        
+        
+        
+        
+        
+        
+        
+        
+        <canvas ...>
+    <div class="txtStyle">STROKE-ON CANVAS</div>
+</canvas>
+        
+        
+<script>
+        var ctx = document.querySelector("canvas").getContext("2d"),
+    dashLen = 220, dashOffset = dashLen, speed = 5,
+    txt = "STROKE-ON CANVAS", x = 30, i = 0;
+
+ctx.font = "50px Comic Sans MS, cursive, TSCu_Comic, sans-serif"; 
+ctx.lineWidth = 5; ctx.lineJoin = "round"; ctx.globalAlpha = 2/3;
+ctx.strokeStyle = ctx.fillStyle = "#1f2f90";
+
+(function loop() {
+  ctx.clearRect(x, 0, 60, 150);
+  ctx.setLineDash([dashLen - dashOffset, dashOffset - speed]); // create a long dash mask
+  dashOffset -= speed;                                         // reduce dash length
+  ctx.strokeText(txt[i], x, 90);                               // stroke letter
+
+  if (dashOffset > 0) requestAnimationFrame(loop);             // animate
+  else {
+    ctx.fillText(txt[i], x, 90);                               // fill final letter
+    dashOffset = dashLen;                                      // prep next char
+    x += ctx.measureText(txt[i++]).width + ctx.lineWidth * Math.random();
+    ctx.setTransform(1, 0, 0, 1, 0, 3 * Math.random());        // random y-delta
+    ctx.rotate(Math.random() * 0.005);                         // random rotation
+    if (i < txt.length) requestAnimationFrame(loop);
+  }
+})();
+</script>        
+
+        
+        <canvas width=100%></canvas>   
+        
+        
         
         <div id="tilegrid">
             <div class="gridrows">
