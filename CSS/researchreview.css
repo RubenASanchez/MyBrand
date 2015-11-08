@@ -93,3 +93,29 @@ a:hover {
     margin: 0 50px 0 0;
 }
 
+#ratings {
+
+}
+
+.ratings {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    border: 2px solid orange;
+}
+
+.ratings .vitems {
+    justify-content: space-around;
+    text-align: center;
+}
+
+.ratings {
+    font-size: 18px;
+}
+
+.ratings i {
+    font-size: 18px;
+    color: orange;
+}
