@@ -16,6 +16,9 @@
     color: whitesmoke;
     font-size: 18px;
     z-index: 0;
+    opacity: 0;
+    -webkit-animation: appear 3s 3s 1 forwards;
+    animation: appear 3s 3s 1 forwards;
 }
 
 .expandicard {
@@ -96,4 +99,13 @@
     visibility: visible;
     top: 1%;
     opacity: 1;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
