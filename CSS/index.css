@@ -14,10 +14,11 @@ body {
     align-items: left;
     justify-content: left;
     position: absolute;
-    top: 190px;
+    top: -200px;
     left: 0;
     right: 0;
     margin: 0px auto;
+    animation: androidslidedown 1.2s 1 forwards 2.5s;
 }
 
 #tilegrid {
@@ -27,10 +28,11 @@ body {
     flex-flow: column;
     justify-content: center;
     position: absolute;
-    top: 300px;
+    top: -300px;
     left: 0;
     right: 0;
     margin: 20px auto;
+    animation: gridslidedown 3s 1 linear forwards;
 }
 
 .gridrows {
@@ -78,277 +80,277 @@ span {
 }
 
 span:nth-child(1) {
-    animation: one 3s forwards 3s;
+    animation: one 2s forwards 4s;
     position: absolute;
 }
 
 span:nth-child(2) {
-    animation: two 3s forwards 3.2s;
+    animation: two 2s forwards 4.1s;
     position: absolute;
 }
 
 span:nth-child(3) {
-    animation: three 3s forwards 3.4s;
+    animation: three 2s forwards 4.2s;
     position: absolute;
 }
 
 span:nth-child(4) {
-    animation: four 3s forwards 5.0s;
+    animation: four 2s forwards 5.0s;
     position: absolute;
 }
 
 span:nth-child(5) {
-    animation: five 3s forwards 5.2s;
+    animation: five 2s forwards 5.1s;
     position: absolute;
 }
 
 span:nth-child(6) {
-    animation: six 3s forwards 5.4s;
+    animation: six 2s forwards 5.2s;
     position: absolute;
 }
 
 span:nth-child(7) {
-    animation: seven 3s forwards 5.6s;
+    animation: seven 2s forwards 5.3s;
     position: absolute;
 }
 
 span:nth-child(8) {
-    animation: eight 3s forwards 5.8s;
+    animation: eight 2s forwards 5.4s;
     position: absolute;
 }
 
 span:nth-child(9) {
-    animation: nine 3s forwards 6.0s;
+    animation: nine 2s forwards 5.5s;
     position: absolute;
 }
 
 span:nth-child(10) {
-    animation: ten 3s forwards 6.2s;
+    animation: ten 2s forwards 5.6s;
     position: absolute;
 }
 
 span:nth-child(11) {
-    animation: eleven 3s forwards 6.4s;
+    animation: eleven 2s forwards 5.7s;
     position: absolute;
 }
 
 span:nth-child(12) {
-    animation: twelve 3s forwards 6.6s;
+    animation: twelve 2s forwards 5.8s;
     position: absolute;
 }
 
 span:nth-child(13) {
-    animation: thirteen 3s forwards 6.8s;
+    animation: thirteen 2s forwards 5.9s;
     position: absolute;
 }
 
 span:nth-child(14) {
-    animation: fourteen 3s forwards 7.0s;
+    animation: fourteen 2s forwards 6.0s;
     position: absolute;
 }
 
 span:nth-child(15) {
-    animation: fifteen 3s forwards 7.2s;
+    animation: fifteen 2s forwards 6.1s;
     position: absolute;
 }
 
 span:nth-child(16) {
-    animation: sixteen 3s forwards 7.4s;
+    animation: sixteen 2s forwards 6.2s;
     position: absolute;
 }
 
 span:nth-child(17) {
-    animation: seventeen 3s forwards 7.6s;
+    animation: seventeen 2s forwards 6.3s;
     position: absolute;
 }
 
 span:nth-child(18) {
-    animation: eighteen 3s forwards 7.8s;
+    animation: eighteen 2s forwards 6.4s;
     position: absolute;
 }
 
 span:nth-child(19) {
-    animation: nineteen 3s forwards 8.0s;
+    animation: nineteen 2s forwards 6.5s;
     position: absolute;
 }
 
 span:nth-child(20) {
-    animation: twenty 3s forwards 8.2s;
+    animation: twenty 2s forwards 6.6s;
     position: absolute;
 }
 
 span:nth-child(21) {
-    animation: twentyone 3s forwards 8.4s;
+    animation: twentyone 2s forwards 6.7s;
     position: absolute;
 }
 
 span:nth-child(22) {
-    animation: twentytwo 3s forwards 8.6s;
+    animation: twentytwo 2s forwards 6.8s;
     position: absolute;
 }
 
 span:nth-child(23) {
-    animation: twentythree 3s forwards 8.8s;
+    animation: twentythree 2s forwards 6.9s;
     position: absolute;
 }
 
 span:nth-child(24) {
-    animation: twentyfour 3s forwards 9.0s;
+    animation: twentyfour 2s forwards 7.0s;
     position: absolute;
 }
 
 span:nth-child(25) {
-    animation: twentyfive 3s forwards 9.2s;
+    animation: twentyfive 2s forwards 7.1s;
     position: absolute;
 }
 
 span:nth-child(26) {
-    animation: twentysix 3s forwards 10.8s;
+    animation: twentysix 2s forwards 8.1s;
     position: absolute;
 }
 
 span:nth-child(27) {
-    animation: twentyseven 3s forwards 11.0s;
+    animation: twentyseven 2s forwards 8.2s;
     position: absolute;
 }
 
 span:nth-child(28) {
-    animation: twentyeight 3s forwards 11.2s;
+    animation: twentyeight 2s forwards 8.3s;
     position: absolute;
 }
 
 span:nth-child(29) {
-    animation: twentynine 3s forwards 11.4s;
+    animation: twentynine 2s forwards 8.4s;
     position: absolute;
 }
 
 span:nth-child(30) {
-    animation: thirty 3s forwards 11.6s;
+    animation: thirty 2s forwards 8.5s;
     position: absolute;
 }
 
 span:nth-child(31) {
-    animation: thirtyone 3s forwards 11.8s;
+    animation: thirtyone 2s forwards 8.6s;
     position: absolute;
 }
 
 span:nth-child(32) {
-    animation: thirtytwo 3s forwards 12.0s;
+    animation: thirtytwo 2s forwards 8.7s;
     position: absolute;
 }
 
 span:nth-child(33) {
-    animation: thirtythree 3s forwards 12.2s;
+    animation: thirtythree 2s forwards 8.8s;
     position: absolute;
 }
 
 span:nth-child(34) {
-    animation: thirtyfour 3s forwards 12.4s;
+    animation: thirtyfour 2s forwards 8.9s;
     position: absolute;
 }
 
 span:nth-child(35) {
-    animation: thirtyfive 3s forwards 12.6s;
+    animation: thirtyfive 2s forwards 9.0s;
     position: absolute;
 }
 
 span:nth-child(36) {
-    animation: thirtysix 3s forwards 12.8s;
+    animation: thirtysix 2s forwards 9.1s;
     position: absolute;
 }
 
 span:nth-child(37) {
-    animation: thirtyseven 3s forwards 13.0s;
+    animation: thirtyseven 2s forwards 9.2s;
     position: absolute;
 }
 
 span:nth-child(38) {
-    animation: thirtyeight 3s forwards 13.2s;
+    animation: thirtyeight 2s forwards 9.3s;
     position: absolute;
 }
 
 span:nth-child(39) {
-    animation: thirtynine 3s forwards 13.4s;
+    animation: thirtynine 2s forwards 9.4s;
     position: absolute;
 }
 
 span:nth-child(40) {
-    animation: forty 3s forwards 13.4s;
+    animation: forty 2s forwards 9.5s;
     position: absolute;
 }
 
 span:nth-child(41) {
-    animation: fortyone 3s forwards 13.6s;
+    animation: fortyone 2s forwards 9.6s;
     position: absolute;
 }
 
 span:nth-child(42) {
-    animation: fortytwo 3s forwards 13.8s;
+    animation: fortytwo 2s forwards 9.7s;
     position: absolute;
 }
 
 span:nth-child(43) {
-    animation: fortythree 3s forwards 14.0s;
+    animation: fortythree 2s forwards 9.8s;
     position: absolute;
 }
 
 span:nth-child(44) {
-    animation: fortyfour 3s forwards 14.2s;
+    animation: fortyfour 2s forwards 9.9s;
     position: absolute;
 }
 
 span:nth-child(45) {
-    animation: fortyfive 3s forwards 14.4s;
+    animation: fortyfive 2s forwards 10.0s;
     position: absolute;
 }
 
 span:nth-child(46) {
-    animation: fortysix 3s forwards 14.6s;
+    animation: fortysix 2s forwards 10.1s;
     position: absolute;
 }
 
 span:nth-child(47) {
-    animation: fortyseven 3s forwards 14.8s;
+    animation: fortyseven 2s forwards 10.2s;
     position: absolute;
 }
 
 span:nth-child(48) {
-    animation: fortyeight 3s forwards 15.0s;
+    animation: fortyeight 2s forwards 10.3s;
     position: absolute;
 }
 
 span:nth-child(49) {
-    animation: fortynine 3s forwards 15.2s;
+    animation: fortynine 2s forwards 10.4s;
     position: absolute;
 }
 
 span:nth-child(50) {
-    animation: fifty 3s forwards 15.4s;
+    animation: fifty 2s forwards 10.5s;
     position: absolute;
 }
 
 span:nth-child(51) {
-    animation: fiftyone 3s forwards 15.6s;
+    animation: fiftyone 2s forwards 10.6s;
     position: absolute;
 }
 
 span:nth-child(52) {
-    animation: fiftytwo 3s forwards 15.8s;
+    animation: fiftytwo 2s forwards 10.7s;
     position: absolute;
 }
 
 span:nth-child(53) {
-    animation: fiftythree 3s forwards 16.2s;
+    animation: fiftythree 2s forwards 10.8s;
     position: absolute;
 }
 
 span:nth-child(54) {
-    animation: fiftyfour 3s forwards 16.4s;
+    animation: fiftyfour 2s forwards 10.9s;
     position: absolute;
 }
 
 span:nth-child(55) {
-    animation: fiftyfive 3s forwards 16.6s;
+    animation: fiftyfive 2s forwards 11.0s;
     position: absolute;
 }
 
@@ -1064,5 +1066,23 @@ span:nth-child(55) {
         top: -40px;
         left: 150px;
         opacity: 1;
+    }
+}
+
+@keyframes androidslidedown {
+    from {
+        top: -400px;
+    }
+    to {
+        top: 190px;
+    }
+}
+
+@keyframes gridslidedown {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 300px;
     }
 }
