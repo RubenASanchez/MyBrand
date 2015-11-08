@@ -14,10 +14,10 @@ body {
     align-items: left;
     justify-content: left;
     position: absolute;
-    top: 50px;
+    top: 190px;
     left: 0;
     right: 0;
-    margin: 80px auto 0 auto;
+    margin: 0px auto;
 }
 
 #tilegrid {
