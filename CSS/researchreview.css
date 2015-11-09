@@ -93,6 +93,80 @@ a:hover {
     margin: 0 50px 0 0;
 }
 
+.fullchart {
+    width: calc(100% - 90px);
+    /*max-width: ;*/
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 10px;
+    background: darkorange;
+}
+
+.fullchart div h2 {
+    color: whitesmoke;
+    margin: 0 0 20px 0;
+}
+
+.fullchart .labels h2:first-child {
+    color: darkorange;
+}
+
+.fullchart p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.fullchart p:last-child {
+    margin: 8px 0 0 0;
+}
+
+.labels {
+    text-align: left;
+}
+
+.fullchart div:first-child, .fullchart div:last-child {
+    border-right: none;
+}
+
+.fullchart div {
+    width: 100%;
+    border-right: 1px solid orange;
+}
+
+.fullchart i {
+    font-size: 18px;
+}
+
+.mobilechart {
+    width: calc(100% - 40px);
+    padding: 20px;
+    background: darkorange;
+}
+
+.mobilechart h2 {
+    width: 100%;
+    margin: 0 0 20px 0;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.mobilechart .hitems p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.mobilechart .hitems p:first-child {
+    text-align: left;
+}
+
+.mobilechart .hitems p:last-child {
+    text-align: center;
+}
+
 #ratings {
 
 }
@@ -118,4 +192,12 @@ a:hover {
 .ratings i {
     font-size: 18px;
     color: orange;
+}
+
+@media (min-width: 761px) {
+    .mobilechart {display: none;}
+}
+
+@media (max-width: 760px) {
+    .fullchart {display: none;}
 }
