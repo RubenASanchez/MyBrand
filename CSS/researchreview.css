@@ -22,7 +22,7 @@ a {
     color: cornflowerblue;
 }
 
-a:hover {
+#outline  a:hover, #tldr a:hover {
     color: orange;
 }
 
@@ -213,5 +213,6 @@ a:hover {
 @media (max-width: 755px) {
     .fullchart {display: none;}
     .content {width: 100%; padding: 20px 0;}
-    .ratings {width: calc(100% - 4px);}
+    .ratings {height: 100%; width: calc(90% - 4px); margin: 0 auto; flex-flow: column; justify-content: flex-start;}
+    .ratings .vitems {margin: 20px auto;}
 }
