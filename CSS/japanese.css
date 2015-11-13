@@ -1,3 +1,85 @@
 section {
     background: black;
 }
+
+#tab0, #tab1, #tab2, #tab3, #tab4 {
+    height: 100%;
+    position: absolute;
+    box-shadow: 6px 0 6px rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+
+}
+
+#tab0:hover ~ div, #tab1:hover ~ div, #tab2:hover ~ div, #tab3:hover ~ div, #tab4:hover ~ div {
+    transform: translateX(-80vw);
+}
+
+#tab0 {
+    width: 100%;
+    background: cornflowerblue;
+}
+
+#tab1 {
+    width: 95vw;
+    background: lightblue;
+}
+
+#tab1::after {
+    content: '';
+    position: absolute;
+    width: 5vw;
+    height: 25vh;
+    background: lightblue;
+    border-radius: 0 20px 20px 0;
+    top: 65%;
+    right: -4vw;
+}
+
+#tab2 {
+    width: 90vw;
+    background: lightgreen;
+}
+
+#tab2::after {
+    content: '';
+    position: absolute;
+    width: 5vw;
+    height: 25vh;
+    background: lightgreen;
+    border-radius: 0 20px 20px 0;
+    top: 50%;
+    right: -4vw;
+}
+
+#tab3 {
+    width: 85vw;
+    background: salmon;
+}
+
+#tab3::after {
+    content: '';
+    position: absolute;
+    width: 5vw;
+    height: 25vh;
+    background: salmon;
+    border-radius: 0 20px 20px 0;
+    top: 25%;
+    right: -4vw;
+}
+
+#tab4 {
+    width: 80vw;
+    background: orangered;
+}
+
+#tab4::after {
+    content: '';
+    position: absolute;
+    width: 5vw;
+    height: 25vh;
+    background: orangered;
+    border-radius: 0 20px 20px 0;
+    top: 5%;
+    right: -4vw;
+}
+

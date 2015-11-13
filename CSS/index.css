@@ -22,7 +22,7 @@ body {
 }
 
 #tilegrid {
-    width: 450px;
+    width: 100%;
     height: 300px;
     display: flex;
     flex-flow: column;
@@ -1085,4 +1085,10 @@ span:nth-child(55) {
     to {
         top: 300px;
     }
+}
+
+@media (max-width: 450px) {
+    #tilegrid {flex-flow: row;}
+    .gridrows {flex-flow: column; justify-content: flex-start; width: 100%;}
+    .gridcolumns {height: 80px; width: 100%; margin: 0 auto;}
 }

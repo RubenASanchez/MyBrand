@@ -1,0 +1,119 @@
+.perspective {
+    width: 360px;
+    height: 340px;
+    margin: 0 auto;
+    color: whitesmoke;
+    text-align: center;
+    -webkit-perspective-origin: 50% 50px;
+    -webkit-perspective: 76em;
+    perspective-origin: 50% 50px;
+    perspective: 76em;
+}
+
+input {
+    display: none;
+}
+
+.tab {
+    width: 80px;
+    height: 70px;
+    background: pink;
+    position: absolute;
+    left: 0;
+    line-height: 70px;
+}
+
+.tab:nth-child(1) {
+    bottom: 0;
+    left: 20px;
+    background: skyblue;
+}
+
+.tab:nth-child(2) {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: maroon;
+}
+
+.tab:nth-child(3) {
+    bottom: 0;
+    left: 260px;
+    background: darkcyan;
+}
+
+.cube {
+    width: 300px;
+    height: 200px;
+    margin: 60px auto 0;
+    position: relative;
+    -webkit-transform-origin: 0 100px;
+    transform-origin: 0 100px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+}
+
+.tabcontent {
+    width: 260px;
+    height: 160px;
+    position: absolute;
+    padding: 20px;
+}
+
+.tabcontent h2 {
+    margin: 20px 0 10px 0;
+}
+
+.tabcontent p {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+}
+
+.tabcontent:nth-child(2) {
+    -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+    background: maroon;
+}
+
+.tabcontent:nth-child(1) {
+    -webkit-transform: rotateX(-270deg) translateY(-100px);
+    transform: rotateX(-270deg) translateY(-100px);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    background: skyblue;
+}
+
+.tabcontent:nth-child(3) {
+    -webkit-transform: rotateX(-90deg) translateY(100px);
+    transform: rotateX(-90deg) translateY(100px);
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+    background: teal;
+}
+
+#tabtop:checked ~ .cube {
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+#tabfront:checked ~ .cube {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+#tabbottom:checked ~ .cube {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+}
+
+#googleplus p {
+    margin: 0 0 10px 0;
+}
+
+.googlebadge {
+    width: 100%;
+    margin: 0 auto 5px auto;
+}

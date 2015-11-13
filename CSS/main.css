@@ -40,6 +40,17 @@ h1, h2, h3, p {
 }
 
 
+.pagename {
+    font-size: 22vw;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(0,0,0,.05);
+}
+
 p {
     font-family: zekton;
 }
