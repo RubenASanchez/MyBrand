@@ -7,12 +7,14 @@ section {
 }
 
 #f0, #f1, #f2, #f3 {
-    height: 80%;
+    height: calc(80% - 100px);
     width: 50px;
+    padding: 50px 0;
     position: absolute;
     top: 60px;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    justify-content: flex-end;
     border-radius: 0 5px 5px 0;
     box-shadow: 8px 1px 4px rgba(0,0,0,0.4);
     transition: all ease 1s;
@@ -38,6 +40,29 @@ section {
     left: 150px;
 }
 
-#f0:hover, #f1:hover, #f2:hover, #f3:hover {
-    width: 80%;
+#f0:hover {
+    width: 90%;
+}
+
+#f1:hover {
+    width: calc(90% - 50px);
+}
+
+#f2:hover {
+    width: calc(90% - 100px);
+}
+
+#f3:hover {
+    width: calc(90% - 150px);
+}
+
+.columns {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.title {
+    margin: 0 20px 0 50px;
 }
