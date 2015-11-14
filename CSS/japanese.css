@@ -1,85 +1,92 @@
+/*body {
+    overflow: hidden;
+}*/
+
 section {
-    background: black;
+    background: #4973c1;
 }
 
-#tab0, #tab1, #tab2, #tab3, #tab4 {
-    height: 100%;
+
+.otherbox {
+    background: whitesmoke;
+    
+}
+
+
+#f0, #f1, #f2, #f3 {
+    height: 80%;
+    width: 100px;
     position: absolute;
-    box-shadow: 6px 0 6px rgba(0,0,0,0.3);
-    transition: all 0.5s ease;
-
+    top: 60px;
+    display: flex;
+    flex-flow: column;
+    /*box-shadow: 2px 1px 4px rgba(0,0,0,0.4);*/
 }
 
-#tab0:hover ~ div, #tab1:hover ~ div, #tab2:hover ~ div, #tab3:hover ~ div, #tab4:hover ~ div {
-    transform: translateX(-80vw);
+#f0 {
+    background: pink;
+    left: 0px;
+}
+
+#f1 {
+    background: teal;
+    left: 40px;
+}
+
+#f2 {
+    background: brown;
+    left: 80px;
+}
+
+#f3 {
+    background: skyblue;
+    left: 120px;
+}
+
+#tab0, #tab1, #tab2, #tab3 {
+    width: 50px;
+    height: 100px;
+    border-radius: 10px;
+    position: absolute;
 }
 
 #tab0 {
-    width: 100%;
-    background: cornflowerblue;
+    top: 5%;
+    left: 100px;
+    background: pink;
 }
 
 #tab1 {
-    width: 95vw;
-    background: lightblue;
-}
-
-#tab1::after {
-    content: '';
-    position: absolute;
-    width: 5vw;
-    height: 25vh;
-    background: lightblue;
-    border-radius: 0 20px 20px 0;
-    top: 65%;
-    right: -4vw;
+    top: 15%;
+    left: 140px;
+    background: teal;
 }
 
 #tab2 {
-    width: 90vw;
-    background: lightgreen;
-}
-
-#tab2::after {
-    content: '';
-    position: absolute;
-    width: 5vw;
-    height: 25vh;
-    background: lightgreen;
-    border-radius: 0 20px 20px 0;
-    top: 50%;
-    right: -4vw;
+    background: brown;
 }
 
 #tab3 {
-    width: 85vw;
-    background: salmon;
+    background: skyblue;
 }
 
-#tab3::after {
-    content: '';
-    position: absolute;
-    width: 5vw;
-    height: 25vh;
-    background: salmon;
-    border-radius: 0 20px 20px 0;
-    top: 25%;
-    right: -4vw;
+#f0:hover {
+    width: 80%;
 }
 
-#tab4 {
-    width: 80vw;
-    background: orangered;
+#f1:hover {
+    width: 80%;
 }
 
-#tab4::after {
-    content: '';
-    position: absolute;
-    width: 5vw;
-    height: 25vh;
-    background: orangered;
-    border-radius: 0 20px 20px 0;
-    top: 5%;
-    right: -4vw;
+#f2:hover {
+    width: 80%;
+}
+
+#f3:hover {
+    width: 80%;
+}
+
+#tab0:hover + #f0 {
+    width: 80%;
 }
 
