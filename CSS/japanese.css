@@ -21,7 +21,7 @@ section {
 }
 
 #f0 {
-    background: pink;
+    background: darkorange;
     left: 0px;
 }
 
@@ -59,10 +59,21 @@ section {
 .columns {
     display: flex;
     flex-flow: column;
+    justify-content: flex-start;
     text-align: center;
-    margin: 0 20px;
+    margin: auto 0;
 }
 
-.title {
-    margin: 0 20px 0 50px;
+.columns p {
+    margin: 10px 16px;
+    font-size: 20px;
+}
+
+.titles {
+    margin: 0 20px 0 40px;
+}
+
+.titles p {
+    margin: 0;
+    font-size: 16px;
 }
