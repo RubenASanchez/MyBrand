@@ -93,6 +93,19 @@ a {
     margin: 0 50px 0 0;
 }
 
+.prosandcons {
+    width: 360px;
+    margin: 0 auto;
+    padding: 2px 5px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    /*background: orangered;*/ /*make hitems into vitems for mobile by changing fles flow direction, expand width to 100*, add color*/
+}
+
+.content .prosandcons .hitems p:first-child {
+    width: 60px;
+}
+
 .fullchart {
     width: calc(100% - 90px);
     /*max-width: ;*/
@@ -213,6 +226,7 @@ a {
 @media (max-width: 755px) {
     .fullchart {display: none;}
     .content {width: 100%; padding: 20px 0;}
+    .prosandcons {padding: 0; border: none; border-radius: 0; background: orange;}
     .ratings {height: 100%; width: calc(90% - 4px); margin: 0 auto; flex-flow: column; justify-content: flex-start;}
     .ratings .vitems {margin: 20px auto;}
 }

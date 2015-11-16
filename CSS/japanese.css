@@ -3,7 +3,7 @@ section {
 }
 
 .otherbox {
-    background: whitesmoke;
+    color: whitesmoke;
 }
 
 #f0, #f1, #f2, #f3 {
@@ -36,7 +36,7 @@ section {
 }
 
 #f3 {
-    background: skyblue;
+    background: tan;
     left: 150px;
 }
 
@@ -75,5 +75,16 @@ section {
 
 .titles p {
     margin: 0;
-    font-size: 16px;
+    color: black;
+    font-size: 18px;
+}
+
+#hello {
+    margin: 0;
+    width: 90%;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: maroon;
+    overflow: hidden;
 }
