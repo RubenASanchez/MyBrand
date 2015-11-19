@@ -108,6 +108,14 @@ body {
     padding: 50px 50px 10px 50px;
 }
 
+#display .bottomdisplay .biglongy .textdisplay p a {
+    color: whitesmoke;
+}
+
+#display .bottomdisplay .biglongy .textdisplay p a:hover {
+    color: orange;
+}
+
 /*#tilegrid {
     width: 60%;
     min-width: 360px;

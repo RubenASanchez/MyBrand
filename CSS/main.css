@@ -129,6 +129,22 @@ a {
     color: whitesmoke;
 }
 
+.sidenav .homeicon p {
+    display: none;
+    width: 100px;
+    position: absolute;
+    top: 14px;
+    right: 60px;
+    text-align: center;
+    color: whitesmoke;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+
+.homeicon:hover p {
+    display: inline-block;
+}
+
 /* maybe use aside to make some animated icons look like they are building as it slides down*/
 aside {
     width: 100%;
@@ -164,7 +180,7 @@ aside {
 
 footer {
     background: cornflowerblue;
-    height: 10%;
+    height: 70px;/*10%*/
     width: 100%;
     text-align: center;
     color: white;

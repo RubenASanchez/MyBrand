@@ -1,3 +1,7 @@
+section {
+    overflow: auto;
+}
+
 .perspective {
     width: 360px;
     height: 340px;
@@ -46,7 +50,7 @@ input {
 .cube {
     width: 300px;
     height: 200px;
-    margin: 60px auto 0;
+    margin: 60px auto 0 auto;
     position: relative;
     -webkit-transform-origin: 0 100px;
     transform-origin: 0 100px;
@@ -113,7 +117,19 @@ input {
     margin: 0 0 10px 0;
 }
 
+.thecube {
+    margin: 200px auto 60px auto;
+}
+
 .googlebadge {
     width: 100%;
     margin: 0 auto 5px auto;
+}
+
+.twitter-timeline {
+    margin: 0 0 50px 0;
+}
+
+.littletwitterfollow {
+    margin: 20px auto 50px auto;
 }
