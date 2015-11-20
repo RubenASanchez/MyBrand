@@ -133,12 +133,31 @@ a {
     display: none;
     width: 100px;
     position: absolute;
-    top: 14px;
     right: 60px;
     text-align: center;
     color: whitesmoke;
     border: 1px solid orange;
     border-radius: 10px;
+}
+
+.homeicon1 p {
+    top: 72px;
+}
+
+.homeicon2 p {
+    top: 134px;
+}
+
+.homeicon3 p {
+    top: 196px;
+}
+
+.homeicon4 p {
+    top: 258px;
+}
+
+.homeicon5 p {
+    top: 325px;
 }
 
 .homeicon:hover p {
