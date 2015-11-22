@@ -109,8 +109,14 @@
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    background: whitesmoke;
+    background: orange;
     transition: all .5s ease-in-out 0s;
+}
+
+.ballspace i {
+    margin: 6px 0 0 0;
+    font-size: 36px;
+    color: whitesmoke;
 }
 
 .bl1 {
