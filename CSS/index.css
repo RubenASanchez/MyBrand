@@ -34,8 +34,10 @@ body {
     animation: displayslideaway 15s 1 linear forwards;
 }
 
-.overdisplay img {
-    margin: 60px;
+.overdisplay p {
+    margin: 100px 0 0 0;
+    font-size: 40px;
+    color: whitesmoke;
 }
 
 #display {
