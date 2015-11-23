@@ -2,6 +2,10 @@ section {
     overflow: auto;
 }
 
+.sidenav .homeicon p {
+    background: rgba(73,115,193,0.6);
+}
+
 .cardsanimationcontainer {
     height: 1200px;
     width: 90%;

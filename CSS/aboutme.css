@@ -1,3 +1,7 @@
+.sidenav .homeicon p {
+    background: rgba(73,115,193,0.6);
+}
+
 .hcontainer {
     height: 90%;
     width: 85%;

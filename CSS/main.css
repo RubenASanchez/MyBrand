@@ -39,7 +39,6 @@ h1, h2, h3, p {
     src: url('../FONTS/ethnocentric.ttf') format('truetype');
 }
 
-
 .pagename {
     font-size: 22vw;
     position: absolute;
@@ -100,10 +99,6 @@ a {
     text-decoration: none;
 }
 
-/*a i:hover {
-    color: orange;
-}*/
-
 .sidenav {
     height: calc(88% - 60px);
     width: 50px;
@@ -138,7 +133,6 @@ a {
     color: whitesmoke;
     border: 1px solid orange;
     border-radius: 10px;
-    background: rgba(73,115,193,0.6);
 }
 
 .homeicon1 p {
@@ -165,7 +159,6 @@ a {
     display: inline-block;
 }
 
-/* maybe use aside to make some animated icons look like they are building as it slides down*/
 aside {
     width: 100%;
     height: 0%;
@@ -200,7 +193,7 @@ aside {
 
 footer {
     background: cornflowerblue;
-    height: 70px;/*10%*/
+    height: 70px;
     width: 100%;
     text-align: center;
     color: white;
