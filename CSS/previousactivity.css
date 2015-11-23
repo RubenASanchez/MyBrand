@@ -113,26 +113,32 @@
 }
 
 .bl1 {
+    opacity: 0;
     animation: 2.5s ease-in 11.6s forwards linkme1;
 }
 
 .bl2 {
+    opacity: 0;
     animation: 2.5s ease-in 11.7s forwards linkme2;
 }
 
 .bl3 {
+    opacity: 0;
     animation: 2.5s ease-in 11.8s forwards linkme3;
 }
 
 .bl4 {
+    opacity: 0;
     animation: 2.5s ease-in 11.9s forwards linkme4;
 }
 
 .bl5 {
+    opacity: 0;
     animation: 2.5s ease-in 12.0s forwards linkme5;
 }
 
 .bl6 {
+    opacity: 0;
     animation: 2.5s ease-in 12.1s forwards linkme6;
 }
 
@@ -329,89 +335,113 @@
 @keyframes linkme1 {
     0% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     30% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     40% {
         transform: translate(-60px,100px) scale(1);
+        opacity: 1;
     }
     100% {
         transform: translate(-60px,100px) scale(1);
+        opacity: 1;
     }
 }
 
 @keyframes linkme2 {
     0% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     30% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     40% {
         transform: translate(-120px,0px) scale(1);
+        opacity: 1;
     }
     100% {
         transform: translate(-120px,0px) scale(1);
+        opacity: 1;
     }
 }
 
 @keyframes linkme3 {
     0% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     30% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     40% {
         transform: translate(-60px,-100px) scale(1);
+        opacity: 1;
     }
     100% {
         transform: translate(-60px,-100px) scale(1);
+        opacity: 1;
     }
 }
 
 @keyframes linkme4 {
     0% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     30% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     40% {
         transform: translate(60px,-100px) scale(1);
+        opacity: 1;
     }
     100% {
         transform: translate(60px,-100px) scale(1);
+        opacity: 1;
     }
 }
 
 @keyframes linkme5 {
     0% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     30% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     40% {
         transform: translate(120px,0px) scale(1);
+        opacity: 1;
     }
     100% {
         transform: translate(120px,0px) scale(1);
+        opacity: 1;
     }
 }
 
 @keyframes linkme6 {
     0% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     30% {
         transform: translate(0) scale(0);
+        opacity: 0;
     }
     40% {
         transform: translate(60px,100px) scale(1);
+        opacity: 1;
     }
     100% {
         transform: translate(60px,100px) scale(1);
+        opacity: 1;
     }
 }

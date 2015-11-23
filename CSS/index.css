@@ -28,14 +28,17 @@ body {
     top: -48px;
     left: 0;
     right: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     margin: 0 auto;
     text-align: center;
-    background: cornflowerblue;
+    background: linear-gradient(140deg, rgba(131,3,0,1), rgba(0,0,0,1));
     animation: displayslideaway 15s 1 linear forwards;
 }
 
 .overdisplay p {
-    margin: 100px 0 0 0;
+    margin: 10px 0;
     font-size: 40px;
     color: whitesmoke;
 }

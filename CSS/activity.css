@@ -1,0 +1,84 @@
+body {
+    overflow: hidden;
+}
+
+section {
+    flex-flow: row;
+}
+
+.sidenav .homeicon p {
+    background: rgba(0,0,0,0);
+}
+
+.panels {
+    width: 150%;
+    height: calc(100% - 70px);
+    position: absolute;
+    top: 0;
+    color: white;
+    transform: skew(-45deg);
+}
+
+.panels:hover {
+    opacity: 0.88;
+}
+
+.panels p {
+    text-align: center;
+    font-size: 36px;
+    transform: skew(45deg);
+}
+
+.t1 {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+}
+
+.t2 {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+}
+
+.previousactivity {
+    left: -250%;
+    background: orangered;
+    animation: 1s ease-in 3s forwards slideright;
+}
+
+.currentactivity {
+    right: -250%;
+    background: rgb(255,140,0);
+    animation: 1s ease-in 3s forwards slideleft;
+}
+
+@keyframes slideright {
+    0% {
+        left: -250%;
+    }
+    60% {
+        left: -100%;
+    }
+    80% {
+        left: -102%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes slideleft {
+    0% {
+        right: -250%;
+    }
+    60% {
+        right: -100%;
+    }
+    80% {
+        right: -102%;
+    }
+    100% {
+        right: -100%;
+    }
+}
