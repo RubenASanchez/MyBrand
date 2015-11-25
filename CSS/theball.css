@@ -66,8 +66,6 @@
 
 .popme:hover .showme {
     display: inline-block;
-     /*can remove for no effect*/
-     /*can remove for no effect*/
     opacity: 1;
 }
 
