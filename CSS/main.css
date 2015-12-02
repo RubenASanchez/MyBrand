@@ -90,7 +90,7 @@ section {
     flex-flow: column;
     overflow: hidden;
     animation-name: wipedown;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
 }
@@ -190,6 +190,52 @@ aside {
 .socialiconsbase:hover {
     opacity: 0;
 }
+
+
+.showme {
+    width: 160px;
+    height: 28px;
+    position: absolute;
+    bottom: 48px;
+    left: -59px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background: rgb(20,20,20);
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.showme p {
+    padding: 6px 0 0 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.showme::after {
+    width: 10px;
+    height: 10px;
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 2px;
+    background: rgb(20,20,20);
+}
+
+.popme:hover .showme {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 
 footer {
     background: cornflowerblue;

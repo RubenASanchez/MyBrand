@@ -47,6 +47,7 @@
 
 .showme p {
     color: whitesmoke;
+    font-size: 10px;
 }
 
 .showme::after {
