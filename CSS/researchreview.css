@@ -38,7 +38,6 @@ a {
 
 .content {
     width: 80%;
-    /*padding: 20px 10%;*/
     padding: 50px 10% 0px 10%;
 }
 
@@ -194,12 +193,13 @@ a {
 
 
 #ratings {
-
+    margin: 50px auto;
 }
 
 .ratings {
     height: 100px;
     width: 100%;
+
     display: flex;
     flex-flow: row;
     justify-content: space-around;
