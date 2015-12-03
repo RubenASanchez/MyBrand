@@ -162,18 +162,26 @@
     animation: 2.5s ease-in 12.1s forwards linkme6;
 }
 
-.showme {
+.showit {
+    width: 250px;
+    height: 25px;
     margin: 0 auto;
+    padding: 5px 0 0 0;
+    position: absolute;
     top: 10px;
     left: 0;
     right: 0;
-    text-decoration: none;
-    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
     color: whitesmoke;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-out;
 }
 
-.popme: .showme {
-    
+.popit:hover .showit {
+    visibility: visible;
+    opacity: 1;
 }
 
 @keyframes bouncy {
@@ -214,6 +222,64 @@
     }
     100% {
         top: 45%;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes shadow {
+    0% {
+        -webkit-transform: rotateX(80deg) scale(0,0);
+        transition-timing-function: ease-in-out;
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: rotateX(80deg) scale(0,0);
+        transition-timing-function: ease-in-out;
+        opacity: 0;
+    }
+    25% {
+        -webkit-transform: rotateX(80deg) scale(1,1);
+        transition-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: rotateX(80deg) scale(0.6,0.6);
+        transition-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    35% {
+        -webkit-transform: rotateX(80deg) scale(1,1);
+        transition-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: rotateX(80deg) scale(0.8,0.8);
+        transition-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    45% {
+        -webkit-transform: rotateX(80deg) scale(1,1);
+        transition-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    55% {
+        -webkit-transform: rotateX(80deg) scale(1,1);
+        transition-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    65% {
+        -webkit-transform: rotateX(80deg) scale(1,1);
+        transition-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: rotateX(80deg) scale(1,1);
+        transition-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotateX(80deg) scale(1,1);
+        transition-timing-function: ease-in-out;
         opacity: 0;
     }
 }
