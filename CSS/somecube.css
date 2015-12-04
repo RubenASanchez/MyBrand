@@ -2,7 +2,20 @@
   animation: byebye 2s ease 12s 1 forwards;
     position: absolute;
     left: 20px;
-    width: 100%;
+    width: 90%;
+}
+
+#showme {
+    width: 90%;
+    flex-flow: column;
+    align-items: flex-start;
+    font-family: zekton;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#showme p {
+    padding: 20px 0 0 0;
 }
 
 .wrapper {
@@ -360,11 +373,11 @@
     }
 }
 
-@keyframes backout {
+/*@keyframes backout {
     to {
         background: rgb(219,219,219);
     }
-}
+}*/
 
 /*@keyframes byebye {
     to {
