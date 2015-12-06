@@ -1,0 +1,16 @@
+body {
+    background: rgb(50,50,50);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgb(0,0,0);
+    box-shadow: inset 2px 3px rgba(0,0,0,0.1);  /*this is neat to make something look like a painting inside a frame*/
+}
+
