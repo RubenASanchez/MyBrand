@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>My Play Space</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Just a play space." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="../CSS/xaplayspace.css" async defer>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript" src="../SCRIPTS/xaplayspace.js" async defer></script>
+</head>
+
+<body>
+
+    <header id="mainheader"><h1>My Play Space</h1></header>
+
+    <main>
+        <header><h1>A drag and drop tool</h1></header><aside><p>Kinda looks like Trello</p></aside>
+        <section id="columnscontainer">
+            <section id="To Do" class="taskcolumns" ondrop="dropTask(this,event)" ondragenter="return false" ondragover="return false">
+            <h1>To Do</h1>
+            <article draggable="true" class="task" id="a" ondragstart="dragTask(this,event)">a</article>
+            <article draggable="true" class="task" id="b" ondragstart="dragTask(this,event)">b</article>
+            <article draggable="true" class="task" id="c" ondragstart="dragTask(this,event)">c</article>
+            <article draggable="true" class="task" id="d" ondragstart="dragTask(this,event)">d</article>
+            </section>
+            <section id="In Progress" class="taskcolumns" ondrop="dropTask(this,event)" ondragenter="return false" ondragover="return false">
+            <h1>In Progress</h1>
+            </section>
+            <section id="Completed" class="taskcolumns" ondrop="dropTask(this,event)" ondragenter="return false" ondragover="return false">
+            <h1>Completed</h1>
+            </section>
+        </section>
+    </main>
+
+    <footer><p>Have Fun</p></footer>
+
+</body>
+
+</html>
