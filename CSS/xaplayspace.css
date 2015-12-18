@@ -28,7 +28,6 @@ header, footer {
     justify-content: center;
     color: whitesmoke;
     background: linear-gradient(white,cornflowerblue 2%,cornflowerblue 98%,white);
-    /*background: linear-gradient(-90deg,darkorange,orangered 20%,orangered 80%,darkorange);*/
 }
 
 header {
@@ -64,7 +63,7 @@ main header {
 #columnscontainer {
     width: 600px;
     height: 520px;
-    margin: 50px auto;
+    margin: 20px auto;
     display: flex;
     justify-content: space-around;
     background: rgba(0,0,0,0.4);
@@ -83,7 +82,7 @@ main header {
 }
 
 .taskcolumns h1 {
-    margin: 10px 0;
+    margin: 10px 10px;
 }
 
 .task {
@@ -94,4 +93,54 @@ main header {
     text-align: left;
     color: black;
     background: whitesmoke;
+    cursor: move;
+}
+
+.task h2 {
+    font-size: 12px;
+    color: grey;
+}
+
+.task p {
+    font-size: 15px;
+    cursor: text;
+}
+
+#ToDo h1 {
+    border-bottom: 2px solid sienna;
+}
+
+#InProgress h1 {
+    border-bottom: 2px solid orange;
+}
+
+#Completed h1 {
+    border-bottom: 2px solid green;
+}
+
+#ToDo .task {
+    background: linear-gradient(0deg,whitesmoke 95%,sienna 5%);
+    /*transition: all .4s;*/
+}
+
+#InProgress .task {
+    background: linear-gradient(0deg,whitesmoke 95%,orange 5%);
+    /*transition: all .4s;*/
+}
+
+#Completed .task {
+    background: linear-gradient(0deg,whitesmoke 95%,green 5%);
+    /*transition: all .4s;*/
+}
+/*
+#ToDo .task:hover {
+    background: linear-gradient(0deg,sienna,whitesmoke 95%,sienna 5%);
+}
+
+#InProgress .task:hover {
+    background: linear-gradient(0deg,orange,whitesmoke 95%,orange 5%);
+}
+
+#Completed .task:hover {
+    background: linear-gradient(0deg,green,whitesmoke 95%,green 5%);
 }
