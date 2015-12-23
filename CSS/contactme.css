@@ -1,5 +1,50 @@
 section {
+    flex-flow: column;
     overflow: auto;
+    justify-content: flex-start;
+}
+
+.somepagetitle {
+    margin: 120px 0 0 0;
+    justify-content: center;
+    font-size: 28px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.mailandcubecontainer {
+    width: 90%;
+    margin: 20px 0 100px 0;
+    /*background: black;*/
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.themailcontainer {
+    width: 300px;
+    height: 80%;
+    margin: 60px 0 0 0;
+    color: whitesmoke;
+    /*background: grey;*/
+}
+
+.themail {
+    width: 100%;
+    height: 100%;
+    background: cornflowerblue;
+    display: flex;
+    text-align: center;
+    flex-flow: column;
+    justify-content: center;
+    /*transform: rotateY(50deg) skewY(-20deg);*/
+    /*transform: skewY(-20deg);*/
+}
+
+.aline {
+    width: 80%;
+    margin: 25px auto 80px auto;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .perspective {
@@ -21,10 +66,10 @@ input {
 .tab {
     width: 80px;
     height: 70px;
-    background: pink;
     position: absolute;
     left: 0;
     line-height: 70px;
+    cursor: pointer;
 }
 
 .tab:nth-child(1) {
@@ -118,7 +163,8 @@ input {
 }
 
 .thecube {
-    margin: 200px auto 60px auto;
+    /*margin: 200px auto 60px auto;*/
+    /*background: white;*/
 }
 
 .googlebadge {
