@@ -13,16 +13,43 @@
 .floating {
     width: 80%;
     position: absolute;
-    bottom: 25%;
+    bottom: 46%;
     left: 0;
     right: 0;
     margin: 0 auto;
+    padding: 0 0 0 40px;
     color: whitesmoke;
     font-size: 18px;
     z-index: 0;
     opacity: 0;
-    -webkit-animation: appear 3s 3s 1 forwards;
-    animation: appear 3s 3s 1 forwards;
+    -webkit-animation: appear 3s 2s 1 forwards;
+    animation: appear 3s 2s 1 forwards;
+}
+
+.smallbiocontainer {
+    width: 80%;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.smallbio {
+    color: whitesmoke;
+    overflow: hidden;
+    /*box-shadow: inset 0 0 20px black;*/
+}
+
+.smallbio p {
+    position: relative;
+    top: 120px;
+    animation: scrollup 5s 6s 1 forwards;
+}
+
+.smallbio a {
+    color: orange;
 }
 
 .expandicard {
@@ -105,6 +132,13 @@
     opacity: 1;
 }
 
+@media (max-width: 360px) {
+    .hcontainer {flex-flow: column; width: 96%; height: 100%; overflow: auto;}
+    .expandicard {width: 100%; height: 100%;}
+    .floating {bottom: 90px;}
+    .expandicard .slidinginfo {visibility: visible; opacity: 1; top: 1%;}
+}
+
 @keyframes appear {
     from {
         opacity: 0;
@@ -112,4 +146,9 @@
     to {
         opacity: 1;
     }
+}
+
+@keyframes scrollup {
+    from {top: 120px;}
+    to {top: 0px;}
 }
