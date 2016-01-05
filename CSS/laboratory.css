@@ -1,78 +1,52 @@
-main {
-    height: calc(80% + 50px);
-    *perspective: 1000px
-    /*flex-flow: row;
-    justify-content: flex-start;*/
+#roomcontainer {
+    width: 100%;
+    height: 90%;
+    margin: 50px 0 0 0;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    background: rgb(0,0,0);
 }
 
-#backwall {
-    height: 60%;
-    width: 70%;
-    margin: 45px -6% 0 -6%;
-    background: rgb(100,0,0);
-}
-
-#leftwall {
-    height: calc(65% + 50px);
-    width: 25%;
-    margin: 50px 0 0 -2%;
-    /*transform: rotateY( 90deg );*/
-    transform: rotate3d(0,1,0,90deg);
-    background: rgb(150,0,0);
-}
-
-#rightwall {
-    height: calc(65% + 50px);
-    width: 25%;
-    margin: 50px -2% 0 0;
-    /*transform: rotateY( -90deg );*/
-    transform: rotate3d(0,1,0,-90deg);
-    background: rgb(150,0,0);
-}
-
-.container {
-    width: 600px;
-    height: 200px;
+#room {
+    width: 400px;
+    height: 400px;
     margin: 0 auto;
     position: relative;
-    perspective: 1000px;
-    background: green;
-}
-
-#box {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    top: calc(50% - 200px);
     transform-style: preserve-3d;
 }
 
-#box figure {
-    margin: 0;
+#room figure {
+    width: 400px;
+    height: 400px;
     position: absolute;
-    display: block;
-    /*border: 2px solid black;*/
+    background: rgba(100,0,0,0.8);
 }
 
-#box .front, #box .back {
-    width: 600px;
-    height: 400px;
+#room #backwall {
+    width: 454px;
+    transform: translateX(-67px) translateY(-20px) translateZ(58px);
+    background: rgba(100,0,0,0.6);
 }
 
-#box .right, #box .left {
-    width: 700px;/*96*/
-    height: 400px;
-    left: -100px; /*100*/
+#leftwall {
+    transform: translateX(-320px) translateY(-20px) translateZ(250px) rotateY(75deg);
 }
 
-#box .top, #box .bottom {
-    width: 600px;
-    height: 600px;
-    top: -200px;
+#rightwall {
+    transform: translateX(240px) translateY(-20px) translateZ(250px) rotateY(-75deg);
 }
 
-#box .front {transform: rotateY(0deg) translateZ(50px); background: transparent;}
-#box .back {transform: rotateX(180deg) translateZ(150px) translateY(100px); background: rgb(100,0,0);}
-#box .right {transform: rotateY(90deg) translateZ(350px); background: rgb(150,0,0);}
-#box .left {transform: rotateY(-90deg) translateZ(250px); background: rgb(150,0,0);}
-#box .top {transform: rotateX(90deg) translateZ(100px); background: rgb(200,200,200);}
-#box .bottom {transform: rotateX(-90deg) translateZ(100px); background: rgb(181, 121, 19);}
+#room #roof {
+    width: 456px;
+    height: 480px;
+    transform: translateX(-68px) translateY(-232px) translateZ(290px) rotateX(-97deg);
+    background: rgb(180,180,180);
+}
+
+#room #floor {
+    width: 454px;
+    height: 486px;
+    transform: translateX(-67px) translateY(110px) translateZ(304px) rotateX(96.4deg);
+    background: rgb(150,100,50);
+}
