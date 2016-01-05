@@ -1,0 +1,78 @@
+main {
+    height: calc(80% + 50px);
+    *perspective: 1000px
+    /*flex-flow: row;
+    justify-content: flex-start;*/
+}
+
+#backwall {
+    height: 60%;
+    width: 70%;
+    margin: 45px -6% 0 -6%;
+    background: rgb(100,0,0);
+}
+
+#leftwall {
+    height: calc(65% + 50px);
+    width: 25%;
+    margin: 50px 0 0 -2%;
+    /*transform: rotateY( 90deg );*/
+    transform: rotate3d(0,1,0,90deg);
+    background: rgb(150,0,0);
+}
+
+#rightwall {
+    height: calc(65% + 50px);
+    width: 25%;
+    margin: 50px -2% 0 0;
+    /*transform: rotateY( -90deg );*/
+    transform: rotate3d(0,1,0,-90deg);
+    background: rgb(150,0,0);
+}
+
+.container {
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    perspective: 1000px;
+    background: green;
+}
+
+#box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+#box figure {
+    margin: 0;
+    position: absolute;
+    display: block;
+    /*border: 2px solid black;*/
+}
+
+#box .front, #box .back {
+    width: 600px;
+    height: 400px;
+}
+
+#box .right, #box .left {
+    width: 700px;/*96*/
+    height: 400px;
+    left: -100px; /*100*/
+}
+
+#box .top, #box .bottom {
+    width: 600px;
+    height: 600px;
+    top: -200px;
+}
+
+#box .front {transform: rotateY(0deg) translateZ(50px); background: transparent;}
+#box .back {transform: rotateX(180deg) translateZ(150px) translateY(100px); background: rgb(100,0,0);}
+#box .right {transform: rotateY(90deg) translateZ(350px); background: rgb(150,0,0);}
+#box .left {transform: rotateY(-90deg) translateZ(250px); background: rgb(150,0,0);}
+#box .top {transform: rotateX(90deg) translateZ(100px); background: rgb(200,200,200);}
+#box .bottom {transform: rotateX(-90deg) translateZ(100px); background: rgb(181, 121, 19);}
