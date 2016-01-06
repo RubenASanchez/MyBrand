@@ -13,21 +13,9 @@
     justify-content: space-around;
 }
 
-/* Count Down Timer */
-
-#countdownContainer {
-    width: 270px;
-    height: 60px;
-    padding: 10px;
-    background: rgba(5,5,5,.2);
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 3;
-}
 
 /* Calendar Date */
-
+/*
 #datecalendar {
     width: 110px;
     height: 150px;
@@ -56,11 +44,11 @@
 #calendar-date {
     font-size: 60px;
     padding: 0px;
-}
+}*/
 
 /* Little Calendar */
 
-#calendarContainer {
+/*#calendarContainer {
     width: 180px;
     height: 150px;
     box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
@@ -91,9 +79,9 @@
 .today {
     background-color: #8db1f4;
 }
-
+*/
 /* Clock */
-
+/*
 #clockcontainer {
     width: 150px;
     height: 150px;
@@ -115,9 +103,9 @@
     font-size: 54px;
     text-align: center;
 }
-
+*/
 /*Cloud Animation*/
-
+/*
 .sayhi {
     width: 100px;
     height: 45px;
@@ -203,3 +191,4 @@
         transform: translateX(1300px);
     }
 }
+*/

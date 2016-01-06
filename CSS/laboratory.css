@@ -1,6 +1,10 @@
+/* Room and Walls */
+
 #roomcontainer {
     width: 100%;
+    max-width: 1024px;
     height: 90%;
+    max-height: 768px;
     margin: 50px 0 0 0;
     perspective: 1000px;
     perspective-origin: 50% 50%;
@@ -39,14 +43,261 @@
 
 #room #roof {
     width: 456px;
-    height: 480px;
-    transform: translateX(-68px) translateY(-232px) translateZ(290px) rotateX(-97deg);
+    height: 580px;/*480*/  /*y232 z290*/
+    transform: translateX(-68px) translateY(-275px) translateZ(346px) rotateX(-97deg);
     background: rgb(180,180,180);
 }
 
 #room #floor {
-    width: 454px;
-    height: 486px;
-    transform: translateX(-67px) translateY(110px) translateZ(304px) rotateX(96.4deg);
+    width: 456px;
+    height: 590px;
+    transform: translateX(-68px) translateY(50px) translateZ(346px) rotateX(96.4deg);
     background: rgb(150,100,50);
+}
+
+/* Tables */
+
+#backtable {
+    width: 276px;
+    height: 200px;
+    margin: 0 auto;
+    transform: translateY(200px) translateZ(70px) rotateX(90deg);
+    background: rgb(200,100,50);
+}
+
+#backtabletrim {
+    width: 276px;
+    height: 10px;
+    outline: 1px solid rgb(0,0,0);
+    transform: translateX(62px) translateY(102px) translateZ(160px);
+    background: rgb(200,100,50);
+}
+
+.backtablelegs {
+    width: 10px;
+    height: 80px;
+    outline: 1px solid rgb(0,0,0);
+    background: rgb(200,100,50);
+}
+
+#btfl {
+    transform: translateX(68px) translateY(100px) translateZ(180px);
+}
+
+#btfr {
+    transform: translateX(322px) translateY(20px) translateZ(180px);
+}
+
+#btbl {
+    transform: translateX(72px) translateY(-60px) translateZ(80px);
+}
+
+#btbr {
+    transform: translateX(320px) translateY(-140px) translateZ(80px);
+}
+
+/* Todays Date */
+
+#datecalendar {
+    width: 80px;
+    height: 120px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 5%;
+    transform: translateX(-20px) translateY(-440px) translateZ(60px);
+    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
+}
+
+#datecalendar p {
+    font-family: zekton;
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day {
+    font-size: 12px;
+}
+
+#calendar-month-year {
+    font-size: 10px;
+}
+
+#calendar-date {
+    font-size: 40px;
+    padding: 0px;
+}
+
+/* Clock */
+
+#clockcontainer {
+    width: 80px;
+    height: 120px;
+    background: cornflowerblue;
+    color: #fff;
+    border-radius: 5%;
+    transform: translateX(340px) translateY(-560px) translateZ(60px);
+    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
+    font-family: zekton;
+}
+
+#clockcontainer p {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#clock {
+    margin: 6px auto 0 auto;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* Little Calendar */
+
+#calendarContainer {
+    width: 140px;
+    margin: 0 auto;
+    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
+    font-family: zekton;
+    font-size: 10px;
+    background-color: #fff;
+    transform: translateX(260px) translateY(-750px) translateZ(180px) rotateY(-72deg);
+}
+
+#calendarMonth {
+    width: 140px;
+    height: 18px;
+    background-color: cornflowerblue;
+    color: #fff;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.day {
+    width: 140px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.zero {
+    color: rgba(255,255,255,0);
+}
+
+.today {
+    background-color: #8db1f4;
+}
+
+
+/* Window */
+
+#windowcontainer {
+    width: 250px;
+    height: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    border: 6px solid rgb(200,200,200);
+    /*box-shadow: 0px 2px 2px black;*/
+    transform: translateZ(60px);
+    background: pink;
+}
+
+.sayhi {
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    bottom: -4px;
+    right: 20px;
+}
+
+.sayhi img {
+    width: 120px;
+}
+
+.niceview {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.sky {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #1386d8;
+}
+
+.cloud {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background: transparent url(../IMAGES/frontcloud.png) 0 0 no-repeat;
+    background-size: 25%;
+}
+
+.fcloud01 {
+    top: 10px;
+    z-index: 1;
+    -webkit-animation-name: drift;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: drift;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.fcloud02 {
+    top: 20px;
+    z-index: 3;
+    -webkit-animation-name: drift;
+    -webkit-animation-duration: 22s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: backwards;
+    animation-name: drift;
+    animation-duration: 22s;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+.fcloud03 {
+    top: 40px;
+    z-index: 2;
+    -webkit-animation-name: drift;
+    -webkit-animation-duration: 26s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: drift;
+    animation-duration: 26s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes drift {
+    from{
+        -webkit-transform: translateX(-250px);
+    }
+    to{
+        -webkit-transform: translateX(600px);
+    }
+}
+
+@keyframes drift {
+    from{
+        transform: translateX(-250px);
+    }
+    to{
+        transform: translateX(600px);
+    }
 }
