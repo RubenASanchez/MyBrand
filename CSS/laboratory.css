@@ -1,5 +1,9 @@
 /* Room and Walls */
 
+main {
+    background: rgb(0,0,0);
+}
+
 #roomcontainer {
     width: 100%;
     max-width: 1024px;
@@ -43,7 +47,7 @@
 
 #room #roof {
     width: 456px;
-    height: 580px;/*480*/  /*y232 z290*/
+    height: 580px;/*480*/
     transform: translateX(-68px) translateY(-275px) translateZ(346px) rotateX(-97deg);
     background: rgb(180,180,180);
 }
@@ -100,17 +104,20 @@
 
 #datecalendar {
     width: 80px;
-    height: 120px;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    left: -20px;
     background-color: cornflowerblue;
     color: #fff;
     border-radius: 5%;
-    transform: translateX(-20px) translateY(-440px) translateZ(60px);
     box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
+    transform: translateZ(60px);
 }
 
 #datecalendar p {
     font-family: zekton;
-    padding: 10px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
     margin: 0px;
     color: #fff;
     text-align: center;
@@ -125,7 +132,7 @@
 }
 
 #calendar-date {
-    font-size: 40px;
+    font-size: 32px;
     padding: 0px;
 }
 
@@ -133,24 +140,28 @@
 
 #clockcontainer {
     width: 80px;
-    height: 120px;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    right: -20px;
     background: cornflowerblue;
     color: #fff;
     border-radius: 5%;
-    transform: translateX(340px) translateY(-560px) translateZ(60px);
+    transform: translateZ(60px);
     box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
     font-family: zekton;
 }
 
 #clockcontainer p {
-    padding: 10px 0px 10px 0px;
+    padding: 5px 0px 5px 0px;
+    margin: 0;
     text-align: center;
     font-size: 12px;
 }
 
 #clock {
-    margin: 6px auto 0 auto;
-    font-size: 32px;
+    margin: 0px auto 0 auto;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -159,11 +170,14 @@
 #calendarContainer {
     width: 140px;
     margin: 0 auto;
-    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
+    position: absolute;
+    top: 20px;
+    right: -120px;
+    box-shadow: 4px 2px 2px 1px rgba(25,25,25,0.8);
     font-family: zekton;
     font-size: 10px;
     background-color: #fff;
-    transform: translateX(260px) translateY(-750px) translateZ(180px) rotateY(-72deg);
+    transform: translateZ(150px) rotateY(-72deg);
 }
 
 #calendarMonth {
@@ -189,6 +203,59 @@
     background-color: #8db1f4;
 }
 
+/* Trello Board */
+
+#trelloboard {
+    width: 140px;
+    height: 110px;
+    position: absolute;
+    top: 20px;
+    left: -120px;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(180,210,250);
+    box-shadow: -2px 2px 2px black;
+    transform: translateZ(140px) rotateY(75deg);
+}
+
+#trelloboard:hover {
+    background: rgba(180,210,250,0.9);
+}
+
+.tb {
+    width: 40px;
+    height: 100px;
+    margin: 5px 0 0 0;
+    border-radius: 5px;
+    background: rgba(0,0,100,.4);
+}
+
+.tb p {
+    width: 80%;
+    margin: 0 auto;
+    color: whitesmoke;
+    font-size: 6px;
+    text-align: center;
+}
+
+.tb:nth-child(1) p {
+    border-bottom: 1px solid red;
+}
+
+.tb:nth-child(2) p {
+    border-bottom: 1px solid orange;
+}
+
+.tb:nth-child(3) p {
+    border-bottom: 1px solid green;
+}
+
+.tbc {
+    width: 20px;
+    height: 15px;
+    margin: 4px auto;
+    background: rgb(240,240,240);
+}
 
 /* Window */
 
@@ -201,7 +268,6 @@
     left: 0;
     right: 0;
     border: 6px solid rgb(200,200,200);
-    /*box-shadow: 0px 2px 2px black;*/
     transform: translateZ(60px);
     background: pink;
 }
