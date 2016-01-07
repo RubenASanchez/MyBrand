@@ -20,5 +20,4 @@ function setText(id, val) {
 
 // to get calendar to show up
 
-/*window.onload = calendar;*/       /*this is outdated*/
 window.addEventListener('load',calendar)

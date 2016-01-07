@@ -169,6 +169,39 @@ main {
     margin: 0;
 }
 
+/* Lab Bench */
+
+#labbenchtop {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 192px;
+    left: 120px;
+    outline: 2px solid black;
+    background: rgb(20,20,20);
+    transform: translateZ(790px) rotateX(94deg);
+}
+
+#labbenchfront {
+    width: 20px;
+    height: 26px;
+    position: absolute;
+    top: 234px;
+    left: 113px;
+    background: rgb(50,50,50);
+    transform: translateZ(804px);
+}
+
+#labbenchside {
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 250px;
+    left: 98px;
+    background: rgb(50,50,50);
+    transform: translateZ(720px) rotateY(70deg);
+}
+
 /* Todays Date */
 
 #datecalendar {
@@ -272,6 +305,95 @@ main {
     background-color: #8db1f4;
 }
 
+/* Computer */
+
+#computerscreen {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: 210px;
+    left: 120px;
+    border-radius: 5px;
+    border: 4px solid rgb(200,200,200);
+    box-shadow: 0 2px 2px rgb(20,20,20);
+    background: black;
+    transform: translateZ(90px);
+}
+
+#computerstand {
+    width: 18px;
+    height: 15px;
+    position: absolute;
+    top: 278px;
+    left: 156px;
+    background: rgb(200,200,200);
+    transform: translateZ(80px);
+}
+
+#computerbase {
+    width: 30px;
+    height: 10px;
+    position: absolute;
+    top: 276px;
+    left: 156px;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgb(20,20,20);
+    background: rgb(200,200,200);
+    transform: perspective(240px) translateZ(120px) rotateX(80deg);
+}
+
+/* Cell Phone */
+
+#cellphone {
+    width: 16px;
+    height: 30px;
+    position: absolute;
+    top: 264px;
+    left: 240px;
+    border-radius: 5px;
+    border: 1px solid rgb(250,250,250);
+    background: rgb(0,0,0);
+    transform-origin: bottom;
+    transform: perspective(500px) translateZ(115px) rotateX(70deg);
+    transition: transform .4s ease-out;
+}
+
+#cellphone:hover {
+    transform-origin: bottom;
+    transform: perspective(500px) translateZ(115px) rotateX(0deg);
+}
+
+#cellspeaker {
+    width: 8px;
+    height: 1px;
+    margin: 2px auto;
+    background: rgb(100,100,100);
+}
+
+#cellscreen {
+    width: 12px;
+    height: 14px;
+    margin: 2px auto;
+    padding: 4px 0 0 0;
+    background: rgb(255,255,255);
+}
+
+#cellapp {
+    width: 8px;
+    height: 8px;
+    margin: 0 auto;
+    background: cornflowerblue;
+}
+
+#cellbutton {
+    width: 1px;
+    height: 1px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid rgb(200,200,200);
+    background: rgb(20,20,20);
+}
+
 /* Trello Board */
 
 #trelloboard {
@@ -284,6 +406,7 @@ main {
     justify-content: space-around;
     background: rgb(180,210,250);
     box-shadow: -2px 2px 2px black;
+    -webkit-transform: translateZ(140px) rotateY(75deg);
     transform: translateZ(140px) rotateY(75deg);
 }
 
