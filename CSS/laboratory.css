@@ -62,42 +62,111 @@ main {
 /* Tables */
 
 #backtable {
-    width: 276px;
+    width: 200px;
     height: 200px;
     margin: 0 auto;
-    transform: translateY(200px) translateZ(70px) rotateX(90deg);
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
     background: rgb(200,100,50);
+    transform: translateZ(50px) rotateX(90deg);
 }
 
 #backtabletrim {
-    width: 276px;
+    width: 200px;
     height: 10px;
+    margin: 0 auto;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
     outline: 1px solid rgb(0,0,0);
-    transform: translateX(62px) translateY(102px) translateZ(160px);
     background: rgb(200,100,50);
+    transform: translateZ(148px);
 }
 
 .backtablelegs {
     width: 10px;
     height: 80px;
+    position: absolute;
     outline: 1px solid rgb(0,0,0);
     background: rgb(200,100,50);
 }
 
 #btfl {
-    transform: translateX(68px) translateY(100px) translateZ(180px);
+    top: 310px;
+    left: 100px;
+    transform: translateZ(140px);
 }
 
 #btfr {
-    transform: translateX(322px) translateY(20px) translateZ(180px);
+    top: 310px;
+    right: 100px;
+    transform: translateZ(140px);
 }
 
 #btbl {
-    transform: translateX(72px) translateY(-60px) translateZ(80px);
+    top: 310px;
+    left: 112px;
+    transform: translateZ(90px);
 }
 
 #btbr {
-    transform: translateX(320px) translateY(-140px) translateZ(80px);
+    top: 310px;
+    right: 112px;
+    transform: translateZ(90px);
+}
+
+#sidetabler {
+    width: 138px;
+    height: 78px;
+    position: absolute;
+    top: 240px;
+    right: -50px;
+    outline: 1px solid black;
+    background: rgb(200, 160, 125);
+    transform: translateZ(360px) rotateY(-70deg) rotateX(90deg);
+    
+}
+
+#sidetablerf {
+    width: 140px;
+    height: 84px;
+    position: absolute;
+    top: 284px;
+    right: -22px;
+    outline: 1px solid black;
+    background: rgb(200, 160, 125);
+    transform: translateZ(360px) rotateY(-70deg);
+}
+
+#sidetablers {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 278px;
+    right: -40px;
+    outline: 1px solid black;
+    background: rgb(200, 160, 125);
+    transform: translateZ(440px) rotateY(30deg);
+}
+
+#sidetablerf p {
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+#sidetablers p {
+    text-align: center;
+}
+
+#sidetablers p:first-child {
+    margin: 10px 0 0 0;
+}
+
+#sidetablers p:last-child {
+    margin: 0;
 }
 
 /* Todays Date */
