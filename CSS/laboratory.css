@@ -50,15 +50,17 @@ main {
 
 #room #roof {
     width: 456px;
-    height: 580px;/*480*/
-    transform: translateX(-68px) translateY(-275px) translateZ(346px) rotateX(-97deg);
+    height: 580px;
+    top: -275px;
+    transform: translateX(-68px) translateZ(346px) rotateX(-97deg);
     background: rgb(180,180,180);
 }
 
 #room #floor {
     width: 456px;
     height: 590px;
-    transform: translateX(-68px) translateY(50px) translateZ(346px) rotateX(96.4deg);
+    top: 50px;
+    transform: translateX(-68px) translateZ(346px) rotateX(96.4deg);
     background: rgb(150,100,50);
 }
 
@@ -175,7 +177,7 @@ main {
 /* Lab Bench */
 
 #labbenchtop {
-    width: 80px;
+    width: 92px;
     height: 80px;
     position: absolute;
     top: 192px;
@@ -185,24 +187,36 @@ main {
     transform: translateZ(790px) rotateX(94deg);
 }
 
+#labbenchtrim {
+    width: 110px;
+    height: 4px;
+    position: absolute;
+    top: 233px;
+    left: 106px;
+    background: rgb(20,20,20);
+    transform: translateZ(806px);
+}
+
 #labbenchfront {
-    width: 20px;
+    width: 12px;
     height: 26px;
     position: absolute;
     top: 234px;
-    left: 113px;
+    left: 110px;
     background: rgb(50,50,50);
-    transform: translateZ(804px);
+    outline: 1px solid rgb(80,80,80);
+    transform: translateZ(800px);
 }
 
 #labbenchside {
-    width: 40px;
-    height: 32px;
+    width: 16px;
+    height: 26px;
     position: absolute;
-    top: 250px;
-    left: 98px;
+    top: 232px;
+    left: 121px;
     background: rgb(50,50,50);
-    transform: translateZ(720px) rotateY(70deg);
+    outline: 1px solid rgb(80,80,80);
+    transform: translateZ(800px) rotateY(76deg);
 }
 
 /* Todays Date */
