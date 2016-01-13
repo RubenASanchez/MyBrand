@@ -44,7 +44,7 @@
     
       ga('create', 'UA-70955224-1', 'auto');
       ga('send', 'pageview');
-    
+      ga('send', 'event', 'PDFs', 'downloaded', 'CV');
     </script>
 </head>
     
@@ -76,7 +76,7 @@
             <div class="expandicard">
                 <i class="material-icons md-48 color">work</i>
                 <p class="title">Experience</p>
-                <div class="slidinginfo"><p>My background stems from clinical diagnostics, comparative medicine, as well as behavioral research.</p><br /><p>Curious?</p><br /><p>Feel free to download my CV.</p><i class="material-icons"><a target="_blank" href="IMAGES/rubenasanchezcv.pdf">description</a></i><br /><p>If you prefer something more visual here is an infographic.</p><i class="material-icons"><a href="infoexperience.html">equalizer</a></i></div>
+                <div class="slidinginfo"><p>My background stems from clinical diagnostics, comparative medicine, as well as behavioral research.</p><br /><p>Curious?</p><br /><p>Feel free to download my CV.</p><i class="material-icons"><a target="_blank" href="IMAGES/rubenasanchezcv.pdf" onClick="ga('send', 'event', 'PDFs', 'downloaded', 'CV');" alt="CV">description</a></i><br /><p>If you prefer something more visual here is an infographic.</p><i class="material-icons"><a href="infoexperience.html">equalizer</a></i></div>
             </div>
             
         </div>
