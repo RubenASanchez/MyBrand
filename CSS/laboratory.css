@@ -328,6 +328,60 @@
     background: rgb(250,180,120);
 }
 
+/* CellPhone */
+
+#cellphone {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    top: 458px;
+    left: 592px;
+    border-radius: 5px;
+    border: 1px solid rgb(150,150,150);
+    background: rgb(0,0,0);
+}
+
+#speaker {
+    width: 8px;
+    height: 1px;
+    margin: 2px auto;
+    background: rgb(100,100,100);
+}
+
+#screen {
+    width: 16px;
+    height: 18px;
+    margin: 4px auto;
+    padding: 4px 0 0 0;
+    background: rgb(100,100,100);
+}
+
+#button {
+    width: 2px;
+    height: 2px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid rgb(120,120,120);
+    background: rgb(20,20,20);
+}
+
+#app {
+    width: 8px;
+    height: 8px;
+    margin: 0 auto;
+    border-radius: 2px;
+    background: cornflowerblue;
+    opacity: 0;
+}
+
+#cellphone:hover #screen {
+    background: rgb(200,200,200);
+}
+
+#cellphone:hover #app {
+    opacity: 1;
+}
+
 /* Table */
 
 #tablecontainer {
