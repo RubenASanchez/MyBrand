@@ -1,3 +1,7 @@
+main, section {
+    animation: none;
+}
+
 section {
     background: black;
     color: white;
@@ -42,6 +46,8 @@ section {
 
 .achievementscontainer {
     height: 100%;
+    margin: 200% 0 0 0;
+    animation: comeup 1s 3s 1 forwards;
 }
 
 .achievements {
@@ -61,5 +67,14 @@ section {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes comeup {
+    from {
+        margin: 200% 0 0 0;
+    }
+    to {
+        margin: 0 0 0 0;
     }
 }

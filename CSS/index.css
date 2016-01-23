@@ -114,7 +114,6 @@ body {
     text-align: right;
     font-size: 40px;
     padding: 10px 40px 0 0;
-    /*animation: 27s ease-out 10s forwards infinite fademe;*/
 }
 
 #display .bottomdisplay .biglongy .textdisplay {
@@ -137,43 +136,6 @@ body {
 #display .bottomdisplay .biglongy .textdisplay p a:hover {
     color: orange;
 }
-
-/*#tilegrid {
-    width: 60%;
-    min-width: 360px;
-    height: 300px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    position: absolute;
-    top: -300px;
-    left: 0;
-    right: 0;
-    margin: 20px auto;
-    animation: displayslidedown 3s 1 linear forwards;
-    background: pink;
-}
-
-.gridrows {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-}
-
-.gridcolumns {
-    height: 140px;
-    width: 140px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    outline: 2px solid black;
-    background: teal;
-}
-
-.gridcolumns:hover {
-    background: darkorange;
-}*/
 
 #welcome img {
     width: 100px;
@@ -1423,9 +1385,3 @@ span:nth-child(55) {
         opacity: 0;
     }
 }
-
-/*@media (max-width: 450px) {
-    #tilegrid {flex-flow: row;}
-    .gridrows {flex-flow: column; justify-content: flex-start; width: 100%;}
-    .gridcolumns {height: 80px; width: 100%; margin: 0 auto;}
-}*/

@@ -1,3 +1,7 @@
+main, section {
+    animation: none;
+}
+
 section {
     background: black;
     color: white;

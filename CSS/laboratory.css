@@ -162,13 +162,13 @@
 
 #scientistcontainer {
     width: 90px;
-    height: 100px;
+    height: 300px;
     margin: 0 auto;
     position: absolute;
-    top: 430px;
+    top: 350px;
     left: 0;
     right: 0;
-    outline: 1px solid black;
+    /*outline: 1px solid black;*/
 }
 
 #face::before {
@@ -178,7 +178,7 @@
     content: "";
     display: block;
     border-radius: 90px 90px 0 0;
-    background: rgb(10,10,10);
+    background: rgb(30,30,30);
 }
 
 #face {
@@ -212,7 +212,7 @@
     position: absolute;
     border-radius: 100%;
     background: rgb(140,100,80);
-    animation: blinking 2s infinite;
+    animation: blinking 3s infinite;
 }
 
 #eyel {
@@ -230,6 +230,102 @@
     position: absolute;
     border-radius: 0 0 12px 12px;
     background: rgb(150,0,0);
+}
+
+#labcoat {
+    width: 90px;
+    height: 120px;
+    margin: 60px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background: rgb(180,180,250);
+}
+
+#pants {
+    width: 90px;
+    height: 20px;
+    margin: 100px 0 0 0;
+    background: rgb(0,0,0);
+}
+
+#pantsleft, #pantsright {
+    width: 36px;
+    height: 80px;
+    position: absolute;
+    border-right: 1px solid rgb(100,100,100);
+    background: rgb(0,0,0);
+}
+
+#pantsleft {
+    left: 4px;
+}
+
+#pantsright {
+    right: 4px;
+}
+
+#labcoatleftside, #labcoatrightside {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    transform: rotateZ(45deg);
+}
+
+#labcoatleftside {
+    left: -45px;
+    background: rgb(240,240,240);
+}
+
+#labcoatrightside {
+    right: -45px;
+    background: rgb(240,240,240);
+}
+
+#labcoatleftbottom, #labcoatrightbottom {
+    width: 43px;
+    height: 80px;
+    position: absolute;
+    top: 40px;
+    background: rgb(240,240,240);
+}
+
+#labcoatleftbottom {
+    left: 0px;
+    border-radius: 0 0 4px 0;
+}
+
+#labcoatrightbottom {
+    right: 0px;
+    border-radius: 0 0 0 4px;
+}
+
+#armleft, #armright{
+    width: 25px;
+    height: 80px;
+    position: absolute;
+    top: 60px;
+    border-radius: 20px;
+    background: rgb(240,240,240);
+}
+
+#armleft {
+    left: -30px;
+}
+
+#armright {
+    right: -30px;
+}
+
+#handleft, #handright {
+    width: 25px;
+    height: 14px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 20px 20px;
+    background: rgb(250,180,120);
 }
 
 /* Table */
@@ -365,10 +461,13 @@
 }
 
 @keyframes blinking {
-    from {
-        height: 9px;
+    0% {
+        height: 9px; margin-top: 15px;
     }
-    to {
+    90% {
+        height: 9px; margin-top: 15px;
+    }
+    100% {
         height: 1px; margin-top: 20px;
     }
 }
