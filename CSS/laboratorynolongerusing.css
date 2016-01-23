@@ -1,0 +1,578 @@
+/* Room and Walls */
+
+main {
+    background: rgb(0,0,0);
+}
+
+#roomcontainer {
+    width: 100%;
+    max-width: 1024px;
+    height: 90%;
+    max-height: 768px;
+    margin: 50px 0 0 0;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+    background: rgb(0,0,0);
+}
+
+#room {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: calc(50% - 200px);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#room figure {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background: rgba(100,0,0,0.8);
+}
+
+#room #backwall {
+    width: 454px;
+    transform: translateX(-67px) translateY(-20px) translateZ(58px);
+    background: rgba(100,0,0,0.6);
+}
+
+#leftwall {
+    transform: translateX(-320px) translateY(-20px) translateZ(250px) rotateY(75deg);
+}
+
+#rightwall {
+    transform: translateX(240px) translateY(-20px) translateZ(250px) rotateY(-75deg);
+}
+
+#room #roof {
+    width: 456px;
+    height: 580px;
+    top: -275px;
+    transform: translateX(-68px) translateZ(346px) rotateX(-97deg);
+    background: rgb(180,180,180);
+}
+
+#room #floor {
+    width: 456px;
+    height: 590px;
+    top: 50px;
+    transform: translateX(-68px) translateZ(346px) rotateX(96.4deg);
+    background: rgb(150,100,50);
+}
+
+/* Tables */
+
+#backtable {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    background: rgb(200,100,50);
+    transform: translateZ(50px) rotateX(90deg);
+}
+
+#backtabletrim {
+    width: 200px;
+    height: 10px;
+    margin: 0 auto;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    outline: 1px solid rgb(0,0,0);
+    background: rgb(200,100,50);
+    transform: translateZ(148px);
+}
+
+.backtablelegs {
+    width: 10px;
+    height: 80px;
+    position: absolute;
+    outline: 1px solid rgb(0,0,0);
+    background: rgb(200,100,50);
+}
+
+#btfl {
+    top: 310px;
+    left: 100px;
+    transform: translateZ(140px);
+}
+
+#btfr {
+    top: 310px;
+    right: 100px;
+    transform: translateZ(140px);
+}
+
+#btbl {
+    top: 310px;
+    left: 112px;
+    transform: translateZ(90px);
+}
+
+#btbr {
+    top: 310px;
+    right: 112px;
+    transform: translateZ(90px);
+}
+
+#sidetabler {
+    width: 138px;
+    height: 78px;
+    position: absolute;
+    top: 240px;
+    right: -50px;
+    outline: 1px solid black;
+    background: rgb(200, 160, 125);
+    transform: translateZ(360px) rotateY(-70deg) rotateX(90deg);
+    
+}
+
+#sidetablerf {
+    width: 140px;
+    height: 84px;
+    position: absolute;
+    top: 284px;
+    right: -22px;
+    outline: 1px solid black;
+    background: rgb(200, 160, 125);
+    transform: translateZ(360px) rotateY(-70deg);
+}
+
+#sidetablers {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 278px;
+    right: -40px;
+    outline: 1px solid black;
+    background: rgb(200, 160, 125);
+    transform: translateZ(440px) rotateY(30deg);
+}
+
+#sidetablerf p {
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+#sidetablers p {
+    text-align: center;
+}
+
+#sidetablers p:first-child {
+    margin: 10px 0 0 0;
+}
+
+#sidetablers p:last-child {
+    margin: 0;
+}
+
+/* Lab Bench */
+
+#labbenchtop {
+    width: 92px;
+    height: 80px;
+    position: absolute;
+    top: 192px;
+    left: 120px;
+    outline: 2px solid black;
+    background: rgb(20,20,20);
+    transform: translateZ(790px) rotateX(94deg);
+}
+
+#labbenchtrim {
+    width: 110px;
+    height: 4px;
+    position: absolute;
+    top: 233px;
+    left: 106px;
+    background: rgb(20,20,20);
+    transform: translateZ(806px);
+}
+
+#labbenchfront {
+    width: 12px;
+    height: 26px;
+    position: absolute;
+    top: 234px;
+    left: 110px;
+    background: rgb(50,50,50);
+    outline: 1px solid rgb(80,80,80);
+    transform: translateZ(800px);
+}
+
+#labbenchside {
+    width: 16px;
+    height: 26px;
+    position: absolute;
+    top: 232px;
+    left: 121px;
+    background: rgb(50,50,50);
+    outline: 1px solid rgb(80,80,80);
+    transform: translateZ(800px) rotateY(76deg);
+}
+
+/* Todays Date */
+
+#datecalendar {
+    width: 80px;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
+    transform: translateZ(60px);
+}
+
+#datecalendar p {
+    font-family: zekton;
+    padding: 5px 0px 0px 0px;
+    margin: 0px;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day {
+    font-size: 12px;
+}
+
+#calendar-month-year {
+    font-size: 10px;
+}
+
+#calendar-date {
+    font-size: 32px;
+    padding: 0px;
+}
+
+/* Clock */
+
+#clockcontainer {
+    width: 80px;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    background: cornflowerblue;
+    color: #fff;
+    border-radius: 5%;
+    transform: translateZ(60px);
+    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
+    font-family: zekton;
+}
+
+#clockcontainer p {
+    padding: 5px 0px 5px 0px;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+#clock {
+    margin: 0px auto 0 auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Little Calendar */
+
+#calendarContainer {
+    width: 140px;
+    margin: 0 auto;
+    position: absolute;
+    top: 20px;
+    right: -120px;
+    box-shadow: 4px 2px 2px 1px rgba(25,25,25,0.8);
+    font-family: zekton;
+    font-size: 10px;
+    background-color: #fff;
+    transform: translateZ(150px) rotateY(-72deg);
+}
+
+#calendarMonth {
+    width: 140px;
+    height: 18px;
+    background-color: cornflowerblue;
+    color: #fff;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.day {
+    width: 140px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.zero {
+    color: rgba(255,255,255,0);
+}
+
+.today {
+    background-color: #8db1f4;
+}
+
+/* Computer */
+
+#computerscreen {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: 210px;
+    left: 120px;
+    border-radius: 5px;
+    border: 4px solid rgb(200,200,200);
+    box-shadow: 0 2px 2px rgb(20,20,20);
+    background: black;
+    transform: translateZ(90px);
+}
+
+#computerstand {
+    width: 18px;
+    height: 15px;
+    position: absolute;
+    top: 278px;
+    left: 156px;
+    background: rgb(200,200,200);
+    transform: translateZ(80px);
+}
+
+#computerbase {
+    width: 30px;
+    height: 10px;
+    position: absolute;
+    top: 276px;
+    left: 156px;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgb(20,20,20);
+    background: rgb(200,200,200);
+    transform: perspective(240px) translateZ(120px) rotateX(80deg);
+}
+
+/* Cell Phone */
+
+#cellphone {
+    width: 16px;
+    height: 30px;
+    position: absolute;
+    top: 264px;
+    left: 240px;
+    border-radius: 5px;
+    border: 1px solid rgb(250,250,250);
+    background: rgb(0,0,0);
+    transform-origin: bottom;
+    transform: perspective(500px) translateZ(115px) rotateX(70deg);
+    transition: transform .4s ease-out;
+}
+
+#cellphone:hover {
+    transform-origin: bottom;
+    transform: perspective(500px) translateZ(115px) rotateX(0deg);
+}
+
+#cellspeaker {
+    width: 8px;
+    height: 1px;
+    margin: 2px auto;
+    background: rgb(100,100,100);
+}
+
+#cellscreen {
+    width: 12px;
+    height: 14px;
+    margin: 2px auto;
+    padding: 4px 0 0 0;
+    background: rgb(255,255,255);
+}
+
+#cellapp {
+    width: 8px;
+    height: 8px;
+    margin: 0 auto;
+    background: cornflowerblue;
+}
+
+#cellbutton {
+    width: 1px;
+    height: 1px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid rgb(200,200,200);
+    background: rgb(20,20,20);
+}
+
+/* Trello Board */
+
+#trelloboard {
+    width: 140px;
+    height: 110px;
+    position: absolute;
+    top: 20px;
+    left: -120px;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(180,210,250);
+    box-shadow: -2px 2px 2px black;
+    -webkit-transform: translateZ(140px) rotateY(75deg);
+    transform: translateZ(140px) rotateY(75deg);
+}
+
+#trelloboard:hover {
+    background: rgba(180,210,250,0.9);
+}
+
+.tb {
+    width: 40px;
+    height: 100px;
+    margin: 5px 0 0 0;
+    border-radius: 5px;
+    background: rgba(0,0,100,.4);
+}
+
+.tb p {
+    width: 80%;
+    margin: 0 auto;
+    color: whitesmoke;
+    font-size: 6px;
+    text-align: center;
+}
+
+.tb:nth-child(1) p {
+    border-bottom: 1px solid red;
+}
+
+.tb:nth-child(2) p {
+    border-bottom: 1px solid orange;
+}
+
+.tb:nth-child(3) p {
+    border-bottom: 1px solid green;
+}
+
+.tbc {
+    width: 20px;
+    height: 15px;
+    margin: 4px auto;
+    background: rgb(240,240,240);
+}
+
+/* Window */
+
+#windowcontainer {
+    width: 250px;
+    height: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    border: 6px solid rgb(200,200,200);
+    transform: translateZ(60px);
+    background: pink;
+}
+
+.sayhi {
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    bottom: -4px;
+    right: 20px;
+}
+
+.sayhi img {
+    width: 120px;
+}
+
+.niceview {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.sky {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #1386d8;
+}
+
+.cloud {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background: transparent url(../IMAGES/frontcloud.png) 0 0 no-repeat;
+    background-size: 25%;
+}
+
+.fcloud01 {
+    top: 10px;
+    z-index: 1;
+    -webkit-animation-name: drift;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: drift;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.fcloud02 {
+    top: 20px;
+    z-index: 3;
+    -webkit-animation-name: drift;
+    -webkit-animation-duration: 22s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: backwards;
+    animation-name: drift;
+    animation-duration: 22s;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+.fcloud03 {
+    top: 40px;
+    z-index: 2;
+    -webkit-animation-name: drift;
+    -webkit-animation-duration: 26s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: drift;
+    animation-duration: 26s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes drift {
+    from{
+        -webkit-transform: translateX(-250px);
+    }
+    to{
+        -webkit-transform: translateX(600px);
+    }
+}
+
+@keyframes drift {
+    from{
+        transform: translateX(-250px);
+    }
+    to{
+        transform: translateX(600px);
+    }
+}
