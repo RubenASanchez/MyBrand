@@ -382,6 +382,92 @@
     opacity: 1;
 }
 
+/* Book Shelf */
+
+#bookshelfcontainer {
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    top: 450px;
+    left: 40px;
+}
+
+#topshelf, #bottomshelf {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    border: 10px solid rgb(160,110,80);
+    background: rgb(140,100,70);
+    box-shadow: inset 0 0 20px 2px;
+}
+
+#topshelf {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#bottomshelf {
+    position: relative;
+    top: -10px;
+    left: 0;
+}
+
+#japanesefolder1, #japanesefolder2, #japanesefolder3 {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    bottom: 2px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0px black;
+}
+
+#book {
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    bottom: 2px;
+    right: 40px;
+    border-radius: 1px;
+    border-left: 4px solid rgb(200,150,50);
+    background: rgb(200,200,200);
+    box-shadow: 0 2px 2px 0 rgb(0,0,0);
+}
+
+#book p {
+    color: rgb(0,0,0);
+    font-size: 10px;
+}
+
+#book:hover p {
+    color: rgb(250,250,250);
+}
+
+#japanesefolder1 {
+    left: 10px;
+    background: orangered;
+}
+
+#japanesefolder2 {
+    left: 15px;
+    background: teal;
+}
+
+#japanesefolder3 {
+    left: 20px;
+    background: brown;
+}
+
+#bookshelfcontainer p {
+    text-align: center;
+    margin: 10px 0 0 0;
+    color: rgb(0,0,0);
+}
+
+#japanesefolder1:hover p {
+    color: rgb(250,250,250);
+}
+
 /* Table */
 
 #tablecontainer {
@@ -510,7 +596,7 @@
         transform: translateX(-250px);
     }
     to{
-        transform: translateX(600px);
+        transform: translateX(200px);
     }
 }
 
