@@ -11,7 +11,7 @@
     height: 90px;
     position: absolute;
     top: 80px;
-    left: 40px;
+    left: 240px;
     display: flex;
     justify-content: space-around;
     background: rgb(180,210,250);
@@ -57,6 +57,45 @@
     background: rgb(240,240,240);
 }
 
+/* To Do Board */
+
+#todoboard {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 80px;
+    left: 60%;
+    background: rgb(210,210,210);
+    box-shadow: 0px 2px 2px black;
+}
+
+#todoboard p {
+    width: 100%;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+}
+
+.tdb {
+    width: 90px;
+    height: 20px;
+    margin: 0 auto 4px auto;
+    background: rgb(240,240,240);
+}
+
+#tdb1 {
+    outline: 1px solid #E91E63;
+}
+
+#tdb2 {
+    outline: 1px solid #2196F3;
+}
+
+#tdb3 {
+    outline: 1px solid #FF5722;
+}
+
 /* Clock */
 
 #clockcontainer {
@@ -64,7 +103,7 @@
     height: 64px;
     position: absolute;
     top: 80px;
-    left: 200px;
+    left: calc(50% - 40px);
     background: cornflowerblue;
     color: #fff;
     border-radius: 5%;
@@ -91,8 +130,8 @@
     width: 80px;
     height: 90px;
     position: absolute;
-    top: 200px;
-    left: 200px;
+    top: 80px;
+    left: 110px;
     background-color: cornflowerblue;
     color: #fff;
     border-radius: 5%;
@@ -127,7 +166,7 @@
     margin: 0 auto;
     position: absolute;
     top: 180px;
-    left: 35px;
+    left: 80px;
     box-shadow: 0px 2px 2px rgb(0,0,0);
     font-family: zekton;
     font-size: 10px;
