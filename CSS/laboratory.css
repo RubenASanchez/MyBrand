@@ -165,7 +165,7 @@
     height: 300px;
     margin: 0 auto;
     position: absolute;
-    top: 350px;
+    top: 310px;
     left: 0;
     right: 0;
     /*outline: 1px solid black;*/
@@ -334,8 +334,8 @@
     width: 22px;
     height: 40px;
     position: absolute;
-    top: 458px;
-    left: 592px;
+    top: 410px;
+    left: 736px;
     border-radius: 5px;
     border: 1px solid rgb(150,150,150);
     background: rgb(0,0,0);
@@ -388,7 +388,7 @@
     width: 200px;
     height: 160px;
     position: absolute;
-    top: 450px;
+    top: 400px;
     left: 40px;
 }
 
@@ -475,7 +475,7 @@
     height: 130px;
     margin: 0 auto;
     position: absolute;
-    top: 500px;
+    top: 456px;
     left: 0;
     right: 0;
 }
