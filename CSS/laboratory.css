@@ -11,7 +11,7 @@
     height: 90px;
     position: absolute;
     top: 80px;
-    left: 240px;
+    left: calc(50% - 220px);
     display: flex;
     justify-content: space-around;
     background: rgb(180,210,250);
@@ -64,9 +64,17 @@
     height: 100px;
     position: absolute;
     top: 80px;
-    left: 60%;
+    left: calc(50% + 100px);
     background: rgb(210,210,210);
     box-shadow: 0px 2px 2px black;
+}
+
+#todoboard:hover {
+    background: rgba(210,210,210,0.9);
+}
+
+#todoboard:hover .tdb {
+    background: rgba(240,240,240,0.8);
 }
 
 #todoboard p {
@@ -165,7 +173,7 @@
     width: 140px;
     margin: 0 auto;
     position: absolute;
-    top: 180px;
+    top: 190px;
     left: 80px;
     box-shadow: 0px 2px 2px rgb(0,0,0);
     font-family: zekton;
@@ -201,12 +209,11 @@
 
 #scientistcontainer {
     width: 90px;
-    height: 300px;
+    height: 286px;
     margin: 0 auto;
     position: absolute;
     top: 310px;
-    left: 0;
-    right: 0;
+    left: calc(50% - 100px);
     /*outline: 1px solid black;*/
 }
 
@@ -290,7 +297,7 @@
 
 #pantsleft, #pantsright {
     width: 36px;
-    height: 80px;
+    height: 88px;
     position: absolute;
     border-right: 1px solid rgb(100,100,100);
     background: rgb(0,0,0);
@@ -301,6 +308,24 @@
 }
 
 #pantsright {
+    right: 4px;
+}
+
+#shoeleft, #shoeright {
+    width: 38px;
+    height: 20px;
+    position: absolute;
+    top: 260px;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 4px solid rgb(40,40,40);
+    background: rgb(20,20,20);
+}
+
+#shoeleft {
+    left: 3px;
+}
+
+#shoeright {
     right: 4px;
 }
 
@@ -373,8 +398,8 @@
     width: 22px;
     height: 40px;
     position: absolute;
-    top: 410px;
-    left: 736px;
+    top: 356px;
+    left: 180px;
     border-radius: 5px;
     border: 1px solid rgb(150,150,150);
     background: rgb(0,0,0);
@@ -431,6 +456,12 @@
     left: 40px;
 }
 
+#bookshelfcontainer p {
+    text-align: center;
+    margin: 10px 0 0 0;
+    color: rgb(0,0,0);
+}
+
 #topshelf, #bottomshelf {
     width: 100%;
     height: 80px;
@@ -452,60 +483,64 @@
     left: 0;
 }
 
-#japanesefolder1, #japanesefolder2, #japanesefolder3 {
-    width: 60px;
-    height: 40px;
-    position: absolute;
-    bottom: 2px;
-    border-radius: 2px;
-    box-shadow: 0 2px 2px 0px black;
-}
-
-#book {
+#book1, #book2 {
     width: 40px;
     height: 50px;
     position: absolute;
     bottom: 2px;
-    right: 40px;
     border-radius: 1px;
-    border-left: 4px solid rgb(200,150,50);
     background: rgb(200,200,200);
     box-shadow: 0 2px 2px 0 rgb(0,0,0);
 }
 
-#book p {
+#book1 {
+    left: 40px;
+    border-left: 4px solid rgb(200,100,20);
+}
+
+#book2 {
+    right: 40px;
+    border-left: 4px solid rgb(200,150,50);
+}
+
+#book1 p, #book2 p {
     color: rgb(0,0,0);
     font-size: 10px;
 }
 
-#book:hover p {
+#book1:hover p, #book2:hover p {
     color: rgb(250,250,250);
 }
 
+#japanesefolder1, #japanesefolder2, #japanesefolder3 {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    bottom: 4px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0px black;
+}
+
 #japanesefolder1 {
-    left: 10px;
+    left: 15px;
     background: orangered;
 }
 
 #japanesefolder2 {
-    left: 15px;
+    left: 20px;
     background: teal;
 }
 
 #japanesefolder3 {
-    left: 20px;
+    left: 25px;
     background: brown;
-}
-
-#bookshelfcontainer p {
-    text-align: center;
-    margin: 10px 0 0 0;
-    color: rgb(0,0,0);
 }
 
 #japanesefolder1:hover p {
     color: rgb(250,250,250);
 }
+
+
 
 /* Table */
 
@@ -547,17 +582,35 @@
     right: 20px;
 }
 
+#tablesmallcontainer {
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    top: 456px;
+    left: 75%;
+}
+
+#tablesmall {
+    width: 200px;
+    height: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-top: 4px solid rgb(140,80,50);
+    background: rgb(120,80,60);
+}
+
 /* Window */
 
 #windowcontainer {
-    /*width: 18%;*/
     width: 200px;
-    /*height: 18%;*/
-    height: 150px;
+    height: 180px;
     margin: 0 auto;
     position: absolute;
-    top: 180px;
-    right: 80px;
+    top: 190px;
+    left: 60%;
     border: 6px solid rgb(200,200,200);
 }
 
