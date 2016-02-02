@@ -763,7 +763,6 @@ body {
     }
 }
 
-
 @-webkit-keyframes drift {
     from{
         -webkit-transform: translateX(-250px);
