@@ -278,7 +278,7 @@ footer p {
     }
 }
 
-#toggle { position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; display: none; opacity: 0; }
+#toggle { position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; opacity: 0; display: none;}
 
 @media all and (max-width: 600px) {
     .sidenav { width: 100%; height: 350px; flex-flow: row; position: absolute; left: 0; right: 0; /*background: rgba(0,0,0,0.8);*/ }
