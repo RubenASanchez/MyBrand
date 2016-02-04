@@ -284,7 +284,7 @@ footer p {
 @media all and (max-width: 600px) {
     .sidenav { width: 100%; height: 350px; flex-flow: row; position: absolute; left: 0; right: 0; justify-content: center; /*background: rgba(0,0,0,0.8);*/ }
     .sidenav .homeicon { width: 50%; height: 100px; position: absolute; margin: 0; text-align: center; outline: 1px solid rgba(0,0,0,0.8); background: rgba(0,0,0,0.6); }
-    .sidenav .homeiconmenu { position: absolute; top: 275px; left: 0; right: 0; text-align: center; color: rgb(240,240,240); }
+    .sidenav .homeiconmenu { position: absolute; top: 275px; left: 0; right: 0; text-align: center; color: rgb(250,250,250); }
     .sidenav .homeicon1 { width: 100%; top: 0px; left: 0; }
     .sidenav .homeicon2 { top: 100px; left: 0; }
     .sidenav .homeicon3 { top: 100px; right: 0; }
