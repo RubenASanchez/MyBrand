@@ -148,12 +148,14 @@
 
 @media all and (max-width: 600px) {
     section { overflow: auto; }
-    .hcontainer { width: 100% ;height: 900px; margin: 150% 0 0 0; flex-flow: column; }
-    .expandicard { width: 360px; height: 600px; margin: 5px auto; }
+    .hcontainer { width: 100%; height: 640px; margin: 200px 0 0 0; flex-flow: column; justify-content: flex-start; align-items: center; }
+    .expandicard { width: 360px; height: 900px; }
+    .expandicard .slidinginfo { top: 0; visibility: visible; opacity: 1; }
+    /*.expandicard { width: 360px; height: 600px; margin: 5px auto; }
     .expandicard .title { border-bottom: 2px solid cornflowerblue; }
     .expandicard .slidinginfo { top: 0; visibility: visible; opacity: 1; }
     .expandicard:hover { height: 600px; }
     .expandicard:hover i:first-child { font-size: 48px; }
     .expandicard:hover .slidinginfo { transition: top 0s ease, opacity 0s ease; }
-    .floating { display: inline-block; }
+    .floating { position: static; display: inline-block; }*/
 }
