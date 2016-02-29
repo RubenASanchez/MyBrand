@@ -139,7 +139,7 @@ body {
 
 #welcome img {
     width: 100px;
-    height: 100%;
+    height: 100%; /* This may need to be adjusted, or deleted */
     margin: 0 auto;
 }
 
