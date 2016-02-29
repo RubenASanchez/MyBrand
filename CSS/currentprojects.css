@@ -52,7 +52,9 @@ section {
 .projectcardstitle {
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: row;
     flex-flow: row;
+    -webkit-align-items: center;
     align-items: center;
     width: 30%;
     height: 100%;
@@ -62,6 +64,7 @@ section {
 .projectcardsdescription {
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     width: 70%;
     height: 100%;
@@ -74,7 +77,9 @@ section {
 .pcvcenter {
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: column;
     flex-flow: column;
+    -webkit-align-items: center;
     align-items: center;
     margin: 0 auto;
 }
@@ -90,17 +95,20 @@ section {
   color: #fff;
   height: 2.5em;
   width: 2.5em;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   border-radius: 0 0% 100% 0;
   top: 0;
   right: 0;
   z-index: 2;
+  -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
 .bubble:before {
   content: '';
   height: 2.5em;
   width: 2.5em;
+  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   border-radius: 0 0 0 100%;
   top: 0;
@@ -128,14 +136,17 @@ section {
   border-radius: 0;
   width: 150%;
   height: 150%;
+  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
 .bubble:hover .bubbleicon {
   top: -50%;
   right: -50%;
+  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
 .bubble:hover .bubblecontent {
+  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   top: 50%;
   right: -20px;
@@ -146,6 +157,7 @@ section {
   top: 0;
   right: 0;
   z-index: 3;
+  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   padding: .6em .9em;
   line-height: 1;
@@ -154,7 +166,9 @@ section {
 .bubblecontent {
   position: absolute;
   top: -200%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   text-align: center;
   width: 100%;
