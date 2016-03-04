@@ -39,3 +39,11 @@ a p:hover {
     text-align: center;
     bottom: 100px;
 }
+
+@media all and (max-width: 600px) {
+    .hlinks {width: 250px; flex-flow: column; margin: 50px 0 0 0;}
+    .vlinks {width: 100%; text-align: center; margin: 10px auto 0 auto;}
+    .links {margin: 0 0 4px 0;}
+    .title {margin: 0 0 5px 0;}
+    .ending {position: absolute; bottom: 75px; left: 0; right: 0; margin: 0 auto;}
+}

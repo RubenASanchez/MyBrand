@@ -35,8 +35,6 @@ section {
     text-align: center;
     flex-flow: column;
     justify-content: center;
-    /*transform: rotateY(50deg) skewY(-20deg);*/
-    /*transform: skewY(-20deg);*/
 }
 
 .emailfront {
@@ -189,4 +187,5 @@ input {
     .mailandcubecontainer {flex-flow: column;}
     .themailcontainer {margin: 60px auto 0 auto;}
     .thecube {margin: 0 0 0 -20px;}
+    .googlepluscontainer {height: 0; width: 0; display: none;}
 }
