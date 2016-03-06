@@ -39,7 +39,6 @@
 .smallbio {
     color: whitesmoke;
     overflow: hidden;
-    /*box-shadow: inset 0 0 20px black;*/
 }
 
 .smallbio p {
@@ -133,12 +132,8 @@
 }
 
 @keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1;}
 }
 
 @keyframes scrollup {
@@ -147,15 +142,11 @@
 }
 
 @media all and (max-width: 600px) {
-    section { overflow: auto; }
-    .hcontainer { width: 100%; height: 640px; margin: 200px 0 0 0; flex-flow: column; justify-content: flex-start; align-items: center; }
-    .expandicard { width: 360px; height: 900px; }
-    .expandicard .slidinginfo { top: 0; visibility: visible; opacity: 1; }
-    /*.expandicard { width: 360px; height: 600px; margin: 5px auto; }
-    .expandicard .title { border-bottom: 2px solid cornflowerblue; }
-    .expandicard .slidinginfo { top: 0; visibility: visible; opacity: 1; }
-    .expandicard:hover { height: 600px; }
-    .expandicard:hover i:first-child { font-size: 48px; }
-    .expandicard:hover .slidinginfo { transition: top 0s ease, opacity 0s ease; }
-    .floating { position: static; display: inline-block; }*/
+    section {overflow: auto;}
+    .hcontainer {width: 100%; height: 640px; margin: 200px 0 0 0; position: relative; top: 0px; flex-flow: column; justify-content: flex-start; align-items: center; opacity: 0; animation: appear 1s 25s 1 forwards;}
+    .expandicard {width: 90%; height: 100%; padding: 10px 0;}
+    .expandicard .slidinginfo {top: 0; visibility: visible; opacity: 1;}
+    .smallbiocontainer {width: 90%; top: 100px;}
+    .smallbio p {top: 0; animation: none;}
+    .floating {width: 90%; bottom: 60px; padding: 0 0 20px 0; font-size: 16px;}
 }
