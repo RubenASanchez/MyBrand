@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    overflow: auto;
 }
 
 /* Panels */
@@ -820,4 +820,20 @@ input[type=checkbox] {
     100% {
         height: 1px; margin-top: 20px;
     }
+}
+
+@media all and (max-width: 739px) {
+    html , main {background: rgb(90,0,0);}
+    #trelloboard {top: 120px; left: calc(25% - 65px);}
+    #todoboard {top: 120px; left: calc(75% - 50px)}
+    #datecalendar {top: 250px; left: calc(25% - 40px);}
+    #clockcontainer {top: 260px; left: calc(75% - 40px);}
+    #calendarContainer {top: 380px; left: calc(50% - 70px);}
+    #windowcontainer {top: 600px; left: calc(50% - 100px);}
+    #tablecontainer {display: none;}
+    #bookshelfcontainer {top: 820px; left: calc(30% - 100px);}
+    #scientistcontainer {top: 740px; left: calc(75% - 50px);}
+    #cellphone {top: 878px; left: calc(75% + 46px);}
+    #bottomspace {position: absolute; top: 1000px; left: 0; height: 100px; width: 100%; background: rgb(90,0,0);}
+    footer {position: fixed;}
 }
