@@ -99,6 +99,17 @@ a {
     text-decoration: none;
 }
 
+.pagetitle {
+    width: 310px;
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 150px);
+    text-align: center;
+    color: rgba(20,20,20,0.1);
+    font-family: zekton;
+    font-size: 64px;
+}
+
 .sidenav {
     height: calc(88% - 60px);
     width: 50px;

@@ -9,6 +9,7 @@ section {
     flex-flow: row;
     justify-content: space-around;
     margin: 25% 0 0 0;
+    z-index: 1;
 }
 
 .vlinks {
