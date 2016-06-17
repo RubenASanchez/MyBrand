@@ -195,3 +195,7 @@ input {
     .thecube {margin: 0 0 0 -20px;}
     .googlepluscontainer {height: 0; width: 0; display: none;}
 }
+
+@media all and (max-width: 340px) {
+    .twitterfollow {width: 98%;}
+}
