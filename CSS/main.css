@@ -273,6 +273,7 @@ footer {
     display: table;
     position: absolute;
     bottom: 0px;
+    overflow: hidden;
     z-index: 10;
 }
 
