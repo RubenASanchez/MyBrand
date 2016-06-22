@@ -127,7 +127,9 @@ a {
 }
 
 .bottomnav {
-    display: table-cell;
+    /*display: table-cell;*/
+    display: flex;
+    flex-flow: column;
     vertical-align: middle;
 }
 
@@ -277,8 +279,11 @@ footer {
 }
 
 footer p {
-    display: table-cell;
+    /*display: table-cell;*/
+    display: flex;
+    flex-flow: column;
     vertical-align: middle;
+    
 }
 
 @keyframes wipedown {
