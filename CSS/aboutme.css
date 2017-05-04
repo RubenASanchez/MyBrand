@@ -1,153 +1,67 @@
-.sidenav .homeicon p {
-    background: rgba(73,115,193,0.6);
-}
-
-.hcontainer {
-    height: 90%;
-    width: 85%;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-}
-
-.floating {
-    width: 80%;
-    position: absolute;
-    bottom: 46%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding: 0 0 0 40px;
-    color: whitesmoke;
-    font-size: 18px;
-    z-index: 0;
-    opacity: 0;
-    -webkit-animation: appear 3s 2s 1 forwards;
-    animation: appear 3s 2s 1 forwards;
-}
-
-.smallbiocontainer {
-    width: 80%;
-    position: absolute;
-    bottom: 25%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    transition: all 0.5s;
-}
-
-.smallbio {
-    color: whitesmoke;
-    overflow: hidden;
-}
-
-.smallbio p {
-    position: relative;
-    top: 120px;
-    animation: scrollup 5s 6s 1 forwards;
-}
-
-.smallbio a {
-    color: orange;
-}
-
-.expandicard {
-    height: 32%;
+.personalinfo {
     width: 30%;
-    border-radius: 10px;
-    margin: 30px 0 0 0;
-    padding: 10px 0 0 0;
-    background: whitesmoke;
-    transition: height 0.4s, box-shadow 0.5s;
+    height: 595px;
+    margin: 1em;
     display: flex;
     flex-flow: column;
-    align-content: center;
     align-items: center;
-    z-index: 1;
+    background-color: rgb(250,250,250);
 }
 
-.expandicard i {
-    -webkit-transition: font-size .3s;
-    transition: font-size .3s;
+.personalinfo img {
+    width: 50px;
+    margin: 1em 0 0 0;
 }
 
-.expandicard .slidinginfo {
-    position: relative;
-    visibility: hidden;
-    top: -50%;
-    opacity: 0;
-}
-
-.title {
-    width: 80%;
-    color: cornflowerblue;
-    border-top: 2px solid cornflowerblue;
-    font-size: 20px;
+.personalinfo h2 {
+    width: 90%;
+    margin: 1em 0 0 0;
+    padding: .5em 0;
     text-align: center;
-    margin: 20px 0 0 0;
-    padding: 20px 0;
+    color: rgb(119,164,238);
+    border-top: 4px solid rgb(119,164,238);
+    border-bottom: 4px solid rgb(119,164,238);
 }
 
-.slidinginfo {
-    width: 80%;
-    color: cornflowerblue;
-    margin: 20px 0 0 0;
+.personalinfo h3 {
+    margin: 1.2em 0 1em 0;
+    text-align: center;
+    /*color: rgb(119,164,238);*/
+    color: rgb(99,144,218);
 }
 
-.slidinginfo i {
-    width: 100%;
-    margin: 20px 0;
+.personalinfo p {
+    width: 90%;
+    margin: .5em auto;
+    align-self: left;
+    color: rgb(119,164,238);
+}
+
+.personalinfo #cv {
+    margin: 3em 0 0 0;
+}
+
+.formaltraining {
+    height: 400px;
+}
+
+.formaltraining p {
+    padding: 1em 0 0 0;
+}
+
+#mindmap img {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
 }
 
-.slidinginfo a {
-    color: cornflowerblue;
-    text-decoration: none;
+#mindmap p {
+    margin: 0 0 2em 0;
+    text-align: center;
 }
 
-.slidinginfo a:hover {
-    color: orange;
-}
-
-.expandicard:hover {
-    height: 95%;
-    transition: height 0.4s ease, box-shadow 0.5s ease;
-    box-shadow: 0 4px 4px 2px rgba(25,25,25,0.6);
-}
-
-.expandicard:hover i {
-    font-size: 24px;
-}
-
-.expandicard:hover .title {
-    border-bottom: 2px solid cornflowerblue;
-}
-
-.expandicard:hover .slidinginfo {
-    -webkit-transition: top 0.5s ease, opacity 1s ease;
-    transition: top 0.5s ease, opacity 1s ease;
-    visibility: visible;
-    top: 1%;
-    opacity: 1;
-}
-
-@keyframes appear {
-    from { opacity: 0; }
-    to { opacity: 1;}
-}
-
-@keyframes scrollup {
-    from {top: 120px;}
-    to {top: 0px;}
-}
-
-@media all and (max-width: 600px) {
-    section {overflow: auto;}
-    .hcontainer {width: 100%; height: 1400px; margin: 0; padding: 0 0 200px 0; position: absolute; top: 90%; left: 0; flex-flow: column; justify-content: flex-start; align-items: center; opacity: 1; background: #4973c1;}
-    .expandicard {width: 90%; height: 100%; padding: 10px 0;}
-    .expandicard .slidinginfo {top: 0; visibility: visible; opacity: 1;}
-    .smallbiocontainer {width: 90%; top: 100px;}
-    .smallbio p {top: 0; animation: none;}
-    .floating {width: 90%; bottom: 60px; padding: 0 0 20px 0; font-size: 16px; opacity: 1; animation: none;}
-    footer {position: fixed; bottom: 0;}
+@media all and (max-width: 800px) {
+    .personalinfo { width: 90%; margin: 1em auto; }
 }
