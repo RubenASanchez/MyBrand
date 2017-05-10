@@ -12,20 +12,20 @@
     color: rgb(250,150,0);
 }*/
 
-.socialmedia {
+.social-media {
     justify-content: space-around;
 }
 
-.socialmedia .alignsecond {
+.social-media .align-second {
     margin: 5vh 0;
     text-align: center;
 }
 
-.socialmedia .alignsecond img , .email img{
+.social-media .align-second img , .email img{
     width: 50px;
     max-width: 50px;
 }
 
-.socialmedia .alignsecond:hover p {
+.social-media .align-second:hover p {
     color: rgb(250,150,0);
 }

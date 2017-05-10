@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* RESET DEFAULT STYLES */
 
 header, footer, nav, main, section, aside, div, root {
@@ -15,7 +17,7 @@ html, body {
 }
 
 h1, h2, h3, p, a {
-    font-style: none;
+    font-style: normal;
     font-weight: normal;
     text-decoration: none;
 }
@@ -23,8 +25,6 @@ h1, h2, h3, p, a {
 p {
     font-size: 1em;
 }
-
-@charset "UTF-8";
 
 /* CUSTOM ITEMS */
 
@@ -34,7 +34,7 @@ p {
 }
 
 h1, h2, h3, p, a {
-    font-family: 'Advent Pro', zekton;
+    font-family: 'Advent Pro', zekton, sans-serif;
     color: rgb(250,250,250);
 }
 
@@ -53,7 +53,7 @@ header {
     position: fixed;
 }
 
-#mainnav , #bottomnav {
+#main-nav , #bottom-nav {
     height: 50px;
     width: 100vw;
     display: flex;
@@ -63,30 +63,26 @@ header {
     background-color: rgba(0,0,0,.65);
 }
 
-#mainnav p , #bottomnav p {
+#main-nav p , #bottom-nav p {
     width: calc(100vw/6); /*100px*/
     text-align: center;
     color: rgba(119,164,238,.7);
 }
 
-#mainnav p {
-    padding: 16px 0px;
+#main-nav p {
+    padding: 16px 0;
 }
 
-#bottomnav navsitename {
-    color: rgba(250,250,250,.9);
-}
-
-header #mainnav a .activecolor {
+header #main-nav a .active-color {
     color: rgb(250,150,0);
 }
 
-header #mainnav .activecolor {
-    padding: 16px 0px;
+header #main-nav .active-color {
+    padding: 16px 0;
     border-bottom: 2px solid rgb(250,150,0);
 }
 
-header #mainnav a:hover p {
+header #main-nav a:hover p {
     color: rgb(250,150,0);
 }
 
@@ -94,53 +90,53 @@ footer {
     margin: 20px 0 0 0;
 }
 
-#navsitename {
-    /*color: rgb(119,164,238);*/
+#bottom-nav #nav-site-name {
     color: rgb(150,150,150);
 }
 
-#bottomnav a {
+#bottom-nav a {
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: center;
 }
 
-#bottomnav a img {
+#bottom-nav a img {
     height: 30px;
     padding: 10px;
 }
 
-.linkcolor {
+.link-color {
     border-bottom: 1px solid rgb(250,150,0);
 }
 
-#bottomnav a:hover p {
+#bottom-nav a:hover p {
     color: rgb(250,150,0);
 }
 
-.linkcolor:hover {
+.link-color:hover {
     color: rgb(250,150,0);
 }
 
 /* PAGE TITLE */
 
-#pagetitle {
-    height: calc(100vh - 0px); /* may need to change this does not make diff to do calc*/
+#page-title {
+    /*height: calc(100vh - 0px);*/ /* may need to change this does not make diff to do calc*/
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
 }
 
-#pagetitle h1 {
+#page-title h1 {
     font-size: 3em;
     /*font-size: 8vw;*/
 }
 
 /* SECTIONS */
 
-#content {
+.content {
     padding: 0 5vw 2vw 5vw;
 }
 
@@ -149,13 +145,13 @@ section h1 {
     text-align: center;
 }
 
-.alignfirst {
+.align-first {
     margin: 28px 0;
     display: flex;
     flex-flow: row;
 }
 
-.alignsecond1 {
+.align-second-1 {
     width: 58%;
     padding: 0 2% 0 0;
     display: flex;
@@ -163,16 +159,16 @@ section h1 {
     justify-content: center;
 }
 
-.alignsecond1 p {
+.align-second-1 p {
     color: rgb(240,240,240);
 }
 
-.paragraphspace {
+.paragraph-space {
     height: 1em;
     width: 100%;
 }
 
-.alignsecond2 {
+.align-second-2 {
     width: 40%;
     display: flex;
     flex-flow: column;
@@ -180,7 +176,7 @@ section h1 {
     align-items: center;
 }
 
-.alignsecond2 img {
+.align-second-2 img {
     width: 100%;
 }
 
@@ -190,11 +186,11 @@ section h1 {
     display: flex;
 }
 
-.leftquote , .rightquote {
+.left-quote , .right-quote {
     font-size: 4em;
 }
 
-.quotecontent {
+.quote-content {
     padding: .4em .5em 0 .5em;
     font-size: 1.4em;
 }
@@ -206,34 +202,34 @@ section h1 {
 /* Mobile */
 
 @media all and (max-width: 650px) {
-    .alignfirst { flex-flow: column; }
-    .alignfirst div { width: 100%; }
-    .alignfirst div img { width: 98%; margin: 2em 0; }
+    .align-first { flex-flow: column; }
+    .align-first div { width: 100%; }
+    .align-first div img { width: 98%; margin: 2em 0; }
 }
 
 @media all and (max-width: 800px) and (min-width: 651px){
-    .alignfirst { flex-flow: column; }
-    .alignfirst div { width: 100%; }
-    .alignfirst div img { width: 70%; margin: 2em 0; }
+    .align-first { flex-flow: column; }
+    .align-first div { width: 100%; }
+    .align-first div img { width: 70%; margin: 2em 0; }
 }
 
 #toggle { width: 0; height: 0; position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; opacity: 0; display: none; z-index: -1; }
 
 @media all and (max-width: 650px) {
-    /*#pagetitle h1 {font-size: 12vw;}*/
-    #mainnav { height: 365px; flex-wrap: wrap; }
-    #mainnav p { width: 100vw; }
-    #mainnav .mobilemenu { height: 50px; width: 50px; margin: 0 auto; }
-    #mainnav { position: fixed; top: 0px; transition: transform 0.4s ease-in; }
-    #toggle:checked + #mainnav { transform: translateY(-314px); }
-    #mainnav .showmenu { height: 50px; position: absolute; bottom: 0px; left: 0; right: 0; cursor: pointer; }
-    header #mainnav .activecolor { border-bottom: none; }
-    .activecolor { background-color: rgba(0,0,0,.4); }
-    #bottomnav { height: 100px; flex-wrap: wrap; background-color: rgba(0,0,0,0); }
-    #bottomnav a img { margin: 0; }
-    #bottomnav p { width: 100%; }
+    /*#page-title h1 {font-size: 12vw;}*/
+    #main-nav { height: 365px; flex-wrap: wrap; }
+    #main-nav p { width: 100vw; }
+    #main-nav .mobilemenu { height: 50px; width: 50px; margin: 0 auto; }
+    #main-nav { position: fixed; top: 0; transition: transform 0.4s ease-in; }
+    #toggle:checked + #main-nav { transform: translateY(-314px); }
+    #main-nav .showmenu { height: 50px; position: absolute; bottom: 0; left: 0; right: 0; cursor: pointer; }
+    header #main-nav .active-color { border-bottom: none; }
+    .active-color { background-color: rgba(0,0,0,.4); }
+    #bottom-nav { height: 100px; flex-wrap: wrap; background-color: rgba(0,0,0,0); }
+    #bottom-nav a img { margin: 0; }
+    #bottom-nav p { width: 100%; }
     #navprevious { order: 1; }
-    #navsitename { order: 3; width: 100%; padding: 14px 0 0 0; margin: 1px 0 0 0; text-align: center; height: 50px; background-color: rgba(0,0,0,0.65); }
-    #navcontinue { order: 2; }
-    #navprevious , #navcontinue { width: calc(50% - 4px); margin: 0 1px; background-color: rgba(0,0,0,0.65); border: 1px solid black; }
+    #nav-site-name { order: 3; width: 100%; padding: 14px 0 0 0; margin: 1px 0 0 0; text-align: center; height: 50px; background-color: rgba(0,0,0,0.65); }
+    #nav-continue { order: 2; }
+    #nav-previous , #nav-continue { width: calc(50% - 4px); margin: 0 1px; background-color: rgba(0,0,0,0.65); border: 1px solid black; }
 }
