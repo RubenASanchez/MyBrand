@@ -13,6 +13,10 @@
     margin: 1em 0 0 0;
 }
 
+.personal-info h1 {
+    text-align: center;
+}
+
 .personal-info h2 {
     width: 90%;
     margin: 1em 0 0 0;
@@ -26,7 +30,6 @@
 .personal-info h3 {
     margin: 1.2em 0 1em 0;
     text-align: center;
-    /*color: rgb(119,164,238);*/
     color: rgb(99,144,218);
 }
 

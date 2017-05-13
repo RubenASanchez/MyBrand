@@ -127,7 +127,6 @@ footer {
 /* PAGE TITLE */
 
 #page-title {
-    /*height: calc(100vh - 0px);*/ /* may need to change this does not make diff to do calc*/
     height: 100vh;
     display: flex;
     justify-content: space-around;
@@ -172,6 +171,15 @@ footer {
 .content {
     padding: 0 5vw 2vw 5vw;
 }
+
+.educational-content h1 {
+    text-align: left;
+}
+
+/*.educational-content p {
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid white;
+}*/
 
 section h1 {
     padding: 2vw 0;
