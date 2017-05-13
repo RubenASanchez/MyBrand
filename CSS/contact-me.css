@@ -3,14 +3,13 @@
 .email {
     margin: 5vh 0 15vh 0;
     flex-flow: column;
-    justify-content: center;
-    align-items: center;
     font-size: 1.3em;
+    text-align: center;
 }
 
-/*.email:hover a {
+.email a:hover p {
     color: rgb(250,150,0);
-}*/
+}
 
 .social-media {
     justify-content: space-around;
