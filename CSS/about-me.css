@@ -53,7 +53,12 @@
 }
 
 #graphs {
+    margin: 50px 0;
     text-align: center;
+}
+
+#graphs h1 {
+    padding: 0 0 50px 0;
 }
 
 .lab-experience-pie {
