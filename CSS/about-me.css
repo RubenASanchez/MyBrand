@@ -52,6 +52,15 @@
     padding: 1em 0 0 0;
 }
 
+#graphs {
+    text-align: center;
+}
+
+.lab-experience-pie {
+    width: 100%;
+    max-width: 400px;
+}
+
 #mindmap img {
     width: 100vw;
     display: flex;
