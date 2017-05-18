@@ -48,6 +48,7 @@ body {
     display: flex;
     flex-flow: column;
     background-color: rgb(119,164,238);
+    overflow: hidden; /* added to fix webkit x scroll issue */
     overflow-y: scroll;
 }
 
@@ -55,6 +56,10 @@ body {
 
 header {
     position: fixed;
+}
+
+header #main-nav {
+    width: 100%; /* added to fix webkit x scroll issue */
 }
 
 #main-nav , #bottom-nav {
