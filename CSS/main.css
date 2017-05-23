@@ -6,7 +6,7 @@ header, footer, nav, main, section, aside, div, root {
     display: block;
 }
 
-html, body, header, footer, nav, main, section, aside, div, h1, h2, h3, p, img, ul, li {
+html, body, header, footer, nav, main, section, aside, div, h1, h2, h3, h4, p, img, ul, ol, li {
     margin: 0;
     padding: 0;
 }
@@ -16,14 +16,18 @@ html, body {
     height: 100%;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, h4, p, a {
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
 }
 
-ul {
+ul, ol {
     list-style-type: none;
+}
+
+ol {
+    list-style-type: upper-roman;
 }
 
 p {
@@ -37,7 +41,7 @@ p {
     src: url(../Fonts/zekton.ttf) format('truetype');
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, h4, p, a {
     font-family: 'Advent Pro', zekton, sans-serif;
     color: rgb(250,250,250);
 }
@@ -242,6 +246,15 @@ footer {
     margin: 10px 0;
     font-size: 1.5em;
     color: rgba(250,250,250,0.6);
+}
+
+.educational-content h4 {
+    font-size: 1.1em;
+    color: rgba(250,250,250,0.6);
+}
+
+#cerebral-cortical-layers, #centrum-semiovale-tracts {
+    margin: 0 20px;
 }
 
 /*.educational-content p {
