@@ -13,6 +13,11 @@
     color: rgb(250,150,0);
 }
 
+.email .align-second {
+    width: 160px;
+    margin: 0 auto;
+}
+
 .social-media {
     justify-content: space-around;
 }
