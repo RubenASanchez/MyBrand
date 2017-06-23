@@ -31,7 +31,7 @@ ol {
 }
 
 p {
-    font-size: 16px; /*1em*/
+    font-size: 20px; /*1em*/
 }
 
 /* CUSTOM ITEMS */
@@ -188,6 +188,7 @@ footer {
 #toc {
     width: 280px;
     height: 500px;
+    min-height: 400px;
     padding: 0 40px;
     text-align: left;
     background-color: rgba(250,250,250,0.10);
@@ -336,6 +337,11 @@ section h1 {
 }
 
 #toggle { width: 0; height: 0; position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; opacity: 0; display: none; z-index: -1; }
+
+@media all and (max-width: 450px) {
+    p { font-size: 16px; }
+    .content .personal-info p { font-size: 16px; }
+}
 
 @media all and (max-width: 650px) {
     /*#page-title h1 {font-size: 12vw;}*/
