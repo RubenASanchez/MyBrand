@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.main-vid {
+    width: 320px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.main-vid iframe {
+    width: 320px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+/*width="560" height="315"*/
+
+/* this all needs to be fixed up , there has to be a better way */
+
+
