@@ -12,5 +12,6 @@
 
 .theneuron img {
     width: 90vw;
+    max-width: 600px;
     align-self: center;
 }

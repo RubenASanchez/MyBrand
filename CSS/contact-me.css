@@ -14,7 +14,7 @@
 }
 
 .email .align-second {
-    width: 160px;
+    width: 200px;
     margin: 0 auto;
 }
 
@@ -34,4 +34,12 @@
 
 .social-media .align-second:hover p {
     color: rgb(250,150,0);
+}
+
+.social-media .pin-profile {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+    background-color: red;
 }
