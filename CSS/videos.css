@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*
 .main-vid {
     width: 320px;
     padding: 0;
@@ -11,9 +12,36 @@
     height: 180px;
     margin: 0 auto;
 }
-
+*/
 /*width="560" height="315"*/
 
 /* this all needs to be fixed up , there has to be a better way */
 
+.main-vid {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0;
+}
 
+.main-vid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.all-vids {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vid-space {
+    width: 320px;
+    height: 180px;
+    margin: 0 0 20px 0;
+    background-color: white;
+}
