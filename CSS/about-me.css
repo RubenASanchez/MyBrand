@@ -70,7 +70,8 @@
 }
 
 #mindmap img {
-    width: 100vw;
+    width: 92vw;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
