@@ -255,10 +255,6 @@ footer {
     color: rgba(250,250,250,0.6);
 }
 
-#cerebral-cortical-layers, #centrum-semiovale-tracts {
-    margin: 0 20px;
-}
-
 /*.educational-content p {
     padding: 0 0 10px 0;
     border-bottom: 2px solid white;
@@ -270,13 +266,14 @@ section h1 {
 }
 
 .align-first {
-    margin: 28px 0;
+    /*width: 90%;*/
+    margin: 28px auto;
     display: flex;
     flex-flow: row;
 }
 
 .align-second-1 {
-    width: 58%;
+    width: 68%;
     padding: 0 2% 0 0;
     display: flex;
     flex-flow: column;
