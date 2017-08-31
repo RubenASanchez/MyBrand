@@ -80,8 +80,8 @@ header #main-nav {
 #main-nav p , #bottom-nav p {
     width: calc(100vw/6); /*100px*/
     text-align: center;
-    font-size: 16px;
-    color: rgba(119,164,238,.7);
+    font-size: 18px;
+    color: rgb(119,164,238);
 }
 
 #main-nav p {
@@ -93,7 +93,7 @@ header #main-nav a .active-color {
 }
 
 header #main-nav .active-color {
-    padding: 16px 0;
+    padding: 16px 0 14px 0;
     border-bottom: 2px solid rgb(250,150,0);
 }
 
