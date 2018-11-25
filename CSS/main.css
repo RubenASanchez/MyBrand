@@ -173,6 +173,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    /*background-color: rgb(119,164,238);*/
 }
 
 #page-title h1 {

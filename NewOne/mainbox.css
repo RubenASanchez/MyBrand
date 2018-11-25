@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* RESET DEFAULT STYLES */
+
+header,footer,nav,main,section,aside,div,root,summary,details,article,button {display: block;}
+
+html,body,header,footer,nav,main,section,aside,summary,details,article,div,h1,h2,h3,h4,p,img,ul,ol,li,button {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, p, a {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+/* BOX SIZING */
+
+html {box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit;}
+
+/* CUSTOM ITEMS */
+
+:root {
+    --mainBlue: rgba(100,150,240,.85);
+    --mainOrange: rgb(250,180,80);
+    --darkOrange: rgb(240,170,80);
+    --mainBlack: rgb(20,20,20);
+    --lightBlack: rgb(80,80,80);
+    --mainGray: rgb(100,100,100);
+    --lightGray: rgb(200,200,200);
+    --mainWhite: rgb(253,253,253);
+    --gridHeight: calc(25vh - 25px);
+}
+
+@font-face {
+    font-family: 'zekton';
+    src: url(../Fonts/zekton.ttf) format('truetype');
+}
+
+html, h1, h2, h3, h4, p, a, button {
+    font-family: 'Advent Pro', zekton, sans-serif;
+    color: var(--mainBlack);
+}
+
+/* CUSTOM DEFAULT STYLES */
+
+html {
+    font-size: 21px; /*1em*/
+    /*font-size: 2vw;*/
+    /*font-size: calc(18px + (26 - 18)) * (100vw - 360px) / (800 - 360);*/
+    /*font-size: calc(0.8em + 1vw);*/
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+p {
+    color: var(--lightBlack);
+}
+
+body {
+    background: var(--mainWhite);
+}
+
+/* HEADER AND FOOTER */
+
+header {
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*background: var(--lightGray);*/
+    background: var(--mainWhite);
+}
+
+footer {
+    height: 250px;
+    background: var(--lightGray);
+}
+
+/* NAVIGATION */
+
+nav {
+    /*background: gray;*/
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    align-items: center;
+    padding-right: 50px;
+}
+
+nav img {
+    height: 50px;
+}
+
+.active-item {
+    color: var(--mainBlue);
+    border-bottom: 1px solid var(--mainBlue);
+}
+
+/* BUTTONS */
+
+.button {
+    display: grid;
+    width: 125px;
+    height: 50px;
+    background: var(--mainOrange);
+    border: none;
+    align-self: center;
+    justify-self: center;
+}
+
+.button:hover {
+    background: var(--darkOrange);
+}
+
+.button p {
+    color: var(--mainWhite);
+    align-self: center;
+    justify-self: center;
+}
+
+/* MOBILE */
+
+@media all and (max-width: 420px) {
+    html {font-size: 17px;}
+    h1 {font-size: 32px; font-weight: 400;}
+    nav {padding-right: 20px;}
+}
