@@ -42,7 +42,7 @@ html {box-sizing: border-box;}
     --lightGray: rgb(200,200,200);
     --mainWhite: rgb(253,253,253);
     --darkWhite: rgb(200,200,200);
-    --gridHeight: calc(25vh - 25px);
+    --gridHeight: calc(25vh - 15px);
 }
 
 @font-face {
@@ -52,14 +52,12 @@ html {box-sizing: border-box;}
 
 html, h1, h2, h3, h4, p, a, button {
     font-family: 'Advent Pro', zekton, sans-serif;
-    color: var(--mainBlack);
 }
 
 /* CUSTOM DEFAULT STYLES */
 
 html {
-    font-size: 21px; /*1em*/
-    /*font-size: 2vw;*/
+    font-size: 21px;
     /*font-size: calc(18px + (26 - 18)) * (100vw - 360px) / (800 - 360);*/
     /*font-size: calc(0.8em + 1vw);*/
 }
@@ -81,19 +79,40 @@ body {
 /* HEADER AND FOOTER */
 
 header {
-    height: 100px;
+    height: 60px;
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    /*background: var(--lightGray);*/
     background: var(--mainWhite);
 }
 
 footer {
     background: var(--lightBlack);
 }
+
+/* NAVIGATION */
+
+header nav {
+    display: grid;
+    grid-gap: 10vw;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    align-items: center;
+    margin-top: 5px;
+    padding-right: 50px;
+}
+
+header nav img {
+    height: 50px;
+}
+
+.active-item {
+    color: var(--mainBlue);
+    border-bottom: 1px solid var(--mainBlue);
+}
+
 
 footer nav {
     display: grid;
@@ -108,27 +127,6 @@ footer nav {
 
 footer a {
     color: var(--darkWhite);
-}
-
-/* NAVIGATION */
-
-header nav {
-    /*background: gray;*/
-    display: grid;
-    grid-gap: 10vw;
-    grid-template-columns: 1fr;
-    grid-auto-flow: column;
-    align-items: center;
-    padding-right: 50px;
-}
-
-header nav img {
-    height: 50px;
-}
-
-.active-item {
-    color: var(--mainBlue);
-    border-bottom: 1px solid var(--mainBlue);
 }
 
 /* BUTTONS */
