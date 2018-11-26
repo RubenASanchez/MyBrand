@@ -28,6 +28,14 @@ aside {
     height: calc(100vh - 100px);
 }
 
+/*#me,#suki {
+    padding-top: 100px;
+}*/
+
+/*#hero-button-2 {
+    margin-top: 150px;
+}*/
+
 .hero-message {
     display: grid;
     height: var(--gridHeight);
@@ -61,4 +69,26 @@ aside {
 #hero-button-3 {
     grid-column: 1/-1;
     grid-row: 12/13;
+}
+
+/* SMOKE */
+
+#smoke-animation-container {
+    
+}
+
+.css-circle {
+    border-radius: 50%;
+}
+
+#circle-1 {
+    background: var(--lightBlue);
+    width: 20vw;
+    height: 20vw;
+}
+
+#circle-2 {
+    background: var(--lightGray);
+    width: 10vw;
+    height: 10vw;
 }

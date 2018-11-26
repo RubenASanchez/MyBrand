@@ -33,6 +33,7 @@ html {box-sizing: border-box;}
 
 :root {
     --mainBlue: rgba(100,150,240,.85);
+    --lightBlue: rgba(100,150,240,.50);
     --mainOrange: rgb(250,180,80);
     --darkOrange: rgb(240,170,80);
     --mainBlack: rgb(20,20,20);
@@ -40,6 +41,7 @@ html {box-sizing: border-box;}
     --mainGray: rgb(100,100,100);
     --lightGray: rgb(200,200,200);
     --mainWhite: rgb(253,253,253);
+    --darkWhite: rgb(200,200,200);
     --gridHeight: calc(25vh - 25px);
 }
 
@@ -90,23 +92,37 @@ header {
 }
 
 footer {
+    background: var(--lightBlack);
+}
+
+footer nav {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    font-size: 18px;
+    /*padding: 40px 40px 0 40px;*/
     height: 250px;
-    background: var(--lightGray);
+    color: var(--darkWhite);
+}
+
+footer a {
+    color: var(--darkWhite);
 }
 
 /* NAVIGATION */
 
-nav {
+header nav {
     /*background: gray;*/
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10vw;
     grid-template-columns: 1fr;
     grid-auto-flow: column;
     align-items: center;
     padding-right: 50px;
 }
 
-nav img {
+header nav img {
     height: 50px;
 }
 
@@ -119,7 +135,7 @@ nav img {
 
 .button {
     display: grid;
-    width: 125px;
+    width: 150px;
     height: 50px;
     background: var(--mainOrange);
     border: none;
@@ -142,5 +158,6 @@ nav img {
 @media all and (max-width: 420px) {
     html {font-size: 17px;}
     h1 {font-size: 32px; font-weight: 400;}
-    nav {padding-right: 20px;}
+    header nav {padding-right: 20px; grid-gap: 4vw;}
+    footer nav {grid-auto-flow: row; font-size: 16px;}
 }
