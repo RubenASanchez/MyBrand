@@ -1,6 +1,27 @@
 
+/* GRID */
+
+main {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/* FLASK */
+
+#lab-flask {
+    
+}
+
+/* BUTTON */
+
+.button {
+    margin: 10vh 0;
+}
+
+/* TERMINAL */
+
 #terminal-container {
-    margin: 100px auto 50px auto;
     width: 70vw;
     height: 40vw;
 }
@@ -51,36 +72,8 @@
     padding: 1vw 0;
 }
 
-.line1 {
-    animation: type .5s 1s steps(20,end) forwards;
-}
-
-.cursor1 {
-    animation: blink 1s 2s 2 forwards;
-}
-
-.line2 {
-    animation: type .5s 4.25s steps(20,end) forwards;
-}
-
-.cursor2 {
-    animation: blink 1s 5.25s 2 forwards;
-}
-
-.line3 {
-    animation: type .5s 7.5s steps(20,end) forwards;
-}
-
-.cursor3 {
-    animation: blink 1s 8.5s 2 forwards;
-}
-
-.line4 {
-    animation: type .5s 10.75s steps(20,end) forwards;
-}
-
-.cursor4 {
-    animation: blink 1s 11.5s 2 infinite;
+.terminal-cursor {
+    animation: 1s blink step-end infinite;
 }
 
 @keyframes blink {
@@ -89,8 +82,4 @@
     50% {opacity: 1;}
     90% {opacity: 1;}
     100% {opacity: 0;}
-}
-
-@keyframes type {
-    to {width: 17em;}
 }
