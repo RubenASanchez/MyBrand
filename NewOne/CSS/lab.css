@@ -1,0 +1,96 @@
+
+#terminal-container {
+    margin: 100px auto 50px auto;
+    width: 70vw;
+    height: 40vw;
+}
+
+#terminal-menu {
+    background: rgb(237,237,237);
+    width: 100%;
+    height: 10%;
+    padding-left: 2vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-content: center;
+}
+
+.terminal-buttons {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+}
+
+#terminal-button-red {
+    background: rgb(250,90,100);
+}
+
+#terminal-button-yellow {
+    background: rgb(250,200,40);
+}
+
+#terminal-button-green {
+    background: rgb(110,200,80);
+}
+
+#terminal-screen {
+    background: rgb(50,50,50);
+    width: 100%;
+    height: 90%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#terminal-text p {
+    color: var(--mainOrange);
+    padding: 1vw 0;
+}
+
+.line1 {
+    animation: type .5s 1s steps(20,end) forwards;
+}
+
+.cursor1 {
+    animation: blink 1s 2s 2 forwards;
+}
+
+.line2 {
+    animation: type .5s 4.25s steps(20,end) forwards;
+}
+
+.cursor2 {
+    animation: blink 1s 5.25s 2 forwards;
+}
+
+.line3 {
+    animation: type .5s 7.5s steps(20,end) forwards;
+}
+
+.cursor3 {
+    animation: blink 1s 8.5s 2 forwards;
+}
+
+.line4 {
+    animation: type .5s 10.75s steps(20,end) forwards;
+}
+
+.cursor4 {
+    animation: blink 1s 11.5s 2 infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes type {
+    to {width: 17em;}
+}

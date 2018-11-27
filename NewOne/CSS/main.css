@@ -62,6 +62,10 @@ html {
     /*font-size: calc(0.8em + 1vw);*/
 }
 
+main {
+    margin-top: 60px;
+}
+
 h1 {
     font-size: 48px;
     margin-bottom: 10px;
@@ -158,4 +162,5 @@ footer a {
     h1 {font-size: 32px; font-weight: 400;}
     header nav {padding-right: 20px; grid-gap: 4vw;}
     footer nav {grid-auto-flow: row; font-size: 16px;}
+    #terminal-text p {font-size: 15px;}
 }
