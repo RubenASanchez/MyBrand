@@ -6,8 +6,6 @@ main {
     grid-template-rows: var(--gridHeight) var(--gridHeight) var(--gridHeight) var(--gridHeight) var(--gridHeight) var(--gridHeight) var(--gridHeight) var(--gridHeight) var(--gridHeight) var(--gridHeight) var(--gridHeight) var(--gridHeight);
 }
 
-/* SMOKE */
-
 aside {
     grid-row: 1/-1;
     grid-column: 1/2;
@@ -70,21 +68,97 @@ aside {
 /* SMOKE */
 
 #smoke-animation-container {
-    
+    display: grid;
+    align-content: end;
+    background: rgb(220,220,220);
+}
+
+#smoke-appearance {
+    background: rgb(230,230,230);
+    height: 20vw;
+}
+
+#smoke-flask {
+    background: rgb(240,240,240);
+    height: 12vh;
+    margin-bottom: 18vh;
+    text-align: center;
 }
 
 .css-circle {
     border-radius: 50%;
+    position: relative;
+    transform-origin: center;
+    opacity: 0;
 }
 
 #circle-1 {
-    background: var(--lightBlue);
-    width: 20vw;
-    height: 20vw;
+    background: var(--smokeGray);
+    width: 10vw;
+    height: 10vw;
+    left: calc(50% - 5vw);
+    top: calc(50% - 5vw);
+    animation: circle2 16s linear infinite;
 }
 
 #circle-2 {
-    background: var(--lightGray);
+    background: var(--lightBlue);
+    width: 20vw;
+    height: 20vw;
+    left: calc(50% - 10vw);
+    top: calc(50% - 20vw);
+    animation: circle2 20s linear infinite;
+    animation-delay: 4s;
+}
+
+#circle-3 {
+    background: var(--lightBlue);
+    width: 16vw;
+    height: 16vw;
+    left: calc(50% - 8vw);
+    top: calc(50% - 38vw);
+    animation: circle2 18s linear infinite;
+    animation-delay: 6s;
+}
+
+#circle-4 {
+    background: var(--smokeGray);
     width: 10vw;
     height: 10vw;
+    left: calc(50% - 5vw);
+    top: calc(50% - 51vw);
+    animation: circle2 16s linear infinite;
+    animation-delay: 8s;
+}
+
+#circle-5 {
+    background: var(--lightBlue);
+    width: 10vw;
+    height: 10vw;
+    left: calc(50% - 5vw);
+    top: calc(50% - 61vw);
+    animation: circle2 16s linear infinite;
+    animation-delay: 8.5s;
+}
+
+#circle-6 {
+    background: var(--lightBlue);
+    width: 20vw;
+    height: 20vw;
+    left: calc(50% - 10vw);
+    top: calc(50% - 76vw);
+    animation: circle2 20s linear infinite;
+    animation-delay: 12s;
+}
+
+@keyframes circle2 {
+    0% {transform: translateX(0) translateY(0); transform: scale(0); opacity: 0;}
+    2% {transform: translateX(0) translateY(0); transform: scale(1.2); opacity: 1;}
+    3% {transform: translateX(0) translateY(0); transform: scale(0.8);}
+    4% {transform: translateX(0) translateY(0); transform: scale(1.1);}
+    5% {transform: translateX(0) translateY(0); transform: scale(1);}
+    /*25% {transform: translateX(0) translateY(-75vh);}
+    50% {transform: translateX(1vw) translateY(-150vh);}
+    75% {transform: translateX(-8.5vw) translateY(-225vh);}*/
+    100% {transform: translateX(0) translateY(-300vh); opacity: 1;}
 }

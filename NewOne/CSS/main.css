@@ -40,6 +40,7 @@ html {box-sizing: border-box;}
     --lightBlack: rgb(80,80,80);
     --mainGray: rgb(100,100,100);
     --lightGray: rgb(200,200,200);
+    --smokeGray: rgba(200,200,200,.50);
     --mainWhite: rgb(253,253,253);
     --darkWhite: rgb(200,200,200);
     --gridHeight: calc(25vh - 15px);
