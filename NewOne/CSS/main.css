@@ -39,8 +39,10 @@ html {box-sizing: border-box;}
     --mainBlack: rgb(20,20,20);
     --lightBlack: rgb(80,80,80);
     --mainGray: rgb(100,100,100);
+    --midGray: rgb(150,150,150);
     --lightGray: rgb(200,200,200);
     --smokeGray: rgba(200,200,200,.50);
+    --veryLightGray: rgb(240,240,240);
     --mainWhite: rgb(253,253,253);
     --darkWhite: rgb(200,200,200);
     --gridHeight: calc(25vh - 15px);
