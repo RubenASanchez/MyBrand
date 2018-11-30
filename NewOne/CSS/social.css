@@ -1,0 +1,26 @@
+.social-circle {
+    display: grid;
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    background: var(--lightBlue);
+    /*ransform-origin: center;*/
+}
+
+.social-circle img {
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+.social-circle p {
+    position: absolute;
+    color: rgba(253,253,253,0);
+    align-self: center;
+    justify-self: center;
+}
+
+.social-circle:hover p {
+    color: var(--mainOrange);
+}
+
