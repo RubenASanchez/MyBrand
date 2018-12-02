@@ -121,6 +121,15 @@ header nav img {
     border-bottom: 1px solid var(--mainBlue);
 }
 
+header nav a {
+    padding: 12px 0;
+    width: 50px;
+    text-align: center;
+}
+
+header nav a:hover p {
+    color: var(--lightBlue)
+}
 
 footer nav {
     display: grid;
