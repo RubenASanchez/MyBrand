@@ -168,3 +168,7 @@ footer {height: 100vh;} /* temporary bug fix*/
     75% {transform: translateX(-8.5vw) translateY(-225vh);}*/
     100% {transform: translateX(0) translateY(-300vh); opacity: 1;}
 }
+
+@media all and (max-width: 600px) {
+    main {grid-template-columns: 2fr 8fr;}
+}
