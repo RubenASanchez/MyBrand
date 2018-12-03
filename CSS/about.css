@@ -48,6 +48,11 @@ aside {
     height: calc(50vh - 50px);
 }
 
+#suki img {
+    margin-top: calc(25vh - 50px);
+    height: 20vh;
+}
+
 /* BUTTONS */
 
 #hero-button-1 {
