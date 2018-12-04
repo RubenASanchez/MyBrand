@@ -166,16 +166,7 @@ aside {
     height: 20vw;
     left: calc(50% - 10vw);
     top: calc(50% - 76vw);
-    /*-webkit-animation: circle2 20s linear infinite;*/
-    -webkit-animation-name: circle2;
-    -webkit-animation-duration: 20s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation: circle2 20s linear infinite;
-    animation-name: circle2;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation: circle2 20s linear infinite;
     animation: circle2 20s linear infinite;
     -webkit-animation-delay: 18s;
     animation-delay: 18s;
