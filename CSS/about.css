@@ -172,6 +172,11 @@ aside {
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     animation: circle2 20s linear infinite;
+    animation-name: circle2;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation: circle2 20s linear infinite;
     -webkit-animation-delay: 18s;
     animation-delay: 18s;
 }
