@@ -1,0 +1,68 @@
+/* SUB NAVIGATION */
+
+header {
+/*    background: gray;*/
+}
+
+#subnav {
+    display: grid;
+    grid-gap: 10vw;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    align-items: center;
+    padding-right: 50px;
+    /*background: rgb(240,240,240);*/
+}
+
+#subnav div {
+    display: grid;
+    width: 50px;
+    align-items: center;
+    justify-items: center;
+    /*background: rgba(200,200,200,0.5);*/
+}
+
+#small-bubble, #medium-bubble, #large-bubble {
+    border-radius: 50%;
+    background: var(--lightBlue);
+    align-self: center;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+#small-bubble {
+    width: 10px;
+    height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+}
+
+#medium-bubble {
+    width: 20px;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+#large-bubble {
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+#large-bubble p {
+    color: var(--mainWhite);
+    font-size: 16px;
+}
+
+/* MAIN */
+
+main {
+    margin-top: 180px;
+}
+
+@media all and (max-width: 420px) {
+    #subnav {padding-right: 20px; grid-gap: 4vw;}
+    #large-bubble p {font-size: 14px;}
+}

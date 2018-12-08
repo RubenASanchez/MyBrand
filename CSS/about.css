@@ -38,6 +38,14 @@ aside {
     grid-row: 5/8;
 }
 
+#me p a {
+    color: var(--mainOrange);
+}
+
+#me p a:hover {
+    color: var(--darkOrange);
+}
+
 #sparky {
     margin-top: -60px;
     padding-top: 82px;
