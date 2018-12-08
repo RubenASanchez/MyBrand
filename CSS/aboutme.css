@@ -84,7 +84,6 @@ header {
 #cv {
     width: 48px;
     height: 59px;
-    background: var(--lightBlue);
 }
 
 #cv:hover {
