@@ -28,28 +28,30 @@ header {
     background: var(--lightBlue);
     align-self: center;
     justify-self: center;
-    margin-top: 10px;
 }
 
 #small-bubble {
-    width: 10px;
-    height: 10px;
-    max-width: 10px;
-    max-height: 10px;
+    margin-top: 0px;
+    width: 8px;
+    height: 8px;
+    max-width: 8px;
+    max-height: 8px;
 }
 
 #medium-bubble {
-    width: 20px;
-    height: 20px;
-    max-width: 20px;
-    max-height: 20px;
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+    max-width: 16px;
+    max-height: 16px;
 }
 
 #large-bubble {
-    width: 40px;
-    height: 40px;
-    max-width: 40px;
-    max-height: 40px;
+    margin-top: 4px;
+    width: 32px;
+    height: 32px;
+    max-width: 32px;
+    max-height: 32px;
 }
 
 #large-bubble p {
@@ -61,11 +63,32 @@ header {
 
 #pdf-container {
     position: absolute;
-    top: 90px;
-    right: calc(20vw + 100px);
-    width: 100px;
-    background:gray;
-    text-align: right;
+    top: 58px;
+    right: calc(4vw + 60px);
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 16px;
+}
+
+#pdf-container a p {
+    color: var(--mainOrange);
+}
+
+#pdf-container a:hover p {
+    color: var(--darkOrange);
+}
+
+#cv {
+    width: 48px;
+    height: 59px;
+    background: var(--lightBlue);
+}
+
+#cv:hover {
+    color: var(--darkOrange);
 }
 
 /* MAIN */
@@ -77,5 +100,5 @@ main {
 @media all and (max-width: 420px) {
     #subnav {padding-right: 20px; grid-gap: 4vw;}
     #large-bubble p {font-size: 14px;}
-    #pdf-container {right: calc(8vw + 100px);}
+    #pdf-container {right: calc(4vw + 20px)}
 }
