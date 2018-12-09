@@ -1,0 +1,65 @@
+#timeline-container {
+    /*height: calc(100vh - 180px - 250px);*/
+    width: 100vw;
+    background: var(--lightBlue);
+    display: grid;
+    grid-template-columns: 4vw 1fr 2vw 6vw 1vw 6vw 2vw 1fr 4vw;
+    grid-template-rows: repeat(26, 20px);
+}
+
+#midline {
+    background: var(--mainBlue);
+    grid-column: 5/6;
+    grid-row: 2/-2;
+}
+
+.tick-container-right, .tick-container-left {
+    display: flex;
+    /*background: rgba(50,50,50,.2);*/
+    align-items: center;
+}
+
+.tick-container-left .tick {
+    background: var(--lightBlue);
+}
+
+.tick {
+    height: 4px;
+    /*width: 10px;*/
+    width: 100%;
+    background: var(--mainBlue);
+}
+
+#tick1 {grid-column: 6/7;grid-row: 3/6;}
+#tick2 {grid-column: 6/7;grid-row: 7/10;}
+#tick3 {grid-column: 6/7;grid-row: 11/14;}
+#tick4 {grid-column: 6/7;grid-row: 15/18;}
+#tick5 {grid-column: 4/5;grid-row: 18/21;}
+
+.timeline-message {
+    background: var(--mainWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.timeline-message h1 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.timeline-message p {
+    font-size: 14px;
+}
+
+#m1 {grid-column: 8/9; grid-row: 3/6;}
+#m2 {grid-column: 8/9; grid-row: 7/10;}
+#m3 {grid-column: 8/9; grid-row: 11/14;}
+#m4 {grid-column: 8/9; grid-row: 15/18;}
+#m5 {grid-column: 2/3; grid-row: 18/21;}
+
+@media all and (max-width: 420px) {
+    #timeline-container {grid-template-columns: 1fr 152px 4px 20px 1vw 20px 4px 152px 1fr;}
+}

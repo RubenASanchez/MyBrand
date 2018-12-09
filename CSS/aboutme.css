@@ -96,6 +96,15 @@ main {
     margin-top: 180px;
 }
 
+#about-nav {
+    /*height: calc(100vh - 180px - 250px);*/
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--mainBlue);
+    /*background: rgba(20,20,20,.5)*/
+}
+
 @media all and (max-width: 420px) {
     #subnav {padding-right: 20px; grid-gap: 4vw;}
     #large-bubble p {font-size: 14px;}
