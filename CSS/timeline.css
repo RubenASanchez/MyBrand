@@ -1,9 +1,9 @@
 #timeline-container {
     /*height: calc(100vh - 180px - 250px);*/
-    width: 100vw;
+    width: 100%;
     background: var(--lightBlue);
     display: grid;
-    grid-template-columns: 4vw 1fr 2vw 6vw 1vw 6vw 2vw 1fr 4vw;
+    grid-template-columns: 20vw 1fr 1.5vw 3vw 8px 3vw 1.5vw 1fr 20vw;
     grid-template-rows: repeat(26, 20px);
 }
 
@@ -15,7 +15,6 @@
 
 .tick-container-right, .tick-container-left {
     display: flex;
-    /*background: rgba(50,50,50,.2);*/
     align-items: center;
 }
 
@@ -24,8 +23,7 @@
 }
 
 .tick {
-    height: 4px;
-    /*width: 10px;*/
+    height: 6px;
     width: 100%;
     background: var(--mainBlue);
 }
@@ -60,6 +58,7 @@
 #m4 {grid-column: 8/9; grid-row: 15/18;}
 #m5 {grid-column: 2/3; grid-row: 18/21;}
 
-@media all and (max-width: 420px) {
+@media all and (max-width: 700px) {
     #timeline-container {grid-template-columns: 1fr 152px 4px 20px 1vw 20px 4px 152px 1fr;}
+    .tick {height: 4px;}
 }
