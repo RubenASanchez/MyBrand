@@ -22,10 +22,13 @@
 }
 
 .chat-bubble {
-    border-radius: 20px 20px 20px 0;
     text-align: center;
     padding: 10px 20px;
     color: var(--mainWhite);
+}
+
+.chat-bubble-container-left .chat-bubble {
+    border-radius: 20px 20px 20px 0;
     background: var(--lightBlue);
 }
 
@@ -34,16 +37,34 @@
     background: var(--lightGray);
 }
 
+#chat5-texting {
+    align-items: flex-end;
+}
+
 .texting {
     border-radius: 50%;
     height: 7px;
     width: 7px;
     background: var(--lightBlue);
     margin-left: 5px;
+    animation: hop 2s infinite;
+}
+
+.texting:nth-of-type(2) {
+    animation-delay: .1s;
+}
+
+.texting:nth-of-type(3) {
+    animation-delay: .2s;
 }
 
 #chat1 {grid-column: 2/3; grid-row: 2/3;}
 #chat2 {grid-column: 4/5; grid-row: 3/4;}
 #chat3 {grid-column: 2/3; grid-row: 4/5;}
 #chat4 {grid-column: 4/5; grid-row: 5/6;}
-#chat5 {grid-column: 2/3; grid-row: 6/7; align-items: flex-end;}
+#chat5-texting {grid-column: 2/3; grid-row: 6/7;}
+
+@keyframes hop {
+    10% {transform: scale(1.8);}
+    50% {transform: scale(1);}
+}
