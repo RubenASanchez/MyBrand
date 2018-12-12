@@ -1,22 +1,17 @@
 /* SUB NAVIGATION */
 
-header {
-/*    background: gray;*/
-}
-
-#subnav {
+#subnav, #sub-subnav {
     display: grid;
     grid-gap: 10vw;
     grid-template-columns: 1fr;
     grid-auto-flow: column;
     align-items: center;
     padding-right: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 4px;
     background: var(--mainWhite);
-    /*background: rgb(240,240,240);*/
 }
 
-#subnav div {
+#subnav div, #sub-subnav div {
     display: grid;
     width: 50px;
     align-items: center;
@@ -59,6 +54,28 @@ header {
     font-size: 16px;
 }
 
+/* SUB SUB NAVIGATION */
+
+#sub-subnav {
+    padding-bottom: 10px;
+}
+
+#sub-subnav #medium-bubble {
+    margin: 0 0 4px 0;
+}
+
+#sub-subnav p {
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin-left: -30px;
+    color: var(--mainWhite);
+    background: var(--lightBlue);
+}
+
+header #subnav a:hover p {
+    color: var(--mainBlue);
+}
+
 /* DOWNLOAD PDF */
 
 #pdf-container {
@@ -93,20 +110,12 @@ header {
 /* MAIN */
 
 main {
-    margin-top: 180px;
-}
-
-#about-nav {
-    /*height: calc(100vh - 180px - 250px);*/
-    height: 30px;
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid var(--mainBlue);
-    /*background: rgba(20,20,20,.5)*/
+    margin-top: 182px;
 }
 
 @media all and (max-width: 420px) {
-    #subnav {padding-right: 20px; grid-gap: 4vw;}
+    #subnav, #sub-subnav {padding-right: 20px; grid-gap: 4vw;}
     #large-bubble p {font-size: 14px;}
     #pdf-container {right: calc(4vw + 20px)}
+    #sub-subnav p {margin-left: -20px;}
 }
