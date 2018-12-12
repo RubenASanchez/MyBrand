@@ -111,7 +111,28 @@ header #subnav a:hover p {
 /* MAIN */
 
 main {
-    margin-top: 178px;
+    margin-top: 123px;
+}
+
+/* DASHBOARD */
+
+#dashboard {
+    height: 400px;
+    padding-top: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    justify-items: center;
+    align-items: center;
+    background: var(--lightBlack);
+    border-bottom:1px solid white;
+}
+
+#dashboard .dashboard-item {
+    width: 150px;
+    height: 100px;
+    background: var(--mainGray);
+    color: white;
 }
 
 @media all and (max-width: 420px) {

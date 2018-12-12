@@ -1,3 +1,9 @@
+/* MAIN */
+
+main {
+    margin-top: 178px;
+}
+
 #timeline-container {
     /*height: calc(100vh - 180px - 250px);*/
     width: 100%;
