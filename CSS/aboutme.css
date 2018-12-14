@@ -140,6 +140,33 @@ main {
 #di5 {grid-column: 4/5; grid-row: 4/5;}
 #di6 {grid-column: 6/7; grid-row: 4/5;}
 
+/* DASHBOARD ITEMS */
+
+#di-summary {
+    display: grid;
+    grid-template-columns: 15% 30% 10% 30% 15%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.summary-page {
+    background: var(--mainWhite);
+    display: grid;
+    grid-template-columns: 10% 60% 20% 10%;
+    grid-template-rows: 20% 5% 15% 5% 10% 5% 10% 5% 25%;
+}
+
+#sp1 {grid-column: 2/3; grid-row: 2/3;}
+#sp2 {grid-column: 4/5; grid-row: 2/3;}
+
+.sp-line {
+    background: var(--lightBlue);
+}
+
+#spl1 {grid-column: 2/3; grid-row: 2/3;}
+#spl2 {grid-column: 2/4; grid-row: 4/5;}
+#spl3 {grid-column: 2/4; grid-row: 6/7;}
+#spl4 {grid-column: 2/4; grid-row: 8/9;}
+
 @media all and (max-width: 420px) {
     #subnav, #sub-subnav {padding-right: 20px; grid-gap: 4vw;}
     #large-bubble p {font-size: 14px;}
@@ -147,7 +174,6 @@ main {
     #sub-subnav p {margin-left: -15px; font-size: 14px;}
 }
 
-/* < 810px then 2 across */
 @media all and (max-width: 810px) {
     #dashboard {grid-template-columns: 3vw 46vw 2vw 46vw 3vw; grid-template-rows: 3vw calc((46vw/3)*2) 2vw calc((46vw/3)*2) 2vw calc((46vw/3)*2) 3vw;}
     #dashboard .dashboard-item {width: 46vw;}
