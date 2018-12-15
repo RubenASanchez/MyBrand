@@ -93,7 +93,7 @@ header {
     left: 0;
     right: 0;
     background: var(--mainWhite);
-    z-index: 2;
+    z-index: 4;
 }
 
 footer {

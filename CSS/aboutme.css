@@ -135,16 +135,17 @@ main {
 .di-title {
     color: var(--mainOrange);
     text-align: center;
+    width: 100%;
     opacity: 0;
     animation: ditappear 1s ease forwards;
-    animation-delay: 4s;
+    animation-delay: 9s;
 }
 
 #dashboard .dashboard-item:hover .di-title {
     color: var(--darkOrange);
 }
 
-.di-title {grid-column: 2/5; grid-row: 1/2;}
+.di-title {grid-column: 2/-2; grid-row: 1/2;}
 
 #di1 {grid-column: 2/3; grid-row: 2/3;}
 #di2 {grid-column: 4/5; grid-row: 2/3;}
@@ -189,6 +190,50 @@ main {
 
   /* KNOWLEDGEBASE */
 
+#di-knowledgebase {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+#waves {
+    background: var(--veryLightGray);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 90%;
+    justify-self: center;
+}
+
+#waves, #edu-frame {
+    opacity: 0;
+    animation: eduappear .2s ease-out forwards;
+    animation-delay: 2.5s;
+}
+
+#edu-frame {
+    animation-delay: 3s;
+}
+
+#orange-wave {
+    opacity: 0;
+    margin-left: 0.5%;
+    transform: translatex(5%);
+    animation: eduappear .2s ease-in forwards, orangewave 3s ease 1;
+    animation-delay: 3.6s, 5s;
+}
+
+#blue-wave {
+    opacity: 0;
+    margin-left: -0.5%;
+    transform: translatex(-5%);
+    animation: eduappear .2s ease-in forwards, bluewave 3s ease 1;
+    animation-delay: 4.1s, 5s;
+}
+
+#orange-wave {grid-column: 2/3; grid-row: 2/3; width: 100%; height: 100%; z-index:1;}
+#blue-wave {grid-column: 2/3; grid-row: 2/3; width: 100%; height: 100%; z-index:2;}
+#edu-frame {grid-column: 2/3; grid-row: 2/3; width: 100%; height: 100%; z-index:3;}
+
   /* SKILLS */
 
 @keyframes pageappear {
@@ -208,6 +253,27 @@ main {
 @keyframes ditappear {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@keyframes eduappear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes bluewave {
+    0% {transform: translatex(-5%);}
+    25% {transform: translatex(0);}
+    50% {transform: translatex(-5%);}
+    75% {transform: translatex(0);}
+    100% {transform: translatex(-5%);}
+}
+
+@keyframes orangewave {
+    0% {transform: translatex(5%);}
+    25% {transform: translatex(0.5%);}
+    50% {transform: translatex(5%);}
+    75% {transform: translatex(0.5%);}
+    100% {transform: translatex(5%);}
 }
 
 @media all and (max-width: 420px) {
