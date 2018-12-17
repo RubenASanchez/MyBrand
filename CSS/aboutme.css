@@ -31,6 +31,8 @@
     height: 8px;
     max-width: 8px;
     max-height: 8px;
+    transform: scale(0.01);
+    animation: bubblepop .5s ease-out forwards;
 }
 
 #medium-bubble {
@@ -39,6 +41,9 @@
     height: 16px;
     max-width: 16px;
     max-height: 16px;
+    transform: scale(0.01);
+    animation: bubblepop .5s ease-out forwards;
+    animation-delay: .2s;
 }
 
 #large-bubble {
@@ -47,6 +52,9 @@
     height: 32px;
     max-width: 32px;
     max-height: 32px;
+    transform: scale(0.01);
+    animation: bubblepop .5s ease-out forwards;
+    animation-delay: .4s;
 }
 
 #large-bubble p {
@@ -174,13 +182,14 @@ main {
     animation: pageappear .6s ease-in forwards;
 }
 
-#sp1 {grid-column: 2/3; grid-row: 2/3; animation-delay: .5s;}
-#sp2 {grid-column: 4/5; grid-row: 2/3; animation-delay: 1s;}
+#sp1 {grid-column: 2/3; grid-row: 2/3; animation-delay: 1s;}
+#sp2 {grid-column: 4/5; grid-row: 2/3; animation-delay: 1.5s;}
 
 .sp-line {
     background: var(--lightBlue);
     transform: translatex(-120%);
     animation: pageline 2s ease forwards;
+    animation-delay: 1s;
 }
 
 #spl1 {grid-column: 2/3; grid-row: 2/3; animation-delay: 1s;}
@@ -268,6 +277,11 @@ main {
 #dl1 {grid-column: 3/4; grid-row: 2/3; align-self: end;}
 #dl2 {grid-column: 3/4; grid-row: 3/4; width: 20%; height: 10%; align-self: center; justify-self: start; margin-left: 10%;}
 #dl3 {grid-column: 3/4; grid-row: 4/5;}
+
+@keyframes bubblepop {
+    0% {transform: scale(0.01);}
+    100% {transform: scale(1);}
+}
 
 @keyframes pageappear {
     0% {transform: scale(0.001);}
