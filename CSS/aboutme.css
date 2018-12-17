@@ -248,6 +248,9 @@ main {
     border-radius: 50%;
     align-self: center;
     border: 1.5vw solid var(--mainOrange);
+    transform: scale(0.001);
+    animation: pageappear 2s ease-out forwards;
+    animation-delay: 2.5s;
 }
 
 .d-line {
@@ -255,6 +258,10 @@ main {
     height: 20%;
     background: var(--mainWhite);
     justify-self: end;
+    transform: translatex(-100%);
+    opacity: 0;
+    animation: dlineslide 2s ease-out forwards;
+    animation-delay: 2.5s;
 }
 
 #donut {grid-column: 2/3; grid-row: 2/5;}
@@ -300,6 +307,12 @@ main {
     50% {transform: translatex(5%);}
     75% {transform: translatex(0.5%);}
     100% {transform: translatex(5%);}
+}
+
+@keyframes dlineslide {
+    0% {opacity: 0; transform: translatex(-100%);}
+    50% {opacity: 0; transform: translatex(-100%);}
+    100% {opacity: 1; transform: translatex(0);}
 }
 
 @media all and (max-width: 420px) {
