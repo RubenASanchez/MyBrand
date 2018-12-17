@@ -287,6 +287,24 @@ main {
 #dl2 {grid-column: 3/4; grid-row: 3/4; width: 20%; height: 10%; align-self: center; justify-self: start; margin-left: 10%;}
 #dl3 {grid-column: 3/4; grid-row: 4/5;}
 
+  /* EXPERIENCE */
+
+
+
+  /* PUBLICATIONS */
+
+#di-publications {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+#p1 {grid-column: 2/3; grid-row: 2/3; animation-delay: 1s;}
+
+  /* CONTACT ME */
+
+
+
 @keyframes bubblepop {
     0% {transform: scale(0.01);}
     100% {transform: scale(1);}
