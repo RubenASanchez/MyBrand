@@ -119,7 +119,7 @@ main {
 #dashboard {
     display: grid;
     grid-template-columns: 3vw 30vw 2vw 30vw 2vw 30vw 3vw;
-    grid-template-rows: 3vw calc((30vw/3)*2) 2vw calc((30vw/3)*2) 3vw;
+    grid-template-rows: 3vw 20vw 2vw 20vw 3vw;
     background: var(--lightBlack);
     border-bottom:1px solid white;
 }
@@ -236,6 +236,32 @@ main {
 
   /* SKILLS */
 
+#di-skills {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: repeat(5, 20%);
+}
+
+#donut {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    align-self: center;
+    border: 1.5vw solid var(--mainOrange);
+}
+
+.d-line {
+    width: 90%;
+    height: 20%;
+    background: var(--mainWhite);
+    justify-self: end;
+}
+
+#donut {grid-column: 2/3; grid-row: 2/5;}
+#dl1 {grid-column: 3/4; grid-row: 2/3; align-self: end;}
+#dl2 {grid-column: 3/4; grid-row: 3/4; width: 20%; height: 10%; align-self: center; justify-self: start; margin-left: 10%;}
+#dl3 {grid-column: 3/4; grid-row: 4/5;}
+
 @keyframes pageappear {
     0% {transform: scale(0.001);}
     30% {transform: scale(1.1);}
@@ -292,4 +318,5 @@ main {
     #di4 {grid-column: 4/5; grid-row: 4/5;}
     #di5 {grid-column: 2/3; grid-row: 6/7;}
     #di6 {grid-column: 4/5; grid-row: 6/7;}
+    #donut {width: 18.1vw; height: 18.1vw; border: 2.4vw solid var(--mainOrange);}
 }
