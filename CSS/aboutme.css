@@ -18,7 +18,7 @@
     justify-items: center;
 }
 
-#small-bubble, #medium-bubble, #large-bubble {
+#small-bubble, #medium-bubble, #large-bubble, #sub-medium-bubble {
     border-radius: 50%;
     background: var(--lightBlue);
     align-self: center;
@@ -68,8 +68,14 @@
     padding-bottom: 10px;
 }
 
-#sub-subnav #medium-bubble {
+#sub-subnav #sub-medium-bubble {
     margin: 0 0 4px 0;
+    width: 16px;
+    height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    transform: scale(0.01);
+    animation: bubblepop .5s ease-out forwards;
 }
 
 #sub-subnav p {
@@ -79,6 +85,9 @@
     font-size: 16px;
     color: var(--mainWhite);
     background: var(--lightBlue);
+    transform: scale(0.01);
+    animation: bubblepop .5s ease-out forwards;
+    animation-delay: .2s;    
 }
 
 header #subnav a:hover p {
@@ -146,7 +155,7 @@ main {
     width: 100%;
     opacity: 0;
     animation: ditappear 1s ease forwards;
-    animation-delay: 9s;
+    animation-delay: 8s;
 }
 
 #dashboard .dashboard-item:hover .di-title {
