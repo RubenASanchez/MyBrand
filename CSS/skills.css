@@ -14,12 +14,106 @@
 /* MAIN */
 
 main {
-    margin-top: 178px;
+    margin-top: 200px;
+}
+
+/* SKILLS */
+
+#skills {
+    display: grid;
+    grid-template-columns: 1vw 30vw 1fr 56vw 1vw;
+    grid-template-rows: 40vw;
+}
+
+#skills-menu {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 100%;
+}
+
+#skills-menu p {
+    padding: .8vw 0 0 2vw;
+    height: 16.6%;
+    color: var(--lightBlack);
+    font-size: 14px;
+    border-bottom: 1px solid var(--smokeGray);
+}
+
+#skills-circles {
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.s-circles {
+    border-radius: 50%;
+    border: 1vw solid transparent;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#c1 {
+    height: 40vw;
+    width: 40vw;
+    border: .5vw solid transparent;
+    border-color: var(--lightBlue);
+}
+
+#c2 {
+    height: 39vw;
+    width: 39vw;
+    border-top-color: var(--mainOrange);
+    transform: rotate(45deg);
+    animation: c2 3s ease-in-out infinite;
+}
+
+#c3 {
+    height: 38.75vw;
+    width: 38.75vw;
+    border-bottom-color: var(--darkOrange);
+    transform: rotate(20deg);
+    animation: c3 2s ease-in-out infinite;
+}
+
+#c4 {
+    height: 36.5vw;
+    width: 36.5vw;
+    border-top-color: var(--mainBlue);
+    transform: rotate(45deg);
+    animation: c4 3s ease-in-out infinite;
+}
+
+#c5 {
+    height: 34vw;
+    width: 34vw;
+    border-right-color: rgb(230,160,70);
+    transform: rotate(45deg);
+    animation: c5 3.5s ease-in-out infinite;
+}
+
+#c6 {
+    height: 31.5vw;
+    width: 31.5vw;
+    border-right-color: var(--lightBlue);
+    border-bottom-color: var(--lightBlue);
+    transform: rotate(45deg);
+    animation: c6 3s ease-in-out infinite;
+}
+
+#c7 {
+    height: 29vw;
+    width: 29vw;
+    border-left-color: var(--mainBlue);
+    animation: c7 5s ease-in-out infinite;
 }
 
 /* LANGUAGES */
 
-#languages-container {
+#languages {
     display: grid;
     grid-template-columns: 20px 100px 1fr 100px 20px;
     grid-template-rows: repeat(7, 40px);
@@ -84,6 +178,59 @@ main {
 #chat3 {grid-column: 2/3; grid-row: 4/5;}
 #chat4 {grid-column: 4/5; grid-row: 5/6;}
 #chat5-texting {grid-column: 2/3; grid-row: 6/7;}
+
+@keyframes c2 {
+    0% {transform: rotate(45deg);}
+    10% {transform: rotate(45deg);}
+    50% {transform: rotate(-40deg);}
+    60% {transform: rotate(-40deg);}
+    100% {transform: rotate(45deg);}
+}
+
+@keyframes c3 {
+    0% {transform: rotate(20deg);}
+    20% {transform: rotate(48deg);}
+    50% {transform: rotate(48deg);}
+    90% {transform: rotate(5deg);}
+    100% {transform: rotate(20deg);}
+}
+
+@keyframes c4 {
+    0% {transform: rotate(45deg);}
+    40% {transform: rotate(228deg);}
+    65% {transform: rotate(360deg);}
+    80% {transform: rotate(228deg);}
+    100% {transform: rotate(45deg);}
+}
+
+@keyframes c5 {
+    0% {transform: rotate(45deg);}
+    20% {transform: rotate(138deg);}
+    50% {transform: rotate(138deg);}
+    60% {transform: rotate(-45deg);}
+    95% {transform: rotate(-45deg);}
+    100% {transform: rotate(45deg);}
+}
+
+@keyframes c6 {
+    0% {transform: rotate(45deg);}
+    10% {transform: rotate(-45deg);}
+    30% {transform: rotate(-45deg);}
+    40% {transform: rotate(45deg);}
+    60% {transform: rotate(45deg);}
+    70% {transform: rotate(140deg);}
+    90% {transform: rotate(140deg);}
+    100% {transform: rotate(45deg);}
+}
+
+@keyframes c7 {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-45deg);}
+    50% {transform: rotate(-45deg);}
+    60% {transform: rotate(-226deg);}
+    80% {transform: rotate(-226deg);}
+    100% {transform: rotate(0deg);}
+}
 
 @keyframes hop {
     10% {transform: scale(1.8);}
