@@ -171,9 +171,10 @@ input {
 }
 
 input:checked + #diagnostics {
-    width: 100vw;
-    height: 84vw;
-    transform: translatex(-1vw);
+    /*width: 100vw;*/
+    /*height: 84vw;*/
+    /*transform: translatex(-1vw);*/
+    transform: translate(34vw,22vw) scalex(3.33) scaley(2.1);
     background: rgba(250,180,80,1);
     z-index: 2;
 }
