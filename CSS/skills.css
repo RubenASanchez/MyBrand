@@ -160,6 +160,51 @@ main {
     padding-top: 4vw;
     display: grid;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+input {
+    visibility: hidden;
+    position: absolute;
+}
+
+input:checked + #diagnostics {
+    width: 100vw;
+    height: 84vw;
+    transform: translatex(-1vw);
+    background: rgba(250,180,80,1);
+    z-index: 2;
+}
+
+input:checked + #medicine {
+    width: 100vw;
+    height: 84vw;
+    transform: translatex(-35vw);
+    background: rgba(250,180,80,1);
+    z-index: 2;
+}
+
+input:checked + #bresearch {
+    width: 100vw;
+    height: 84vw;
+    transform: translatex(-69vw);
+    background: rgba(250,180,80,1);
+    z-index: 2;
+}
+
+input:checked + #diagnostics .industry-definition {opacity: 1;}
+input:checked + #medicine .industry-definition {opacity: 1;}
+input:checked + #bresearch .industry-definition {opacity: 1;}
+input:checked + #animation .industry-definition {opacity: 1;}
+input:checked + #illustration .industry-definition {opacity: 1;}
+input:checked + #interactivity .industry-definition {opacity: 1;}
+
+.industry-definition {
+    opacity: 0;
+    font-size: 14px;
+    transition: all 0.4s;
 }
 
 .industry h1 {
