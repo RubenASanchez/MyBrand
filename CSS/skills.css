@@ -14,7 +14,7 @@
 /* MAIN */
 
 main {
-    margin-top: 200px;
+    margin-top: 210px;
 }
 
 /* SKILLS */
@@ -31,12 +31,18 @@ main {
     height: 100%;
 }
 
-#skills-menu p {
-    padding: .8vw 0 0 2vw;
+#skills-menu div {
     height: 16.6%;
+    padding-left: 2vw;
+    display: flex;
+    align-items: center;
     color: var(--lightBlack);
     font-size: 14px;
     border-bottom: 1px solid var(--smokeGray);
+}
+
+#skills-menu a:hover p {
+    color: var(--lightBlue);
 }
 
 #skills-circles {
@@ -69,6 +75,7 @@ main {
     border-top-color: var(--mainOrange);
     transform: rotate(45deg);
     animation: c2 3s ease-in-out infinite;
+    animation-delay: 4s;
 }
 
 #c3 {
@@ -77,6 +84,7 @@ main {
     border-bottom-color: var(--darkOrange);
     transform: rotate(20deg);
     animation: c3 2s ease-in-out infinite;
+    animation-delay: 10s;
 }
 
 #c4 {
@@ -85,6 +93,7 @@ main {
     border-top-color: var(--mainBlue);
     transform: rotate(45deg);
     animation: c4 3s ease-in-out infinite;
+    animation-delay: 10s;
 }
 
 #c5 {
@@ -93,6 +102,7 @@ main {
     border-right-color: rgb(230,160,70);
     transform: rotate(45deg);
     animation: c5 3.5s ease-in-out infinite;
+    animation-delay: 10s;
 }
 
 #c6 {
@@ -102,6 +112,7 @@ main {
     border-bottom-color: var(--lightBlue);
     transform: rotate(45deg);
     animation: c6 3s ease-in-out infinite;
+    animation-delay: 10s;
 }
 
 #c7 {
@@ -109,6 +120,7 @@ main {
     width: 29vw;
     border-left-color: var(--mainBlue);
     animation: c7 5s ease-in-out infinite;
+    animation-delay: 10s;
 }
 
 /* LANGUAGES */
