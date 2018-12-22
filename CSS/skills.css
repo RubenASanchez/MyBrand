@@ -152,7 +152,7 @@ main {
 #industries {
     margin-top: 10vw;
     display: grid;
-    grid-template-columns: 1fr 30vw 4vw 30vw 4vw 30vw 1fr;
+    grid-template-columns: 1vw 30vw 4vw 30vw 4vw 30vw 1vw;
     grid-template-rows: 40vw 4vw 40vw;
 }
 
@@ -197,10 +197,25 @@ input:checked + #bresearch {
     z-index: 2;
 }
 
+input:checked + #animations {
+    transform: translate(34vw,-22vw) scalex(3.33) scaley(2.1);
+    background: rgba(100,150,240,1);
+}
+
+input:checked + #illustration {
+    transform: translate(0,-22vw) scalex(3.33) scaley(2.1);
+    background: rgba(100,150,240,1);
+}
+
+input:checked + #interactivity {
+    transform: translate(-34vw,-22vw) scalex(3.33) scaley(2.1);
+    background: rgba(100,150,240,1);
+}
+
 input:checked + #diagnostics .industry-definition {opacity: 1;}
 input:checked + #medicine .industry-definition {opacity: 1;}
 input:checked + #bresearch .industry-definition {opacity: 1;}
-input:checked + #animation .industry-definition {opacity: 1;}
+input:checked + #animations .industry-definition {opacity: 1;}
 input:checked + #illustration .industry-definition {opacity: 1;}
 input:checked + #interactivity .industry-definition {opacity: 1;}
 
