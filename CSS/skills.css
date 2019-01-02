@@ -152,7 +152,7 @@ main {
 #industries {
     margin-top: 10vw;
     display: grid;
-    grid-template-columns: 1fr 30vw 4vw 30vw 4vw 30vw 1fr;
+    grid-template-columns: 1vw 30vw 4vw 30vw 4vw 30vw 1vw;
     grid-template-rows: 40vw 4vw 40vw;
     background: gray;
 }
