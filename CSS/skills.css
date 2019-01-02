@@ -162,7 +162,7 @@ main {
     padding-right: 1vw;
     display: grid;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     height: 100%;
     transition: all 0.4s;
 }
