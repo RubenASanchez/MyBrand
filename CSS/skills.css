@@ -158,6 +158,8 @@ main {
 
 .industry {
     padding-top: 4vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     display: grid;
     justify-content: center;
     width: 100%;
@@ -188,17 +190,17 @@ input:checked + #bresearch {
     z-index: 2;
 }
 
-input:checked + #animations {
+input:checked + #computation {
     transform: translate(34vw,-22vw) scalex(3.33) scaley(2.1);
     background: rgba(100,150,240,1);
 }
 
-input:checked + #illustration {
+input:checked + #imaging {
     transform: translate(0,-22vw) scalex(3.33) scaley(2.1);
     background: rgba(100,150,240,1);
 }
 
-input:checked + #interactivity {
+input:checked + #animation {
     transform: translate(-34vw,-22vw) scalex(3.33) scaley(2.1);
     background: rgba(100,150,240,1);
 }
@@ -206,20 +208,23 @@ input:checked + #interactivity {
 input:checked + #diagnostics .industry-definition {opacity: 1;}
 input:checked + #medicine .industry-definition {opacity: 1;}
 input:checked + #bresearch .industry-definition {opacity: 1;}
-input:checked + #animations .industry-definition {opacity: 1;}
-input:checked + #illustration .industry-definition {opacity: 1;}
-input:checked + #interactivity .industry-definition {opacity: 1;}
-
-.industry-definition {
-    opacity: 0;
-    font-size: 14px;
-    transition: all 0.4s;
-}
+input:checked + #computation .industry-definition {opacity: 1;}
+input:checked + #imaging .industry-definition {opacity: 1;}
+input:checked + #animation .industry-definition {opacity: 1;}
 
 .industry h1 {
     font-size: 14px;
     color: var(--lightBlack);
     margin: 0;
+    /*background: gray;*/
+    text-align: center;
+}
+
+.industry-definition {
+    opacity: 0;
+    margin-top: 1vw;
+    font-size: 14px;
+    transition: all 0.4s;
 }
 
 #diagnostics {
@@ -240,19 +245,19 @@ input:checked + #interactivity .industry-definition {opacity: 1;}
     grid-row: 1/2;
 }
 
-#animations {
+#computation {
     background: rgba(100,150,240,.25);
     grid-column: 2/3;
     grid-row: 3/4;
 }
 
-#illustration {
+#imaging {
     background: rgba(100,150,240,.50);
     grid-column: 4/5;
     grid-row: 3/4;
 }
 
-#interactivity {
+#animation {
     background: rgba(100,150,240,.75);
     grid-column: 6/7;
     grid-row: 3/4;
