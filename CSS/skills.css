@@ -154,6 +154,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 30vw 2vw 30vw 2vw 30vw 1fr;
     grid-template-rows: 40vw 4vw 40vw;
+    background: gray;
 }
 
 .industry {
