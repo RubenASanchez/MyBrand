@@ -168,7 +168,7 @@ main {
 }
 
 input {
-    display: none;
+    visibility: hidden;
     position: absolute;
 }
 
@@ -216,14 +216,15 @@ input:checked + #animation .industry-definition {opacity: 1;}
     font-size: 14px;
     color: var(--lightBlack);
     margin: 0;
-    /*background: gray;*/
     text-align: center;
 }
 
 .industry-definition {
     opacity: 0;
     margin-top: 1vw;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 200;
+    color: rgb(50,50,50);
     transition: all 0.4s;
 }
 
