@@ -34,6 +34,7 @@ html {box-sizing: border-box;}
 :root {
     --mainBlue: rgba(100,150,240,.85);
     --lightBlue: rgba(100,150,240,.50);
+    --veryLightBlue: rgba(100,150,240,.25);
     --mainOrange: rgb(250,180,80);
     --darkOrange: rgb(240,170,80);
     --mainBlack: rgb(20,20,20);

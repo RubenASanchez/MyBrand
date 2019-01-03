@@ -40,8 +40,45 @@ main {
     margin-top: 8vw;
 }
 
+/* JOURNEY */
+
+#journey-container {
+    display: grid;
+    grid-template-columns: 2vw repeat(7,10vw) 26vw 2vw;
+    grid-template-rows: 2vw repeat(20,10vw);
+}
+
+#journey h2 {
+    text-align: center;
+    background: var(--lightBlue);
+}
+
+#journey p {
+    background: var(--veryLightBlue);
+}
+
+.images {
+    background: var(--mainBlue);
+}
+
+#choices {grid-column: 9/10; grid-row: 2/4;}
+
+#img1 {grid-column: 4/6; grid-row: 2/4;}
+#img2 {grid-column: 4/6; grid-row: 5/7;}
+#img3 {grid-column: 6/8; grid-row: 8/10;}
+#img4 {grid-column: 4/6; grid-row: 5/7;}
+#img5 {grid-column: 4/6; grid-row: 2/4;}
+#img6 {grid-column: 4/6; grid-row: 5/7;}
+#img7 {grid-column: 4/6; grid-row: 2/4;}
+#img8 {grid-column: 4/6; grid-row: 5/7;}
+#img9 {grid-column: 4/6; grid-row: 2/4;}
+#img10 {grid-column: 4/6; grid-row: 5/7;}
+#img11 {grid-column: 4/6; grid-row: 5/7;}
+
 @media all and (max-width: 650px) {
     #sub-subnav p {margin-left: -11px;}
     #summary h1,#journey h1,#FAQs h1 {height: 30px; font-size: 21px;}
     #summary div p {font-size: 16px;}
+    #journey h2 {font-size: 18px;}
+    #journey p {font-size: 14px;}
 }
