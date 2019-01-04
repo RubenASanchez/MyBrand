@@ -166,6 +166,7 @@ main {
     width: 30vw;
     height: 100%;
     transition: all 0.4s;
+    overflow-x: hidden;
 }
 
 input {
