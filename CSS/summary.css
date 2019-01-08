@@ -109,7 +109,7 @@ main {
 #journey-mouse {grid-column: 5/9; grid-row: 37/41;}
 #journey-microscope {grid-column: 3/7; grid-row: 43/47;}
 #journey-uni {grid-column: 1/5; grid-row: 49/53;}
-#img10 {grid-column: 3/7; grid-row: 58/62;}
+#journey-data-analysis {grid-column: 3/7; grid-row: 58/62;}
 #journey-paper {grid-column: 3/7; grid-row: 65/69;}
 
 @media all and (max-width: 650px) {
