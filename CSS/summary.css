@@ -68,10 +68,6 @@ main {
     align-items: center;
 }
 
-.images {
-    background: var(--mainBlue);
-}
-
 .journey-images {
     height: 100%;
     width: 100%;
