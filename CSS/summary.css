@@ -111,23 +111,31 @@ main {
 
 .chat-container {
     display: flex;
+    margin-bottom: 2vw;
 }
 
 .suki-img {
     background: gray;
     height: 10vw;
     width: 10vw;
+    min-height: 10vw;
+    min-width: 10vw;
 }
 
+.c-suki {justify-content: flex-start;}
+.c-me {justify-content: flex-end;}
+
 .chat-container p {
-    margin-left: 2vw;
     padding: 2vw;
     height: 100%;
+    
     font-size: 3vw;
     color: var(--lightBlack);
     background: var(--lightBlue);
 }
 
+.c-suki p {margin-left: 2vw;}
+.c-me p {margin-right: 2vw;}
 
 @media all and (max-width: 650px) {
     #sub-subnav p {margin-left: -11px;}
