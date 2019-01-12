@@ -75,7 +75,7 @@ main {
     border-top-color: var(--mainOrange);
     transform: rotate(45deg);
     animation: c2 3s ease-in-out infinite;
-    animation-delay: 4s;
+    animation-delay: 10s;
 }
 
 #c3 {
@@ -123,29 +123,17 @@ main {
     animation-delay: 10s;
 }
 
-.s-lines {
+#passion,#innovation,#results {
     grid-column: 1/2;
     grid-row: 1/2;
+    font-size: 5vw;
     opacity: 0;
-    transform: rotate(-135deg);
-    /*animation: s1 4s ease-in-out infinite;
-    animation-delay: 11s;*/
+    animation: inner-c 3s ease-in-out 1;
 }
 
-.s-square {
-    border-left: 1px solid var(--lightBlack);
-    border-right: 1px solid var(--lightBlack);
-    border-bottom: 1px solid var(--lightBlack);
-    height: 1vw;
-    width: 10vw;
-}
-
-.s-line {
-    height: 1.5vw;
-    width: 1px;
-    margin: 0 auto;
-    background: var(--lightBlack);
-}
+#passion {animation-delay: 1s;}
+#innovation {animation-delay: 4s;}
+#results {animation-delay: 7s;}
 
 /* INDUSTRIES */
 
@@ -387,11 +375,10 @@ input:checked + #animation .industry-definition {opacity: 1;}
     100% {transform: rotate(0deg);}
 }
 
-@keyframes s1 {
-    0% {opacity: 0; transform: rotate(-135deg);}
-    10% {opacity: 1; transform: rotate(-135deg);}
-    90% {opacity: 1; transform: rotate(-135deg);}
-    100% {opacity: 0; transform: rotate(-135deg);}
+@keyframes inner-c {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 @keyframes hop {
