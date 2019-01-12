@@ -106,7 +106,6 @@ main {
 
 #faq-container {
     margin: 0 1vw;
-    background: lightgray;
 }
 
 .chat-container {
@@ -114,8 +113,7 @@ main {
     margin-bottom: 2vw;
 }
 
-.suki-img {
-    background: gray;
+.chat-img {
     height: 10vw;
     width: 10vw;
     min-height: 10vw;
@@ -128,14 +126,12 @@ main {
 .chat-container p {
     padding: 2vw;
     height: 100%;
-    
     font-size: 3vw;
     color: var(--lightBlack);
-    background: var(--lightBlue);
 }
 
-.c-suki p {margin-left: 2vw;}
-.c-me p {margin-right: 2vw;}
+.c-suki p {margin-left: 2vw; background: var(--lightGray);}
+.c-me p {margin-right: 2vw; background: var(--lightBlue);}
 
 @media all and (max-width: 650px) {
     #sub-subnav p {margin-left: -11px;}
