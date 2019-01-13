@@ -323,6 +323,62 @@ input:checked + #animation .industry-definition {opacity: 1;}
     100% {opacity: 0;}
 }
 
+/* RESEARCH */
+
+#research {
+    width: 98vw;
+    margin: -175px auto 0 auto;
+    padding-top: 220px;
+}
+
+#research-backdrop {
+    width: 100%;
+    padding: 3vw;
+    background: rgb(40,40,40);
+}
+
+.r-title {
+    margin-bottom: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.r-title p {
+    width: 50%;
+    color: rgb(110,110,110);
+    font-size: 3.2vw;
+}
+
+.r-bar {
+    padding: 1vw;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(70,70,70);
+}
+
+.r-bar h2 {
+    width: 50%;
+    align-self: center;
+    color: var(--mainBlue);
+    font-size: 4vw;
+}
+
+.r-content {
+    display: flex;
+    flex: 0 1 auto;
+    width: 50%;
+}
+
+.r-content p {
+    padding: .8vw;
+    margin-right: 1vw;
+    color: rgb(220,220,220);
+    background: var(--mainGray);
+    font-size: 3.2vw;
+    align-self: flex-start;
+}
+
 /* LANGUAGES */
 
 #languages {
