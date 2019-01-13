@@ -254,6 +254,75 @@ input:checked + #animation .industry-definition {opacity: 1;}
     grid-row: 3/4;
 }
 
+/* PROGRAMMING */
+
+#programming {
+    width: 98vw;
+    margin: -175px auto 0 auto;
+    padding-top: 220px;
+}
+
+#terminal-menu {
+    background: rgb(237,237,237);
+    width: 100%;
+    height: 8vw;
+    padding-left: 2vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-content: center;
+}
+
+.terminal-buttons {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+}
+
+#terminal-button-red {background: rgb(250,90,100);}
+#terminal-button-yellow {background: rgb(250,200,40);}
+#terminal-button-green {background: rgb(110,200,80);}
+
+#terminal-screen {
+    background: rgb(50,50,50);
+    width: 100%;
+    height: 50vw;
+    padding-top: 8vw;
+    padding-left: 4vw;
+}
+
+#terminal-screen div {
+    display: flex;
+    align-items: baseline;
+}
+
+#terminal-screen div h2 {
+    width: 38vw;
+    font-size: 5vw;
+    color: var(--darkWhite);
+}
+
+#terminal-screen div p {
+    font-size: 5vw;
+    color: var(--mainOrange);
+}
+
+.terminal-cursor {
+    color: var(--mainOrange);
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 /* LANGUAGES */
 
 #languages {
