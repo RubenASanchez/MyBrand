@@ -190,7 +190,7 @@ input:checked + #imaging {
     background: rgba(100,150,240,1);
 }
 
-input:checked + #animation {
+input:checked + #ianimation {
     transform: translate(-34vw,-22vw) scalex(3.33) scaley(2.1);
     background: rgba(100,150,240,1);
 }
@@ -200,7 +200,7 @@ input:checked + #medicine .industry-definition {opacity: 1;}
 input:checked + #bresearch .industry-definition {opacity: 1;}
 input:checked + #computation .industry-definition {opacity: 1;}
 input:checked + #imaging .industry-definition {opacity: 1;}
-input:checked + #animation .industry-definition {opacity: 1;}
+input:checked + #ianimation .industry-definition {opacity: 1;}
 
 .industry h1 {
     font-size: 14px;
@@ -248,7 +248,7 @@ input:checked + #animation .industry-definition {opacity: 1;}
     grid-row: 3/4;
 }
 
-#animation {
+#ianimation {
     background: rgba(100,150,240,.75);
     grid-column: 6/7;
     grid-row: 3/4;
@@ -256,7 +256,7 @@ input:checked + #animation .industry-definition {opacity: 1;}
 
 /* SKILL SECTIONS */
 
-#programming , #research , #project , #languages {
+#programming , #research , #project , #webdev , #animation , #languages {
     width: 98vw;
     margin: -175px auto 0 auto;
     padding-top: 220px;
@@ -407,12 +407,64 @@ input:checked + #animation .industry-definition {opacity: 1;}
     margin-bottom: 1vw;
 }
 
+/* ANIMATION */
+
+#storyboard {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3.5vw 28vw 3.5vw 28vw 3.5vw 28vw 3.5vw;
+    grid-template-rows: 3.5vw 20vw 3.5vw 20vw 3.5vw;
+    background: rgb(150,150,150);
+}
+
+.boards {
+    background: var(--darkWhite);
+}
+
+.boards h2 {
+    text-align: center;
+    font-size: 4vw;
+    color: var(--mainBlack);
+}
+
+#b3 {
+    display: grid;
+    grid-template-columns: 4% 28% 4% 28% 4% 28% 4%;
+    grid-template-rows: 7vw 4% 22% 4% 22% 4%;
+}
+
+.small-boards {
+    background: rgb(220,220,220);
+}
+
+#b1 {grid-column: 2/3; grid-row: 2/3;}
+#b2 {grid-column: 4/5; grid-row: 2/3;}
+#b3 {grid-column: 6/7; grid-row: 2/3;}
+#b4 {grid-column: 2/3; grid-row: 4/5;}
+#b5 {grid-column: 4/5; grid-row: 4/5;}
+#b6 {grid-column: 6/7; grid-row: 4/5;}
+
+#bt1 {grid-column: 1/2; grid-row: 2/3;}
+#bt2 {grid-column: 4/5; grid-row: 2/3;}
+#bt3 {grid-column: 1/-1; grid-row: 1/2;}
+#bt4 {grid-column: 2/3; grid-row: 4/5;}
+#bt5 {grid-column: 4/5; grid-row: 4/5;}
+#bt6 {grid-column: 6/7; grid-row: 4/5;}
+
+#sb1 {grid-column: 2/3; grid-row: 3/4;}
+#sb2 {grid-column: 4/5; grid-row: 3/4;}
+#sb3 {grid-column: 6/7; grid-row: 3/4;}
+#sb4 {grid-column: 2/3; grid-row: 5/6;}
+#sb5 {grid-column: 4/5; grid-row: 5/6;}
+#sb6 {grid-column: 6/7; grid-row: 5/6;}
+
 /* LANGUAGES */
 
-#languages {
+#chats-container {
     display: grid;
     grid-template-columns: 20px 100px 1fr 100px 20px;
     grid-template-rows: repeat(7, 40px);
+    width: 100%;
     max-width: 700px;
     margin: 0 auto;
 }
