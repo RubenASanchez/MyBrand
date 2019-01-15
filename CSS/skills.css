@@ -455,6 +455,20 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
     color: var(--mainGray);
 }
 
+#wd-topline , #wd-botline {
+    margin-top: 2vw;
+    height: 0.4vw;
+    width: 100%;
+    background: var(--mainWhite);
+}
+
+#wd-midline {
+    height: 6.6vw;
+    width: 0.4vw;
+    margin: 2vw auto 0 auto;
+    background: var(--mainWhite);
+}
+
 #jan {grid-column: 1/-1; grid-row: 1/2;}
 #nums {grid-column: 2/-2; grid-row: 2/3;}
 #bars1 {grid-column: 3/4; grid-row: 3/-1;}
@@ -462,7 +476,7 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 #bars3 {grid-column: 23/24; grid-row: 3/-1;}
 #bars4 {grid-column: 33/34; grid-row: 3/-1;}
 #bars5 {grid-column: 43/44; grid-row: 3/-1;}
-#ux-research {grid-column: 3/11; grid-row: 4/5;}
+#ux-research1 {grid-column: 3/11; grid-row: 4/5;}
 #prototype {grid-column: 13/22; grid-row: 6/7;}
 #ux-test {grid-column: 15/22; grid-row: 8/9;}
 #develop {grid-column: 22/31; grid-row: 10/11;}
@@ -470,6 +484,9 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 #launch {grid-column: 31/35; grid-row: 14/15;}
 #l-test {grid-column: 31/35; grid-row: 16/17;}
 #ux-research2 {grid-column: 35/43; grid-row: 18/19;}
+#wd-topline {grid-column: 11/12; grid-row: 4/5;}
+#wd-midline {grid-column: 11/13; grid-row: 4/7;}
+#wd-botline {grid-column: 12/13; grid-row: 6/7;}
 
 /* ANIMATION */
 
@@ -497,7 +514,6 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 #b4 {grid-column: 2/3; grid-row: 4/5;}
 #b5 {grid-column: 4/5; grid-row: 4/5;}
 #b6 {grid-column: 6/7; grid-row: 4/5;}
-
 #bt1 {grid-column: 1/2; grid-row: 2/3;}
 #bt2 {grid-column: 1/-1; grid-row: 1/2;}
 #bt3 {grid-column: 1/-1; grid-row: 1/2;}
