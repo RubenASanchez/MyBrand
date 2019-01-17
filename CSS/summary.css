@@ -31,12 +31,12 @@ main {
     border-bottom: 1px solid var(--mainBlue);
 }
 
-#summary div p {
+#summary p {
     margin: 4vw 10vw;
-    font-size: 21px;
+    font-size: 3vw; /*21px*/
 }
 
-#summary div p:nth-of-type(1) {
+#summary p:nth-of-type(1) {
     margin-top: 8vw;
 }
 
@@ -136,8 +136,12 @@ main {
 @media all and (max-width: 650px) {
     #sub-subnav p {margin-left: -11px;}
     #summary h1,#journey h1,#FAQs h1 {height: 30px; font-size: 21px;}
-    #summary div p {font-size: 16px;}
+    
     /*#journey h2 {font-size: 18px;}*/
+}
+
+@media all and (max-width: 550px) {
+    #summary p {font-size: 16px;}
 }
 
 @media all and (max-width: 540px) {

@@ -17,6 +17,8 @@ main {
     margin-top: 210px;
 }
 
+h1 {font-size: 7vw;}
+
 /* SKILLS */
 
 #skills {
@@ -37,9 +39,13 @@ main {
     display: flex;
     align-items: center;
     color: var(--lightBlack);
-    font-size: 14px;
     border-bottom: 1px solid var(--smokeGray);
 }
+
+@media all and (max-width: 360px) {#skills-menu div {font-size: 14px;}}
+@media all and (min-width: 361px) {#skills-menu div {font-size: 4vw;}}
+@media all and (min-width: 580px) and (max-width: 768px) {#skills-menu div {font-size: 23px;}}
+@media all and (min-width: 769px) {#skills-menu div {font-size: 3vw;}}
 
 #skills-menu a:hover p {
     color: var(--lightBlue);
@@ -203,10 +209,14 @@ input:checked + #imaging .industry-definition {opacity: 1;}
 input:checked + #ianimation .industry-definition {opacity: 1;}
 
 .industry h1 {
-    font-size: 14px;
+    font-size: 4vw;
     color: var(--lightBlack);
     margin: 0;
     text-align: center;
+}
+
+@media all and (max-width: 360px) {
+    .industry h1 {font-size: 14px;}
 }
 
 .industry-definition {
@@ -699,7 +709,6 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 
 #x-2d {grid-column: 5/6; grid-row: 3/5;}
 #y-2d {grid-column: 2/4; grid-row: 1/2;}
-
 #x-3d {grid-column: 1/2; grid-row: 5/6;}
 #y-3d {grid-column: 5/6; grid-row: 3/5;}
 #z-3d {grid-column: 2/4; grid-row: 1/2;}
