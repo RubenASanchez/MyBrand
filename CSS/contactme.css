@@ -1,0 +1,26 @@
+/* SUB NAV */
+
+#small-bubble, #medium-bubble, #large-bubble {
+    transform: scale(1);
+    animation: none;
+}
+
+/* SUB SUB NAV */
+
+#sub-subnav p {
+    margin-left: -20px;
+}
+
+#shadow-puppet-theater {
+    width: 90vw;
+    height: 50.9vw;
+    margin: 200px auto 50px auto;
+    margin-top: 200px;
+    background: var(--mainBlue);
+}
+
+
+
+@media all and (max-width: 650px) {
+    #sub-subnav p {margin-left: -16px;}
+}
