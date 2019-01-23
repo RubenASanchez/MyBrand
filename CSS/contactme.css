@@ -28,8 +28,9 @@
 }
 
 #waves-front {
-    will-change: translate;
-    transform: translatex(-4%);
+    /*will-change: translate;*/
+    /*transform: none;*/
+    transform: rotate(0.001deg) translatex(-4%);
     animation: waves 5s ease-in-out infinite;
     animation-delay: 2s;
 }
