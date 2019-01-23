@@ -11,6 +11,9 @@
     margin-left: -20px;
 }
 
+
+/* SHADOW THEATER */
+
 #shadow-puppet-theater {
     width: 90vw;
     height: 50.9vw;
@@ -19,9 +22,22 @@
     background: var(--mainBlue);
 }
 
-#shadow-puppet-theater img {
+#shadow-puppet-theater svg {
     width: 100%;
     height: 100%;
+}
+
+#waves-front {
+    will-change: translate;
+    transform: translatex(-4%);
+    animation: waves 5s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes waves {
+    0% {transform: translatex(-4%);}
+    50% {transform: translatex(4%);}
+    100% {transform: translatex(-4%);}
 }
 
 @media all and (max-width: 650px) {
