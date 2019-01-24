@@ -30,8 +30,7 @@
     grid-column: 1/-1;
     grid-row: -2/-1;
     align-self: end;
-    /*width: 136.5vw;*/ /*152%*/
-    width: 152%;
+    width: 152%; /*136.5vw*/
 }
 
 #waves-front {
