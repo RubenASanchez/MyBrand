@@ -19,26 +19,100 @@
     height: 50.9vw;
     margin: 200px auto 50px auto;
     margin-top: 200px;
-    background: var(--mainBlue);
+    background: var(--lightBlack);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 4% 25% 25% 6% 12% 12% 12% 4%;
+    grid-template-rows: 20% 5% 60% 15%;
 }
 
-#shadow-puppet-theater svg {
-    width: 100%;
-    height: 100%;
+.waves {
+    grid-column: 1/-1;
+    grid-row: -2/-1;
+    align-self: end;
+    width: 152%;
 }
 
 #waves-front {
-    /*will-change: translate;*/
-    /*transform: none;*/
-    transform: rotate(0.001deg) translatex(-4%);
-    animation: waves 5s ease-in-out infinite;
+    transform: translatex(-30%);
+    animation: wave1 5s ease-in-out infinite;
+    animation-delay: 2s;
+    z-index: 2;
+}
+
+#waves-middle {
+    transform: translatex(-1%);
+    animation: wave2 5s ease-in-out infinite;
     animation-delay: 2s;
 }
 
-@keyframes waves {
-    0% {transform: translatex(-4%);}
-    50% {transform: translatex(4%);}
-    100% {transform: translatex(-4%);}
+#waves-back {
+    transform: translatex(-30%);
+    animation: wave1 5s ease-in-out infinite;
+    animation-delay: 2.4s;
+}
+
+#ship {
+    grid-column: 2/4;
+    grid-row: 1/4;
+    align-self: end;
+    width: 100%;
+    z-index: 1;
+    transform-origin: bottom;
+    transform: translate(0,0);
+    animation: ship 5s ease-in-out infinite;
+    animation-delay: 2.2s;
+}
+
+#moon {
+    grid-column: -4/-3;
+    grid-row: 2/3;
+    align-self: end;
+    width: 100%;
+}
+
+#star1 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    width: 15%;
+}
+
+#star2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: end;
+    margin-left: 15%;
+    width: 20%;
+}
+
+#star3 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    width: 40%;
+}
+
+@keyframes wave1 {
+    0% {transform: translatex(-30%);}
+    50% {transform: translatex(-7%);}
+    100% {transform: translatex(-30%);}
+}
+
+@keyframes wave2 {
+    0% {transform: translatex(-1%);}
+    50% {transform: translatex(-33%);}
+    100% {transform: translatex(-1%);}
+}
+
+@keyframes ship {
+    0% {transform: translate(0,0);}
+    25% {transform: translate(0,-4%) rotate(5deg);}
+    50% {transform: translate(0,0) rotate(0deg);}
+    75% {transform: translate(0,-4%) rotate(-5deg);}
+    100% {transform: translate(0,0);}
 }
 
 @media all and (max-width: 650px) {
