@@ -54,6 +54,10 @@
 }
 
 #ship {
+    width: 100%;
+}
+
+#ship-container {
     grid-column: 2/4;
     grid-row: 1/4;
     align-self: end;
@@ -72,7 +76,7 @@
     width: 100%;
     z-index: 1; 
     transform: translatey(80%);
-    animation: thekraken 15s ease-in-out infinite;
+    animation: thekraken 16s ease-in-out infinite;
     animation-delay: 8s;
 }
 
@@ -107,6 +111,22 @@
     width: 40%;
 }
 
+#poof1 , #poof2 {
+    position: absolute;
+    top: 64.30%;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    background: var(--mainWhite);
+    opacity: 0;
+    transform: scale(0.01);
+    z-index: 3;
+    animation: poof 16s ease-in infinite;
+}
+
+#poof1 {left: 66.20%; animation-delay: 14s;}
+#poof2 {left: 60.15%; animation-delay: 14.2s;}
+
 @keyframes wave1 {
     0% {transform: translatex(-30%);}
     50% {transform: translatex(-7%);}
@@ -125,6 +145,13 @@
     50% {transform: translate(0,0) rotate(0deg);}
     75% {transform: translate(0,-4%) rotate(-5deg);}
     100% {transform: translate(0,0);}
+}
+
+@keyframes poof {
+    0% {opacity: 0;transform: scale(0.01);}
+    0.5% {opacity: 1;transform: scale(1.4);}
+    2% {opacity: 0;transform: scale(1);}
+    100% {opacity: 0;transform: scale(0.01);}
 }
 
 @keyframes thekraken {
