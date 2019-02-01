@@ -62,10 +62,30 @@ input:checked + label {
     overflow-x: scroll;
 }
 
-#content-watch .scrolling-item iframe ,#content-watch .scrolling-item img {  /* item */
-    background: lightgray;
-}
-
 .scrolling-item img {
     width: 18vw;
 }
+
+#content-watch .scrolling-items {
+    grid-column-gap: 4vw;
+    grid-template-columns: repeat(8,40vw);
+}
+
+#content-watch .scrolling-item {
+    /*align-self: center;*/
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+#content-watch .scrolling-item iframe ,#content-watch .scrolling-item img {  /* item */
+    background: lightgray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
