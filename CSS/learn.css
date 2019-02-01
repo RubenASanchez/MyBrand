@@ -41,12 +41,11 @@ input:checked + label {
 .content-container {
     grid-column: 1/-1;
     padding: 2vh 0 4vh 0;
-    /*background: rgb(200,200,200);*/
 }
 
 /* SCROLLING CONTENT */
 
-.scrolling-topics {  /* app */
+.scrolling-topics {
     display: grid;
     grid-template-columns: 2vw 1fr 2vw;
     margin-bottom: 2vw;
@@ -56,20 +55,15 @@ input:checked + label {
     grid-column: 2/-2;
 }
 
-.app > .full {
-    grid-column: 1/-1;
-}
-
-.scrolling-items { /* hs */
-    /*background: white;*/
+.scrolling-items {
     display: grid;
-    /*grid-gap: 10px;*/
     grid-template-columns: repeat(8,calc(25% - 4vw));
+    grid-template-rows: 1fr 2vw;
     overflow-x: scroll;
 }
 
-.scrolling-item {  /* item */
-    /*background: lightgray;*/
+#content-watch .scrolling-item iframe ,#content-watch .scrolling-item img {  /* item */
+    background: lightgray;
 }
 
 .scrolling-item img {
