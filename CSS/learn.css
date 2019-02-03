@@ -72,9 +72,7 @@ input:checked + label {
 }
 
 #content-watch .scrolling-item {
-    /*align-self: center;*/
     position: relative;
-    /*padding-top: 30px;*/
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
