@@ -16,7 +16,7 @@ main {
 
 #cinematic-lab-intro {
     height: calc(100vh - 60px);
-    width: 100vw;
+    width: 100%;
     opacity: 0;
     background: var(--mainBlack);
     animation: dim 2.5s ease forwards;
