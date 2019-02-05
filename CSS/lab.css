@@ -12,76 +12,56 @@ main {
     margin: 12vh 0;
 }
 
-/* TERMINAL */
+/* CINEMATIC LAB INTRO */
 
-#terminal-container {
-    margin-top: 12vh;
-    width: 70vw;
-    height: 40vw;
+#cinematic-lab-intro {
+    height: calc(100vh - 60px);
+    width: 100vw;
+    opacity: 0;
+    background: var(--mainBlack);
+    animation: dim 2.5s ease forwards;
+    animation-delay: 1s;
 }
 
-#terminal-menu {
-    background: rgb(237,237,237);
-    width: 100%;
-    height: 10%;
-    padding-left: 2vw;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    display: grid;
-    grid-gap: 10px;
-    grid-auto-flow: column;
-    justify-content: start;
-    align-content: center;
+#intro1 {
+    margin-top: 25vh;
+    color: var(--mainBlue);
+    font-size: 18vw;
+    text-align: center;
 }
 
-.terminal-buttons {
-    width: 2vw;
-    height: 2vw;
-    border-radius: 50%;
+#intro1 span {
+    opacity: 0;
+    filter: blur(20vw);
+    animation: blurry 4s ease forwards;
 }
 
-#terminal-button-red {
-    background: rgb(250,90,100);
-}
+#intro1 span:nth-of-type(6) {animation-delay: 3s;}
+#intro1 span:nth-of-type(2) {animation-delay: 4.25s;}
+#intro1 span:nth-of-type(7) {animation-delay: 5.5s;}
+#intro1 span:nth-of-type(3) {animation-delay: 6.75s;}
+#intro1 span:nth-of-type(1) {animation-delay: 8s;}
+#intro1 span:nth-of-type(5) {animation-delay: 9.25s;}
 
-#terminal-button-yellow {
-    background: rgb(250,200,40);
-}
-
-#terminal-button-green {
-    background: rgb(110,200,80);
-}
-
-#terminal-screen {
-    background: rgb(50,50,50);
-    width: 100%;
-    height: 90%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
-#terminal-text p {
-    color: var(--mainOrange);
-    padding: 1vw 0;
-}
-
-#terminal-text a {
-    color: var(--mainOrange);
-}
-
-#terminal-text p a:hover {
+#intro2 p {
+    opacity: 0;
     color: var(--darkOrange);
+    text-align: center;
+    animation: intro2appear 2s ease forwards;
+    animation-delay: 14s;
 }
 
-.terminal-cursor {
-    animation: 1s blink step-end infinite;
+@keyframes dim {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
-@keyframes blink {
-    0% {opacity: 0;}
-    40% {opacity: 0;}
-    50% {opacity: 1;}
-    90% {opacity: 1;}
-    100% {opacity: 0;}
+@keyframes blurry {
+    0% {filter: blur(20vw);opacity:0;}
+    100% {filter: blur(0); opacity:1;}
+}
+
+@keyframes intro2appear {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
