@@ -46,6 +46,7 @@ main {
 #intro2 p {
     opacity: 0;
     color: var(--darkOrange);
+    font-size: 5vw;
     text-align: center;
     animation: intro2appear 2s ease forwards;
     animation-delay: 14s;
