@@ -55,6 +55,10 @@ input:checked + label {
     grid-column: 2/-2;
 }
 
+.scrolling-topics h1 {
+    font-size: 4.75vw;
+}
+
 .scrolling-items {
     display: grid;
     grid-template-columns: repeat(8,calc(25% - 4vw));
