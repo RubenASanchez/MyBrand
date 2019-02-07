@@ -1,0 +1,86 @@
+/* SUB NAVIGATION */
+
+#subnav {
+    display: grid;
+    grid-gap: 10vw;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    align-items: center;
+    padding-right: 50px;
+    padding-bottom: 4px;
+    background: var(--mainWhite);
+}
+
+#subnav div {
+    display: grid;
+    width: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+#nav-bubbles {
+    margin-right: 45px;
+}
+
+#small-bubble, #medium-bubble, #large-bubble {
+    border-radius: 50%;
+    background: var(--lightBlue);
+    align-self: center;
+    justify-self: center;
+}
+
+#small-bubble {
+    margin-top: 0px;
+    width: 8px;
+    height: 8px;
+    max-width: 8px;
+    max-height: 8px;
+    transform: scale(0.01);
+    animation: bubblepop .5s ease-out forwards;
+}
+
+#medium-bubble {
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    transform: scale(0.01);
+    animation: bubblepop .5s ease-out forwards;
+    animation-delay: .2s;
+}
+
+#subnav div #large-bubble {
+    border-radius: 20px;
+    margin-top: 4px;
+    width: 140px;
+    transform: scale(0.01);
+    animation: bubblepop .5s ease-out forwards;
+    animation-delay: .4s;
+}
+
+#large-bubble p {
+    padding: 4px 10px;
+    color: var(--mainWhite);
+    font-size: 16px;
+}
+
+
+@keyframes bubblepop {
+    0% {transform: scale(0.01);}
+    100% {transform: scale(1);}
+}
+
+@media all and (max-width: 580px) {
+    #nav-bubbles {margin-left: -45px;}
+    #large-bubble p {font-size: 14px;}
+ }
+
+@media all and (max-width: 420px) {
+    #subnav {grid-gap: 4vw;}
+    #nav-bubbles {margin-right: 15px;}
+}
+
+@media all and (max-width: 374px) {
+    #nav-bubbles {margin-left: -15vw;}
+}
