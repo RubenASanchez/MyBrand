@@ -67,14 +67,25 @@
 
 /* ARTICLE */
 
-article {
-    margin: 150px auto 50px auto;
-    width: 90vw;
-    text-align: center;
+article {margin: 150px auto 50px auto; width: 90vw;}
+article h1 {font-size: 4vw;}
+article h2 {font-size: 6vw; margin-bottom: 2vw;}
+
+#article-illustration {text-align: center;}
+#article-illustration img {width: 90vw;}
+
+#article-body {
+    margin: 10vw 0;
 }
 
-article img {
-    width: 80vw;
+#article-follow {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+#article-follow a {
+    margin-right: 10vw;
 }
 
 @keyframes bubblepop {
