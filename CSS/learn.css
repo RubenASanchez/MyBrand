@@ -83,7 +83,7 @@ input:checked + label {
 }
 
 #content-watch .scrolling-item iframe ,#content-watch .scrolling-item img {  /* item */
-    background: lightgray;
+    /*background: lightgray;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -91,3 +91,11 @@ input:checked + label {
     height: 100%;
 }
 
+#yt-container {
+    margin: 25px auto 0 auto;
+    text-align: center;
+}
+
+#yt-container p {
+    margin-bottom: 5px;
+}
