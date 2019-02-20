@@ -48,8 +48,8 @@ main {
     color: var(--darkOrange);
     font-size: 5vw;
     text-align: center;
-    animation: intro2appear 2s ease forwards;
-    animation-delay: 12s;
+    animation: intro2appear 2.5s ease forwards;
+    animation-delay: 10.5s;
 }
 
 @keyframes dim {
