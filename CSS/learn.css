@@ -1,4 +1,4 @@
-main /*nav*/ {
+main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
@@ -7,7 +7,8 @@ main /*nav*/ {
 
 /* TABS */
 
-/*nav*/ label {
+/*nav*/
+label {
     color: var(--midGray);
     width: 100%;
     height: 10vh;
@@ -18,7 +19,8 @@ main /*nav*/ {
     justify-content: center;
 }
 
-/*nav*/ label:hover {
+/*nav*/
+label:hover {
     color: var(--lightBlue);
     border-top: 2px solid var(--lightBlue);
     cursor: pointer;
@@ -70,6 +72,11 @@ input:checked + label {
     width: 18vw;
 }
 
+#content-read #neuronal-anatomy {
+    margin-top: -60px;
+    padding-top: 60px;
+}
+
 #content-watch .scrolling-items {
     grid-column-gap: 4vw;
     grid-template-columns: repeat(8,40vw);
@@ -82,8 +89,7 @@ input:checked + label {
     overflow: hidden;
 }
 
-#content-watch .scrolling-item iframe ,#content-watch .scrolling-item img {  /* item */
-    /*background: lightgray;*/
+#content-watch .scrolling-item iframe ,#content-watch .scrolling-item img {
     position: absolute;
     top: 0;
     left: 0;
