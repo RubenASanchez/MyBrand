@@ -72,10 +72,7 @@ input:checked + label {
     width: 18vw;
 }
 
-#content-read #neuronal-anatomy {
-    margin-top: -60px;
-    padding-top: 60px;
-}
+#content-read #neuronal-anatomy {margin-top: -80px; padding-top: 80px;}
 
 #content-watch .scrolling-items {
     grid-column-gap: 4vw;
