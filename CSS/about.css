@@ -26,6 +26,22 @@ aside {
     height: calc(100vh - 60px);
 }
 
+.hero h1 {font-size:6vw;}
+
+.hero p {font-size:2.75vw;}
+
+/*3vw*/
+
+@media all and (max-width: 420px) {
+    
+}
+
+@media all and (max-width: 600px) {
+    .hero h1 {font-size: 28px;}
+    .hero p {font-size: 16px;}
+}
+
+
 #members {
     grid-column: 1/2;
     grid-row: 1/4;

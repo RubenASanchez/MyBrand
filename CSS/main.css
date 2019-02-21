@@ -60,10 +60,6 @@ html, h1, h2, h3, h4, p, a, button {
 
 /* CUSTOM DEFAULT STYLES */
 
-html {
-    font-size: 21px;
-}
-
 main {
     margin-top: 60px;
 }
@@ -72,6 +68,7 @@ h1 {
     font-size: 48px;
     margin-bottom: 10px;
     font-weight: 200;
+    font-size: 21px;
 }
 
 p {
@@ -93,6 +90,7 @@ header {
     right: 0;
     background: var(--mainWhite);
     z-index: 4;
+    font-size: 21px;
 }
 
 footer {
