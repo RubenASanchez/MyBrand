@@ -203,7 +203,7 @@ aside {
     animation-delay: 18s;
 }
 
-footer {height: 100vh;} /* temporary bug fix*/
+main {overflow-y: hidden;} /*footer bug fix*/
 
 -webkit-@keyframes circle2 {
     0% {-webkit-transform: translateX(0) translateY(0); transform: scale(0.1); opacity: 0;}
