@@ -49,13 +49,8 @@ html {box-sizing: border-box;}
     --gridHeight: calc(25vh - 15px);
 }
 
-@font-face {
-    font-family: 'zekton';
-    src: url(../Fonts/zekton.ttf) format('truetype');
-}
-
 html, h1, h2, h3, h4, p, a, button {
-    font-family: 'Advent Pro', zekton, sans-serif;
+    font-family: 'Advent Pro', sans-serif;
 }
 
 /* CUSTOM DEFAULT STYLES */
@@ -68,7 +63,6 @@ h1 {
     font-size: 48px;
     margin-bottom: 10px;
     font-weight: 200;
-    font-size: 21px;
 }
 
 p {
@@ -175,5 +169,4 @@ footer a {
     html {font-size: 17px;}
     header nav {padding-right: 20px; grid-gap: 4vw;}
     footer nav {grid-auto-flow: row; font-size: 16px; grid-gap: 10px;}
-    #terminal-text p {font-size: 15px;}
 }
