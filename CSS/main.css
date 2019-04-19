@@ -166,7 +166,7 @@ footer a {
 /* MOBILE */
 
 @media all and (max-width: 420px) {
-    html {font-size: 17px;}
+    /*html {font-size: 17px;}*/     /*check each page to see what this affects*/
     header nav {padding-right: 20px; grid-gap: 4vw;}
     footer nav {grid-auto-flow: row; font-size: 16px; grid-gap: 10px;}
 }

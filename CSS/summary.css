@@ -136,8 +136,6 @@ main {
 @media all and (max-width: 650px) {
     #sub-subnav p {margin-left: -11px;}
     #summary h1,#journey h1,#FAQs h1 {height: 30px; font-size: 21px;}
-    
-    /*#journey h2 {font-size: 18px;}*/
 }
 
 @media all and (max-width: 550px) {

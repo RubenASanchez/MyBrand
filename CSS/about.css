@@ -50,14 +50,16 @@ aside {
     margin-bottom: 2vw;
 }
 
+
 #me p a {
     padding: 0.5vw 1vw;
-    background: var(--mainOrange);
-    color: var(--mainWhite);
-
+    border: 1px solid var(--mainOrange);
+    color: var(--mainGray);
 }
 
 #me p a:hover {
+    color: var(--mainWhite);
+    border: 1px solid var(--darkOrange);
     background: var(--darkOrange);
 }
 

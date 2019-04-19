@@ -154,7 +154,7 @@ main {
     width: 100%;
     opacity: 0;
     animation: ditappear 1s ease forwards;
-    animation-delay: 8s;
+    animation-delay: 6s;
 }
 
 #dashboard .dashboard-item:hover .di-title {
