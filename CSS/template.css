@@ -9,7 +9,6 @@
     padding-right: 50px;
     padding-bottom: 4px;
     background: var(--mainWhite);
-    /*background: rgba(250,250,250,0);*/
 }
 
 #subnav div {
@@ -74,10 +73,34 @@ article h2 {font-size: 36px; margin-bottom: 50px; font-weight: 300;}
 article p {font-size: 18px; font-weight: 300;}
 
 #article-illustration {display: grid; justify-items: center;}
-#article-illustration img {width: 350px;}
+#article-illustration img {width: 90vw;}
 #article-illustration a {margin-top: 10px; width: 50px;}
 
 #article-body {margin: 10vw 0;}
+
+/* BUBBLES */
+
+.article-bubbles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    margin: 20px 0px;
+}
+
+.bubble-small-gray , .bubble-medium-gray {
+    border-radius: 50%;
+    background: var(--lightGray);
+}
+
+.bubble-large-blue {
+    border-radius: 50%;
+    background: var(--lightBlue);
+}
+
+.bubble-small-gray {width: 25px; height: 25px; justify-self: center; align-self: center;}
+.bubble-medium-gray {width: 50px; height: 50px; justify-self: center;}
+
+.bubble-large-blue{width: 100px; height: 100px;}
 
 /* FOLLOW */
 
@@ -106,4 +129,8 @@ article p {font-size: 18px; font-weight: 300;}
 
 @media all and (max-width: 374px) {
     #nav-bubbles {margin-left: -15vw;}
+}
+
+@media all and (min-width: 1000px) {
+    #article-illustration img {width: 500px;}
 }
