@@ -49,8 +49,12 @@ html {box-sizing: border-box;}
     --gridHeight: calc(25vh - 15px);
 }
 
-html, h1, h2, h3, h4, p, a, button {
+html, h1, h2, h3, h4, a, nav, button, header, footer, nav a p, #subnav a p {
     font-family: 'Advent Pro', sans-serif;
+}
+
+p {
+    font-family: 'Comfortaa', sans-serif;
 }
 
 /* CUSTOM DEFAULT STYLES */
@@ -65,8 +69,10 @@ h1 {
     font-weight: 200;
 }
 
+h2 {font-weight: 200;}
+
 p {
-    color: var(--lightBlack);
+    color: var(--mainBlack);
 }
 
 body {
