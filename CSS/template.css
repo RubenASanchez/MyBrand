@@ -76,7 +76,7 @@ article p {font-size: 18px; font-weight: 300; line-height: 2; margin-bottom: 40p
 #article-illustration img {width: 90vw; max-width: 500px;}
 #article-illustration a {margin-top: 10px; width: 50px;}
 
-#article-body {margin: 10vw 0;}
+#article-body {margin: 10vw auto; max-width: 790px;}
 
 /* BUBBLES */
 
@@ -106,8 +106,7 @@ article p {font-size: 18px; font-weight: 300; line-height: 2; margin-bottom: 40p
 .article-end {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10px;
-    /*margin: 75px 0px;*/
+    grid-template-rows: 4px;
 }
 
 .end-gray-left , .end-gray-right {
@@ -124,6 +123,13 @@ article p {font-size: 18px; font-weight: 300; line-height: 2; margin-bottom: 40p
     justify-self: center;
 }
 
+/* ARTICLE SUBSCRIBE */
+
+.article-subscribe {
+    margin: 50px auto 0 auto;
+    width: 90vw;
+}
+
 /* FOLLOW */
 
 #article-follow {
@@ -132,6 +138,7 @@ article p {font-size: 18px; font-weight: 300; line-height: 2; margin-bottom: 40p
     align-items: center;
     width: 140px;
     height: 50px;
+    margin: 0 auto;
 }
 
 @keyframes bubblepop {
@@ -155,8 +162,4 @@ article p {font-size: 18px; font-weight: 300; line-height: 2; margin-bottom: 40p
 
 @media all and (max-width: 700px) {
     article p {font-size: 16px; line-height: 2.2;}
-}
-
-@media all and (min-width: 878px) {
-    #article-body {width: 790px; margin-left: auto; margin-right: auto;}
 }

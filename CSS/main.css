@@ -167,6 +167,8 @@ footer a {
     color: var(--mainWhite);
     align-self: center;
     justify-self: center;
+    font-size: 18px;
+    /*font-weight: bold;*/
 }
 
 /* MOBILE */
