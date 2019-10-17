@@ -73,7 +73,7 @@ article h2 {font-size: 36px; margin-bottom: 50px; font-weight: 300;}
 article p {font-size: 18px; font-weight: 300; line-height: 2;}
 
 #article-illustration {display: grid; justify-items: center;}
-#article-illustration img {width: 90vw;}
+#article-illustration img {width: 90vw; max-width: 500px;}
 #article-illustration a {margin-top: 10px; width: 50px;}
 
 #article-body {margin: 10vw 0;}
@@ -129,10 +129,6 @@ article p {font-size: 18px; font-weight: 300; line-height: 2;}
 
 @media all and (max-width: 374px) {
     #nav-bubbles {margin-left: -15vw;}
-}
-
-@media all and (min-width: 1000px) {
-    #article-illustration img {width: 500px;}
 }
 
 @media all and (max-width: 700px) {
