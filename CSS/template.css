@@ -76,7 +76,7 @@ article p {font-size: 18px; font-weight: 300; line-height: 2; margin-bottom: 40p
 #article-illustration img {width: 90vw; max-width: 500px;}
 #article-illustration a {margin-top: 10px; width: 50px;}
 
-#article-body {margin: 10vw auto; max-width: 790px;}
+#article-body {margin: 10vw auto 0 auto; max-width: 790px;}
 
 /* BUBBLES */
 
@@ -125,9 +125,13 @@ article p {font-size: 18px; font-weight: 300; line-height: 2; margin-bottom: 40p
 
 /* ARTICLE SUBSCRIBE */
 
-.article-subscribe {
-    margin: 50px auto 0 auto;
-    width: 90vw;
+#article-body #article-subscribe {
+    margin: 50px 0 0 0;
+}
+
+#article-subscribe p {
+    margin: 0;
+    color: var(--midGray);
 }
 
 /* FOLLOW */
