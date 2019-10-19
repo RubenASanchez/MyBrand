@@ -46,7 +46,7 @@ html {box-sizing: border-box;}
     --veryLightGray: rgb(240,240,240);
     --mainWhite: rgb(253,253,253);
     --darkWhite: rgb(250,250,250);
-    --gridHeight: calc(25vh - 15px);
+    --gridHeight: calc(33vh - 17px);
 }
 
 html, h1, h2, h3, h4, a, nav, button, header, footer, nav a p, #subnav a p {
@@ -73,6 +73,8 @@ h2 {font-weight: 200;}
 
 p {
     color: var(--mainBlack);
+    font-size: 19px;
+    font-weight: 300;
 }
 
 body {
@@ -105,7 +107,6 @@ header nav {
     grid-template-columns: 1fr;
     grid-auto-flow: column;
     align-items: center;
-    margin-top: 5px;
     padding-right: 50px;
 }
 
@@ -122,6 +123,7 @@ header nav a {
     padding: 12px 0;
     width: 50px;
     text-align: center;
+    /*font-size: 21px;*/
 }
 
 header nav a:hover p {
@@ -168,7 +170,6 @@ footer a {
     align-self: center;
     justify-self: center;
     font-size: 18px;
-    /*font-weight: bold;*/
 }
 
 /* MOBILE */

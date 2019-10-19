@@ -2,66 +2,80 @@
 
 main {
     display: grid;
-    grid-template-columns: 4fr 6fr;
-    grid-template-rows: repeat(16,var(--gridHeight));
+    grid-template-columns: minmax(160px,395px) minmax(160px,395px);
+    grid-template-rows: repeat(15,var(--gridHeight));
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 790px;
+    overflow: hidden;
 }
 
 aside {
-    grid-column: 1/2;
+    grid-column: 1/-1;
     grid-row: 1/-1;
 }
+
+/* TITLE */
+
+#intro-title {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    font-size: 12px;
+    color: var(--mainBlue);
+}
+
+.introductions {justify-self: center; align-self: center;}
+
+#website-title {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    align-self: start;
+}
+
+#learn {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: start;
+    text-align: center;
+    width: 90vw;
+}
+
+#lab-members {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    width: 50vw;
+    max-height: 33vh;
+}
+
+#research-group-1 {grid-column: 1/2; grid-row: 4/5; padding-left: 20px;}
+#research-group-2 {grid-column: 2/3; grid-row: 5/6; padding: 0 20px;}
+#research-group-3 {grid-column: 1/3; grid-row: 6/7; padding-left: 20px;}
+
+#scientist {
+    grid-column: 2/3;
+    grid-row: 9/10;
+    width: 50vw;
+    max-height: 33vh;
+}
+
+#scientist-1 {grid-column: 2/3; grid-row: 8/9;}
+#scientist-2 {grid-column: 1/2; grid-row: 9/10; padding-left: 20px;}
+#scientist-3 {grid-column: 1/3; grid-row: 10/11; padding-left: 20px;}
+
 
 /* HEROES */
 
-.heroes-container {
-    grid-column: 2/3;
-    grid-row: 1/-1;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr 20px;
-    grid-template-rows: repeat(16,var(--gridHeight));
-}
 
-.hero {
-    height: calc(100vh - 60px);
-}
-
-.hero h1 {font-size:6vw;}
-.hero p {font-size:2.75vw;}
-
-@media all and (max-width: 600px) {
+/*@media all and (max-width: 600px) {
     .hero h1 {font-size: 28px;}
     .hero p {font-size: 16px;}
-}
+}*/
 
-#members {
-    grid-column: 1/2;
-    grid-row: 1/4;
-}
-
-#me {
-    margin-top: -60px;
-    padding-top: 60px;
-    grid-column: 1/2;
-    grid-row: 5/8;
-}
-
+/*
 #me p:nth-of-type(1) {
     margin-bottom: 2vw;
 }
 
-
-#me p a {
-    padding: 0.5vw 1vw;
-    border: 1px solid var(--mainOrange);
-    color: var(--mainGray);
-}
-
-#me p a:hover {
-    color: var(--mainWhite);
-    border: 1px solid var(--darkOrange);
-    background: var(--darkOrange);
-}
 
 #sparky {
     margin-top: -60px;
@@ -76,43 +90,12 @@ aside {
     grid-row: 13/16;
 }
 
-.hero-message {
-    display: grid;
-    height: var(--gridHeight);
-    align-content: end;
-}
-
-.hero-image {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
-
-.hero-image img {
-    height: calc(50vh - 50px);
-}
 
 #suki img {
     margin-top: calc(25vh - 108px);
     height: 20vh;
 }
-
-/* BUTTONS */
-
-#hero-button-1 {
-    grid-column: 1/-1;
-    grid-row: 4/5;
-}
-
-#hero-button-2 {
-    grid-column: 1/-1;
-    grid-row: 8/9;
-}
-
-#hero-button-3 {
-    grid-column: 1/-1;
-    grid-row: 12/13;
-}
+*/
 
 /* SMOKE */
 
@@ -127,7 +110,6 @@ aside {
 
 #smoke-flask {
     height: 20vh;
-    margin-bottom: 30vh;
     text-align: center;
 }
 
@@ -221,7 +203,7 @@ main {overflow-y: hidden;} /*footer bug fix*/
     3% {-webkit-transform: translateX(0) translateY(0); transform: scale(0.8);}
     4% {-webkit-transform: translateX(0) translateY(0); transform: scale(1.1);}
     5% {-webkit-transform: translateX(0) translateY(0); transform: scale(1);}
-    100% {-webkit-transform: translateX(0) translateY(-300vh); opacity: 1;}
+    100% {-webkit-transform: translateX(0) translateY(-350vh); opacity: 1;}
 }
 
 @keyframes circle2 {
@@ -230,10 +212,10 @@ main {overflow-y: hidden;} /*footer bug fix*/
     3% {transform: translateX(0) translateY(0); transform: scale(0.8);}
     4% {transform: translateX(0) translateY(0); transform: scale(1.1);}
     5% {transform: translateX(0) translateY(0); transform: scale(1);}
-    100% {transform: translateX(0) translateY(-330vh); opacity: 1;}
+    100% {transform: translateX(0) translateY(-350vh); opacity: 1;}
 }
 
 @media all and (max-width: 600px) {
-    main {grid-template-columns: 2fr 8fr;}
-    .heroes-container {grid-column: 1/3; padding-left: 5vw;}
+    /*main {grid-template-columns: 2fr 8fr;}*/
+    /*.heroes-container {grid-column: 1/3; padding-left: 5vw;}*/
 }
