@@ -9,6 +9,7 @@
     padding-right: 50px;
     padding-bottom: 4px;
     background: var(--mainWhite);
+    margin-top: -10px;
 }
 
 #subnav div, #sub-subnav div {
