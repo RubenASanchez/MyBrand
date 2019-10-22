@@ -111,7 +111,8 @@ header nav {
 }
 
 header nav img {
-    height: 50px;
+    height: 40px;
+    margin-left: 10px;
 }
 
 .active-item {
@@ -120,16 +121,14 @@ header nav img {
 }
 
 header nav a {
-    padding: 12px 0;
+    padding: 10px 0;
     width: 50px;
     text-align: center;
-    /*font-size: 21px;*/
 }
 
 header nav a:hover p {
     color: var(--lightBlue);
 }
-
 
 footer nav {
     display: grid;
