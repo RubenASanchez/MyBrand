@@ -8,6 +8,7 @@
     align-items: center;
     padding-right: 50px;
     padding-bottom: 4px;
+    margin-top: -12px;
     background: var(--mainWhite);
 }
 
@@ -67,15 +68,72 @@
 
 /* ARTICLE */
 
-article {margin: 150px auto 50px auto; width: 90vw;}
-article h1 {font-size: 4vw;}
-article h2 {font-size: 5vw; margin-bottom: 2vw;}
+article {margin: 120px auto 50px auto; width: 90vw;}
+article h1 {font-size: 40px; margin-bottom: 40px; font-weight: 300;}
+article h2 {font-size: 36px; margin-bottom: 50px; font-weight: 200;}
+article p {font-size: 18px; font-weight: 300; line-height: 2; margin-bottom: 40px;}
 
 #article-illustration {display: grid; justify-items: center;}
-#article-illustration img {width: 90vw;}
+#article-illustration img {width: 90vw; max-width: 500px;}
 #article-illustration a {margin-top: 10px; width: 50px;}
 
-#article-body {margin: 10vw 0;}
+#article-body {margin: 10vw auto 0 auto; max-width: 790px;}
+
+/* BUBBLES */
+
+.article-bubbles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    margin: 75px 0px;
+}
+
+.bubble-small-gray , .bubble-medium-gray {
+    border-radius: 50%;
+    background: var(--lightGray);
+}
+
+.bubble-large-blue {
+    border-radius: 50%;
+    background: var(--lightBlue);
+}
+
+.bubble-small-gray {width: 25px; height: 25px; justify-self: center; align-self: center;}
+.bubble-medium-gray {width: 50px; height: 50px; justify-self: center;}
+.bubble-large-blue{width: 100px; height: 100px;justify-self: center; align-self: center;}
+
+/*END*/
+
+.article-end {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4px;
+}
+
+.end-gray-left , .end-gray-right {
+    background: var(--lightGray);
+    width: 50%;
+}
+
+.end-gray-left {justify-self: left;}
+.end-gray-right {justify-self: right;}
+
+.end-blue-middle {
+    background: var(--lightBlue);
+    width: 80%;
+    justify-self: center;
+}
+
+/* ARTICLE SUBSCRIBE */
+
+#article-body #article-subscribe {
+    margin: 50px 0 0 0;
+}
+
+#article-subscribe p {
+    margin: 0;
+    color: var(--midGray);
+}
 
 /* FOLLOW */
 
@@ -85,6 +143,7 @@ article h2 {font-size: 5vw; margin-bottom: 2vw;}
     align-items: center;
     width: 140px;
     height: 50px;
+    margin: 0 auto;
 }
 
 @keyframes bubblepop {
@@ -106,6 +165,6 @@ article h2 {font-size: 5vw; margin-bottom: 2vw;}
     #nav-bubbles {margin-left: -15vw;}
 }
 
-/*@media all and (min-width: 580px) {
-    #article-illustration img {width: 60vw;}
-}*/
+@media all and (max-width: 700px) {
+    article p {font-size: 16px; line-height: 2.2;}
+}
