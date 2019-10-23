@@ -100,7 +100,7 @@ header #subnav a:hover p {
 #pdf-container {
     position: absolute;
     top: 58px;
-    right: calc(4vw + 60px);
+    right: calc(4vw + 14px);
     width: 140px;
     display: flex;
     justify-content: space-between;
