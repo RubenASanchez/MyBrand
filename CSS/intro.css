@@ -210,5 +210,5 @@ aside {
 }
 
 @media all and (max-width: 420px) {
-    main p {font-size: 16px;}
+    main p , .text-links {font-size: 16px;}
 }
