@@ -154,6 +154,8 @@ footer a {
 
 .text-links {
     color: var(--mainOrange);
+    font-family: 'Comfortaa' , sans-serif;
+    font-size: 19px;
 }
 
 /* BUTTONS */
