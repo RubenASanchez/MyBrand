@@ -150,6 +150,12 @@ footer a {
     color: var(--lightGray);
 }
 
+/* TEXT LINKS */
+
+.text-links {
+    color: var(--mainOrange);
+}
+
 /* BUTTONS */
 
 .button {
