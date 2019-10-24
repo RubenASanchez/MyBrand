@@ -128,9 +128,8 @@ header #subnav a:hover p {
 
 /* MAIN */
 
-main {
-    margin-top: 110px;
-}
+html {background: var(--lightBlack);}
+main {margin-top: 110px;}
 
 /* DASHBOARD */
 
