@@ -99,18 +99,18 @@ header #subnav a:hover p {
 
 #pdf-container {
     position: absolute;
-    top: 58px;
-    right: calc(4vw + 14px);
-    width: 140px;
+    top: 50px;
+    right: 54px;
+    width: 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    font-size: 16px;
 }
 
 #pdf-container a p {
     color: var(--mainOrange);
+    font-size: 16px;
 }
 
 #pdf-container a:hover p {
@@ -129,7 +129,7 @@ header #subnav a:hover p {
 /* MAIN */
 
 main {
-    margin-top: 123px;
+    margin-top: 110px;
 }
 
 /* DASHBOARD */
@@ -139,7 +139,6 @@ main {
     grid-template-columns: 3vw 30vw 2vw 30vw 2vw 30vw 3vw;
     grid-template-rows: 3vw 20vw 2vw 20vw 3vw;
     background: var(--lightBlack);
-    border-bottom:1px solid white;
 }
 
 #dashboard .dashboard-item {
@@ -152,6 +151,8 @@ main {
 .di-title {
     color: var(--mainOrange);
     text-align: center;
+    align-self: center;
+    justify-self: center;
     width: 100%;
     opacity: 0;
     animation: ditappear 1s ease forwards;
@@ -490,12 +491,13 @@ main {
 @media all and (max-width: 420px) {
     #subnav, #sub-subnav {padding-right: 20px; grid-gap: 4vw;}
     #large-bubble p {font-size: 14px;}
-    #pdf-container {right: calc(4vw + 20px)}
+    #pdf-container {right: calc(4vw + 10px)}
     #sub-subnav p {margin-left: -15px; font-size: 14px;}
+    .di-title {font-size: 16px;}
 }
 
 @media all and (max-width: 810px) {
-    #dashboard {grid-template-columns: 3vw 46vw 2vw 46vw 3vw; grid-template-rows: 3vw calc((46vw/3)*2) 2vw calc((46vw/3)*2) 2vw calc((46vw/3)*2) 3vw;}
+    #dashboard {padding-top: 10px;grid-template-columns: 3vw 46vw 2vw 46vw 3vw; grid-template-rows: 3vw calc((46vw/3)*2) 2vw calc((46vw/3)*2) 2vw calc((46vw/3)*2) 3vw;}
     #dashboard .dashboard-item {width: 46vw;}
     #di1 {grid-column: 2/3; grid-row: 2/3;}
     #di2 {grid-column: 4/5; grid-row: 2/3;}
