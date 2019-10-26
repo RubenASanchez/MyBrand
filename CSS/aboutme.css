@@ -60,7 +60,7 @@
 
 #large-bubble p {
     color: var(--mainWhite);
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* SUB SUB NAVIGATION */
@@ -83,7 +83,7 @@
     border-radius: 20px;
     padding: 4px 10px;
     margin-left: -20px;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--mainWhite);
     background: var(--lightBlue);
     transform: scale(0.01);
@@ -491,7 +491,6 @@ main {margin-top: 110px;}
     #subnav, #sub-subnav {padding-right: 20px; grid-gap: 4vw;}
     #large-bubble p {font-size: 14px;}
     #pdf-container {right: calc(4vw + 10px)}
-    #sub-subnav p {margin-left: -15px; font-size: 14px;}
     .di-title {font-size: 16px;}
 }
 
