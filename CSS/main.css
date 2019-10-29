@@ -64,16 +64,19 @@ main {
 }
 
 h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    font-weight: 200;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 300;
 }
 
-h2 {font-weight: 200;}
+h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-weight: 200;}
 
 p {
     color: var(--mainBlack);
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 300;
 }
 

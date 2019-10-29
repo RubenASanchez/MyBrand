@@ -122,145 +122,102 @@ header #subnav a:hover p {
 
 /* MAIN */
 
-main {
-    margin-top: 210px;
-}
+main {margin: 170px auto 0 auto; width: 90vw; max-width: 790px;}
+h1 {margin: 200px auto 40px auto;}
 
 /* SUMMARY */
 
-#summary,#journey,#FAQs {
-    margin-bottom: 10vw;
-}
-
-#summary h1,#journey h1,#FAQs h1 {
-    margin: 0 1vw 4vw 1vw;
-    height: 39px;
-    font-size: 28px;
-    font-weight: 200;
-    border-bottom: 1px solid var(--mainBlue);
-}
-
-#summary p {
-    margin: 4vw 10vw;
-    font-size: 3vw;
-}
-
-#summary p:nth-of-type(1) {
-    margin-top: 8vw;
-}
+#summary {line-height: 2;}
+#summary p {margin-bottom: 40px;}
+/*#summary h2 {border-top: 1px solid var(--mainBlue);}*/
 
 /* JOURNEY */
 
+#journey h2 , #FAQs h2{
+    margin: 100px auto 40px auto;
+    /*border-top: 1px solid var(--mainBlue);*/
+}
+
 #journey-container {
-    margin: 0 1vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
     display: grid;
-    grid-template-columns: repeat(10,5vw) 1fr;
-    grid-template-rows: 10vw repeat(69,5vw) 10vw;
+    grid-template-columns: 5% repeat(12,7.5%) 5%;
+    grid-template-rows: 4vw repeat(18, auto-fit 16vw) 4vw;
+    grid-row-gap: 15vw;
     background: var(--lightBlue);
 }
 
-#journey h2 {
-    text-align: center;
-    font-size: 5vw;
+#journey h3 {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 10px;
     color: var(--darkWhite);
 }
 
 #journey p {
-    padding: 0 3vw;
     color: var(--lightBlack);
-    font-size: 2.8vw;
+    line-height: 1.5;
 }
 
 .journey-images {
     height: 100%;
-    width: 100%;
+    width:100%;
 }
 
-#choices-title {grid-column: 8/-1; grid-row: 2/3;}
-#choices-content {grid-column: 8/-1; grid-row: 4/5;}
-#medical-assistant-title {grid-column: 8/-1; grid-row: 8/9;}
-#medical-assistant-content {grid-column: 8/-1; grid-row: 10/12;}
-#medical-groups-title {grid-column: 10/-1; grid-row: 14/15;}
-#medical-groups-content {grid-column: 10/-1; grid-row: 16/18;}
-#specimens-title {grid-column: 8/-1; grid-row: 20/21;}
-#specimens-content {grid-column: 8/-1; grid-row: 22/24;}
-#diagnostics-title {grid-column: 6/-1; grid-row: 26/27;}
-#diagnostics-content {grid-column: 6/-1; grid-row: 28/30;}
-#clinical-trials-title {grid-column: 8/-1; grid-row: 32/33;}
-#clinical-trials-content {grid-column: 8/-1; grid-row: 34/36;}
-#comparative-medicine-title {grid-column: 10/-1; grid-row: 38/39;}
-#comparative-medicine-content {grid-column: 10/-1; grid-row: 40/42;}
-#science-title {grid-column: 8/-1; grid-row: 45/46;}
-#science-content {grid-column: 8/-1; grid-row: 47/48;}
-#uni-title {grid-column: 6/-1; grid-row: 50/51;}
-#uni-content {grid-column: 6/-1; grid-row: 52/55;}
-#analyst-title {grid-column: 8/-1; grid-row: 58/59;}
-#analyst-content {grid-column: 8/-1; grid-row: 60/64;}
-#author-title {grid-column: 8/-1; grid-row: 66/67;}
-#author-content {grid-column: 8/-1; grid-row: 68/70;}
+#choices {grid-column: 5/-2; grid-row: 1/2;}
+#medical-assistant {grid-column: 6/-2; grid-row: 2/3;}
+#medical-groups {grid-column: 7/-2; grid-row: 3/4;}
+#specimens {grid-column: 6/-2; grid-row: 4/5;}
+#diagnostics {grid-column: 5/-2; grid-row: 5/6;}
+#clinical-trials {grid-column: 7/-1; grid-row: 6/7;}
+#comparative-medicine {grid-column: 8/-2; grid-row: 7/8;}
+#science {grid-column: 7/-2; grid-row: 8/9;}
+#uni {grid-column: 6/-2; grid-row: 9/10;}
+#analyst {grid-column: 7/-2; grid-row: 10/11;}
+#author {grid-column: 7/-2; grid-row: 11/12;}
 
-#journey-checklist {grid-column: 3/7; grid-row: 2/6;}
-#journey-asclepius {grid-column: 3/7; grid-row: 8/12;}
-#journey-stethoscope {grid-column: 5/9; grid-row: 14/18;}
-#journey-test-tubes {grid-column: 3/7; grid-row: 20/24;}
-#journey-microscope {grid-column: 1/5; grid-row: 26/30;}
-#journey-book {grid-column: 3/7; grid-row: 32/36;}
-#journey-mouse {grid-column: 5/9; grid-row: 38/42;}
-#journey-research {grid-column: 3/7; grid-row: 44/48;}
-#journey-uni {grid-column: 1/5; grid-row: 51/55;}
-#journey-data-analysis {grid-column: 3/7; grid-row: 59/63;}
-#journey-paper {grid-column: 3/7; grid-row: 66/70;}
+#journey-checklist {grid-column: 2/4; grid-row: 1/2;}
+#journey-asclepius {grid-column: 2/5; grid-row: 2/3;}
+#journey-stethoscope {grid-column: 3/6; grid-row: 3/4;}
+#journey-test-tubes {grid-column: 2/5; grid-row: 4/5;}
+#journey-microscope {grid-column: 2/4; grid-row: 5/6;}
+#journey-book {grid-column: 3/6; grid-row: 6/7;}
+#journey-mouse {grid-column: 4/7; grid-row: 7/8;}
+#journey-research {grid-column: 3/6; grid-row: 8/9;}
+#journey-uni {grid-column: 2/5; grid-row: 9/10;}
+#journey-data-analysis {grid-column: 3/6; grid-row: 10/11;}
+#journey-paper {grid-column: 3/6; grid-row: 11/12;}
 
 /* FAQS */
 
-#faq-container {
-    margin: 0 1vw;
-}
-
-.chat-container {
-    display: flex;
-    margin-bottom: 2vw;
-}
-
-.chat-img {
-    height: 10vw;
-    width: 10vw;
-    min-height: 10vw;
-    min-width: 10vw;
-}
-
+.chat-container {display: flex; margin-bottom: 20px;}
+.chat-img {height: 56px;}
 .c-suki {justify-content: flex-start;}
 .c-me {justify-content: flex-end;}
 
 .chat-container p {
-    padding: 2vw;
-    height: 100%;
-    font-size: 3vw;
+    padding: 10px;
+    line-height: 2;
     color: var(--lightBlack);
 }
 
-.c-suki p {margin-left: 2vw; background: var(--lightGray);}
-.c-me p {margin-right: 2vw; background: var(--lightBlue);}
+.c-suki p {margin-left: 10px; background: var(--lightGray);}
+.c-me p {margin-right: 10px; background: var(--lightBlue);}
 
 @keyframes bubblepop {
     0% {transform: scale(0.01);}
     100% {transform: scale(1);}
 }
 
-/*@media all and (max-width: 650px) {
-    #summary h1,#journey h1,#FAQs h1 {height: 30px; font-size: 21px;}
-}
-
-@media all and (max-width: 550px) {
-    #summary p {font-size: 16px;}
-}
-
-@media all and (max-width: 540px) {
-    #journey p , .chat-container p {font-size: 14px;}
-}*/
-
 
 @media all and (max-width: 420px) {
     #subnav, #sub-subnav {padding-right: 20px; grid-gap: 4vw;}
     #pdf-container {right: calc(4vw + 10px)}
+}
+
+@media all and (max-width: 700px) {
+    #summary p , #FAQs p {font-size: 16px; line-height: 2.2;}
+    #journey p {font-size: 16px;}
+    #journey h3 {font-size: 24px; margin-bottom: 0px;}
 }
