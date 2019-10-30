@@ -137,9 +137,9 @@ h1 {margin: 200px auto 40px auto;}
 #journey-container {
     padding-top: 4vw;
     padding-bottom: 4vw;
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 5% repeat(12,7.5%) 5%;
-    grid-template-rows: 4vw repeat(18, auto-fit 16vw) 4vw;
+    grid-template-rows: 4vw repeat(11, auto-fit 16vw) 4vw;
     grid-row-gap: 15vw;
     background: var(--lightBlue);
 }
