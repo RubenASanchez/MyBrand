@@ -129,19 +129,15 @@ h1 {margin: 200px auto 40px auto;}
 
 #summary {line-height: 2;}
 #summary p {margin-bottom: 40px;}
-/*#summary h2 {border-top: 1px solid var(--mainBlue);}*/
 
 /* JOURNEY */
 
-#journey h2 , #FAQs h2{
-    margin: 100px auto 40px auto;
-    /*border-top: 1px solid var(--mainBlue);*/
-}
+#journey h2 , #FAQs h2{margin: 100px auto 40px auto;}
 
 #journey-container {
     padding-top: 4vw;
     padding-bottom: 4vw;
-    display: grid;
+    display: inline-grid;
     grid-template-columns: 5% repeat(12,7.5%) 5%;
     grid-template-rows: 4vw repeat(18, auto-fit 16vw) 4vw;
     grid-row-gap: 15vw;
