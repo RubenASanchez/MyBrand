@@ -132,19 +132,41 @@ h1 {margin: 200px auto 40px auto;}
 
 /* JOURNEY 2 */
 
-#journey2 { padding: 4vw 4vw; background: var(--lightBlue);color:var(--darkWhite);}
-#journey2 h3 {font-size: 30px;}
-#j1 , #j2 {display: flex; margin-bottom: 50px;}
-#j2 {margin-left: 50px;}
-#choices2,#uni2 {flex:1;}
-.journey-images2 {width: 25%; align-self:center;}
-.divspace {width: 10%;}
+#journey-container2 {
+    padding: 4vw;
+    background: var(--lightBlue);
+}
+
+.journey-sections {
+    display: flex;
+    margin-bottom: 50px;
+    /*background: grey;*/
+}
+
+.journey-sections:nth-of-type(11) {margin-bottom:0;}
+
+.journey-images2 {width: 25%;}
+
+#journey-checklist , #journey-microscope {max-width: 100px;}
+
+.spacediv {width: 10%;}
+
+.journey-content {flex: 1;}
+
+#medical-assistant {margin-left: 5%;}
+#medical-groups {margin-left: 10%;}
+#specimens {margin-left: 5%;}
+#clinical-trials {margin-left: 5%;}
+#comparative-medicine {margin-left: 10%;}
+#science {margin-left: 5%;}
+#analyst {margin-left: 5%;}
+#author {margin-left: 5%;}
 
 /* JOURNEY */
 
 #journey h2 , #FAQs h2 {margin: 100px auto 40px auto;}
 
-#journey-container {
+/*#journey-container {
     padding-top: 4vw;
     padding-bottom: 4vw;
     display: grid;
@@ -152,7 +174,7 @@ h1 {margin: 200px auto 40px auto;}
     grid-template-rows: repeat(auto-fit);
     grid-row-gap: 15vw;
     background: var(--lightBlue);
-}
+}*/
 
 #journey h3 {
     text-align: left;
