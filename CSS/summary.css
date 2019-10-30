@@ -130,6 +130,16 @@ h1 {margin: 200px auto 40px auto;}
 #summary {line-height: 2;}
 #summary p {margin-bottom: 40px;}
 
+/* JOURNEY 2 */
+
+#journey2 { padding: 4vw 4vw; background: var(--lightBlue);color:var(--darkWhite);}
+#journey2 h3 {font-size: 30px;}
+#j1 , #j2 {display: flex; margin-bottom: 50px;}
+#j2 {margin-left: 50px;}
+#choices2,#uni2 {flex:1;}
+.journey-images2 {width: 25%; align-self:center;}
+.divspace {width: 10%;}
+
 /* JOURNEY */
 
 #journey h2 , #FAQs h2 {margin: 100px auto 40px auto;}
