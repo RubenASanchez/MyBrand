@@ -132,7 +132,7 @@ h1 {margin: 200px auto 40px auto;}
 
 /* JOURNEY */
 
-#journey h2 , #FAQs h2{margin: 100px auto 40px auto;}
+#journey h2 , #FAQs h2 {margin: 100px auto 40px auto;}
 
 #journey-container {
     padding-top: 4vw;
@@ -157,7 +157,7 @@ h1 {margin: 200px auto 40px auto;}
 }
 
 .journey-images {
-    /*height: 100%;*/
+    height: 100%;
     width:100%;
 }
 
