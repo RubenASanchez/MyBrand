@@ -1,16 +1,124 @@
-/* SUB NAV */
+/* SUB NAVIGATION */
 
-#small-bubble, #medium-bubble, #large-bubble {
-    transform: scale(1);
-    animation: none;
+#subnav, #sub-subnav {
+    display: grid;
+    grid-gap: 10vw;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    align-items: center;
+    padding-right: 50px;
+    padding-bottom: 4px;
+    background: var(--mainWhite);
+    margin-top: -10px;
 }
 
-/* SUB SUB NAV */
+#subnav div, #sub-subnav div {
+    display: grid;
+    width: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+#small-bubble, #medium-bubble, #large-bubble, #sub-medium-bubble {
+    border-radius: 50%;
+    background: var(--lightBlue);
+    align-self: center;
+    justify-self: center;
+}
+
+#small-bubble {
+    margin-top: 0px;
+    width: 8px;
+    height: 8px;
+    max-width: 8px;
+    max-height: 8px;
+}
+
+#medium-bubble {
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+}
+
+#large-bubble {
+    margin-top: 4px;
+    width: 32px;
+    height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+a #large-bubble p {
+    color: var(--mainWhite);
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 14px;
+}
+
+/* SUB SUB NAVIGATION */
+
+#sub-subnav {
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+
+#sub-subnav #sub-medium-bubble {
+    margin: 0 0 4px 0;
+    width: 16px;
+    height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    transform: scale(0.01);
+    animation: bubblepop .5s ease-out forwards;
+}
 
 #sub-subnav p {
-    margin-left: -20px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    margin-left: -30px;
+    font-size: 14px;
+    color: var(--mainWhite);
+    background: var(--lightBlue);
+    transform: scale(0.01);
+    animation: bubblepop .5s ease-out forwards;
+    animation-delay: .2s;
 }
 
+header #subnav a:hover p {
+    color: var(--mainBlue);
+}
+
+/* DOWNLOAD PDF */
+
+#pdf-container {
+    position: absolute;
+    top: 50px;
+    right: 54px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+#pdf-container a p {
+    color: var(--mainOrange);
+    font-size: 16px;
+}
+
+#pdf-container a:hover p {
+    color: var(--darkOrange);
+}
+
+#cv {
+    width: 48px;
+    height: 59px;
+}
+
+#cv:hover {
+    color: var(--darkOrange);
+}
 
 /* SHADOW THEATER */
 
@@ -30,7 +138,7 @@
     grid-column: 1/-1;
     grid-row: -2/-1;
     align-self: end;
-    width: 152%; /*136.5vw*/
+    width: 136.5vw; /*136.5vw  152%*/
 }
 
 #waves-front {
@@ -230,8 +338,14 @@
 #shadow2 {grid-column: 3/4; grid-row: 2/3; width: 6.5vw;}
 #shadow3 {grid-column: 5/6; grid-row: 2/3; width: 5vw;}
 
-@media all and (max-width: 650px) {
-    #sub-subnav p {margin-left: -16px;}
+@keyframes bubblepop {
+    0% {transform: scale(0.01);}
+    100% {transform: scale(1);}
+}
+
+@media all and (max-width: 420px) {
+    #subnav, #sub-subnav {padding-right: 20px; grid-gap: 4vw;}
+    #pdf-container {right: calc(4vw + 10px)}
 }
 
 @media all and (max-width: 580px) {
