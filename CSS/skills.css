@@ -129,14 +129,15 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
 
 #skills {
     display: grid;
-    grid-template-columns: 45% 10% 45%;
-    grid-template-rows: 40vw;
+    grid-template-columns: 44% 2% 54%;
+    /*grid-template-rows: 40vw;*/
 }
 
 #skills-menu {
     grid-column: 1/2;
     grid-row: 1/2;
     height: 100%;
+    max-height: 420px;
 }
 
 #skills-menu div {
@@ -162,6 +163,7 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
     grid-template-rows: 100%;
     justify-items: center;
     align-items: center;
+    max-height: 420px;
 }
 
 .s-circles {
@@ -174,13 +176,18 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
 #c1 {
     height: 40vw;
     width: 40vw;
-    border: .5vw solid transparent;
+    max-height: 410px;
+    max-width: 410px;
+    border: 0.5vw solid transparent;
     border-color: var(--lightBlue);
+    border-width: 2%;
 }
 
 #c2 {
     height: 39vw;
     width: 39vw;
+    max-height: 400px;
+    max-width: 400px;
     border-top-color: var(--mainOrange);
     transform: rotate(45deg);
     animation: c2 3s ease-in-out infinite;
@@ -190,6 +197,8 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
 #c3 {
     height: 38.75vw;
     width: 38.75vw;
+    max-height: 398px;
+    max-width: 398px;
     border-bottom-color: var(--darkOrange);
     transform: rotate(20deg);
     animation: c3 2s ease-in-out infinite;
@@ -199,6 +208,8 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
 #c4 {
     height: 36.5vw;
     width: 36.5vw;
+    max-height: 390px;
+    max-width: 390px;
     border-top-color: var(--mainBlue);
     transform: rotate(45deg);
     animation: c4 3s ease-in-out infinite;
@@ -208,6 +219,8 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
 #c5 {
     height: 34vw;
     width: 34vw;
+    max-height: 348px;
+    max-width: 348px;
     border-right-color: rgb(230,160,70);
     transform: rotate(45deg);
     animation: c5 3.5s ease-in-out infinite;
@@ -217,6 +230,8 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
 #c6 {
     height: 31.5vw;
     width: 31.5vw;
+    max-height: 323px;
+    max-width: 323px;
     border-right-color: var(--lightBlue);
     border-bottom-color: var(--lightBlue);
     transform: rotate(45deg);
@@ -227,6 +242,8 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
 #c7 {
     height: 29vw;
     width: 29vw;
+    max-height: 295px;
+    max-width: 295px;
     border-left-color: var(--mainBlue);
     animation: c7 5s ease-in-out infinite;
     animation-delay: 10s;
@@ -235,7 +252,7 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
 #passion,#innovation,#results {
     grid-column: 1/2;
     grid-row: 1/2;
-    font-size: 5vw;
+    font-size: 12px;
     opacity: 0;
     animation: inner-c 3s ease-in-out 1;
 }
@@ -243,6 +260,8 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
 #passion {animation-delay: 1s;}
 #innovation {animation-delay: 4s;}
 #results {animation-delay: 7s;}
+
+svg {grid-column: 1/2; grid-row: 1/2;}
 
 /* INDUSTRIES */
 
@@ -978,4 +997,9 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 
 @media all and (max-width: 700px) {
     #skills-menu p {font-size: 14px;}
+}
+
+@media all and (min-width: 1030px) {
+    .s-circles {border-width: 8px;}
+    #c1 {border-width: 5px;}
 }
