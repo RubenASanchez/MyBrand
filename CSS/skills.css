@@ -19,7 +19,7 @@
     justify-items: center;
 }
 
-#small-bubble, #medium-bubble, #large-bubble, #sub-medium-bubble {
+#small-bubble, #medium-bubble, #large-bubble {
     border-radius: 50%;
     background: var(--lightBlue);
     align-self: center;
@@ -63,19 +63,11 @@ a #large-bubble p {
     margin-top: 0px;
 }
 
-#sub-subnav #sub-medium-bubble {
-    margin: 0 0 4px 0;
-    width: 16px;
-    height: 16px;
-    max-width: 16px;
-    max-height: 16px;
-    transform: scale(0.01);
-    animation: bubblepop .5s ease-out forwards;
-}
-
 #sub-subnav p {
+    height: 32px;
+    max-height: 32px;
     border-radius: 20px;
-    padding: 4px 10px;
+    padding: 9px 10px; /*4 10*/
     margin-left: -4px;
     font-size: 14px;
     color: var(--mainWhite);
@@ -389,7 +381,6 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 /* SKILL SECTIONS */
 
 #programming , #research , #project , #webdev , #animation , #languages {
-    width: 98vw;
     margin: -175px auto 0 auto;
     padding-top: 220px;
 }
