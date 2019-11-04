@@ -387,7 +387,7 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
     background: rgb(237,237,237);
     width: 100%;
     height: 8vw;
-    padding-left: 2vw;
+    padding-left: 2%;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
     display: grid;
@@ -412,7 +412,7 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
     width: 100%;
     height: 50vw;
     padding-top: 8vw;
-    padding-left: 4vw;
+    padding-left: 2%;
 }
 
 #terminal-screen div {
@@ -420,14 +420,14 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
     align-items: baseline;
 }
 
-#terminal-screen div h2 {
-    width: 38vw;
-    font-size: 5vw;
+#terminal-screen div h3 {
+    width: 40%;
+    font-size: 4vw;
     color: var(--darkWhite);
 }
 
 #terminal-screen div p {
-    font-size: 5vw;
+    font-size: 3vw;
     color: var(--mainOrange);
 }
 
