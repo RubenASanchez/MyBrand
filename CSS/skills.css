@@ -64,10 +64,10 @@ a #large-bubble p {
 }
 
 #sub-subnav p {
-    height: 32px;
-    max-height: 32px;
+    /*height: 32px;
+    max-height: 32px;*/
     border-radius: 20px;
-    padding: 9px 10px; /*4 10*/
+    padding: 4px 10px; /*9 10*/
     margin-left: -4px;
     font-size: 14px;
     color: var(--mainWhite);
