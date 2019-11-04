@@ -19,7 +19,7 @@
     justify-items: center;
 }
 
-#small-bubble, #medium-bubble, #large-bubble, #sub-medium-bubble {
+#small-bubble, #medium-bubble, #large-bubble {
     border-radius: 50%;
     background: var(--lightBlue);
     align-self: center;
@@ -67,16 +67,6 @@
 
 #sub-subnav {
     padding-bottom: 10px;
-}
-
-#sub-subnav #sub-medium-bubble {
-    margin: 0 0 4px 0;
-    width: 16px;
-    height: 16px;
-    max-width: 16px;
-    max-height: 16px;
-    transform: scale(0.01);
-    animation: bubblepop .5s ease-out forwards;
 }
 
 #sub-subnav p {
