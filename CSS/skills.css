@@ -416,48 +416,24 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 
 #terminal-text {
     width: 90%;
-    height: 75%;
+    height: 70%;
     margin: auto;
-    /*background: gray;*/
-}
-
-.terminal-h3 text {
-    fill: var(--darkWhite);
 }
 
 svg .heading {
-    font-size: 8px;
+    font-size: 5px;
     fill: var(--darkWhite);
 }
 
 svg .item {
-    font-size: 6px;
+    font-size: 4px;
     font-family: 'Comfortaa';
     fill: var(--mainOrange);
 }
 
-#script {
-    font-size: 8px;
-}
-
-#terminal-text div {
-    display: flex;
-    align-items: baseline;
-}
-
-#terminal-text h3 {
-    width: 40%;
-    font-size: 4vw;
-    color: var(--darkWhite);
-}
-
-#terminal-text p {
-    font-size: 3vw;
-    color: var(--mainOrange);
-}
-
 .terminal-cursor {
-    color: var(--mainOrange);
+    font-size: 4px;
+    fill: var(--darkWhite);
     animation: 1s blink step-end infinite;
 }
 
