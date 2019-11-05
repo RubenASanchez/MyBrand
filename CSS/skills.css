@@ -382,7 +382,8 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 #terminal-menu {
     background: rgb(237,237,237);
     width: 100%;
-    height: 8vw;
+    height: 7vw;
+    max-height: 50px;
     padding-left: 2%;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
@@ -395,7 +396,9 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 
 .terminal-buttons {
     width: 3vw;
+    max-width: 20px;
     height: 3vw;
+    max-height: 20px;
     border-radius: 50%;
 }
 
@@ -406,23 +409,49 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 #terminal-screen {
     background: rgb(50,50,50);
     width: 100%;
-    height: 50vw;
-    padding-top: 8vw;
-    padding-left: 2%;
+    height: 45vw;
+    max-height: 400px;
+    display: flex;
 }
 
-#terminal-screen div {
+#terminal-text {
+    width: 90%;
+    height: 75%;
+    margin: auto;
+    /*background: gray;*/
+}
+
+.terminal-h3 text {
+    fill: var(--darkWhite);
+}
+
+svg .heading {
+    font-size: 8px;
+    fill: var(--darkWhite);
+}
+
+svg .item {
+    font-size: 6px;
+    font-family: 'Comfortaa';
+    fill: var(--mainOrange);
+}
+
+#script {
+    font-size: 8px;
+}
+
+#terminal-text div {
     display: flex;
     align-items: baseline;
 }
 
-#terminal-screen div h3 {
+#terminal-text h3 {
     width: 40%;
     font-size: 4vw;
     color: var(--darkWhite);
 }
 
-#terminal-screen div p {
+#terminal-text p {
     font-size: 3vw;
     color: var(--mainOrange);
 }
@@ -607,17 +636,19 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 
 #storyboard {
     width: 100%;
-    display: grid;
+    display: flex;
+    /*display: grid;
     grid-template-columns: 3.5vw 28vw 3.5vw 28vw 3.5vw 28vw 3.5vw;
-    grid-template-rows: 3.5vw 20vw 3.5vw 20vw 3.5vw;
+    grid-template-rows: 3.5vw 20vw 3.5vw 20vw 3.5vw;*/
     background: rgb(150,150,150);
 }
 
 .boards {
     background: var(--darkWhite);
+    flex-basis: 1 300px;
 }
 
-.boards h2 {
+.boards h3 {
     text-align: center;
     font-size: 4vw;
     color: var(--mainBlack);
