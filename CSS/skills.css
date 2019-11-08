@@ -447,52 +447,37 @@ svg .item {
 
 /* RESEARCH */
 
-#research-backdrop {
-    width: 100%;
-    padding: 3vw;
-    background: rgb(40,40,40);
-}
+#research-backdrop {background: rgb(40,40,40);}
+#research-content {padding: 2%;}
 
-.r-title {
-    margin-bottom: 1vw;
-    display: flex;
-    justify-content: space-between;
-}
+#research-title {margin-bottom: 1.2%;}
 
-.r-title p {
-    width: 50%;
-    color: rgb(110,110,110);
-    font-size: 3.2vw;
+#research-title #research-name , #research-title #research-description {
+    fill: rgb(110,110,110);
+    font-size: 5px;
 }
 
 .r-bar {
-    padding: 1vw;
-    margin-bottom: 2vw;
+    padding: 1.5%;
+    margin-bottom: 2.4%;
     display: flex;
     justify-content: space-between;
     background: rgb(70,70,70);
 }
 
-.r-bar h3 {
-    width: 50%;
-    align-self: center;
-    color: var(--mainBlue);
-    font-size: 3vw;
+.r-name {
+    fill: var(--mainBlue);
+    font-size: 4px;
 }
 
-.r-content {
-    display: flex;
-    flex: 0 1 auto;
-    width: 50%;
+.r-rect {
+    fill: var(--mainGray);
 }
 
-.r-content p {
-    padding: .8vw;
-    margin-right: 1vw;
-    color: rgb(220,220,220);
-    background: var(--mainGray);
-    font-size: 1.6vw;
-    align-self: flex-start;
+.r-description {
+    fill: rgb(220,220,220);
+    font-size: 2.5px;
+    font-family: 'Comfortaa';
 }
 
 /* PROJECT */
