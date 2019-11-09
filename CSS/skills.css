@@ -252,7 +252,7 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
 #innovation {animation-delay: 4s;}
 #results {animation-delay: 7s;}
 
-svg {grid-column: 1/2; grid-row: 1/2;}
+.skills-svg {grid-column: 1/2; grid-row: 1/2;}
 
 /* INDUSTRIES */
 
@@ -420,18 +420,18 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
     margin: auto;
 }
 
-#terminal-screen svg .heading {
+#terminal-svg .heading {
     font-size: 5px;
     fill: var(--darkWhite);
 }
 
-#terminal-screen svg .item {
+#terminal-svg .item {
     font-size: 4px;
     font-family: 'Comfortaa';
     fill: var(--mainOrange);
 }
 
-#terminal-screen .terminal-cursor {
+#terminal-svg .terminal-cursor {
     font-size: 4px;
     fill: var(--darkWhite);
     animation: 1s blink step-end infinite;
@@ -509,83 +509,30 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
 /* WEB DEVELOPMENT */
 
 #web-backdrop {
-    width: 100%;
-    padding: 2vw 0;
+    padding: 1.5% 1% 1% 1%;
     background: rgb(40,40,40);
-    display: grid;
-    grid-template-columns: 1fr repeat(42,2.3%) 1fr;
-    grid-template-rows: 5vw 4vw repeat(9,2vw 4.2vw);
 }
 
-.ux , .dev {
-    display: flex;
-    align-items: center;
+#month , #month-svg text {
+    fill: var(--lightGray);
+    font-size: 5px;
 }
 
-.ux {
-    background: var(--mainBlue);
+#days #days-svg text {
+    fill: var(--mainGray);
+    font-size: 3.45px;
 }
 
-.dev {
-    background: var(--darkOrange);
-}
+#web-svg .bars {fill: rgb(50,50,50);}
+#web-svg .blue {fill: var(--mainBlue);}
+#web-svg .orange {fill: var(--darkOrange);}
+#web-svg .white {fill: var(--darkWhite);}
 
-.ux p , .dev p {
-    padding-left: 0.5vw;
-    color: var(--darkWhite);
-    font-size: 1.8vw;
+#web-svg .w-text {
+    fill: var(--darkWhite);
+    font-family: 'Comfortaa';
+    font-size: 2.3px;
 }
-
-#nums {
-    padding: 0 1.5vw 0 2vw;
-    font-size: 0.5vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-.bars {
-    width: 0.3vw;
-    background: rgb(50,50,50);
-}
-
-#jan p {
-    text-align: center;
-    font-size: 3.2vw;
-    color: var(--mainGray);
-}
-
-#wd-topline , #wd-botline {
-    margin-top: 2vw;
-    height: 0.4vw;
-    width: 100%;
-    background: var(--mainWhite);
-}
-
-#wd-midline {
-    height: 6.6vw;
-    width: 0.4vw;
-    margin: 2vw auto 0 auto;
-    background: var(--mainWhite);
-}
-
-#jan {grid-column: 1/-1; grid-row: 1/2;}
-#nums {grid-column: 2/-2; grid-row: 2/3;}
-#bars1 {grid-column: 3/4; grid-row: 3/-1;}
-#bars2 {grid-column: 13/14; grid-row: 3/-1;}
-#bars3 {grid-column: 23/24; grid-row: 3/-1;}
-#bars4 {grid-column: 33/34; grid-row: 3/-1;}
-#bars5 {grid-column: 43/44; grid-row: 3/-1;}
-#ux-research1 {grid-column: 3/11; grid-row: 4/5;}
-#prototype {grid-column: 13/22; grid-row: 6/7;}
-#ux-test {grid-column: 15/22; grid-row: 8/9;}
-#develop {grid-column: 22/31; grid-row: 10/11;}
-#dev-test {grid-column: 24/31; grid-row: 12/13;}
-#launch {grid-column: 31/35; grid-row: 14/15;}
-#l-test {grid-column: 31/35; grid-row: 16/17;}
-#ux-research2 {grid-column: 35/43; grid-row: 18/19;}
-#wd-topline {grid-column: 11/12; grid-row: 4/5;}
-#wd-midline {grid-column: 11/13; grid-row: 4/7;}
-#wd-botline {grid-column: 12/13; grid-row: 6/7;}
 
 /* ANIMATION */
 
