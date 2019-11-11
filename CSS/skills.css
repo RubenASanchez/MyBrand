@@ -263,91 +263,6 @@ article {width: 90vw; max-width: 790px; margin: 0 auto;}
     grid-template-rows: 49.4% 1.2% 49.4%;
 }
 
-.industry {
-    /*height: 100%;*
-    /*padding-top: 4vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    display: grid;
-    justify-content: center;
-    width: 30vw;
-    height: 100%;*/
-    transition: all 0.4s;
-    /*overflow-x: hidden;*/
-}
-
-.industry svg text {
-    font-size: 12px;
-}
-
-.industry svg .industry-definition {
-    font-family: 'Comfortaa';
-    font-size: 4.8px;
-    /*font-stretch: 50%;*/
-}
-
-input {visibility: hidden; position: absolute;}
-
-input:checked + #diagnostics {
-    transform: translate(103%,51%) scale(3.06,2.03);
-    background: rgba(250,180,80,1);
-    z-index: 2;
-}
-
-input:checked + #medicine {
-    transform: translate(0,22vw) scalex(3.33) scaley(2.1);
-    background: rgba(250,180,80,1);
-    z-index: 2;
-}
-
-input:checked + #bresearch {
-    transform: translate(-34vw,22vw) scalex(3.33) scaley(2.1);
-    background: rgba(250,180,80,1);
-    z-index: 2;
-}
-
-input:checked + #computation {
-    transform: translate(34vw,-22vw) scalex(3.33) scaley(2.1);
-    background: rgba(100,150,240,1);
-}
-
-input:checked + #imaging {
-    transform: translate(0,-22vw) scalex(3.33) scaley(2.1);
-    background: rgba(100,150,240,1);
-}
-
-input:checked + #ianimation {
-    transform: translate(-34vw,-22vw) scalex(3.33) scaley(2.1);
-    background: rgba(100,150,240,1);
-}
-
-input:checked + #diagnostics .industry-definition {opacity: 1;}
-input:checked + #medicine .industry-definition {opacity: 1;}
-input:checked + #bresearch .industry-definition {opacity: 1;}
-input:checked + #computation .industry-definition {opacity: 1;}
-input:checked + #imaging .industry-definition {opacity: 1;}
-input:checked + #ianimation .industry-definition {opacity: 1;}
-
-.industry h1 {
-    font-size: 4vw;
-    color: var(--lightBlack);
-    margin: 0;
-    text-align: center;
-}
-
-@media all and (max-width: 360px) {
-    .industry h1 {font-size: 14px;}
-}
-
-.industry-definition {
-    opacity: 0;
-    margin-top: 1vw;
-    font-size: 12px;
-    font-weight: 200;
-    color: rgb(50,50,50);
-    transition: all 0.4s;
-}
-
 #diagnostics {
     background: rgba(250,180,80,.25);
     grid-column: 1/2;
@@ -383,6 +298,59 @@ input:checked + #ianimation .industry-definition {opacity: 1;}
     grid-column: 5/6;
     grid-row: 3/4;
 }
+
+.industry-svg .i-title {font-size: 12px;}
+
+.industry-svg .i-text {
+    font-family: 'Comfortaa';
+    font-size: 4.8px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.industry {transition: all 0.4s;}
+
+input {visibility: hidden; position: absolute;}
+
+input:checked + #diagnostics {
+    transform: translate(103%,51%) scale(3.06,2.03);
+    background: rgba(250,180,80,1);
+    z-index: 2;
+}
+
+input:checked + #medicine {
+    transform: translate(0,51%) scale(3.06,2.03);
+    background: rgba(250,180,80,1);
+    z-index: 2;
+}
+
+input:checked + #bresearch {
+    transform: translate(-103%,51%) scale(3.06,2.03);
+    background: rgba(250,180,80,1);
+    z-index: 2;
+}
+
+input:checked + #computation {
+    transform: translate(103%,-51%) scale(3.06,2.03);
+    background: rgba(100,150,240,1);
+}
+
+input:checked + #imaging {
+    transform: translate(0,-51%) scale(3.06,2.03);
+    background: rgba(100,150,240,1);
+}
+
+input:checked + #ianimation {
+    transform: translate(-103%,-51%) scale(3.06,2.03);
+    background: rgba(100,150,240,1);
+}
+
+input:checked + #diagnostics .i-text {opacity: 1;}
+input:checked + #medicine .i-text {opacity: 1;}
+input:checked + #bresearch .i-text {opacity: 1;}
+input:checked + #computation .i-text {opacity: 1;}
+input:checked + #imaging .i-text {opacity: 1;}
+input:checked + #ianimation .i-text {opacity: 1;}
 
 /* PROGRAMMING */
 
