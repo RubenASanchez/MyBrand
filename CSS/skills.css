@@ -517,7 +517,6 @@ input:checked + #ianimation .i-text {opacity: 1;}
     max-height: 512px;
     padding: 2% 2% 2.5% 2%;
     grid-template-columns: 32% 32% 32%;
-    /*grid-template-rows: 3.5vw 20vw 3.5vw 20vw 3.5vw;*/
     grid-template-rows: 48.5% 48.5%;
     grid-gap: 4% 2%;
     background: rgb(150,150,150);
@@ -546,8 +545,8 @@ input:checked + #ianimation .i-text {opacity: 1;}
 #b5 {grid-column: 2/3; grid-row: 2/3;}
 #b6 {grid-column: 3/4; grid-row: 2/3;}
 #narrative-title {grid-column: 1/-1; grid-row:}
+#storyboard-title {grid-column: 1/-1; grid-row:}
 
-#bt3 {grid-column: 1/-1; grid-row: 1/2;}
 #bt4 {grid-column: 2/3; grid-row: 4/5;}
 #bt5 {grid-column: 1/-1; grid-row: 1/2;}
 #bt6 {grid-column: 1/-1; grid-row: 1/2;}
@@ -561,9 +560,9 @@ input:checked + #ianimation .i-text {opacity: 1;}
     grid-template-rows: 24% 24% 12% 12% 12% 12%;
     height: 8vw;
     width: 8vw;
-    max-height: 102px;
-    max-width: 102px;
-    margin: auto;
+    max-height: 82px;
+    max-width: 82px;
+    margin: 10% auto 0 auto;
     border-radius: 50%;
     border: 0.7vw solid rgb(220,220,220);
 }
@@ -571,6 +570,8 @@ input:checked + #ianimation .i-text {opacity: 1;}
 #cd-l-eye , #cd-r-eye {
     height: 100%;
     width: 100%;
+    max-height: 17px;
+    max-width: 17px;
     border-radius: 50%;
     background: rgb(220,220,220);
 }
@@ -592,7 +593,7 @@ input:checked + #ianimation .i-text {opacity: 1;}
 #b2 {
     display: grid;
     grid-template-columns: 1fr 34% 1fr;
-    grid-template-rows: 1fr 58% 1fr;
+    grid-template-rows: 30% 50% 1fr;
 }
 
 #n-page {
@@ -618,7 +619,7 @@ input:checked + #ianimation .i-text {opacity: 1;}
 #b3 {
     display: grid;
     grid-template-columns: 4% 28% 4% 28% 4% 28% 4%;
-    grid-template-rows: 7vw 22% 4% 22%;
+    grid-template-rows: 31% 22% 4% 22%;
 }
 
 .small-boards {
