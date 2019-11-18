@@ -113,70 +113,28 @@ header #subnav a:hover p {
 /* MAIN */
 
 main {
-    margin-top: 178px;
-}
-
-#timeline-container {
-    /*height: calc(100vh - 180px - 250px);*/
-    width: 100%;
-    background: var(--lightBlue);
-    display: grid;
-    /*grid-template-columns: 20vw 1fr 1.5vw 3vw 8px 3vw 1.5vw 1fr 20vw;*/
-    grid-template-columns: 1fr 152px 4px 20px 1vw 20px 4px 152px 1fr;
-    grid-template-rows: repeat(26, 20px);
-}
-
-#midline {
-    background: var(--mainBlue);
-    grid-column: 5/6;
-    grid-row: 2/-1;
-}
-
-.tick-container-right, .tick-container-left {
-    display: flex;
-    align-items: center;
-}
-
-.tick-container-left .tick {
+    margin-top: 153px;
+    padding: 20px 0;
     background: var(--lightBlue);
 }
 
-.tick {
-    height: 6px;
-    width: 100%;
-    background: var(--mainBlue);
+#timeline {
+    max-width: 790px;
+    margin: 0 auto;
 }
 
-#tick1 {grid-column: 6/7;grid-row: 3/6;}
-#tick2 {grid-column: 6/7;grid-row: 7/10;}
-#tick3 {grid-column: 6/7;grid-row: 11/14;}
-#tick4 {grid-column: 6/7;grid-row: 15/18;}
-#tick5 {grid-column: 4/5;grid-row: 18/21;}
-
-.timeline-message {
-    background: var(--mainWhite);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 5px;
+#timeline-main-bar , .timeline-bubble {
+    fill: var(--mainBlue);
 }
 
-.timeline-message h1 {
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
+.timeline-box {
+    fill: var(--mainWhite);
 }
 
-.timeline-message p {
-    font-size: 14px;
+.timeline-text {
+    font-family: 'Comfortaa';
+    font-size: 3px;
 }
-
-#m1 {grid-column: 8/9; grid-row: 3/6;}
-#m2 {grid-column: 8/9; grid-row: 7/10;}
-#m3 {grid-column: 8/9; grid-row: 11/14;}
-#m4 {grid-column: 8/9; grid-row: 15/18;}
-#m5 {grid-column: 2/3; grid-row: 18/21;}
-
 
 @keyframes bubblepop {
     0% {transform: scale(0.01);}
@@ -187,8 +145,3 @@ main {
     #subnav, #sub-subnav {padding-right: 20px; grid-gap: 4vw;}
     #pdf-container {right: calc(4vw + 10px)}
 }
-
-/*@media all and (max-width: 700px) {
-    #timeline-container {grid-template-columns: 1fr 152px 4px 20px 1vw 20px 4px 152px 1fr;}
-    .tick {height: 4px;}
-}*/
