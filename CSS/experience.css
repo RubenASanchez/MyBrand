@@ -114,7 +114,6 @@ header #subnav a:hover p {
 
 main {
     margin-top: 153px;
-    padding: 20px 0;
     background: var(--lightBlue);
 }
 
@@ -124,16 +123,17 @@ main {
 }
 
 #timeline-main-bar , .timeline-bubble {
-    fill: var(--mainBlue);
+    fill: rgb(100,150,240);
 }
 
 .timeline-box {
-    fill: var(--mainWhite);
+    fill: var(--veryLightBlue);
 }
 
 .timeline-text {
     font-family: 'Comfortaa';
-    font-size: 3px;
+    font-size: 2.5px;
+    fill: var(--mainWhite);
 }
 
 @keyframes bubblepop {
