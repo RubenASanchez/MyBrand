@@ -98,24 +98,31 @@
         <svg viewbox="0 0 100 100">
           <rect id="timeline-main-bar" width="2" height="80" x="50" y="20"></rect>
           <ellipse class="timeline-bubble" id=tb1 rx="4" ry="4" cx="51" cy="20"></ellipse>
+          <ellipse class="timeline-bubble" id=tb2 rx="4" ry="4" cx="51" cy="20"></ellipse>
+          <ellipse class="timeline-bubble" id=tb3 rx="4" ry="4" cx="51" cy="20"></ellipse>
+          
           <g id="group1">
            <rect class="timeline-box" width="23" height="6" x="23" y="82" rx="3"></rect>
            <text class="timeline-text" x="25" y="86">B.A. Linguistics</text>
           </g>
-          <rect class="timeline-box" width="32" height="6" x="56" y="82" rx="3"></rect>
-          <text class="timeline-text" x="58" y="86">B.S. Cognitive Science</text>
-          <ellipse class="timeline-bubble" id=tb2 rx="4" ry="4" cx="51" cy="20"></ellipse>
+          <g id="group2">
+           <rect class="timeline-box" width="32" height="6" x="56" y="82" rx="3"></rect>
+           <text class="timeline-text" x="58" y="86">B.S. Cognitive Science</text>
+          </g>
           <text class="timeline-bubble-text bubble-inside" id=tb2-inside-a x="49.5" y="64.75">0101</text>
           <text class="timeline-bubble-text bubble-inside" id=tb2-inside-b x="49.5" y="66.75">0101</text>
-          <rect class="timeline-box" width="21" height="6" x="56" y="62" rx="3"></rect>
-          <text class="timeline-text" x="58" y="66">Data Analyst</text>
-          <ellipse class="timeline-bubble" id=tb3 rx="4" ry="4" cx="51" cy="20"></ellipse>
-          <rect class="timeline-box" width="38" height="6" x="8" y="37" rx="3"></rect>
-          <text class="timeline-text" x="10" y="41">Co Author Journal Article</text>
+          <g id="group3">
+           <rect class="timeline-box" width="21" height="6" x="56" y="62" rx="3"></rect>
+           <text class="timeline-text" x="58" y="66">Data Analyst</text>
+          </g>
+          <g id="group4">
+           <rect class="timeline-box" width="38" height="6" x="8" y="37" rx="3"></rect>
+           <text class="timeline-text" x="10" y="41">Co Author Journal Article</text>
+          </g>
           <ellipse class="timeline-bubble" id=tb4 rx="4" ry="4" cx="51" cy="20"></ellipse>
-          <text class="timeline-date-text" x="1" y="86.1">2015</text>
-          <text class="timeline-date-text" x="1" y="66.1">2017</text>
-          <text class="timeline-date-text" x="1" y="41.1">2019</text>
+          <text class="timeline-date-text" id="dt1" x="1" y="86.1">2015</text>
+          <text class="timeline-date-text" id="dt2" x="1" y="66.1">2017</text>
+          <text class="timeline-date-text" id="dt3" x="1" y="41.1">2019</text>
         </svg>
       </section>
   </main>

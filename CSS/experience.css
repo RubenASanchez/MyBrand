@@ -154,12 +154,40 @@ main {
     opacity: 0;
     transform-origin: 100% 100%;
     transform: translatex(-35%) scalex(0.2);
-    animation: expandbud 0.3s ease-out 3s forwards;
+    animation: expandbud1 0.3s ease-out 2s forwards;
+}
+
+#group2 {
+    opacity: 0;
+    transform: translatex(37%) scalex(0.2);
+    animation: expandbud2 0.3s ease-out 2s forwards;
+}
+
+#group3 {
+    opacity: 0;
+    transform: translatex(38%) scalex(0.2);
+    animation: expandbud3 0.3s ease-out 2.8s forwards;
+}
+
+#group4 {
+    opacity: 0;
+    transform-origin: 100% 100%;
+    transform: translatex(-35%) scalex(0.2);
+    animation: expandbud4 0.3s ease-out 3.6s forwards;
 }
 
 #tb2-inside-a , #tb2-inside-b {
-    animation-delay: 3.2s;
+    animation-delay: 2.8s;
 }
+
+.timeline-date-text {
+    opacity: 0;
+    animation: showdate 0.3s ease-out forwards;
+}
+
+#dt1 {animation-delay: 3.8s;}
+#dt2 {animation-delay: 4.2s;}
+#dt3 {animation-delay: 4.4s;}
 
 @keyframes bubblepop {
     0% {transform: scale(0.01);}
@@ -222,9 +250,29 @@ main {
     100% {opacity: 1;}
 }
 
-@keyframes expandbud {
+@keyframes expandbud1 {
     0% {transform: translatex(-35%) scalex(0.2); opacity: 0;}
     100% {transform: translatex(0%) scalex(1); opacity: 1;}
+}
+
+@keyframes expandbud2 {
+    0% {transform: translatex(37%) scalex(0.2); opacity: 0;}
+    100% {transform: translatex(0%) scalex(1); opacity: 1;}
+}
+
+@keyframes expandbud3 {
+    0% {transform: translatex(38%) scalex(0.2); opacity: 0;}
+    100% {transform: translatex(0%) scalex(1); opacity: 1;}
+}
+
+@keyframes expandbud4 {
+    0% {transform: translatex(-35%) scalex(0.2); opacity: 0;}
+    100% {transform: translatex(0%) scalex(1); opacity: 1;}
+}
+
+@keyframes showdate {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 @media all and (max-width: 420px) {
