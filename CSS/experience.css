@@ -114,7 +114,8 @@ header #subnav a:hover p {
 
 main {
     margin-top: 153px;
-    background: var(--lightBlue);
+    background: var(--mainWhite);
+    animation: backdrop 0.6s ease-in 0.75s forwards;
 }
 
 /* TIMELINE */
@@ -124,32 +125,106 @@ main {
     margin: 0 auto;
 }
 
-#timeline-main-bar , .timeline-bubble {
-    fill: rgb(100,150,240);
+#timeline-main-bar , .timeline-bubble {fill: rgb(100,150,240);}
+
+#timeline-main-bar {
+    transform: translatey(85%);
+    animation: stemup 2.5s ease-out 1.75s forwards;
 }
 
-.timeline-box {
-    fill: rgba(250,250,250,.4);
+.timeline-bubble {transform: translatey(85%);}
+
+#tb1 {animation: bud1 2.5s ease-out 1.75s forwards;}
+#tb2 {animation: bud2 2.5s ease-out 1.75s forwards;}
+#tb3 {animation: bud3 2.5s ease-out 1.75s forwards;}
+#tb4 {animation: bud4 2.5s ease-out 1.75s forwards;}
+
+.timeline-box {fill: rgba(250,250,250,.4);}
+
+.timeline-text {font-family: 'Comfortaa'; font-size: 2.5px;}
+.timeline-bubble-text {font-size: 2px; fill: var(--mainWhite);}
+.timeline-date-text {font-size: 3px; fill: var(--mainWhite);}
+
+.bubble-inside {
+    opacity: 0;
+    animation: innerbud 0.3s ease-out forwards;
 }
 
-.timeline-text {
-    font-family: 'Comfortaa';
-    font-size: 2.5px;
+#group1 {
+    opacity: 0;
+    transform-origin: 100% 100%;
+    transform: translatex(-35%) scalex(0.2);
+    animation: expandbud 0.3s ease-out 3s forwards;
 }
 
-.timeline-bubble-text {
-    font-size: 2px;
-    fill: var(--mainWhite);
-}
-
-.timeline-date-text {
-    font-size: 3px;
-    fill: var(--mainWhite);
+#tb2-inside-a , #tb2-inside-b {
+    animation-delay: 3.2s;
 }
 
 @keyframes bubblepop {
     0% {transform: scale(0.01);}
     100% {transform: scale(1);}
+}
+
+@keyframes backdrop {
+    0% {background: var(--mainWhite)}
+    100% {background: var(--lightBlue);}
+}
+
+@keyframes stemup {
+    0% {transform: translatey(80%);}
+    10% {transform: translatey(65%);}
+    30% {transform: translatey(65%);}
+    40% {transform: translatey(45%);}
+    60% {transform: translatey(45%);}
+    70% {transform: translatey(20%);}
+    90% {transform: translatey(20%);}
+    100% {transform: translatey(0%);}
+}
+
+@keyframes bud1 {
+    0% {transform: translatey(85%);}
+    10% {transform: translatey(65%);}
+    100% {transform: translatey(65%);}
+}
+
+@keyframes bud2 {
+    0% {transform: translatey(85%);}
+    10% {transform: translatey(65%);}
+    30% {transform: translatey(65%);}
+    40% {transform: translatey(45%);}
+    100% {transform: translatey(45%);}
+}
+
+@keyframes bud3 {
+    0% {transform: translatey(85%);}
+    10% {transform: translatey(65%);}
+    30% {transform: translatey(65%);}
+    40% {transform: translatey(45%);}
+    60% {transform: translatey(45%);}
+    70% {transform: translatey(20%);}
+    100% {transform: translatey(20%);}
+}
+
+@keyframes bud4 {
+    0% {transform: translatey(85%);}
+    10% {transform: translatey(65%);}
+    30% {transform: translatey(65%);}
+    40% {transform: translatey(45%);}
+    60% {transform: translatey(45%);}
+    70% {transform: translatey(20%);}
+    90% {transform: translatey(20%);}
+    100% {transform: translatey(0%);}
+}
+
+@keyframes innerbud {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes expandbud {
+    0% {transform: translatex(-35%) scalex(0.2); opacity: 0;}
+    100% {transform: translatex(0%) scalex(1); opacity: 1;}
 }
 
 @media all and (max-width: 420px) {
