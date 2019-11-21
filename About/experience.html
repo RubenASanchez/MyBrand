@@ -97,10 +97,9 @@
       <section id="timeline">
         <svg viewbox="0 0 100 100">
           <rect id="timeline-main-bar" width="2" height="80" x="50" y="20"></rect>
-          <ellipse class="timeline-bubble" id=tb1 rx="4" ry="4" cx="51" cy="20"></ellipse>
-          <ellipse class="timeline-bubble" id=tb2 rx="4" ry="4" cx="51" cy="20"></ellipse>
-          <ellipse class="timeline-bubble" id=tb3 rx="4" ry="4" cx="51" cy="20"></ellipse>
-          
+          <circle class="timeline-bubble" id=tb1 cx="51" cy="20" r="4"></circle>
+          <circle class="timeline-bubble" id=tb2 cx="51" cy="20" r="4"></circle>
+          <circle class="timeline-bubble" id=tb3 cx="51" cy="20" r="4"></circle>
           <g id="group1">
            <rect class="timeline-box" width="23" height="6" x="23" y="82" rx="3"></rect>
            <text class="timeline-text" x="25" y="86">B.A. Linguistics</text>
@@ -111,7 +110,7 @@
           </g>
           <text class="timeline-bubble-text bubble-inside" id=tb2-inside-a x="49.5" y="64.75">0101</text>
           <text class="timeline-bubble-text bubble-inside" id=tb2-inside-b x="49.5" y="66.75">0101</text>
-          <g id="group3">
+          <g id="group3" width="20" height="20" fill="gray">
            <rect class="timeline-box" width="21" height="6" x="56" y="62" rx="3"></rect>
            <text class="timeline-text" x="58" y="66">Data Analyst</text>
           </g>
@@ -119,7 +118,27 @@
            <rect class="timeline-box" width="38" height="6" x="8" y="37" rx="3"></rect>
            <text class="timeline-text" x="10" y="41">Co Author Journal Article</text>
           </g>
-          <ellipse class="timeline-bubble" id=tb4 rx="4" ry="4" cx="51" cy="20"></ellipse>
+          <circle class="timeline-bubble" id=tb4 cx="51" cy="20" r="4"></circle>
+          <svg id="flower-svg" viewbox="-15 -15 30 30" x="36" y="5" width="30" height="30">
+           <!--<rect id="back" x="-15" y="-15" width="100" height="100"></rect>-->
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(22.5)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(45)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(67.5)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(90)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(112.5)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(135)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(157.5)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(180)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(202.5)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(225)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(247.5)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(270)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(292.5)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(315)"></rect>
+           <rect class="flower" width="1" height="10" x="-0.5" y="-15" rx="1" transform="rotate(337.5)"></rect>
+           <rect class="flower" width="1" height="10" x="49.25" y="66" rx="1" transform="rotate(35 50 50)"></rect>
+          </svg>
           <text class="timeline-date-text" id="dt1" x="1" y="86.1">2015</text>
           <text class="timeline-date-text" id="dt2" x="1" y="66.1">2017</text>
           <text class="timeline-date-text" id="dt3" x="1" y="41.1">2019</text>
