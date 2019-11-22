@@ -185,38 +185,27 @@ main {
     animation-delay: 2.8s;
 }
 
-#back {
-    /*fill: rgba(50,50,50,.5);*/
-}
-
 #flower-svg {
     opacity: 0;
-    animation: flowerup 0.3s ease-out 4.5s forwards;
+    animation: flowerup 1s ease-out 4.5s forwards;
 }
 
-#flowers {
-    /*transform-origin: 100% 100%;*/
-}
+.flower {fill: rgb(235,235,235); transform: rotate(0deg);}
 
-.flower {
-    fill: var(--veryLightGray);
-    
-}
-
-#flowers rect:nth-of-type(2) {
-    /*transform: rotate(45deg);*/
-    /*transform-origin: 52% 18%;*/
-}
-
-/*#flowers rect:nth-of-type(3) {
-    transform: rotate(90deg);
-    
-}
-
-#flowers rect:nth-of-type(4) {
-    transform: rotate(45deg) 20 20;
-}*/
-
+.flower:nth-of-type(2) {animation: flowerfan2 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(3) {animation: flowerfan3 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(4) {animation: flowerfan4 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(5) {animation: flowerfan5 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(6) {animation: flowerfan6 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(7) {animation: flowerfan7 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(8) {animation: flowerfan8 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(9) {animation: flowerfan9 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(10) {animation: flowerfan10 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(11) {animation: flowerfan11 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(12) {animation: flowerfan12 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(13) {animation: flowerfan13 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(14) {animation: flowerfan14 1s ease-out 4.5s forwards;}
+.flower:nth-of-type(15) {animation: flowerfan15 1s ease-out 4.5s forwards;}
 
 .timeline-date-text {
     opacity: 0;
@@ -311,6 +300,78 @@ main {
 @keyframes flowerup {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@keyframes flowerfan2 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(22.5deg);}
+}
+
+@keyframes flowerfan3 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(45deg);}
+}
+
+@keyframes flowerfan4 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(67deg);}
+}
+
+@keyframes flowerfan5 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(90deg);}
+}
+
+@keyframes flowerfan6 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(112deg);}
+}
+
+@keyframes flowerfan7 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(135deg);}
+}
+
+@keyframes flowerfan8 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(157.5deg);}
+}
+
+
+
+@keyframes flowerfan9 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-22.5deg);}
+}
+
+@keyframes flowerfan10 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-45deg);}
+}
+
+@keyframes flowerfan11 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-67deg);}
+}
+
+@keyframes flowerfan12 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-90deg);}
+}
+
+@keyframes flowerfan13 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-112deg);}
+}
+
+@keyframes flowerfan14 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-135deg);}
+}
+
+@keyframes flowerfan15 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-157deg);}
 }
 
 @keyframes showdate {
