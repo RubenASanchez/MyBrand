@@ -125,6 +125,11 @@ main {
     margin: 0 auto;
 }
 
+#timeline-svg {
+    height: calc(100vh - 407px);
+    width: 100%;
+}
+
 #timeline-main-bar , .timeline-bubble {fill: rgb(100,150,240);}
 
 #timeline-main-bar {
