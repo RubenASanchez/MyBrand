@@ -15,6 +15,16 @@ aside {
     grid-row: 1/-1;
 }
 
+#main-svg {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+#main-svg text {
+    font-family: 'Comfortaa';
+    fill: var(--mainWhite);
+}
+
 /* TITLE */
 
 #intro-title {
