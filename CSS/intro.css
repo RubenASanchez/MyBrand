@@ -16,8 +16,9 @@ aside {
 }
 
 #main-svg {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
+    grid-column: 1/3;
+    grid-row: 6/7;
+    width: 100%;
 }
 
 #main-svg text {
