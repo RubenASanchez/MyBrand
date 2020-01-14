@@ -121,7 +121,12 @@ main #journal-articles .citation {margin: 0; font-size: 14px; line-height: 1.5; 
 /* JOURNAL ARTICLES */
 
 #journal-articles {line-height: 2;}
-#journal-articles p {margin-bottom: 40px;}
+#journal-articles .article-link p {margin-bottom: 40px;}
+
+/* ABSTRACTS */
+
+details {margin-bottom: 40px; font-family: 'Comfortaa',sans-serif; font-size: 18px; color: var(--mainBlack);}
+summary {display: list-item;}
 
 @keyframes bubblepop {
     0% {transform: scale(0.01);}
