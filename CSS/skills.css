@@ -112,6 +112,7 @@ header #subnav a:hover p {
 
 /* MAIN */
 
+html {scroll-behavior: smooth;}
 main {margin-top: 153px;}
 article {width: 90vw; max-width: 790px; margin: 0 auto;}
 #programming,#research,#project,#webdev,#animation,#languages {padding-top: 153px;margin-top: -103px;}
