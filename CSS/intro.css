@@ -290,6 +290,16 @@ aside {
     100% {transform: translateX(0) translateY(-570vh); opacity: 1;}
 }
 
+footer p {
+    text-align: center;
+    margin-top: -4vw;
+    padding-bottom: 20px;
+    font-size: 14px;
+    background: white;
+}
+
 @media all and (max-width: 420px) {
     main p , .text-links {font-size: 16px;}
+    footer p {margin-top: 0;}
+    footer div {width: 72vw; margin: 0 auto;}
 }
