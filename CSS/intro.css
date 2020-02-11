@@ -295,11 +295,10 @@ footer p {
     margin-top: -4vw;
     padding-bottom: 20px;
     font-size: 14px;
-    background: white;
 }
 
 @media all and (max-width: 420px) {
     main p , .text-links {font-size: 16px;}
     footer p {margin-top: 0;}
-    footer div {width: 72vw; margin: 0 auto;}
+    footer div {width: 75vw; margin: 0 auto;}
 }
