@@ -1,4 +1,4 @@
-html,body,main,header,footer,section,div,nav {
+html,body,main,header,footer,section,div,nav,img {
   margin: 0;
   padding: 0;
 }
@@ -6,4 +6,26 @@ html,body,main,header,footer,section,div,nav {
 main {
   width: 95vw;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  height: 30px;
+}
+
+.release-notes-section {
+    margin-bottom: 50px;
+}
+
+.release-notes {
+    display: flex;
+    align-items: center;
+}
+
+.release-notes p {
+    margin-left: 20px;
 }
