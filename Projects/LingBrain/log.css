@@ -1,0 +1,9 @@
+html,body,main,header,footer,section,div,nav {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 95vw;
+  margin: 0 auto;
+}
