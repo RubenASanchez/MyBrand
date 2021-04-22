@@ -1,4 +1,4 @@
-html,body,main,header,footer,section,div,nav,img {
+html,body,main,header,footer,section,div,nav,img,hr {
   margin: 0;
   padding: 0;
 }
@@ -26,6 +26,15 @@ img {
     align-items: center;
 }
 
+.release-notes h3 {
+    width: 150px;
+    margin-left: 20px;
+}
+
 .release-notes p {
     margin-left: 20px;
+}
+
+hr {
+    margin-bottom: 50px;
 }
