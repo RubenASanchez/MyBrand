@@ -31,8 +31,7 @@ aside {
 #intro-title {
     grid-column: 1/-1;
     grid-row: 1/2;
-    font-size: 12px;
-    color: var(--mainBlue);
+    font-size: 18px;
 }
 
 #website-title {
