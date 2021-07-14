@@ -1,4 +1,7 @@
 main {
+/*     width: 90%; */
+/*     max-width: 900px; */
+    margin:0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
@@ -68,8 +71,18 @@ input:checked + label {
     overflow-x: scroll;
 }
 
+.scrolling-item h3 {
+    width: 91%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .scrolling-item img {
     width: 18vw;
+}
+
+.scrolling-item h3 a {
+    text-decoration: none;
 }
 
 #content-read #neuronal-anatomy {margin-top: -70px; padding-top: 70px;}
