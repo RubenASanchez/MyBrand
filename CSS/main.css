@@ -77,7 +77,7 @@ h2 {
 
 p {
     color: var(--mainBlack);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -160,6 +160,10 @@ footer a {
     color: var(--mainOrange);
     font-family: 'Comfortaa' , sans-serif;
     font-size: 19px;
+}
+
+.in-text-link {
+    color: var(--mainOrange);
 }
 
 /* BUTTONS */
