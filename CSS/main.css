@@ -47,6 +47,8 @@ h2, p {
 
 /* CUSTOM DEFAULT STYLES */
 
+html {scroll-behavior: smooth;}
+
 main {
     margin-top: 60px;
 }
@@ -153,6 +155,21 @@ footer a {
 
 .in-text-link {
     color: var(--mainOrange);
+}
+
+/* GHOST LINKS */
+
+.ghost-link {
+    width: 100px;
+    height: 100px;
+    padding: 4px 10px;
+    text-align: center;
+    border: 1px solid var(--lightGray);
+    color: var(--mainBlack);
+}
+
+.ghost-link:hover {
+    background-color: var(--veryLightBlue);
 }
 
 /* BUTTONS */
