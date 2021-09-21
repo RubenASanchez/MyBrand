@@ -4,24 +4,11 @@
 
 header,footer,nav,main,section,aside,div,root,summary,details,article,button {display: block;}
 
-html,body,header,footer,nav,main,section,aside,summary,details,article,div,h1,h2,h3,h4,p,img,ul,ol,li,button {
-    margin: 0;
-    padding: 0;
-}
+html,body,header,footer,nav,main,section,aside,summary,details,article,div,h1,h2,h3,h4,p,img,ul,ol,li,button {margin: 0; padding: 0;}
 
-h1, h2, h3, h4, p, a {
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: none;
-}
+a {text-decoration: none;}
 
-ul, ol {
-    list-style-type: none;
-}
-
-ol {
-    list-style-type: upper-roman;
-}
+ul, ol {list-style-type: none;} /* upper-roman */
 
 /* BOX SIZING */
 
@@ -50,11 +37,11 @@ html {box-sizing: border-box;}
     --gridHeight: calc(33vh - 17px);
 }
 
-html, h1, h2, h3, h4, a, nav, button, header, footer, nav a p, #subnav a p {
+html, h1, a, nav, button, header, footer, nav a p, #subnav a p {
     font-family: 'Advent Pro', sans-serif;
 }
 
-p {
+h2, p {
     font-family: 'Comfortaa', sans-serif;
 }
 
@@ -66,14 +53,16 @@ main {
 
 h1 {
     font-size: 40px;
-    margin-bottom: 40px;
-    font-weight: 300;
+    margin-bottom: 10px;
+    font-weight: 100;
 }
 
 h2 {
-    font-size: 36px;
-    margin-bottom: 50px;
-    font-weight: 200;}
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color: var(--lightGray);
+}
 
 p {
     color: var(--mainBlack);
