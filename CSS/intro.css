@@ -2,11 +2,13 @@
 
 #title-website {
   width: 90vw;
+  max-width: 750px;
   margin: 15vh auto 50px;
 }
 
 .intros {
   width: 90vw;
+  max-width: 750px;
   height: 25vh;
   margin: 0 auto 50px;
   display: flex;
