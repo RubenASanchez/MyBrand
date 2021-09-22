@@ -2,19 +2,21 @@
 
 #title-website {
   width: 90vw;
+  height: 30vh;
   max-width: 750px;
-  margin: 15vh auto 50px;
+  margin: 10vh auto 0px;
+    background: pink;
 }
 
 .intros {
   width: 90vw;
   max-width: 750px;
-  height: 25vh;
-  margin: 0 auto 50px;
+  height: 30vh;
+  margin: 0 auto 0px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-/*     background: gray; */
+    background: gray;
 }
 
 #dopamine-animated {
@@ -33,9 +35,10 @@
 
 #continue {
     width: 90vw;
+    height: 30vh;
     margin: 0 auto 50px;
     text-align: center;
-/*     background: pink; */
+    background: pink;
 }
 
 #continue p {

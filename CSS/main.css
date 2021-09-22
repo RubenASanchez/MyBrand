@@ -160,8 +160,8 @@ footer a {
 /* GHOST LINKS */
 
 .ghost-link {
-    width: 100px;
-    height: 100px;
+/*     width: 100px; */
+/*     height: 100px; */
     padding: 4px 10px;
     text-align: center;
     border: 1px solid var(--lightGray);
