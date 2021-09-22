@@ -147,13 +147,12 @@ footer a {
 
 /* TEXT LINKS */
 
-.text-links {
+.in-text-link {
     color: var(--mainOrange);
     font-family: 'Comfortaa' , sans-serif;
-    font-size: 19px;
 }
 
-.in-text-link {
+.post-text-link {
     color: var(--mainOrange);
 }
 
