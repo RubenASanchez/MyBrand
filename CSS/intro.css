@@ -18,8 +18,9 @@
 }
 
 #dopamine-animated {
-    width: 40%;
-    max-height: 120px;
+    width: 50%;
+    min-width: 100px;
+    max-width: 200px;
     margin-left: 10%;
     fill: rgb(0,0,0);
 }
