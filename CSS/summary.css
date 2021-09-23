@@ -120,6 +120,18 @@ h1 {margin: 200px auto 40px auto;}
 #summary {line-height: 2;}
 #summary p {margin-bottom: 40px;}
 
+#research-interests-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#research-interests-tags p {
+    padding: 4px 8px;
+    margin: 0px 5px 5px 0px;
+    font-size: 12px;
+    background-color: var(--veryLightGray);
+}
+
 /* JOURNEY */
 
 #journey h2 , #FAQs h2 {margin: 100px auto 40px auto;}
