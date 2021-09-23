@@ -2,11 +2,11 @@
 
 /* RESET DEFAULT STYLES */
 
-header,footer,nav,main,section,aside,div,root,summary,details,article,button {display: block;}
+header,footer,nav,main,section,aside,div,root,summary,details,article,button,cite {display: block;}
 
-html,body,header,footer,nav,main,section,aside,summary,details,article,div,h1,h2,h3,h4,p,img,ul,ol,li,button {margin: 0; padding: 0;}
+html,body,header,footer,nav,main,section,aside,summary,details,article,div,h1,h2,h3,h4,p,img,ul,ol,li,button,cite {margin: 0; padding: 0;}
 
-a {text-decoration: none;}
+a,cite {text-decoration: none;font-style:normal;}
 
 ul, ol {list-style-type: none;} /* upper-roman */
 
