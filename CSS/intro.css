@@ -46,13 +46,24 @@
 
 .intros img {
     height: 100%;
+/*     background: gray; */
 }
 
 #lab-intro {
     padding-top: 100px;
+    
 }
 
+#lab-intro div {
+/*     background: gray; */
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20vw;
+}
 
+#lab-intro div img {
+    width: 100%;
+}
 
 #lab-members {
     width: 50vw;
