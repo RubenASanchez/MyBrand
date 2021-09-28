@@ -35,6 +35,7 @@ html {box-sizing: border-box;}
     --mainWhite: rgb(253,253,253);
     --darkWhite: rgb(250,250,250);
     --gridHeight: calc(33vh - 17px);
+    --h2Gray: rgb(140,140,140);
 }
 
 html, h1, a, nav, button, header, footer, nav a p, #subnav a p {
@@ -63,7 +64,7 @@ h2 {
     height: 60px;
     font-size: 26px;
     font-weight: 300;
-    color: var(--midGray);
+    color: var(--h2Gray);
 }
 
 p {
