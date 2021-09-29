@@ -150,12 +150,14 @@ footer a {
 /* TEXT LINKS */
 
 .in-text-link {
-    color: var(--veryDarkOrange);
+/*     color: var(--veryDarkOrange); */
+    color: var(--mainBlue);
     font-family: 'Comfortaa' , sans-serif;
 }
 
 .post-text-link {
-    color: var(--veryDarkOrange);
+/*     color: var(--veryDarkOrange); */
+    color: var(--mainBlue);
 }
 
 /* GHOST LINKS */
