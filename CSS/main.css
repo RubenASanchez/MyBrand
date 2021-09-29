@@ -37,7 +37,6 @@ html {box-sizing: border-box;}
     --gridHeight: calc(33vh - 17px);
     --h2Gray: rgb(147,147,147);
 /*     --veryDarkOrange: rgb(180,110,10); */
-    --veryDarkOrange: rgb(0,0,0);
 }
 
 html, h1, a, nav, button, header, footer, nav a p, #subnav a p {
@@ -151,13 +150,15 @@ footer a , footer p {
 /* TEXT LINKS */
 
 .in-text-link {
-    color: var(--veryDarkOrange);
+    color: var(--mainBlack);
     font-family: 'Comfortaa' , sans-serif;
     border-bottom: 1px solid var(--mainOrange);
 }
 
 .post-text-link {
-    color: var(--veryDarkOrange);
+    color: var(--mainBlack);
+    max-height: 10px;
+    background: var(--mainOrgange);
     border-bottom: 1px solid var(--mainOrange);
 }
 
