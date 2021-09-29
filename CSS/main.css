@@ -144,7 +144,7 @@ footer nav a {
     padding: 16px 2px;
 }
 
-footer a {
+footer a , footer p {
     color: var(--lightGray);
 }
 
