@@ -93,7 +93,7 @@ header {
 
 footer {
     width: 100%;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
     background: var(--lightBlack);
 }
@@ -148,8 +148,19 @@ footer a , footer p {
 }
 
 footer div {
-    padding: 10px 0 0;
+    padding: 40px 0 0;
     text-align: center;
+}
+
+footer div p {
+    width: 94%;
+    margin: 0px auto 10px;
+    font-size: 12px;
+}
+
+footer div p:nth-of-type(2) {
+    max-width: 450px;
+    text-align: left;
 }
 
 /* TEXT LINKS */
