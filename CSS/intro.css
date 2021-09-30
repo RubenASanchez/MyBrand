@@ -2,75 +2,91 @@
 
 #title-website {
   width: 90vw;
-  height: 30vh;
+  height: 35vh;
   max-width: 750px;
   margin: 10vh auto 0px;
-}
-
-#dopamine-animated {
-    width: 50%;
-    min-width: 100px;
-    max-width: 200px;
-    margin-left: 10%;
-    fill: rgb(0,0,0);
 }
 
 /* CONTINUE */
 
 #continue {
     width: 90vw;
-    height: 30vh;
+    height: 25vh;
     max-width: 750px;
     margin: 0 auto 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-#continue p {
-    margin-bottom: 10%;
-}
 
 /* INTROS */
 
-.intros {
+.page-info {
   width: 90vw;
   max-width: 750px;
   height: 30vh;
   margin: 0 auto 0px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-template-rows: 30vh;
   align-items: center;
-  justify-content: space-around;
+  grid-gap: 10%;
+  justify-items: center;
+/*   border: 1px solid black; */
 }
 
-.intros img {
-    height: 100%;
+#scientist {
+    height: 80%;
+}
+
+.page-info svg {
+    max-width: 200px;
+}
+
+section:nth-of-type(2) {
+  grid-template-columns: 40% 50%;
+}
+
+section:nth-of-type(5) {
+  grid-template-columns: 70% 20%;
 /*     background: gray; */
-}
-
-#lab-intro {
-    padding-top: 100px;
-    
-}
-
-#lab-intro div {
-/*     background: gray; */
-    height: 100%;
-    display: grid;
-    grid-template-columns: 20vw;
-}
-
-#lab-intro div img {
-    width: 100%;
 }
 
 #lab-members {
     width: 50vw;
 }
 
+#flask {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 100px 0 0;
+}
 
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: gray;
+}
 
+#b1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#sparky {
+    grid-column: 2;
+    grid-row: 1;
+    width: 80%; /*change to 100*/
+}
+
+#suki {
+    grid-column: 1;
+    grid-row:1;
+    width: 100%;
+}
 
 /* ANIMATIONS */
 
@@ -130,9 +146,19 @@
 
 /* SMOKE */
 
+#circleball {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background: gray;
+    grid-row: 1;
+    grid-column: 1;
+}
+
 #smoke-animation-container {
     display: grid;
     align-content: end;
+/*     background: salmon; */
 }
 
 #smoke-appearance {
@@ -145,7 +171,7 @@
     position: relative;
     -webkit-transform-origin: center;
     transform-origin: center;
-    opacity: 0;
+    opacity: 1;
 }
 
 #circle-1 {
