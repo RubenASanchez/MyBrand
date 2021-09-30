@@ -235,20 +235,3 @@
     5% {transform: translateX(0) translateY(0); transform: scale(1);}
     100% {transform: translateX(0) translateY(-570vh); opacity: 1;}
 }
-
-footer p {
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 14px;
-}
-
-footer nav {
-    height: 214px;
-    padding-top: 35px;
-}
-
-@media all and (max-width: 420px) {
-    main p , .text-links {font-size: 14px;}
-    footer nav {padding-top: 0;}
-    footer div {width: 75vw; margin: 20px auto 0 auto;}
-}

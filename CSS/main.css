@@ -92,6 +92,9 @@ header {
 }
 
 footer {
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
     background: var(--lightBlack);
 }
 
@@ -132,21 +135,21 @@ header nav a:hover p {
 }
 
 footer nav {
+    width: 100%;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
     justify-items: center;
-    font-size: 18px;
-    height: 250px;
     color: var(--lightGray);
-}
-
-footer nav a {
-    padding: 16px 2px;
 }
 
 footer a , footer p {
     color: var(--lightGray);
+}
+
+footer div {
+    padding: 10px 0 0;
+    text-align: center;
 }
 
 /* TEXT LINKS */
@@ -204,5 +207,5 @@ footer a , footer p {
 
 @media all and (max-width: 420px) {
     header nav {padding-right: 20px; grid-gap: 4vw;}
-    footer nav {grid-auto-flow: row; font-size: 16px; grid-gap: 10px;}
+    footer nav {grid-auto-flow: row; grid-gap: 10px;}
 }
