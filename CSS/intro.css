@@ -16,27 +16,7 @@
   justify-content: space-evenly;
 }
 
-
 /* INTROS */
-
-.page-info {
-  height: 30vh;
-  margin: 0 auto 0px;
-  display: grid;
-  grid-template-columns: 20% 70%;
-  grid-template-rows: 30vh;
-  align-items: center;
-  grid-gap: 10%;
-  justify-items: center;
-}
-
-#scientist {
-    height: 80%;
-}
-
-.page-info svg {
-    max-width: 200px;
-}
 
 section {
   width: 90vw;
@@ -51,6 +31,27 @@ section:nth-of-type(5) {
   grid-template-columns: 70% 20%;
 }
 
+.page-info {
+  height: 30vh;
+  margin: 0 auto 0px;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-template-rows: 30vh;
+  align-items: center;
+  grid-gap: 10%;
+  justify-items: center;
+}
+
+/* IMAGES */
+
+#scientist {
+    height: 80%;
+}
+
+.page-info svg {
+    max-width: 200px;
+}
+
 #lab-members {
     width: 50vw;
 }
@@ -58,19 +59,7 @@ section:nth-of-type(5) {
 #flask {
     grid-column: 1;
     grid-row: 1;
-    margin: 100px 0 0;
-}
-
-.ball {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: gray;
-}
-
-#b1 {
-    grid-column: 1;
-    grid-row: 1;
+    margin: 108px 0 0;
 }
 
 #sparky {
@@ -85,7 +74,7 @@ section:nth-of-type(5) {
     width: 100%;
 }
 
-/* ANIMATIONS */
+/* MOLECULE ANIMATION */
 
 #ring {
     stroke-dasharray: 290;
@@ -140,121 +129,62 @@ section:nth-of-type(5) {
     }
 }
 
+/* SMOKE ANIMATION */
 
-/* SMOKE */
-
-#circleball {
-    width: 5vw;
-    height: 5vw;
-    border-radius: 50%;
-    background: gray;
-    grid-row: 1;
+.ball {
     grid-column: 1;
-}
-
-#smoke-animation-container {
-    display: grid;
-    align-content: end;
-/*     background: salmon; */
-}
-
-#smoke-appearance {
-    height: 20vw;
-}
-
-
-.css-circle {
+    grid-row: 1;
     border-radius: 50%;
-    position: relative;
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    opacity: 1;
+    opacity: 0;
+    background: var(--lightBlue);
+    animation: smoke 3s linear infinite;
 }
 
-#circle-1 {
+#b1 {
+    width: 25px;
+    height: 25px;
+    margin: 25px 0 0;
     background: var(--smokeGray);
-    width: 10vw;
-    height: 10vw;
-    left: calc(50% - 5vw);
-    top: calc(50% - 5vw);
-    -webkit-animation: circle2 18s linear infinite;
-    animation: circle2 18s linear infinite;
 }
 
-#circle-2 {
-    background: var(--lightBlue);
-    width: 20vw;
-    height: 20vw;
-    left: calc(50% - 10vw);
-    top: calc(50% - 20vw);
-    -webkit-animation: circle2 22s linear infinite;
-    animation: circle2 22s linear infinite;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
+#b2 {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0 0;
+    animation-delay: .5s;
+    animation-duration: 4s;
 }
 
-#circle-3 {
-    background: var(--lightBlue);
-    width: 16vw;
-    height: 16vw;
-    left: calc(50% - 8vw);
-    top: calc(50% - 38vw);
-    -webkit-animation: circle2 20s linear infinite;
-    animation: circle2 20s linear infinite;
-    -webkit-animation-delay: 8s;
-    animation-delay: 8s;
-}
-
-#circle-4 {
+#b3 {
+    width: 20px;
+    height: 20px;
+    margin: 30px 0 0;
+    animation-delay: .7s;
+    animation-duration: 2.75s;
     background: var(--smokeGray);
-    width: 10vw;
-    height: 10vw;
-    left: calc(50% - 5vw);
-    top: calc(50% - 51vw);
-    -webkit-animation: circle2 18s linear infinite;
-    animation: circle2 18s linear infinite;
-    -webkit-animation-delay: 12s;
-    animation-delay: 12s;
 }
 
-#circle-5 {
-    background: var(--lightBlue);
-    width: 10vw;
-    height: 10vw;
-    left: calc(50% - 5vw);
-    top: calc(50% - 61vw);
-    -webkit-animation: circle2 18s linear infinite;
-    animation: circle2 18s linear infinite;
-    -webkit-animation-delay: 13s;
-    animation-delay: 13s;
+#b4 {
+    width: 15px;
+    height: 15px;
+    margin: 35px 0 0;
+    animation-delay: .8s;
+    animation-duration: 2.5s;
 }
 
-#circle-6 {
-    background: var(--lightBlue);
-    width: 20vw;
-    height: 20vw;
-    left: calc(50% - 10vw);
-    top: calc(50% - 76vw);
-    -webkit-animation: circle2 22s linear infinite;
-    animation: circle2 22s linear infinite;
-    -webkit-animation-delay: 18s;
-    animation-delay: 18s;
+#b5 {
+    width: 25px;
+    height: 25px;
+    margin: 25px 0 0;
+    animation-delay: 1.2s;
 }
 
--webkit-@keyframes circle2 {
-    0% {-webkit-transform: translateX(0) translateY(0); transform: scale(0.1); opacity: 0;}
-    2% {-webkit-transform: translateX(0) translateY(0); transform: scale(1.2); opacity: 1;}
-    3% {-webkit-transform: translateX(0) translateY(0); transform: scale(0.8);}
-    4% {-webkit-transform: translateX(0) translateY(0); transform: scale(1.1);}
-    5% {-webkit-transform: translateX(0) translateY(0); transform: scale(1);}
-    100% {-webkit-transform: translateX(0) translateY(-570vh); opacity: 1;}
-}
-
-@keyframes circle2 {
+@keyframes smoke {
     0% {transform: translateX(0) translateY(0); transform: scale(0.1); opacity: 0;}
-    2% {transform: translateX(0) translateY(0); transform: scale(1.2); opacity: 1;}
-    3% {transform: translateX(0) translateY(0); transform: scale(0.8);}
-    4% {transform: translateX(0) translateY(0); transform: scale(1.1);}
-    5% {transform: translateX(0) translateY(0); transform: scale(1);}
-    100% {transform: translateX(0) translateY(-570vh); opacity: 1;}
+    8% {transform: translateX(0) translateY(0); transform: scale(1.2); opacity: 1;}
+    12% {transform: translateX(0) translateY(0); transform: scale(0.8);}
+    16% {transform: translateX(0) translateY(0); transform: scale(1.1);}
+    20% {transform: translateX(0) translateY(0); transform: scale(1);}
+    90% {opacity: 1;}
+    100% {transform: translateX(0) translateY(-28vh); opacity: 0;}
 }
