@@ -175,7 +175,6 @@ footer div p:nth-of-type(2) {
 .post-text-link {
     color: var(--mainBlack);
     max-height: 10px;
-    background: var(--mainOrgange);
     border-bottom: 1px solid var(--mainOrange);
 }
 

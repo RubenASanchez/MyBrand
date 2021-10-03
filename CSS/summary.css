@@ -84,30 +84,36 @@ header #subnav a:hover p {
 #pdf-container {
     position: absolute;
     top: 50px;
-    right: 54px;
-    width: 170px;
+    right: 5vw;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    grid-gap: 0 10px;
     text-align: left;
 }
 
 #pdf-container a p {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 12px;
     color: var(--mainOrange);
-    font-size: 16px;
 }
 
 #pdf-container a:hover p {
+/*     color: var(--darkOrange); */
+/*     color: black; */
+}
+
+#pdf-container:hover p {
     color: var(--darkOrange);
 }
 
-#cv {
-    width: 48px;
-    height: 59px;
+#cv img {
+    width: 30px;
+    height: 40px;
 }
 
-#cv:hover {
-    color: var(--darkOrange);
+#cv:hover a {
+/*     color: var(--darkOrange); */
+    color: black;
 }
 
 /* MAIN */
@@ -186,7 +192,6 @@ h1 {margin: 200px auto 40px auto;}
 
 @media all and (max-width: 420px) {
     #subnav, #sub-subnav {padding-right: 20px; grid-gap: 4vw;}
-    #pdf-container {right: calc(4vw + 10px)}
 }
 
 @media all and (max-width: 700px) {
