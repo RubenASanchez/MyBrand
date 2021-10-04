@@ -22,11 +22,6 @@
 
 /* INTROS */
 
-section {
-  width: 90vw;
-  max-width: 750px;
-}
-
 section:nth-of-type(2) {
   grid-template-columns: 40% 50%;
 }

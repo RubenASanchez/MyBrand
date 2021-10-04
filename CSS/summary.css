@@ -1,15 +1,14 @@
 /* SUB NAVIGATION */
 
 #subnav, #sub-subnav {
+    margin-top: -8px;
+    padding: 0 50px 12px 10px;
     display: grid;
-    grid-gap: 10vw;
+    grid-gap: 0vw 10vw;
     grid-template-columns: 1fr;
     grid-auto-flow: column;
     align-items: center;
-    padding-right: 50px;
-    padding-bottom: 4px;
 /*     background: var(--mainWhite); */
-    margin-top: -10px;
 }
 
 #subnav div, #sub-subnav div {
@@ -27,46 +26,43 @@
 }
 
 #small-bubble {
-    margin-top: 0px;
-    width: 8px;
-    height: 8px;
-    max-width: 8px;
-    max-height: 8px;
+    margin-top: 2px;
+    width: 6px;
+    height: 6px;
+    max-width: 6px;
+    max-height: 6px;
 }
 
 #medium-bubble {
     margin-top: 4px;
-    width: 16px;
-    height: 16px;
-    max-width: 16px;
-    max-height: 16px;
+    width: 12px;
+    height: 12px;
+    max-width: 12px;
+    max-height: 12px;
 }
 
 #large-bubble {
     margin-top: 4px;
-    width: 32px;
-    height: 32px;
-    max-width: 32px;
-    max-height: 32px;
+    width: 24px;
+    height: 24px;
+    max-width: 24px;
+    max-height: 24px;
 }
 
 a #large-bubble p {
     color: var(--mainWhite);
-    font-family: 'Comfortaa', sans-serif;
+    margin-top: -2px;
     font-size: 14px;
 }
 
 /* SUB SUB NAVIGATION */
 
-#sub-subnav {
-    padding-bottom: 10px;
-    margin-top: 0px;
-}
 
 #sub-subnav p {
     border-radius: 20px;
     padding: 4px 10px;
-    margin-left: -20px;
+    margin-left: -13px;
+    font-family: 'Advent Pro', sans-serif;
     font-size: 14px;
     color: var(--mainWhite);
     background: var(--lightBlue);
@@ -83,15 +79,15 @@ header #subnav a:hover p {
 
 #pdf-container {
     position: absolute;
-    top: 50px;
+    top: 45px;
     right: 5vw;
     display: flex;
     align-items: center;
-    grid-gap: 0 10px;
     text-align: left;
 }
 
 #pdf-container a p {
+    margin: 0 10px 0 0; 
     font-family: 'Advent Pro', sans-serif;
     font-size: 12px;
     color: var(--mainOrange);
@@ -116,10 +112,6 @@ header #subnav a:hover p {
     color: black;
 }
 
-/* MAIN */
-
-main {margin: 170px auto 0 auto; width: 90vw; max-width: 790px;}
-h1 {margin: 200px auto 40px auto;}
 
 /* SUMMARY */
 
