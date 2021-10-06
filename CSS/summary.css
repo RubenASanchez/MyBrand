@@ -30,6 +30,8 @@
 /* #summary {line-height: 2;} */
 #summary p {margin-bottom: 40px;}
 
+/* TAGS */
+
 #research-interests-tags {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +48,7 @@
 
 #journey h2 , #FAQs h2 {margin: 100px auto 40px auto;}
 
-#journey-container {padding: 4vw; background: var(--lightBlue);}
+#journey-container {padding: 4vw; background: var(--mainBlue);}
 
 .journey-sections {display: flex; margin-bottom: 50px;}
 
