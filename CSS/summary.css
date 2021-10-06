@@ -1,7 +1,8 @@
 /* DOWNLOAD PDF */
 
-#pdf-container {
-    width: 100px;
+#pdf-container a {
+    width: 80px;
+    height: 20px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -9,6 +10,7 @@
 }
 
 #pdf-container a p {
+    padding: 0;
     font-family: 'Advent Pro', sans-serif;
     font-size: 12px;
     color: var(--mainOrange);
@@ -19,8 +21,9 @@
 }
 
 #cv img {
-    width: 30px;
-    height: 40px;
+    margin: 5px 0 0;
+    width: 20px;
+    height: 20px;
 }
 
 /* SUMMARY */
