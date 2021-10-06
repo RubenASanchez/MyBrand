@@ -48,7 +48,7 @@
 
 #journey h2 , #FAQs h2 {margin: 100px auto 40px auto;}
 
-#journey-container {padding: 4vw; background: var(--mainBlue);}
+#journey-container {padding: 4vw; background: var(--lightBlue);}
 
 .journey-sections {display: flex; margin-bottom: 50px;}
 
@@ -72,7 +72,7 @@
 #analyst {margin-left: 5%;}
 #author {margin-left: 5%;}
 
-#journey h3 {font-size: 30px; margin-bottom: 10px; color: rgb(255,255,255);}
+#journey h3 {font-size: 30px; margin-bottom: 10px; color: var(--darkWhite);}
 #journey p {color: var(--lightBlack); line-height: 1.5;}
 
 /* FAQS */
