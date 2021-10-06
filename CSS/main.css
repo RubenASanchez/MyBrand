@@ -118,7 +118,8 @@ header nav img {
 }
 
 .active-item {
-    color: var(--mainBlue);
+/*     color: var(--mainBlue); */
+    color: rgb(100,150,240);
     border-bottom: 1px solid var(--mainBlue);
 }
 
