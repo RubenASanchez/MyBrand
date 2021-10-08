@@ -248,6 +248,10 @@ footer div p:nth-of-type(2) {
     text-align: left;
 }
 
+footer div a {
+    font-family: 'Comfortaa' , sans-serif;
+}
+
 /* TEXT LINKS */
 
 .in-text-link {
