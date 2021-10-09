@@ -1,5 +1,6 @@
 main {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 100vw;
 }
 
 #social-circles-container {
