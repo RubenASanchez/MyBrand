@@ -1,11 +1,17 @@
 main {
     margin: 0 auto;
+    width: 100vw;
     max-width: 100vw;
+    background: pink;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 #social-circles-container {
     display: grid;
-    grid-template-columns: repeat(10,10vw);
+    grid-template-columns: 5vw repeat(8,10vw) 5vw;
     grid-template-rows: repeat(20,12.5vw);
 }
 
