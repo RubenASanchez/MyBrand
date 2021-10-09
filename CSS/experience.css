@@ -32,17 +32,19 @@
 /* MAIN */
 
 main {
-    height: calc(100vh - 40px);
+    
     margin-top: 40px;
-    background: var(--mainWhite);
-    animation: backdrop 0.6s ease-in 0.75s forwards;
+    
+    
 }
 
 /* TIMELINE */
 
 #timeline {
-    max-width: 790px;
+    height: calc(100vh - 40px - 60px);
     margin: 0 auto;
+    background: var(--mainWhite);
+    animation: backdrop 0.6s ease-in 0.75s forwards;
 }
 
 #timeline-svg {
