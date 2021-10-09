@@ -85,7 +85,6 @@ body {
 header {
     width: 100vw;
     height: 40px;
-    max-width: 750px;
     position: fixed;
     top: 0;
     left: 0;
