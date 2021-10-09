@@ -1,87 +1,6 @@
-/* SUB NAVIGATION */
-
-#subnav, #sub-subnav {
-    display: grid;
-    grid-gap: 10vw;
-    grid-template-columns: 1fr;
-    grid-auto-flow: column;
-    align-items: center;
-    padding-right: 50px;
-    padding-bottom: 4px;
-    background: var(--mainWhite);
-    margin-top: -10px;
-}
-
-#subnav div, #sub-subnav div {
-    display: grid;
-    width: 50px;
-    align-items: center;
-    justify-items: center;
-}
-
-#small-bubble, #medium-bubble, #large-bubble {
-    border-radius: 50%;
-    background: var(--lightBlue);
-    align-self: center;
-    justify-self: center;
-}
-
-#small-bubble {
-    margin-top: 0px;
-    width: 8px;
-    height: 8px;
-    max-width: 8px;
-    max-height: 8px;
-}
-
-#medium-bubble {
-    margin-top: 4px;
-    width: 16px;
-    height: 16px;
-    max-width: 16px;
-    max-height: 16px;
-}
-
-#large-bubble {
-    margin-top: 4px;
-    width: 32px;
-    height: 32px;
-    max-width: 32px;
-    max-height: 32px;
-}
-
-a #large-bubble p {
-    color: var(--mainWhite);
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 14px;
-}
-
-/* SUB SUB NAVIGATION */
-
-#sub-subnav {
-    padding-bottom: 10px;
-    margin-top: 0px;
-}
-
-#sub-subnav p {
-    border-radius: 20px;
-    padding: 4px 10px;
-    margin-left: -26px;
-    font-size: 14px;
-    color: var(--mainWhite);
-    background: var(--lightBlue);
-    transform: scale(0.01);
-    animation: bubblepop .5s ease-out forwards;
-    animation-delay: .2s;
-}
-
-header #subnav a:hover p {
-    color: var(--mainBlue);
-}
-
 /* DOWNLOAD PDF */
 
-#pdf-container {
+/* #pdf-container {
     position: absolute;
     top: 50px;
     right: 54px;
@@ -90,7 +9,7 @@ header #subnav a:hover p {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-}
+} */
 
 #pdf-container a p {
     color: var(--mainOrange);
@@ -113,7 +32,8 @@ header #subnav a:hover p {
 /* MAIN */
 
 main {
-    margin-top: 153px;
+    height: calc(100vh - 40px);
+    margin-top: 40px;
     background: var(--mainWhite);
     animation: backdrop 0.6s ease-in 0.75s forwards;
 }
@@ -382,5 +302,4 @@ main {
 
 @media all and (max-width: 420px) {
     #subnav, #sub-subnav {padding-right: 20px; grid-gap: 4vw;}
-    #pdf-container {right: calc(4vw + 10px)}
 }
