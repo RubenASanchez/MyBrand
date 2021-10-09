@@ -1,3 +1,7 @@
+main {
+    margin: 0;
+}
+
 #social-circles-container {
     display: grid;
     grid-template-columns: repeat(10,10vw);
