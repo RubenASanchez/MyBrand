@@ -9,6 +9,10 @@ html {
     overflow-x: hidden;
 }
 
+footer {
+    margin: -40px;
+}
+
 #social-circles-container {
     display: grid;
     grid-template-columns: repeat(10,10vw) ;
