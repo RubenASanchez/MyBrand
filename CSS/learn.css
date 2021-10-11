@@ -1,7 +1,4 @@
 main {
-/*     width: 90%; */
-/*     max-width: 900px; */
-    margin:0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
