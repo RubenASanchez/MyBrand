@@ -1,6 +1,7 @@
 /* GRID */
 
 main {
+    width: 100vw;
     display: grid;
     justify-items: center;
     align-content: center;
