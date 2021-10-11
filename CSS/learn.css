@@ -9,6 +9,8 @@ h1 {
     margin: 0 0 0 2vw;
 }
 
+h2 {margin: 20px 0 0;}
+
 /* TABS */
 
 /*nav*/
@@ -61,9 +63,9 @@ input:checked + label {
     grid-column: 2/-2;
 }
 
-.scrolling-topics h1 {
+/* .scrolling-topics h1 {
     font-size: 4.75vw;
-}
+} */
 
 .scrolling-items {
     display: grid;
@@ -86,7 +88,7 @@ input:checked + label {
     text-decoration: none;
 }
 
-#content-read #neuronal-anatomy {margin-top: -70px; padding-top: 70px;}
+/* #content-read #neuronal-anatomy {margin-top: -70px; padding-top: 70px;} */
 
 #content-watch .scrolling-items {
     grid-column-gap: 4vw;
