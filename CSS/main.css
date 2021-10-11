@@ -52,7 +52,7 @@ h2, p {
 html {scroll-behavior: smooth;}
 
 main {
-    margin: 60px auto 0;
+    margin: 40px auto 0;
     width: 90vw;
     max-width: 750px;
 }
