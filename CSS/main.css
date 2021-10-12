@@ -121,8 +121,8 @@ header nav img {
 }
 
 .active-item {
-    color: var(--mainBlack);
-/*     color: rgb(60,110,200); */
+/*     color: var(--mainBlack); */
+    color: rgb(60,110,200);
     border-bottom: 1px solid var(--mainBlue);
 }
 
