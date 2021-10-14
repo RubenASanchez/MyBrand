@@ -54,6 +54,7 @@ html {scroll-behavior: smooth;}
 
 body {
     width: 100vw;
+    max-width: 1330px;
     overflow-x: hidden;
     background: var(--darkWhite);
 }
@@ -62,7 +63,6 @@ main {
     margin: 40px auto 0;
     width: 90vw;
     background: var(--mainWhite);
-/*     max-width: 1440px; */
 }
 
 h1 {
