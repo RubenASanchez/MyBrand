@@ -313,6 +313,6 @@ footer div a {
     footer nav {grid-auto-flow: row; grid-gap: 10px;}
 }
 
-@media all and (max-width: 1278px) {
+@media all and (max-width: 1331px) {
     body {background: var(--mainWhite);}
 }
