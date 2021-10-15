@@ -90,6 +90,7 @@ p {
 
 header {
     width: 100%;
+    max-width: 1330px;
     height: 40px;
     position: fixed;
     top: 0;
