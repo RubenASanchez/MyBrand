@@ -63,6 +63,7 @@ body {
 main {
     width: 100%;
     max-width: 1330px;
+    padding: 0 5%;
     margin: 40px auto 0;
     background: var(--mainWhite);
 }
@@ -95,8 +96,6 @@ header {
     height: 40px;
     position: fixed;
     top: 0;
-/*     left: 0;
-    right: 0; */
     background: var(--mainWhite);
     z-index: 4;
 }
@@ -319,5 +318,5 @@ footer div a {
 
 @media all and (max-width: 1331px) {
     body {background: var(--mainWhite);}
-    main {width: 90%;}
+/*     main {width: 90%;} */
 }
