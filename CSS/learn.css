@@ -6,7 +6,7 @@ main {
 }
 
 h1 {
-    margin: 0 0 0 2vw;
+/*     margin: 0 0 0 2vw; */
     font-size: 30px;
 }
 
@@ -14,7 +14,6 @@ h2 {margin: 20px 0 0;}
 
 /* TABS */
 
-/*nav*/
 label {
     color: var(--midGray);
     width: 100%;
@@ -31,7 +30,7 @@ label:hover {
     border-top: 2px solid var(--veryLightBlue);
 }
 
-/*nav*/
+/* SHOW SECTIONS */
 
 input, .content-container {
     display: none;
@@ -49,29 +48,29 @@ input:checked + label {
 
 .content-container {
     grid-column: 1/-1;
-    padding: 2vh 0 4vh 0;
+/*     padding: 2vh 0 4vh 0; */
 }
 
 /* SCROLLING CONTENT */
 
 .scrolling-topics {
+/*     width: 100%; */
     display: grid;
-    grid-template-columns: 2vw 1fr 2vw;
-    margin-bottom: 2vw;
+/*     grid-template-columns: 2vw 1fr 2vw; */
+/*     grid-template-columns: 1fr; */
+/*     margin-bottom: 2vw; */
 }
 
 .scrolling-topics > * {
-    grid-column: 2/-2;
+/*     grid-column: 1/-1; */
 }
 
-/* .scrolling-topics h1 {
-    font-size: 4.75vw;
-} */
 
 .scrolling-items {
     display: grid;
-    grid-template-columns: repeat(8,calc(25% - 4vw));
-    grid-template-rows: 1fr 2vw;
+/*     grid-template-columns: repeat(8,calc(25% - 4vw)); */
+    grid-template-columns: repeat(8,22%);
+/*     grid-template-rows: 1fr 2vw; */
     overflow-x: scroll;
 }
 
