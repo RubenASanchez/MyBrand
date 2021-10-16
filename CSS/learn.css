@@ -26,12 +26,12 @@ label {
     justify-content: center;
 }
 
-/*nav*/
-#tab-read:hover {
-/*     color: var(--lightBlue);
-    border-top: 2px solid var(--lightBlue); */
+label:hover {
     cursor: pointer;
+    border-top: 2px solid var(--veryLightBlue);
 }
+
+/*nav*/
 
 input, .content-container {
     display: none;
