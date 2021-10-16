@@ -69,19 +69,14 @@ input:checked + label {
 .scrolling-items {
     display: grid;
 /*     grid-template-columns: repeat(8,calc(25% - 4vw)); */
-    grid-template-columns: repeat(8,22%);
+    grid-template-columns: repeat(8,20%);
+    column-gap: 2%;
 /*     grid-template-rows: 1fr 2vw; */
     overflow-x: scroll;
 }
 
-.scrolling-item h3 {
-    width: 91%;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 .scrolling-item img {
-    width: 18vw;
+    width: 100%;
 }
 
 .scrolling-item h3 a {
