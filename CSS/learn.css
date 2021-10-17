@@ -110,16 +110,15 @@ input:checked + label {
 }
 
 #yt-container {
-/*     width: 100%; */
+    width: 100px;
     margin: 0 auto 40px;
     display: grid;
     justify-content: center;
     align-items: center;
-/*     text-align: center; */
-    background: gray;
 }
 
 #yt-container p {
+    margin: 0 0 10px;
     grid-column: 1/-1;
     grid-row: 1;
     text-align: center;
@@ -129,20 +128,10 @@ input:checked + label {
     width: 100px;
     grid-column: 1/-1;
     grid-row: 2;
-/*     margin: 0 auto;
-    text-align: center; */
     justify-self: center;
     align-self: center;
 }
 
-#___ytsubscribe_0 {
-/*     display: grid !important;
-    align-self: center !important;
-    text-align: center !important; */
-    width: 85px !important;
-/*     margin: 0 auto !important; */
-}
+#___ytsubscribe_0 {width: 85px !important;}
 
-#___ytsubscribe_0 iframe {
-    width: 85px !important;
-}
+#___ytsubscribe_0 iframe {width: 85px !important;}
