@@ -56,6 +56,10 @@ input:checked + label {
     display: grid;
 }
 
+.scrolling-topics:last-of-type {
+    margin: 0 0 80px;
+}
+
 .scrolling-topics > * {
 /*     grid-column: 1/-1; */
 }
@@ -106,10 +110,12 @@ input:checked + label {
 }
 
 #yt-container {
-    width: 100%;
+    width: 100px;
+    margin: 0 auto 40px;
     display: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background: gray;
 }
 
@@ -118,8 +124,16 @@ input:checked + label {
 }
 
 .g-ytsubscribe {
-    width: 100%;
+    width: 100px;
     margin: 0 auto;
+    text-align: center;
     justify-self: center;
     align-self: center;
+}
+
+#___ytsubscribe_0 {
+/*     display: grid; */
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
 }
