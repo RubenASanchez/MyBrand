@@ -110,7 +110,7 @@ input:checked + label {
 }
 
 #yt-container {
-    width: 100px;
+    width: 100%;
     margin: 0 auto 40px;
     display: grid;
     justify-content: center;
@@ -120,6 +120,8 @@ input:checked + label {
 }
 
 #yt-container p {
+    grid-column: 1;
+    grid-row: 1;
     text-align: center;
 }
 
