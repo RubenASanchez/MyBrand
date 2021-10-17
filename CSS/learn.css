@@ -132,8 +132,13 @@ input:checked + label {
 }
 
 #___ytsubscribe_0 {
-/*     display: grid; */
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
+    display: grid !important;
+    align-self: center !important;
+    text-align: center !important;
+    width: 300px !important;
+    margin: 0 auto !important;
+}
+
+#I0_1634505478938 {
+    width: 200px !important;
 }
