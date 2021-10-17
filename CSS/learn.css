@@ -6,7 +6,6 @@ main {
 }
 
 h1 {
-/*     margin: 0 0 0 2vw; */
     font-size: 30px;
 }
 
@@ -48,31 +47,23 @@ input:checked + label {
 
 .content-container {
     grid-column: 1/-1;
-/*     padding: 2vh 0 4vh 0; */
 }
 
 /* SCROLLING CONTENT */
 
 .scrolling-topics {
-/*     width: 100%; */
     margin: 0 0 40px;
     display: grid;
-/*     grid-template-columns: 2vw 1fr 2vw; */
-/*     grid-template-columns: 1fr; */
-/*     margin-bottom: 2vw; */
 }
 
 .scrolling-topics > * {
 /*     grid-column: 1/-1; */
 }
 
-
 .scrolling-items {
     display: grid;
-/*     grid-template-columns: repeat(8,calc(25% - 4vw)); */
     grid-template-columns: repeat(8,20%);
     column-gap: 2%;
-/*     grid-template-rows: 1fr 2vw; */
     overflow-x: scroll;
 }
 
@@ -94,11 +85,9 @@ input:checked + label {
     text-decoration: none;
 }
 
-/* #content-read #neuronal-anatomy {margin-top: -70px; padding-top: 70px;} */
-
 #content-watch .scrolling-items {
-    grid-column-gap: 4vw;
-    grid-template-columns: repeat(8,40vw);
+/*     column-gap: 2%;
+    grid-template-columns: repeat(8,40%); */
 }
 
 #content-watch .scrolling-item {
@@ -117,10 +106,20 @@ input:checked + label {
 }
 
 #yt-container {
-    margin: 25px auto 0 auto;
-    text-align: center;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: gray;
 }
 
 #yt-container p {
-    margin-bottom: 5px;
+    text-align: center;
+}
+
+.g-ytsubscribe {
+    width: 100%;
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
 }
