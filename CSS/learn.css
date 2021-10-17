@@ -110,39 +110,39 @@ input:checked + label {
 }
 
 #yt-container {
-    width: 100%;
+/*     width: 100%; */
     margin: 0 auto 40px;
     display: grid;
     justify-content: center;
     align-items: center;
-    text-align: center;
+/*     text-align: center; */
     background: gray;
 }
 
 #yt-container p {
-    grid-column: 1;
+    grid-column: 1/-1;
     grid-row: 1;
     text-align: center;
 }
 
 .g-ytsubscribe {
     width: 100px;
-    grid-column: 1;
+    grid-column: 1/-1;
     grid-row: 2;
-    margin: 0 auto;
-    text-align: center;
+/*     margin: 0 auto;
+    text-align: center; */
     justify-self: center;
     align-self: center;
 }
 
 #___ytsubscribe_0 {
-    display: grid !important;
+/*     display: grid !important;
     align-self: center !important;
-    text-align: center !important;
-    width: 300px !important;
-    margin: 0 auto !important;
+    text-align: center !important; */
+    width: 85px !important;
+/*     margin: 0 auto !important; */
 }
 
 #I0_1634505478938 {
-    width: 200px !important;
+/*     width: 100px !important; */
 }
