@@ -127,6 +127,8 @@ input:checked + label {
 
 .g-ytsubscribe {
     width: 100px;
+    grid-column: 1;
+    grid-row: 2;
     margin: 0 auto;
     text-align: center;
     justify-self: center;
