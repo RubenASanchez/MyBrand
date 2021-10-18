@@ -60,9 +60,9 @@ input:checked + label {
     margin: 0 0 80px;
 }
 
-.scrolling-topics > * {
-/*     grid-column: 1/-1; */
-}
+/* .scrolling-topics > * {
+    grid-column: 1/-1;
+} */
 
 .scrolling-items {
     display: grid;
@@ -84,7 +84,7 @@ input:checked + label {
     color: var(--lightBlack);
     font-family: 'Comfortaa', sans-serif;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     text-decoration: none;
 }
