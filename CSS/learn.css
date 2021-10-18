@@ -60,10 +60,6 @@ input:checked + label {
     margin: 0 0 80px;
 }
 
-/* .scrolling-topics > * {
-    grid-column: 1/-1;
-} */
-
 .scrolling-items {
     display: grid;
     grid-template-columns: repeat(8,20%);
@@ -90,8 +86,7 @@ input:checked + label {
 }
 
 #content-watch .scrolling-items {
-/*     column-gap: 2%;
-    grid-template-columns: repeat(8,40%); */
+    grid-template-columns: repeat(8,40%);
 }
 
 #content-watch .scrolling-item {
