@@ -81,7 +81,7 @@ input:checked + label {
 }
 
 .scrolling-item h3 a {
-    color: var(--lightBlack);
+    color: var(--mainBlack);
     font-family: 'Comfortaa', sans-serif;
     font-weight: 100;
     font-size: 12px;
