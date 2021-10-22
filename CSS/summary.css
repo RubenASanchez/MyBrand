@@ -87,25 +87,27 @@
 .c-me {justify-content: flex-end;}
 
 .chat-container p {
-    padding: 10px;
+    padding: 10px 20px;
+    border-radius: 28px;
     line-height: 2;
     color: var(--lightBlack);
+/*     max-width: 70%; */
 }
 
 .c-suki p {margin-left: 10px; background: var(--lightGray);}
 .c-me p {margin-right: 10px; background: var(--lightBlue);}
 
-@keyframes bubblepop {
+/* @keyframes bubblepop {
     0% {transform: scale(0.01);}
     100% {transform: scale(1);}
-}
+} */
 
-@media all and (max-width: 420px) {
+/* @media all and (max-width: 420px) {
     #subnav, #sub-subnav {padding-right: 20px; grid-gap: 4vw;}
 }
-
-@media all and (max-width: 700px) {
+ */
+/* @media all and (max-width: 700px) {
     #summary p , #FAQs p {font-size: 16px; line-height: 2.2;}
     #journey p {font-size: 16px;}
     #journey h3 {font-size: 24px; margin-bottom: 0px;}
-}
+} */
