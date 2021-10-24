@@ -44,7 +44,7 @@
 }
 
 .tail1-container {
-    padding: 2vw;
+    padding: min(2vw,25px);
 }
 
 .tail1 {
