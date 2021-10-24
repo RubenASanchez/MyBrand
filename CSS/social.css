@@ -88,6 +88,8 @@
     border-radius: 50%;
     width: 12.5vw;
     height: 12.5vw;
+    max-width: 170px;
+    max-height: 170px;
     background: var(--lightGray);
 }
 
