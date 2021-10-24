@@ -8,8 +8,6 @@
 .social-circles {
     display: flex;
     flex-direction: column;
-/*     width: 30vw; */
-    background: pink;
 }
 
 .social-circle {
@@ -53,6 +51,8 @@
     border-radius: 50%;
     width: 6.25vw;
     height: 6.25vw;
+    max-width: 85px;
+    max-height: 85px;
     background: var(--lightBlue);
 }
 
@@ -60,6 +60,8 @@
     border-radius: 50%;
     width: 3.125vw;
     height: 3.125vw;
+    max-width: 42px;
+    max-height: 42px;
     background: var(--lightBlue);
 }
 
