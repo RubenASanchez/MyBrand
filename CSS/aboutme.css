@@ -35,13 +35,13 @@ html {background: var(--lightBlack);}
 
 main {
     background: pink;
-    margin: 40px 0 0;
+/*     margin: 40px 0 0; */
 }
 
 /* DASHBOARD */
 
 #dashboard {
-    width: 99vw;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 30vw 2vw 30vw 2vw 30vw 1fr;
