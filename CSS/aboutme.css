@@ -34,7 +34,7 @@
 html {background: var(--lightBlack);}
 
 main {
-    background: pink;
+    padding: 0;
 /*     margin: 40px 0 0; */
 }
 
