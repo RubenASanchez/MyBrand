@@ -44,7 +44,7 @@ main {
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 30vw 2vw 30vw 2vw 30vw 1fr;
+    grid-template-columns: 1fr 30% 2% 30% 2% 30% 1fr;
     grid-template-rows: 2vw 20vw 2vw 20vw 2vw;
     background: var(--lightBlack);
 /*     background: red; */
@@ -52,7 +52,7 @@ main {
 
 #dashboard .dashboard-item {
     height: 100%;
-    width: 30vw;
+    width: 100%;
     background: var(--mainGray);
     color: white;
 }
